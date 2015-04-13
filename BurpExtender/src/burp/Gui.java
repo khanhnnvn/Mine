@@ -9,6 +9,7 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Label;
+import java.util.List;
 import javax.swing.BorderFactory;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
@@ -31,9 +32,14 @@ public class Gui extends JPanel{
     public     JPanel  panel12, rightPanel;
     public     JButton buttonHelp;
     public     JTable  proxyTable;
-    public Gui()
+    public      BurpExtender BurpExtender;
+    public final List<LogEntry> log;
+    public Gui(BurpExtender BurpExtender)
     {
+        this.BurpExtender = BurpExtender;
+        this.log = BurpExtender.log;
         initComponents();
+        
     }
     public void initComponents()
     {
@@ -136,22 +142,23 @@ public class Gui extends JPanel{
         @Override
         public int getColumnCount() 
         { 
-          return 4; 
+          return 2; 
         }
         @Override
         public int getRowCount() 
         { 
-          return 15;
+          return log.size();
         }
         @Override
         public Object getValueAt(int row, int col) 
         { 
+            LogEntry logEntry = log.get(row);
             switch (col)
             {
                 case 0:
                     return "";
                 case 1:
-                    return "";
+                    return logEntry.url.toString();
                 default:
                     return "";
             }
