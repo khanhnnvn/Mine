@@ -6,7 +6,6 @@ import javax.swing.*;
 import javax.swing.BoxLayout;
 import net.miginfocom.layout.*;
 import net.miginfocom.swing.*;
-import burp.MainLayout;
 import java.awt.Button;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -19,16 +18,17 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 public class BurpExtender implements IBurpExtender, ITab, IHttpListener
 {
-    private IBurpExtenderCallbacks callbacks;
-    private IExtensionHelpers helpers;
-    public List<LogEntry> log = new ArrayList<LogEntry>();
+    public IBurpExtenderCallbacks callbacks;
+    public IExtensionHelpers helpers;
+    
     private Gui jPanel1;
-    public DefaultTableModel model;
     @Override
     public void registerExtenderCallbacks(final IBurpExtenderCallbacks callbacks)
     {
         // your extension code here
+        this.callbacks = callbacks;
         callbacks.setExtensionName("NamHB Extension");
+        helpers = callbacks.getHelpers();
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run(){
@@ -46,9 +46,7 @@ public class BurpExtender implements IBurpExtender, ITab, IHttpListener
         if (!messageIsRequest)
         {
             // create a new log entry with the message details
-            System.out.println(log.size());
-               
-            
+                jPanel1.addRowDataModel(toolFlag, messageInfo);
         }
     }
     @Override
