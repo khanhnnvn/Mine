@@ -9,6 +9,8 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Label;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -35,9 +37,12 @@ public class Gui extends JPanel{
     public      JTable  proxyTable;
     public      BurpExtender BurpExtender;
     public      DefaultTableModel dataModel;
+    public      JPanel topPanel, panel2, requestInfoPanel, responseInfoPanel;
     public  final   List<LogEntry> log = new ArrayList<LogEntry>();
     public IBurpExtenderCallbacks callbacks;
     public IExtensionHelpers helpers;
+    private IMessageEditor requestViewer;
+    private IMessageEditor responseViewer;
     public Gui(BurpExtender BurpExtender)
     {
         this.BurpExtender = BurpExtender;
@@ -50,12 +55,12 @@ public class Gui extends JPanel{
     {
         this.setLayout(new BorderLayout());
         
-        JPanel topPanel = new JPanel();
+        topPanel = new JPanel();
         topPanel.setLayout(new BorderLayout());
         //Create SiteMap Tab
         createSiteMap();
         //Options Tab
-        JPanel panel2 = new JPanel();
+        panel2 = new JPanel();
 
         JTabbedPane tabbedPane = new JTabbedPane();
         tabbedPane.addTab("Site map", panel1);
@@ -130,6 +135,16 @@ public class Gui extends JPanel{
         proxyTable = new JTable(dataModel);
         proxyTable.getColumnModel().getColumn(0).setMaxWidth(50);
         proxyTable.getColumnModel().getColumn(0).setMaxWidth(100);
+        proxyTable.addMouseListener(new MouseAdapter() 
+            {
+                public void mouseClicked(MouseEvent e)
+                {
+                    int row = proxyTable.getSelectedRow();
+                    LogEntry logEntry = log.get(row);
+                    requestViewer.setMessage(logEntry.requestResponse.getRequest(), true);
+                    responseViewer.setMessage(logEntry.requestResponse.getResponse(), false);
+                }
+            });
         return proxyTable;
     }
 
@@ -148,6 +163,14 @@ public class Gui extends JPanel{
     public JPanel createRequestPanel()
     {
         requestPanel = new JPanel(new BorderLayout());
+        //create tab
+
+        JTabbedPane tabbedRequestResponsePane = new JTabbedPane();
+        requestViewer = callbacks.createMessageEditor(BurpExtender, false);
+        responseViewer = callbacks.createMessageEditor(BurpExtender, false);
+        tabbedRequestResponsePane.addTab("Request", requestViewer.getComponent());
+        tabbedRequestResponsePane.addTab("Response", responseViewer.getComponent());
+        requestPanel.add(tabbedRequestResponsePane, BorderLayout.CENTER);
         return requestPanel;
     }
 

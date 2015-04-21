@@ -16,11 +16,11 @@ import java.util.List;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
-public class BurpExtender implements IBurpExtender, ITab, IHttpListener
+public class BurpExtender implements IBurpExtender, ITab, IHttpListener, IMessageEditorController
 {
     public IBurpExtenderCallbacks callbacks;
     public IExtensionHelpers helpers;
-    
+    public IHttpRequestResponse currentlyDisplayedItem;
     private Gui jPanel1;
     @Override
     public void registerExtenderCallbacks(final IBurpExtenderCallbacks callbacks)
@@ -57,5 +57,26 @@ public class BurpExtender implements IBurpExtender, ITab, IHttpListener
     public Component getUiComponent () {
         return  jPanel1;
     }
+    //
+    // implement IMessageEditorController
+    // this allows our request/response viewers to obtain details about the messages being displayed
+    //
+    
+    @Override
+    public byte[] getRequest()
+    {
+        return currentlyDisplayedItem.getRequest();
+    }
 
+    @Override
+    public byte[] getResponse()
+    {
+        return currentlyDisplayedItem.getResponse();
+    }
+
+    @Override
+    public IHttpService getHttpService()
+    {
+        return currentlyDisplayedItem.getHttpService();
+    }
 }
