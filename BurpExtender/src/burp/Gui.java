@@ -9,6 +9,10 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Label;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 import javax.swing.BorderFactory;
 import javax.swing.Box;
@@ -19,25 +23,31 @@ import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.JTabbedPane;
 import javax.swing.JTable;
-import javax.swing.table.AbstractTableModel;
-import javax.swing.table.TableModel;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
  * @author namhb1
  */
 public class Gui extends JPanel{
-    public     JPanel  sitePanel, requestPanel;
-    public     JPanel  panel1, panel11, panel111;
-    public     JPanel  panel12, rightPanel;
-    public     JButton buttonHelp;
-    public     JTable  proxyTable;
+    public      JPanel  sitePanel, requestPanel;
+    public      JPanel  panel1, panel11, panel111;
+    public      JPanel  panel12, rightPanel;
+    public      JButton buttonHelp;
+    public      JTable  proxyTable;
     public      BurpExtender BurpExtender;
-    public final List<LogEntry> log;
+    public      DefaultTableModel dataModel;
+    public      JPanel topPanel, panel2, requestInfoPanel, responseInfoPanel;
+    public  final   List<LogEntry> log = new ArrayList<LogEntry>();
+    public IBurpExtenderCallbacks callbacks;
+    public IExtensionHelpers helpers;
+    private IMessageEditor requestViewer;
+    private IMessageEditor responseViewer;
     public Gui(BurpExtender BurpExtender)
     {
         this.BurpExtender = BurpExtender;
-        this.log = BurpExtender.log;
+        this.callbacks = BurpExtender.callbacks;
+        this.helpers = BurpExtender.helpers;
         initComponents();
         
     }
@@ -45,12 +55,12 @@ public class Gui extends JPanel{
     {
         this.setLayout(new BorderLayout());
         
-        JPanel topPanel = new JPanel();
+        topPanel = new JPanel();
         topPanel.setLayout(new BorderLayout());
         //Create SiteMap Tab
         createSiteMap();
         //Options Tab
-        JPanel panel2 = new JPanel();
+        panel2 = new JPanel();
 
         JTabbedPane tabbedPane = new JTabbedPane();
         tabbedPane.addTab("Site map", panel1);
@@ -82,6 +92,7 @@ public class Gui extends JPanel{
 
         //For sitePanel
         JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
+        splitPane.setDividerSize(3);
         sitePanel = createSitePanel();
         JScrollPane leftScrollPane = new JScrollPane(sitePanel);
         splitPane.setLeftComponent(leftScrollPane);
@@ -93,10 +104,11 @@ public class Gui extends JPanel{
         proxyTable = createProxyPanel(); 
         requestPanel = createRequestPanel();
         JScrollPane scrollPane2 = new JScrollPane(proxyTable);
-        scrollPane2.setPreferredSize(new Dimension(scrollPane2.getWidth(),250));
+        scrollPane2.setPreferredSize(new Dimension(scrollPane2.getWidth(),230));
         JScrollPane scrollPane3 = new JScrollPane(requestPanel);
         
         JSplitPane splitPane2 = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
+        splitPane2.setDividerSize(3);
         splitPane2.setLeftComponent(scrollPane2);
         splitPane2.setRightComponent(scrollPane3);
         rightPanel.add(splitPane2);
@@ -111,57 +123,55 @@ public class Gui extends JPanel{
     public JPanel createSitePanel()
     {
         sitePanel = new JPanel(new BorderLayout());
-        sitePanel.setPreferredSize(new Dimension(250,sitePanel.getHeight()));
+        sitePanel.setPreferredSize(new Dimension(300,sitePanel.getHeight()));
         return sitePanel;
     }
     public JTable createProxyPanel()
     {
+        dataModel = new DefaultTableModel();
+        dataModel.addColumn("#");
+        dataModel.addColumn("Method");
+        dataModel.addColumn("URL");
         proxyTable = new JTable(dataModel);
+        proxyTable.getColumnModel().getColumn(0).setMaxWidth(50);
+        proxyTable.getColumnModel().getColumn(0).setMaxWidth(100);
+        proxyTable.addMouseListener(new MouseAdapter() 
+            {
+                public void mouseClicked(MouseEvent e)
+                {
+                    int row = proxyTable.getSelectedRow();
+                    LogEntry logEntry = log.get(row);
+                    requestViewer.setMessage(logEntry.requestResponse.getRequest(), true);
+                    responseViewer.setMessage(logEntry.requestResponse.getResponse(), false);
+                }
+            });
         return proxyTable;
+    }
+
+    public void addRowDataModel(int tool, IHttpRequestResponse messageInfo)
+    {
+        URL url = helpers.analyzeRequest(messageInfo).getUrl();
+        String method = helpers.analyzeRequest(messageInfo).getMethod();
+        String path = url.getPath().toString();
+        dataModel.addRow(new Object[] { 
+            log.size(),
+            method,
+            url.getPath().toString() 
+        });
+        log.add(new LogEntry(tool, callbacks.saveBuffersToTempFiles(messageInfo), url));
     }
     public JPanel createRequestPanel()
     {
         requestPanel = new JPanel(new BorderLayout());
+        //create tab
+
+        JTabbedPane tabbedRequestResponsePane = new JTabbedPane();
+        requestViewer = callbacks.createMessageEditor(BurpExtender, false);
+        responseViewer = callbacks.createMessageEditor(BurpExtender, false);
+        tabbedRequestResponsePane.addTab("Request", requestViewer.getComponent());
+        tabbedRequestResponsePane.addTab("Response", responseViewer.getComponent());
+        requestPanel.add(tabbedRequestResponsePane, BorderLayout.CENTER);
         return requestPanel;
     }
-    public TableModel dataModel = new AbstractTableModel() 
-    {
-        @Override
-        public String getColumnName(int columnIndex)
-        {
-            switch (columnIndex)
-            {
-                case 0:
-                    return "Tool";
-                case 1:
-                    return "URL";
-                default:
-                    return "";
-            }
-        }   
-        @Override
-        public int getColumnCount() 
-        { 
-          return 2; 
-        }
-        @Override
-        public int getRowCount() 
-        { 
-          return log.size();
-        }
-        @Override
-        public Object getValueAt(int row, int col) 
-        { 
-            LogEntry logEntry = log.get(row);
-            switch (col)
-            {
-                case 0:
-                    return "";
-                case 1:
-                    return logEntry.url.toString();
-                default:
-                    return "";
-            }
-        }
-    };
+
 }
