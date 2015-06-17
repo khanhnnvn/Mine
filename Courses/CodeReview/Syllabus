@@ -16,6 +16,10 @@ Secure Coding (4h)
 
 
 Day 2: Code Review
+Approach (30p)
+	Define
+	EntryPoint to EndPoint
+	EndPoint to EntryPoint
 Data Validation (5h)
 	Injection
 		SQL inj
