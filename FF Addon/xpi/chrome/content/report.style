@@ -1,0 +1,95 @@
+<html>
+	<head>
+		<title>Acunetix Scanner Report</title>
+		<style type="text/css">
+			.body {font-family: verdana, arial, serif;}
+			.requestHead {font-family: verdana, arial, serif; font-size: 13px; font-weight:bold; color:#787878; margin:0px; background-color:#e6e6e6;}
+			.requestColumnsHead {font-family: verdana, arial, serif; font-size: 13px; font-weight:bold; border-bottom:#CCCCCC 1px solid;}
+			.requestColumns {font-family: verdana, arial, serif; font-size: 13px; border-bottom: #CCCCCC 1px solid;}
+			.requestTehnical {font-family: verdana, arial, serif; font-size: 13px; border-bottom: #CCCCCC 1px solid; word-wrap: break-word;}
+		</style>
+		<script language="JavaScript1.2">
+function toggle_tehnical1(strId)
+{
+	var rowTehnical1 = document.getElementById(strId + "1");
+	if (rowTehnical1 == null) return;
+	
+	var element = document.getElementById("x" + strId);
+	
+	if (rowTehnical1.style.display == "none")
+	{
+		if(element)element.innerHTML = "-";
+		rowTehnical1.style.display = "";
+	}
+	else
+	{
+		if(element)element.innerHTML = "+";
+		rowTehnical1.style.display = "none"
+		var rowTehnical2 = document.getElementById(strId + "2");
+		if (rowTehnical2 == null) return;
+		rowTehnical2.style.display = "none";
+	}	
+}
+function toggle_tehnical2(strId)
+{
+	var rowTehnical2 = document.getElementById(strId + "2");
+	if (rowTehnical2 == null) return;
+	if (rowTehnical2.style.display == "none")
+	{
+		rowTehnical2.style.display = "";
+	}
+	else
+	{
+		rowTehnical2.style.display = "none"
+	}
+}
+		</script>
+	</head>
+	
+	<body style="font-family: verdana, arial, serif; font-size: 8px;">
+<!-- TopBar -->    
+		<div style="height: 29px; margin-top:3px; margin-bottom:8px; margin-left:4px; margin-right:4px;border-bottom:#CCCCCC 1px solid">
+			<img src="http://www.acunetix.com/webtransfer/ff/acuheader-left.png" width="113" height="24" style="float:left;"/>
+			<img src="http://www.acunetix.com/webtransfer/ff/acuheader-right.png" width="186" height="24" style="float:right;"/>
+		</div>
+<!-- End TopBar -->
+
+		<table cellspacing="1" cellpadding="1">
+			<tr>
+				<td style= "font-family: Arial, Helvetica, sans-serif; font-size: 12px;">Test Status:</td>
+				<td style= "font-family: Arial, Helvetica, sans-serif; font-size: 12px;"> {test_status}</td>
+			</tr>
+			<tr>
+				<td style= "font-family: Arial, Helvetica, sans-serif; font-size: 12px;">Vulnerabilities Found:</td>
+				<td style= "font-family: Arial, Helvetica, sans-serif; font-size: 12px;"> {test_vulnerabilities}</td>
+			</tr>
+			<tr>
+				<td style= "font-family: Arial, Helvetica, sans-serif; font-size: 12px;">Total Requests Handled:</td>
+				<td style= "font-family: Arial, Helvetica, sans-serif; font-size: 12px;"> {test_requestHandled}</td>
+			</tr>
+			<tr>
+				<td style= "font-family: Arial, Helvetica, sans-serif; font-size: 12px;">Total HTTP Errors:</td>
+				<td style= "font-family: Arial, Helvetica, sans-serif; font-size: 12px;"> {test_erros}</td>
+			</tr>
+			<tr>
+				<td style= "font-family: Arial, Helvetica, sans-serif; font-size: 12px;">Scan Time:</td>
+				<td style= "font-family: Arial, Helvetica, sans-serif; font-size: 12px;"> {time_elapsed}</td>
+			</tr>
+		</table>
+		<br/>
+		<br/>
+
+		<table width="100%" cellspacing = "0" cellpadding = "0">
+			{request_list}
+		</table>
+		
+		<br>
+		<br>
+
+<!-- Copyright 	-->
+		<div style=" height:20px; font-family:verdana, arial,  serif; font-size:7pt; color:#787878; margin: 										0px;background-color:#e6e6e6;vertical-align:middle;border-top: 0px solid #CCCCCC;padding-top: 3px;">
+		<div style="float:left; height:17px"><img src="http://www.acunetix.com/webtransfer/ff/logo_bw.png" width="18" height="13" style="vertical-align:middle; margin-left:4px;"/> <div style="margin-left:4px; display:inline; vertical-align:middle;" id="replace_Copyright">Acunetix Ltd &copy; 2007 All rights reserved.</div></div><div style="float:right; margin-right: 4px; height:17px" id="replace_LongVersionInfo"></div>
+</div>
+<!-- End Copyright -->
+	</body>
+</html>

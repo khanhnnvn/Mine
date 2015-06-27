@@ -1,0 +1,25 @@
+<tr class = "requestColumns" >
+				<td id = "xrequest{request_index}_param{param_index}_tehnical" class = "requestColumns" onclick="toggle_tehnical1('request{request_index}_param{param_index}_tehnical')" >+</td>
+				<td class = "requestColumns" onclick="toggle_tehnical1('request{request_index}_param{param_index}_tehnical')" >{param_name}</td>
+				<td class = "requestColumns" onclick="toggle_tehnical1('request{request_index}_param{param_index}_tehnical')" >{param_method}</td>
+				<td class = "requestColumns"><a style = "text-decoration:none" target="_blank" href="{vuln_description}">{vul_test_name}</a></td>
+				<td class = "requestColumns" onclick="toggle_tehnical1('request{request_index}_param{param_index}_tehnical')" >{vuln_severity}</td>
+			</tr>
+			
+			<tr id = "request{request_index}_param{param_index}_tehnical1" style="display:none" >
+				<td colspan = "6" class = "requestTehnical">
+					<b>Request HTTP Header:</b>
+					<pre style="margin:0px; padding:6px; border:1px inset; width:700px; height:200px; overflow:auto" >
+{request_header}
+					</pre>
+					<b>Response HTTP Header:</b>
+					<pre style="margin:0px; padding:6px; border:1px inset; width:700px; height:200px; overflow:auto" >
+{response_header}
+					</pre>
+					<a style = "text-decoration:none;{show_response_html}" href="javascript:toggle_tehnical2('request{request_index}_param{param_index}_tehnical')"><b>View HTML Response</b><a>
+					<pre  id = "request{request_index}_param{param_index}_tehnical2" style="margin:0px; padding:6px; border:1px inset; width:700px; height:200px; overflow:auto; display:none" >
+{response_html}
+					</pre>
+					<br>&nbsp;
+				</td>
+			</tr>

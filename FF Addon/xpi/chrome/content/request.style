@@ -1,0 +1,22 @@
+			<tr class = "requestHead">
+				<td colspan = "3">Request: {request_url}</td>
+				<td>Source: {request_source}</td>
+				<td>Method: {request_method}</td>
+			</tr>
+
+			<tr class = "requestColumnsHead" style="{show_params_table_header}">
+				<td class = "requestColumnsHead" colspan = "2" >Parameter Name</td>
+				<td class = "requestColumnsHead">Parameter Type</td>
+				<td class = "requestColumnsHead">Test Name</td>
+				<td class = "requestColumnsHead">Severity</td>
+			</tr>
+
+			<tr class = "requestColumns" style="{show_no_vuln_message}">
+				<td colspan = "6">No vulnerable input found</td>
+			</tr>
+
+			{parameter_list}
+
+			<tr class = "requestColumns">
+				<td colspan = "6">&nbsp;</td>
+			</tr>
