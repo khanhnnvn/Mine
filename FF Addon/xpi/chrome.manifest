@@ -1,4 +1,0 @@
-content		acunetixwebscanner	jar:chrome/acuscan.jar!/content/
-locale		acunetixwebscanner	en-US	jar:chrome/acuscan.jar!/locale/en-US/
-skin		acunetixwebscanner	classic/1.0	jar:chrome/acuscan.jar!/skin/
-overlay	chrome://browser/content/browser.xul	chrome://acunetixwebscanner/content/firefoxOverlay.xul
