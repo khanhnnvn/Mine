@@ -1,0 +1,5 @@
+#Set USER
+USER="level02;getflag;"
+echo $USER
+
+#Run
