@@ -1,21 +1,8 @@
 package burp;
 
 import java.awt.Component;
-import java.awt.BorderLayout;
 import javax.swing.*;
-import javax.swing.BoxLayout;
-import net.miginfocom.layout.*;
-import net.miginfocom.swing.*;
-import java.awt.Button;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Label;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-import javax.swing.table.AbstractTableModel;
-import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableModel;
+
 public class BurpExtender implements IBurpExtender, ITab, IHttpListener, IMessageEditorController
 {
     public IBurpExtenderCallbacks callbacks;
@@ -27,8 +14,11 @@ public class BurpExtender implements IBurpExtender, ITab, IHttpListener, IMessag
     {
         // your extension code here
         this.callbacks = callbacks;
-        callbacks.setExtensionName("NamHB Extension");
         helpers = callbacks.getHelpers();
+
+        callbacks.setExtensionName("NamHB Extension");
+        callbacks.registerMenuItem("Send to NamHB Extension", new extendedMenu(callbacks, helpers));
+        
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run(){
