@@ -6,7 +6,6 @@
 package burp;
 
 import java.net.InetAddress;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -88,7 +87,7 @@ class extendedMenu implements IMenuItemHandler {
             String protocol = messageInfo.getHttpService().getProtocol();
             String method = reqInfo.getMethod();
             //Get request
-            
+            IHttpRequestResponsePersisted requestResponse = this.callbacks.saveBuffersToTempFiles(messageInfo);
             //Get path
             String path = reqInfo.getUrl().getPath();
             String result = String.format(
@@ -106,7 +105,7 @@ class extendedMenu implements IMenuItemHandler {
                     
             );
             //System.out.println(ip);
-            System.out.println(messageInfo.getRequest().toString());
+            System.out.println(requestResponse.getHttpService().getHost());
         } catch (Exception ex) 
         {
             ex.printStackTrace();
