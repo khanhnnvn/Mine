@@ -17,7 +17,7 @@ import burp.*;
 public class extendedMenu implements IMenuItemHandler {
     public IBurpExtenderCallbacks callbacks;
     public IExtensionHelpers helpers;
-    public String tempFileName = "D:\\req.tmp";
+    public String tempFileName = "C:\\Users\\Public\\req.tmp";
     PrintWriter stdout, stderr;
     public String stringTemplate = "<?xml version=\"1.1\"?>\n" +
 "<!-- NOTE: Any NULL bytes in requests and responses are preserved within this output, even though this strictly breaks the XML syntax. If your XML parser rejects the NULL bytes then you will need to remove or replace these bytes before parsing. Alternatively, you can use the option to base64-encode requests and responses. -->\n" +
@@ -139,7 +139,7 @@ public class extendedMenu implements IMenuItemHandler {
             if(ret == 1)
             {
                 aws aws = new aws(callbacks, url, tempFileName);
-                aws.createCrawlFile();
+                aws.start();
             }
             else
             {
