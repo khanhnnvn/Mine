@@ -2,6 +2,7 @@ package burp;
 
 import java.awt.Component;
 import javax.swing.*;
+import org.namhb.*;
 
 public class BurpExtender implements IBurpExtender, ITab, IHttpListener, IMessageEditorController
 {
@@ -17,7 +18,7 @@ public class BurpExtender implements IBurpExtender, ITab, IHttpListener, IMessag
         helpers = callbacks.getHelpers();
 
         callbacks.setExtensionName("NamHB Extension");
-        callbacks.registerMenuItem("Send to NamHB Extension", new extendedMenu(callbacks, helpers));
+        callbacks.registerMenuItem("Send to NamHB Extension", new org.namhb.extendedMenu(callbacks, helpers));
         
         SwingUtilities.invokeLater(new Runnable() {
             @Override
@@ -36,7 +37,7 @@ public class BurpExtender implements IBurpExtender, ITab, IHttpListener, IMessag
         if (!messageIsRequest)
         {
             // create a new log entry with the message details
-                jPanel1.addRowDataModel(toolFlag, messageInfo);
+                //jPanel1.addRowDataModel(toolFlag, messageInfo);
         }
     }
     @Override
