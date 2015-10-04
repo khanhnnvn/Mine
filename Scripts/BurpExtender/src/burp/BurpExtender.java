@@ -36,8 +36,8 @@ public class BurpExtender implements IBurpExtender, ITab, IHttpListener, IMessag
         // only process responses
         if (!messageIsRequest)
         {
-            // create a new log entry with the message details
-                //jPanel1.addRowDataModel(toolFlag, messageInfo);
+            //create a new log entry with the message details
+                jPanel1.addRowDataModel(toolFlag, messageInfo);
         }
     }
     @Override
@@ -70,4 +70,5 @@ public class BurpExtender implements IBurpExtender, ITab, IHttpListener, IMessag
     {
         return currentlyDisplayedItem.getHttpService();
     }
+    
 }

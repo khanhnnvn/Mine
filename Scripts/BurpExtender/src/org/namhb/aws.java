@@ -13,7 +13,7 @@ import java.io.*;
  * @author namhb1
  */
 public class aws {
-    public String awsFolderPath = "C:\\Program Files\\Acunetix\\Web Vulnerability Scanner 10";
+    public String awsFolderPath = "C:\\Program Files (x86)\\Acunetix\\Web Vulnerability Scanner 10";
     public String saveFolderPath = "C:\\Users\\Public\\";
     public String url;
     public String tempFileName;
