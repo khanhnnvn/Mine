@@ -14,7 +14,7 @@ import burp.*;
  *
  * @author habachnam
  */
-public class extendedMenu implements IMenuItemHandler {
+public class ExtendedMenu implements IMenuItemHandler {
     public IBurpExtenderCallbacks callbacks;
     public IExtensionHelpers helpers;
     public String tempFileName = "C:\\Users\\Public\\req.tmp";
@@ -63,7 +63,7 @@ public class extendedMenu implements IMenuItemHandler {
 "    <comment></comment>\n" +
 "  </item>\n" +
 "</items>";
-    public extendedMenu(IBurpExtenderCallbacks callbacks, IExtensionHelpers helpers)
+    public ExtendedMenu(IBurpExtenderCallbacks callbacks, IExtensionHelpers helpers)
     {
         super();
         this.callbacks = callbacks;
@@ -138,7 +138,7 @@ public class extendedMenu implements IMenuItemHandler {
             int ret = saveToFile(result);
             if(ret == 1)
             {
-                aws aws = new aws(callbacks, url, tempFileName);
+                Aws aws = new Aws(callbacks, url, tempFileName);
                 aws.start();
             }
             else

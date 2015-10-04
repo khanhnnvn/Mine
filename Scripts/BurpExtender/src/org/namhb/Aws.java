@@ -12,7 +12,7 @@ import java.io.*;
  *
  * @author namhb1
  */
-public class aws {
+public class Aws {
     public String awsFolderPath = "C:\\Program Files (x86)\\Acunetix\\Web Vulnerability Scanner 10";
     public String saveFolderPath = "C:\\Users\\Public\\";
     public String url;
@@ -21,7 +21,7 @@ public class aws {
     public IBurpExtenderCallbacks callbacks;
     PrintWriter stdout, stderr;
     public String profile = "Sql_Injection";
-    public aws(IBurpExtenderCallbacks callbacks, String url, String tempFileName)
+    public Aws(IBurpExtenderCallbacks callbacks, String url, String tempFileName)
     {
         this.callbacks = callbacks;
         this.url = url;

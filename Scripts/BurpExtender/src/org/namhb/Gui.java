@@ -3,8 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package burp;
+package org.namhb;
 
+import burp.BurpExtender;
+import burp.IBurpExtenderCallbacks;
+import burp.IExtensionHelpers;
+import burp.IHttpRequestResponse;
+import burp.IMessageEditor;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -23,6 +28,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.JTabbedPane;
 import javax.swing.JTable;
+import javax.swing.SwingUtilities;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -105,12 +111,12 @@ public class Gui extends JPanel{
         requestPanel = createRequestPanel();
         JScrollPane scrollPane2 = new JScrollPane(proxyTable);
         scrollPane2.setPreferredSize(new Dimension(scrollPane2.getWidth(),230));
-        JScrollPane scrollPane3 = new JScrollPane(requestPanel);
+        //JScrollPane scrollPane3 = new JScrollPane(requestPanel);
         
         JSplitPane splitPane2 = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
         splitPane2.setDividerSize(3);
         splitPane2.setLeftComponent(scrollPane2);
-        splitPane2.setRightComponent(scrollPane3);
+        splitPane2.setRightComponent(requestPanel);
         rightPanel.add(splitPane2);
         
         //*Add rightPanel
@@ -143,6 +149,10 @@ public class Gui extends JPanel{
                     LogEntry logEntry = log.get(row);
                     requestViewer.setMessage(logEntry.requestResponse.getRequest(), true);
                     responseViewer.setMessage(logEntry.requestResponse.getResponse(), false);
+                    if(SwingUtilities.isRightMouseButton(e))
+                    {
+                        //Right click to scan
+                    }
                 }
             });
         return proxyTable;
@@ -163,6 +173,7 @@ public class Gui extends JPanel{
     public JPanel createRequestPanel()
     {
         requestPanel = new JPanel(new BorderLayout());
+        
         //create tab
 
         JTabbedPane tabbedRequestResponsePane = new JTabbedPane();

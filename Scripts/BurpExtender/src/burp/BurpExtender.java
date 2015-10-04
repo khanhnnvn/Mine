@@ -1,5 +1,6 @@
 package burp;
 
+import org.namhb.Gui;
 import java.awt.Component;
 import javax.swing.*;
 import org.namhb.*;
@@ -18,7 +19,7 @@ public class BurpExtender implements IBurpExtender, ITab, IHttpListener, IMessag
         helpers = callbacks.getHelpers();
 
         callbacks.setExtensionName("NamHB Extension");
-        callbacks.registerMenuItem("Send to NamHB Extension", new org.namhb.extendedMenu(callbacks, helpers));
+        callbacks.registerMenuItem("Send to NamHB Extension", new org.namhb.ExtendedMenu(callbacks, helpers));
         
         SwingUtilities.invokeLater(new Runnable() {
             @Override
