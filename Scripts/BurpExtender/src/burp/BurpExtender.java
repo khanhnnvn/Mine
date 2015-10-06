@@ -2,15 +2,17 @@ package burp;
 
 import org.namhb.Gui;
 import java.awt.Component;
+import java.util.ArrayList;
+import java.util.List;
 import javax.swing.*;
 import org.namhb.*;
 
-public class BurpExtender implements IBurpExtender, ITab, IHttpListener, IMessageEditorController
+public class BurpExtender implements IBurpExtender, ITab, IHttpListener, IMessageEditorController, IContextMenuFactory 
 {
     public IBurpExtenderCallbacks callbacks;
     public IExtensionHelpers helpers;
     public IHttpRequestResponse currentlyDisplayedItem;
-    private Gui jPanel1;
+    public Gui jPanel1;
     @Override
     public void registerExtenderCallbacks(final IBurpExtenderCallbacks callbacks)
     {
@@ -19,7 +21,7 @@ public class BurpExtender implements IBurpExtender, ITab, IHttpListener, IMessag
         helpers = callbacks.getHelpers();
 
         callbacks.setExtensionName("NamHB Extension");
-        callbacks.registerMenuItem("Send to NamHB Extension", new org.namhb.ExtendedMenu(callbacks, helpers));
+        callbacks.registerContextMenuFactory(this);
         
         SwingUtilities.invokeLater(new Runnable() {
             @Override
@@ -27,7 +29,7 @@ public class BurpExtender implements IBurpExtender, ITab, IHttpListener, IMessag
                 // table of log entries
                 jPanel1 = new Gui(BurpExtender.this);
                 callbacks.addSuiteTab(BurpExtender.this);
-                callbacks.registerHttpListener(BurpExtender.this);
+                callbacks.registerHttpListener(BurpExtender.this);     
             }
         });
     }
@@ -38,7 +40,7 @@ public class BurpExtender implements IBurpExtender, ITab, IHttpListener, IMessag
         if (!messageIsRequest)
         {
             //create a new log entry with the message details
-                jPanel1.addRowDataModel(toolFlag, messageInfo);
+            //    jPanel1.addRowDataModel(toolFlag, messageInfo);
         }
     }
     @Override
@@ -70,6 +72,16 @@ public class BurpExtender implements IBurpExtender, ITab, IHttpListener, IMessag
     public IHttpService getHttpService()
     {
         return currentlyDisplayedItem.getHttpService();
+    }
+
+    @Override
+    public List<JMenuItem> createMenuItems(IContextMenuInvocation invocation) {
+        //Menu right click
+        List <JMenuItem> menuList = new  ArrayList<>(); 
+        JMenu sendToItem = new org.namhb.MenuClick(invocation);
+        menuList.add(sendToItem);
+        return menuList;
+        
     }
     
 }
