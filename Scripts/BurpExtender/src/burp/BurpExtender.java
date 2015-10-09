@@ -19,7 +19,6 @@ public class BurpExtender implements IBurpExtender, ITab, IHttpListener, IMessag
         // your extension code here
         this.callbacks = callbacks;
         helpers = callbacks.getHelpers();
-
         callbacks.setExtensionName("NamHB Extension");
         callbacks.registerContextMenuFactory(this);
         
@@ -76,12 +75,19 @@ public class BurpExtender implements IBurpExtender, ITab, IHttpListener, IMessag
 
     @Override
     public List<JMenuItem> createMenuItems(IContextMenuInvocation invocation) {
-        //Menu right click
+        IHttpRequestResponse[] ihrr = invocation.getSelectedMessages();
         List <JMenuItem> menuList = new  ArrayList<>(); 
-        JMenu sendToItem = new org.namhb.MenuClick(invocation);
-        menuList.add(sendToItem);
+        if(ihrr.length == 1)
+        {
+            IHttpRequestResponse ihrr0 = ihrr[0];
+            JMenu sendToItem = new org.namhb.MenuClick(ihrr0, jPanel1);
+            menuList.add(sendToItem);
+        }
+        else
+        {
+            this.callbacks.issueAlert("Select 1 request only");
+        }
         return menuList;
-        
     }
     
 }

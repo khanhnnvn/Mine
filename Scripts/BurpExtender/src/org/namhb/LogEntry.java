@@ -7,6 +7,7 @@ package org.namhb;
 
 import burp.IHttpRequestResponsePersisted;
 import java.net.URL;
+import java.util.Date;
 
 /**
  *
@@ -16,11 +17,18 @@ public class LogEntry {
     final int tool;
     final IHttpRequestResponsePersisted requestResponse;
     final URL url;
+    final String check;
+    public String status;
+    public String debugLog;
+    public Date dateAdd;
 
-    LogEntry(int tool, IHttpRequestResponsePersisted requestResponse, URL url)
+    LogEntry(int tool, IHttpRequestResponsePersisted requestResponse, URL url, String check, Date dateAdd)
     {
         this.tool = tool;
         this.requestResponse = requestResponse;
         this.url = url;
+        this.check = check;
+        this.status = "Pending";
+        this.dateAdd = dateAdd;
     }
 }

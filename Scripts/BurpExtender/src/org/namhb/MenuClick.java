@@ -25,11 +25,15 @@ import javax.swing.JMenuItem;
  */
 public class MenuClick extends JMenu {
     public JMenuItem sqlClick, xssClick, fileClick;
-    public IContextMenuInvocation invocation;
+    public IHttpRequestResponse ihrr;
     public IHttpRequestResponse messageinfo;
-    public MenuClick(IContextMenuInvocation invocation)
+    public int toolFlag;
+    public Gui jPanel1;
+    public MenuClick(IHttpRequestResponse ihrr, Gui jPanel1)
     {
-        this.invocation = invocation;
+        this.ihrr = ihrr;
+        this.toolFlag = jPanel1.getLogEntrySize();
+        this.jPanel1 = jPanel1;
         this.setText("Send to AWS");
         //Create sub menu
         sqlClick = new  JMenuItem("SQL injection");
@@ -37,20 +41,35 @@ public class MenuClick extends JMenu {
         fileClick = new  JMenuItem("File Inclusion");
         //Add event
         SQLActionListener sqlAction = new SQLActionListener();
-        sqlAction.toolFlag = invocation.getToolFlag();
         sqlClick.addActionListener(sqlAction);
-
+        XssActionListener xssAction = new XssActionListener();
+        xssClick.addActionListener(xssAction);
+        FileActionListener fileAction = new FileActionListener();
+        fileClick.addActionListener(fileAction);
         //Add sub menu
         this.add(sqlClick);
         this.add(xssClick);
         this.add(fileClick);
     }
     class SQLActionListener implements ActionListener {
-        public int toolFlag;
         @Override
         public void actionPerformed(ActionEvent e) {
-            
-            System.out.println(this.toolFlag);
+            //Add to list
+            jPanel1.addRowDataModel(toolFlag, ihrr, "SQL injection");
+        }
+    }
+    class XssActionListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            //Add to list
+            jPanel1.addRowDataModel(toolFlag, ihrr, "Cross Site Sripting");
+        }
+    }
+    class FileActionListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            //Add to list
+            jPanel1.addRowDataModel(toolFlag, ihrr, "File Inclusion");
         }
     }
  

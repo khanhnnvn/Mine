@@ -17,8 +17,12 @@ import java.awt.Label;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 import javax.swing.BorderFactory;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
@@ -39,6 +43,7 @@ public class Gui extends JPanel{
     public      JPanel  sitePanel, requestPanel;
     public      JPanel  panel1, panel11, panel111;
     public      JPanel  panel12, rightPanel;
+    public      JPanel  resultAWS, debugLog;
     public      JButton buttonHelp;
     public      JTable  proxyTable;
     public      BurpExtender BurpExtender;
@@ -49,13 +54,18 @@ public class Gui extends JPanel{
     public IExtensionHelpers helpers;
     private IMessageEditor requestViewer;
     private IMessageEditor responseViewer;
+    public CheckAWS checkAWSProcess;
+    public int timeToCheck;
+    
     public Gui(BurpExtender BurpExtender)
     {
         this.BurpExtender = BurpExtender;
         this.callbacks = BurpExtender.callbacks;
         this.helpers = BurpExtender.helpers;
         initComponents();
-        
+        timeToCheck = 1000;
+        checkAWSProcess = new CheckAWS("Check AWS");
+        checkAWSProcess.start();
     }
     public void initComponents()
     {
@@ -136,11 +146,17 @@ public class Gui extends JPanel{
     {
         dataModel = new DefaultTableModel();
         dataModel.addColumn("#");
+        dataModel.addColumn("Status");
         dataModel.addColumn("Method");
+        dataModel.addColumn("Profile");
         dataModel.addColumn("URL");
+        dataModel.addColumn("Added Time");
         proxyTable = new JTable(dataModel);
         proxyTable.getColumnModel().getColumn(0).setMaxWidth(50);
-        proxyTable.getColumnModel().getColumn(0).setMaxWidth(100);
+        proxyTable.getColumnModel().getColumn(1).setMaxWidth(100);
+        proxyTable.getColumnModel().getColumn(2).setMaxWidth(100);
+        proxyTable.getColumnModel().getColumn(3).setMaxWidth(300);
+        proxyTable.getColumnModel().getColumn(5).setMaxWidth(100);
         proxyTable.addMouseListener(new MouseAdapter() 
             {
                 public void mouseClicked(MouseEvent e)
@@ -149,26 +165,30 @@ public class Gui extends JPanel{
                     LogEntry logEntry = log.get(row);
                     requestViewer.setMessage(logEntry.requestResponse.getRequest(), true);
                     responseViewer.setMessage(logEntry.requestResponse.getResponse(), false);
-                    if(SwingUtilities.isRightMouseButton(e))
-                    {
-                        //Right click to scan
-                    }
                 }
             });
         return proxyTable;
     }
-
-    public void addRowDataModel(int tool, IHttpRequestResponse messageInfo)
+    public int getLogEntrySize()
+    {
+        return log.size();
+    }
+    public void addRowDataModel(int tool, IHttpRequestResponse messageInfo, String check)
     {
         URL url = helpers.analyzeRequest(messageInfo).getUrl();
         String method = helpers.analyzeRequest(messageInfo).getMethod();
         String path = url.getPath().toString();
+        Date now = new Date();
+        SimpleDateFormat ft = new SimpleDateFormat ("HH:mm");
         dataModel.addRow(new Object[] { 
-            log.size(),
+            tool,
+            "Pending",
             method,
-            url.getPath().toString() 
+            check,
+            url.getPath().toString(),
+            ft.format(now)
         });
-        log.add(new LogEntry(tool, callbacks.saveBuffersToTempFiles(messageInfo), url));
+        log.add(new LogEntry(tool, callbacks.saveBuffersToTempFiles(messageInfo), url, check, now));
     }
     public JPanel createRequestPanel()
     {
@@ -181,8 +201,71 @@ public class Gui extends JPanel{
         responseViewer = callbacks.createMessageEditor(BurpExtender, false);
         tabbedRequestResponsePane.addTab("Request", requestViewer.getComponent());
         tabbedRequestResponsePane.addTab("Response", responseViewer.getComponent());
+        resultAWS = createResultAWSTab();
+        tabbedRequestResponsePane.addTab("AWS Scanner", resultAWS);
+        int count = tabbedRequestResponsePane.getTabCount();
+        tabbedRequestResponsePane.setSelectedIndex(count-1);
+        debugLog = creatDebugLogTab();
+        tabbedRequestResponsePane.addTab("Debug Log", debugLog);
         requestPanel.add(tabbedRequestResponsePane, BorderLayout.CENTER);
         return requestPanel;
     }
+    public JPanel createResultAWSTab()
+    {
+        JPanel resultAWS2 = new JPanel();
+        return resultAWS2;
+    }
+    public JPanel creatDebugLogTab()
+    {
+        JPanel debugTab = new JPanel();
+        return debugTab;
+    }
+    public List<LogEntry> getPending()
+    {
+        List<LogEntry> logPending = log.stream().filter(u -> u.status.startsWith("Pending")).collect(Collectors.toList());
+        return logPending;
+    }
+    class CheckAWS implements Runnable
+    {
+        private Thread t;
+        private String threadName;
 
+        CheckAWS( String name)
+        {
+            threadName = name;
+            System.out.println("Creating " +  threadName );
+        }
+        @Override
+        public void run() {
+            try
+            {
+                while(true)
+                {
+                    //Process check log entry array pending to scan
+                    //Get pending
+                    List<LogEntry> penddingList = getPending();
+                    if(penddingList.size() > 0)
+                    {
+                        //Sort
+
+                    }
+                    // size < 0, nothing to do
+                    Thread.sleep(timeToCheck);
+                }
+            }
+            catch(Exception e)
+            {
+                System.out.println(e.toString());
+            }
+        }
+        public void start()
+        {
+            if (t == null)
+            {
+                t = new Thread(this, threadName);
+                t.start();
+            }
+        }
+        
+    }
 }
