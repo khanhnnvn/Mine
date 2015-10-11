@@ -9,10 +9,14 @@ import burp.BurpExtender;
 import burp.IBurpExtenderCallbacks;
 import burp.IExtensionHelpers;
 import burp.IHttpRequestResponse;
+import burp.IHttpRequestResponsePersisted;
 import burp.IMessageEditor;
+import burp.IRequestInfo;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
 import java.awt.Label;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -27,28 +31,33 @@ import javax.swing.BorderFactory;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.JTabbedPane;
 import javax.swing.JTable;
-import javax.swing.SwingUtilities;
+import javax.swing.JTextArea;
+import javax.swing.JTextPane;
+import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
-
 /**
  *
  * @author namhb1
  */
 public class Gui extends JPanel{
+    public      Label   labelStatusAll;
     public      JPanel  sitePanel, requestPanel;
     public      JPanel  panel1, panel11, panel111;
     public      JPanel  panel12, rightPanel;
     public      JPanel  resultAWS, debugLog;
+    public      JPanel  optionTabs;
     public      JButton buttonHelp;
     public      JTable  proxyTable;
     public      BurpExtender BurpExtender;
     public      DefaultTableModel dataModel;
     public      JPanel topPanel, panel2, requestInfoPanel, responseInfoPanel;
+    public      JTextArea debugText;
     public  final   List<LogEntry> log = new ArrayList<LogEntry>();
     public IBurpExtenderCallbacks callbacks;
     public IExtensionHelpers helpers;
@@ -56,7 +65,9 @@ public class Gui extends JPanel{
     private IMessageEditor responseViewer;
     public CheckAWS checkAWSProcess;
     public int timeToCheck;
-    
+    public Aws aws;
+    public boolean scanning=false;
+    SimpleDateFormat ft = new SimpleDateFormat ("HH:mm");
     public Gui(BurpExtender BurpExtender)
     {
         this.BurpExtender = BurpExtender;
@@ -76,10 +87,10 @@ public class Gui extends JPanel{
         //Create SiteMap Tab
         createSiteMap();
         //Options Tab
-        panel2 = new JPanel();
+        createOptionTab();
 
         JTabbedPane tabbedPane = new JTabbedPane();
-        tabbedPane.addTab("Site map", panel1);
+        tabbedPane.addTab("AWV Scanner", panel1);
         tabbedPane.addTab("Options", panel2);
 
         topPanel.add(tabbedPane, BorderLayout.CENTER);
@@ -94,7 +105,8 @@ public class Gui extends JPanel{
         
         //*For Filter on top, top head
         Box topBox = new Box(BoxLayout.LINE_AXIS);
-        topBox.add(new Label(" Filter: For example only"));
+        labelStatusAll = new Label("   0 request, 0 pendding, 0 scanned");
+        topBox.add(labelStatusAll);
         topBox.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         panel111.add(topBox, BorderLayout.CENTER);
         buttonHelp = new JButton("Help");
@@ -147,16 +159,34 @@ public class Gui extends JPanel{
         dataModel = new DefaultTableModel();
         dataModel.addColumn("#");
         dataModel.addColumn("Status");
+        dataModel.addColumn("^ ^");
         dataModel.addColumn("Method");
         dataModel.addColumn("Profile");
         dataModel.addColumn("URL");
-        dataModel.addColumn("Added Time");
+        dataModel.addColumn("Added");
+        dataModel.addColumn("Finish");
+        dataModel.addColumn("High");
+        dataModel.addColumn("Medium");
+        dataModel.addColumn("Low");
+        dataModel.addColumn("Info");
+        
         proxyTable = new JTable(dataModel);
+        //Before
         proxyTable.getColumnModel().getColumn(0).setMaxWidth(50);
         proxyTable.getColumnModel().getColumn(1).setMaxWidth(100);
         proxyTable.getColumnModel().getColumn(2).setMaxWidth(100);
         proxyTable.getColumnModel().getColumn(3).setMaxWidth(300);
-        proxyTable.getColumnModel().getColumn(5).setMaxWidth(100);
+        proxyTable.getColumnModel().getColumn(4).setMaxWidth(100);
+        //URL
+        //After
+        proxyTable.getColumnModel().getColumn(6).setMaxWidth(100);
+        proxyTable.getColumnModel().getColumn(7).setMaxWidth(100);
+        proxyTable.getColumnModel().getColumn(8).setMaxWidth(100);
+        proxyTable.getColumnModel().getColumn(9).setMaxWidth(100);
+        proxyTable.getColumnModel().getColumn(10).setMaxWidth(100);
+        proxyTable.getColumnModel().getColumn(11).setMaxWidth(100);
+
+                
         proxyTable.addMouseListener(new MouseAdapter() 
             {
                 public void mouseClicked(MouseEvent e)
@@ -165,6 +195,7 @@ public class Gui extends JPanel{
                     LogEntry logEntry = log.get(row);
                     requestViewer.setMessage(logEntry.requestResponse.getRequest(), true);
                     responseViewer.setMessage(logEntry.requestResponse.getResponse(), false);
+                    debugText.setText(logEntry.debugLog);
                 }
             });
         return proxyTable;
@@ -173,20 +204,34 @@ public class Gui extends JPanel{
     {
         return log.size();
     }
+    public int getLogEntryPending()
+    {
+        return getPending().size();
+    }
+    public int getLogEntryScanned()
+    {
+        return getScanned().size();
+    }
     public void addRowDataModel(int tool, IHttpRequestResponse messageInfo, String check)
     {
         URL url = helpers.analyzeRequest(messageInfo).getUrl();
         String method = helpers.analyzeRequest(messageInfo).getMethod();
         String path = url.getPath().toString();
         Date now = new Date();
-        SimpleDateFormat ft = new SimpleDateFormat ("HH:mm");
+        
         dataModel.addRow(new Object[] { 
             tool,
             "Pending",
+            "No",
             method,
             check,
             url.getPath().toString(),
-            ft.format(now)
+            ft.format(now),
+            null,
+            0,
+            0,
+            0,
+            0
         });
         log.add(new LogEntry(tool, callbacks.saveBuffersToTempFiles(messageInfo), url, check, now));
     }
@@ -217,13 +262,96 @@ public class Gui extends JPanel{
     }
     public JPanel creatDebugLogTab()
     {
-        JPanel debugTab = new JPanel();
+        JPanel debugTab = new JPanel(new BorderLayout());
+        debugText = new JTextArea();
+        JScrollPane scrollPane3 = new JScrollPane(debugText);
+        debugTab.add(scrollPane3, BorderLayout.CENTER);
         return debugTab;
+    }
+    public void updateStatus(LogEntry logEntry, String status)
+    {
+        int row = log.indexOf(logEntry);
+        logEntry.status = status;
+        proxyTable.setValueAt(status, row, 1);
+    }
+    public void updatevulnerability(LogEntry logEntry, int level)
+    {
+        int row = log.indexOf(logEntry);
+        //High
+        if(level == 1)
+        {
+            logEntry.high = logEntry.high + 1;
+            proxyTable.setValueAt(logEntry.high, row, 8);
+            logEntry.hackable = "Yes";
+            proxyTable.setValueAt(logEntry.hackable, row, 2);
+        }
+        //Medium
+        if(level == 2)
+        {
+            logEntry.medium = logEntry.medium + 1;
+            proxyTable.setValueAt(logEntry.medium, row, 9);
+        }
+        //Low
+        if(level == 3)
+        {
+            logEntry.low = logEntry.low + 1;
+            proxyTable.setValueAt(logEntry.low, row, 10);
+        }
+        //Info
+        if(level == 4)
+        {
+            logEntry.info = logEntry.info + 1;
+            proxyTable.setValueAt(logEntry.info, row, 11);
+        }
+    }
+    public void addDebugLog(LogEntry logEntry, String str)
+    {
+        logEntry.debugLog = logEntry.debugLog + "\n" + str;
     }
     public List<LogEntry> getPending()
     {
         List<LogEntry> logPending = log.stream().filter(u -> u.status.startsWith("Pending")).collect(Collectors.toList());
         return logPending;
+    }
+    public List<LogEntry> getScanned()
+    {
+        List<LogEntry> logPending = log.stream().filter(u -> u.status.startsWith("Scanned")).collect(Collectors.toList());
+        return logPending;
+    }
+    public void startScan(LogEntry logEntry)
+    {
+        IHttpRequestResponsePersisted messageInfo = logEntry.requestResponse;
+        IRequestInfo reqInfo = this.helpers.analyzeRequest(messageInfo);
+        String url = reqInfo.getUrl().toString();
+        aws = new Aws(callbacks, helpers, url, logEntry, this);
+        aws.saveFile(messageInfo);
+    }
+    public void createOptionTab()
+    {
+        panel2 = new JPanel(new BorderLayout());
+        
+        JPanel panel21 = new JPanel(new BorderLayout());
+        JPanel panel211 = new JPanel(new BorderLayout());
+        
+        Box allBox = new Box(BoxLayout.LINE_AXIS);
+        JPanel optionPanel = new JPanel(new GridBagLayout());
+        GridBagConstraints c = new GridBagConstraints();
+        //c.fill = GridBagConstraints.HORIZONTAL;
+        c.anchor = GridBagConstraints.WEST;
+        JTextPane   stt1 = new JTextPane();
+        stt1.setBorder(new EmptyBorder(0, 10, 0, 0));
+        stt1.setContentType("text/html");
+        stt1.setText("<html><h2><font color=\"#E58900\">Acunetix Web Vunlerabilitity Configuration</font></h2></html>");
+        c.gridx = 0;
+        c.gridy = 0; 
+        optionPanel.add(stt1, c);
+        
+        allBox.add(optionPanel);
+        allBox.setBorder(BorderFactory.createLineBorder(Color.GRAY));
+        
+        panel211.add(allBox, BorderLayout.CENTER );
+        panel21.add(panel211, BorderLayout.CENTER );
+        panel2.add(panel21, BorderLayout.NORTH);
     }
     class CheckAWS implements Runnable
     {
@@ -233,7 +361,6 @@ public class Gui extends JPanel{
         CheckAWS( String name)
         {
             threadName = name;
-            System.out.println("Creating " +  threadName );
         }
         @Override
         public void run() {
@@ -247,9 +374,21 @@ public class Gui extends JPanel{
                     if(penddingList.size() > 0)
                     {
                         //Sort
-
+                        LogEntry logEntry = penddingList.stream().findFirst().get();
+                        
+                        //Send to AWS
+                        //Create one process
+                        StartScan startAWSScan = new StartScan("StartScan", logEntry);
+                        startAWSScan.start();
+                        
                     }
                     // size < 0, nothing to do
+                    //Update labelStatusAll
+                    int allLog = getLogEntrySize();
+                    int penLog = getLogEntryPending();
+                    int scaLog = getLogEntryScanned();
+                    String strLog = String.format("   %d request, %d pendding, %d scanned", allLog, penLog, scaLog);
+                    labelStatusAll.setText(strLog);
                     Thread.sleep(timeToCheck);
                 }
             }
@@ -267,5 +406,51 @@ public class Gui extends JPanel{
             }
         }
         
+    }
+    class StartScan implements Runnable
+    {
+        private Thread t;
+        private String threadName;
+        public LogEntry logEntry;
+
+        StartScan(String name, LogEntry logEntry)
+        {
+            threadName = name;
+            this.logEntry = logEntry;
+        }
+
+        @Override
+        public void run() {
+            try
+            {
+                //Start Scan, check lock before scan
+                if(!scanning)
+                {
+                    scanning = true;
+                    startScan(logEntry);
+                    //Update
+                    Date now = new Date();
+                    proxyTable.setValueAt("Scanned", logEntry.tool, 1);
+                    proxyTable.setValueAt(ft.format(now), logEntry.tool, 7);
+                    logEntry.status = "Scanned";
+                    logEntry.finishTime = now;
+                    scanning = false;
+                }
+
+            }
+            catch(Exception e)
+            {
+                System.out.println(e.toString());
+            }
+        }
+        public void start()
+        {
+            if (t == null)
+            {
+                t = new Thread(this, threadName);
+                t.start();
+            }
+        }
+
     }
 }

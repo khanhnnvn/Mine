@@ -6,7 +6,14 @@
 package org.namhb;
 
 import burp.IBurpExtenderCallbacks;
+import burp.IExtensionHelpers;
+import burp.IHttpRequestResponse;
+import burp.IHttpRequestResponsePersisted;
+import burp.IRequestInfo;
 import java.io.*;
+
+import java.net.InetAddress;
+import java.util.Date;
 
 /**
  *
@@ -15,24 +22,153 @@ import java.io.*;
 public class Aws {
     public String awsFolderPath = "C:\\Program Files (x86)\\Acunetix\\Web Vulnerability Scanner 10";
     public String saveFolderPath = "C:\\Users\\Public\\";
+    public String tempFileName = "C:\\Users\\Public\\req.tmp";
     public String url;
-    public String tempFileName;
     public String crawlResult = null;
     public IBurpExtenderCallbacks callbacks;
+    public IExtensionHelpers helpers;
     PrintWriter stdout, stderr;
     public String profile = "Sql_Injection";
-    public Aws(IBurpExtenderCallbacks callbacks, String url, String tempFileName)
+    public LogEntry logEntry;
+    public Gui gui;
+    public String stringTemplate = 
+        "<?xml version=\"1.1\"?>\n" +
+        "<!-- NOTE: Any NULL bytes in requests and responses are preserved within this output, even though this strictly breaks the XML syntax. If your XML parser rejects the NULL bytes then you will need to remove or replace these bytes before parsing. Alternatively, you can use the option to base64-encode requests and responses. -->\n" +
+        "<!DOCTYPE items [\n" +
+        "<!ELEMENT items (item*)>\n" +
+        "<!ATTLIST items burpVersion CDATA \"\">\n" +
+        "<!ATTLIST items exportTime CDATA \"\">\n" +
+        "<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>\n" +
+        "<!ELEMENT time (#PCDATA)>\n" +
+        "<!ELEMENT url (#PCDATA)>\n" +
+        "<!ELEMENT host (#PCDATA)>\n" +
+        "<!ATTLIST host ip CDATA \"\">\n" +
+        "<!ELEMENT port (#PCDATA)>\n" +
+        "<!ELEMENT protocol (#PCDATA)>\n" +
+        "<!ELEMENT method (#PCDATA)>\n" +
+        "<!ELEMENT path (#PCDATA)>\n" +
+        "<!ELEMENT extension (#PCDATA)>\n" +
+        "<!ELEMENT request (#PCDATA)>\n" +
+        "<!ATTLIST request base64 (true|false) \"false\">\n" +
+        "<!ELEMENT status (#PCDATA)>\n" +
+        "<!ELEMENT responselength (#PCDATA)>\n" +
+        "<!ELEMENT mimetype (#PCDATA)>\n" +
+        "<!ELEMENT response (#PCDATA)>\n" +
+        "<!ATTLIST response base64 (true|false) \"false\">\n" +
+        "<!ELEMENT comment (#PCDATA)>\n" +
+        "]>\n" +
+        "<items burpVersion=\"1.6.25\" exportTime=\"%s\">\n" +
+        "  <item>\n" +
+        "    <time>%s</time>\n" +
+        "    <url><![CDATA[%s]]></url>\n" +
+        "    <host ip=\"%s\">%s</host>\n" +
+        "    <port>%d</port>\n" +
+        "    <protocol>%s</protocol>\n" +
+        "    <method>%s</method>\n" +
+        "    <path><![CDATA[%s]]></path>\n" +
+        "    <extension>null</extension>\n" +
+        "    <request base64=\"false\"><![CDATA[%s" +
+        "]]></request>\n" +
+        "    <status></status>\n" +
+        "    <responselength></responselength>\n" +
+        "    <mimetype></mimetype>\n" +
+        "    <response base64=\"false\"></response>\n" +
+        "    <comment></comment>\n" +
+        "  </item>\n" +
+        "</items>";
+    public Aws(IBurpExtenderCallbacks callbacks, IExtensionHelpers helpers, String url, LogEntry logEntry, Gui gui)
     {
         this.callbacks = callbacks;
+        this.helpers = helpers;
         this.url = url;
-        this.tempFileName = tempFileName;
+        this.logEntry = logEntry;
+        this.gui = gui;
         this.stdout = new PrintWriter(callbacks.getStdout(), true);
         this.stderr = new PrintWriter(callbacks.getStderr(), true);
     }
+    public int saveToFile(String req)
+    {
+        try
+        {
+            try (FileWriter fw = new FileWriter(tempFileName)) {
+                fw.write(req);
+                fw.close();
+                this.stdout.println("Saved to file: "+tempFileName);
+                return 1;
+            }
+        }
+        catch (java.io.FileNotFoundException fe)
+        {
+            //Send to alert
+            callbacks.issueAlert("File access Permisson: "+tempFileName);
+            return 0;
+        }
+        catch (Exception e)
+        {
+            this.stderr.println(e.getStackTrace());
+            return 0;
+        }
+
+    }
+    public void saveFile(IHttpRequestResponsePersisted messageInfo)
+    {
+        try {
+            //Get current time
+            Date now = new Date();
+            String time = now.toString();
+            //Get URL
+            IRequestInfo reqInfo = this.helpers.analyzeRequest(messageInfo);
+            String url = reqInfo.getUrl().toString();
+            //Get domain
+            String host = messageInfo.getHttpService().getHost();
+            //Get IP
+            InetAddress address = InetAddress.getByName(host);
+            String ip = address.getHostAddress();
+            //Get port, protocol, method
+            int port = messageInfo.getHttpService().getPort();
+            String protocol = messageInfo.getHttpService().getProtocol();
+            String method = reqInfo.getMethod();
+            //Get request
+            IHttpRequestResponsePersisted requestResponse = this.callbacks.saveBuffersToTempFiles(messageInfo);
+            //Get path
+            String path = reqInfo.getUrl().getPath();
+            //Get request
+            String req = new String(requestResponse.getRequest(), "UTF-8");
+            String result = String.format(
+                    stringTemplate, 
+                    time, 
+                    time,
+                    url,
+                    ip,
+                    host,
+                    port,
+                    protocol,
+                    method,
+                    path,
+                    req                 
+            );
+            //System.out.println(result);
+            //gui.addDebugLog(logEntry, result);
+            
+            //Save to file
+            int ret = saveToFile(result);
+            if(ret == 1)
+            {
+                start();
+            }
+            else
+            {
+                this.stdout.println("File writer error, check stderr log!");
+            }
+        } catch (Exception ex) 
+        {
+            this.stderr.println(ex.getStackTrace());
+        }
+    }
     public int createCrawlFile()
     {
-        String cmd = awsFolderPath + "\\wvs_console.exe /Crawl " + this.url +" --GetFirstOnly=true /SaveFolder " + saveFolderPath + " /Import "+tempFileName;
-        //stdout.println("Run Crawler: " + cmd);
+        String cmd = awsFolderPath + "\\wvs_console.exe /Crawl \"" + this.url +"\" --GetFirstOnly=true /SaveFolder " + saveFolderPath + " /Import "+tempFileName;
+        stdout.println("Run Crawler: " + cmd);
         boolean crawlResult = false;
         String s = null;
         String crawlResultFileName = null;
@@ -49,6 +185,7 @@ public class Aws {
                 //stdout.println(s);
                 if(s.equals("Crawling done."))
                 {
+                    gui.addDebugLog(logEntry, s);
                     stdout.println("Crawl finished!");
                     crawlResult = true;
                 }
@@ -87,22 +224,26 @@ public class Aws {
     }
     public void start()
     {
+        //Set status
+        gui.updateStatus(logEntry, "Crawling");
         int crawlerResult = createCrawlFile();
         if (crawlerResult == 1)
         {
             stdout.println("Start scan");
+            gui.addDebugLog(logEntry, "Start scan");
+            gui.updateStatus(logEntry, "Scanning");
             scan();
         }
         else
         {
             stdout.println("Stop scan!!!");
+            gui.addDebugLog(logEntry, "Stop scan!!!");
         }
-        
     }
     public void scan()
     {
         boolean scanlResult = false;
-        String cmd = awsFolderPath + "\\wvs_console.exe /ScanFromCrawl " + crawlResult + " /Profile " + profile + " /SaveFolder " + saveFolderPath + " /ExportXML /Verbose ";
+        String cmd = awsFolderPath + "\\wvs_console.exe /ScanFromCrawl " + crawlResult + " /Profile " + logEntry.profile + " /SaveFolder " + saveFolderPath + " /ExportXML /Verbose ";
         //stdout.println("Run Scanner: " + cmd);
         String s = null;
         try 
@@ -115,6 +256,23 @@ public class Aws {
             while((s = stdInput.readLine()) != null)
             {
                 stdout.println(s);
+                gui.addDebugLog(logEntry, s);
+                if(s.startsWith("[high]"))
+                {
+                    gui.updatevulnerability(logEntry, 1);
+                }
+                if(s.startsWith("[medium]"))
+                {
+                    gui.updatevulnerability(logEntry, 2);
+                }
+                if(s.startsWith("[low]"))
+                {
+                    gui.updatevulnerability(logEntry, 3);
+                }
+                if(s.startsWith("[info]"))
+                {
+                    gui.updatevulnerability(logEntry, 4);
+                }
                 
             }
             

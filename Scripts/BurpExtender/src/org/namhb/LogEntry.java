@@ -20,7 +20,10 @@ public class LogEntry {
     final String check;
     public String status;
     public String debugLog;
-    public Date dateAdd;
+    public Date dateAdd, finishTime;
+    public String profile;
+    public String hackable = "No";
+    public int high, medium, low, info;
 
     LogEntry(int tool, IHttpRequestResponsePersisted requestResponse, URL url, String check, Date dateAdd)
     {
@@ -30,5 +33,23 @@ public class LogEntry {
         this.check = check;
         this.status = "Pending";
         this.dateAdd = dateAdd;
+        this.finishTime = null;
+        this.debugLog = dateAdd.toString()+": Add to List";
+        if(check.equals("SQL injection"))
+        {
+            this.profile = "Sql_Injection";
+        }
+        if(check.equals("Cross Site Sripting"))
+        {
+            this.profile = "XSS";
+        }
+        if(check.equals("File Inclusion"))
+        {
+            this.profile = "Sql_Injection";
+        }
+        this.high = 0;
+        this.medium = 0;
+        this.low = 0;
+        this.info = 0;
     }
 }
