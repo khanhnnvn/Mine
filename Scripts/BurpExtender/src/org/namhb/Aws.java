@@ -20,9 +20,9 @@ import java.util.Date;
  * @author namhb1
  */
 public class Aws {
-    public String awsFolderPath = "C:\\Program Files (x86)\\Acunetix\\Web Vulnerability Scanner 10";
-    public String saveFolderPath = "C:\\Users\\Public\\";
-    public String tempFileName = "C:\\Users\\Public\\req.tmp";
+    public String awsFolderPath = "";
+    public String saveFolderPath = "";
+    public String tempFileName = "";
     public String url;
     public String crawlResult = null;
     public IBurpExtenderCallbacks callbacks;
@@ -76,13 +76,16 @@ public class Aws {
         "    <comment></comment>\n" +
         "  </item>\n" +
         "</items>";
-    public Aws(IBurpExtenderCallbacks callbacks, IExtensionHelpers helpers, String url, LogEntry logEntry, Gui gui)
+    public Aws(IBurpExtenderCallbacks callbacks, IExtensionHelpers helpers, String url, LogEntry logEntry, Gui gui, String acunetixPath, String tempfolderPath, String tempfileName)
     {
         this.callbacks = callbacks;
         this.helpers = helpers;
         this.url = url;
         this.logEntry = logEntry;
         this.gui = gui;
+        this.awsFolderPath = acunetixPath;
+        this.saveFolderPath = tempfolderPath;
+        this.tempFileName = tempfileName;
         this.stdout = new PrintWriter(callbacks.getStdout(), true);
         this.stderr = new PrintWriter(callbacks.getStderr(), true);
     }
@@ -273,7 +276,7 @@ public class Aws {
                 {
                     gui.updatevulnerability(logEntry, 4);
                 }
-                
+                gui.updateSiteAndAwsPanel(logEntry);
             }
             
         }

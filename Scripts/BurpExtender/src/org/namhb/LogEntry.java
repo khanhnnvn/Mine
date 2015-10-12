@@ -23,6 +23,9 @@ public class LogEntry {
     public Date dateAdd, finishTime;
     public String profile;
     public String hackable = "No";
+    public String htmlResult = "";
+    public boolean generatedHTML = false;
+    public String htmlReport = "";
     public int high, medium, low, info;
 
     LogEntry(int tool, IHttpRequestResponsePersisted requestResponse, URL url, String check, Date dateAdd)
@@ -51,5 +54,11 @@ public class LogEntry {
         this.medium = 0;
         this.low = 0;
         this.info = 0;
+        this.htmlResult = String.format(""
+                + "<html>"
+                + "<b>Scan ID:</b> %d <br/>"
+                + "<b>URL:</b> %s<br/>"
+                + "</html>"
+                + "", this.tool ,this.url.toString());
     }
 }
