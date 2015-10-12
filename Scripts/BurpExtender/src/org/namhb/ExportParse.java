@@ -23,20 +23,35 @@ public class ExportParse {
     public ExportParse(String exportFilePath)
     {
         this.exportFilePath = exportFilePath;
-        try {
-            File inputFile = new File(exportFilePath);
-            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-            Document doc = dBuilder.parse(inputFile);
-            doc.getDocumentElement().normalize();
-            Element root = doc.getDocumentElement();
-            // lay danh sach node con cua 1 node
-            NodeList nodeListScanGroup = root.getChildNodes();
-            printNoteWithParam(nodeListScanGroup, "ReportItems");
+        try
+        {
+            File f = new File(exportFilePath);
+            if(f.exists())
+            {
+                try {
+                    File inputFile = new File(exportFilePath);
+                    DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+                    DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+                    Document doc = dBuilder.parse(inputFile);
+                    doc.getDocumentElement().normalize();
+                    Element root = doc.getDocumentElement();
+                    // lay danh sach node con cua 1 node
+                    NodeList nodeListScanGroup = root.getChildNodes();
+                    printNoteWithParam(nodeListScanGroup, "ReportItems");
 
-        } catch (Exception e) {
-            e.printStackTrace();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+            else
+            {
+                resultList = null;
+            }
         }
+        catch(Exception e)
+        {
+        }
+        
     }
     public List<ResultEntry> getResult()
     {
@@ -46,7 +61,7 @@ public class ExportParse {
     {
         String htmlString = "<html>"
                 + "<b>Vulnerability description:</b><br/>"
-                + "<table border=\"1\"><tr><td>Name</td><td>Severity</td><td>Parameter</td><td>Affects</td><td>Details</td></tr>";
+                + "<table border=\"1\"><tr><td><center><b>Name</b></center></td><td><center><b>Severity</b></center></td><td><center><b>Parameter</b></center></td><td><center><b>Affects</b></center></td><td><center><b>Details</b></center></td></tr>";
         for(int count = 0; count < resultList.size(); count++)
         {
             ResultEntry entry = resultList.get(count);
@@ -119,7 +134,6 @@ public class ExportParse {
         }
         if(resultItem.Name != null)
         {
-            System.out.println(resultItem.Name);
             resultList.add(resultItem);
         }
     }

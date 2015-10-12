@@ -27,6 +27,7 @@ public class LogEntry {
     public boolean generatedHTML = false;
     public String htmlReport = "";
     public int high, medium, low, info;
+    public int process;
 
     LogEntry(int tool, IHttpRequestResponsePersisted requestResponse, URL url, String check, Date dateAdd)
     {
@@ -38,6 +39,7 @@ public class LogEntry {
         this.dateAdd = dateAdd;
         this.finishTime = null;
         this.debugLog = dateAdd.toString()+": Add to List";
+        this.process = 0;
         if(check.equals("SQL injection"))
         {
             this.profile = "Sql_Injection";

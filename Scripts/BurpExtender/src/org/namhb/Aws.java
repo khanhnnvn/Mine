@@ -13,6 +13,7 @@ import burp.IRequestInfo;
 import java.io.*;
 
 import java.net.InetAddress;
+import java.nio.file.Files;
 import java.util.Date;
 
 /**
@@ -88,6 +89,24 @@ public class Aws {
         this.tempFileName = tempfileName;
         this.stdout = new PrintWriter(callbacks.getStdout(), true);
         this.stderr = new PrintWriter(callbacks.getStderr(), true);
+        //*Delete xml before scan
+        String exportFile = this.saveFolderPath + "//export.xml";
+        try
+        {
+            File f = new File(exportFile);
+            if(f.exists())
+            {
+                f.delete();
+            }
+            else
+            {
+                this.callbacks.issueAlert("File export.xml not found!");
+            }
+        }
+        catch(Exception e)
+        {
+            stdout.println("Error: "+e.toString());
+        }
     }
     public int saveToFile(String req)
     {
@@ -275,6 +294,13 @@ public class Aws {
                 if(s.startsWith("[info]"))
                 {
                     gui.updatevulnerability(logEntry, 4);
+                }
+                if(s.startsWith("Progress:"))
+                {
+                    int startx = s.indexOf(":");
+                    int endx = s.indexOf("%");
+                    String proc = s.substring(startx+2, endx);
+                    gui.updateProcess(logEntry, Integer.parseInt(proc));
                 }
                 gui.updateSiteAndAwsPanel(logEntry);
             }

@@ -20,6 +20,7 @@ import java.awt.GridBagLayout;
 import java.awt.Label;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.File;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -303,6 +304,10 @@ public class Gui extends JPanel{
         logEntry.status = status;
         proxyTable.setValueAt(status, row, 1);
     }
+    public void updateProcess(LogEntry logEntry, int process)
+    {
+        logEntry.process = process;
+    }
     public void parseExportXML()
     {
         
@@ -315,6 +320,8 @@ public class Gui extends JPanel{
             + "<b>Scan ID:</b> %d <br/>"
             + "<b>URL:</b> %s<br/>"
             + "<b>Status: </b> %s<br>"
+            + "<b>Profile: </b> %s<br/>"
+            + "<b>Process: </b> %d%%<br/>"
             + "<b>Summary</b></br>"
             + "<table border=\"0\">"
             + "<tr><td><font color=\"#E01010\">High</font></td><td><font color=\"#E01010\">%d</font></td></tr>"
@@ -325,7 +332,7 @@ public class Gui extends JPanel{
             + "</table><br/>"
             + "<b>Web Alerts (%d)</b>"
             + "</html>"
-            + "", logEntry.tool ,logEntry.url.toString(), logEntry.status,
+            + "", logEntry.tool ,logEntry.url.toString(), logEntry.status, logEntry.profile, logEntry.process,
         logEntry.high, logEntry.medium,logEntry.low,logEntry.info, allErr, allErr);
        
     }
@@ -563,14 +570,26 @@ public class Gui extends JPanel{
                     if(!logEntry.generatedHTML)
                     {
                         String exportFilePath = tempfolderPathField.getText() + "//export.xml";
-                        ExportParse export = new ExportParse(exportFilePath);
-                        List<ResultEntry> resultList = export.getResult();
-                        String htmlResult = export.generateHTML();
-                        logEntry.htmlReport = htmlResult;
-                        //Don`t generate HTML again
+                        File f = new File(exportFilePath);
+                        if(f.exists())
+                        {
+                            ExportParse export = new ExportParse(exportFilePath);
+                            List<ResultEntry> resultList = export.getResult();
+                            String htmlResult = export.generateHTML();
+                            logEntry.htmlReport = htmlResult;
+                            //Don`t generate HTML again
+                            
+                        }
+                        else
+                        {
+                            callbacks.issueAlert("Error: export.xml not found!");
+                            logEntry.htmlReport = "<html>Error! File export not found!</html>";
+                        }
                         logEntry.generatedHTML = true;
                     }
+                    reportHTML.setText(logEntry.htmlReport);
                     scanning = false;
+                    
                 }
 
             }
