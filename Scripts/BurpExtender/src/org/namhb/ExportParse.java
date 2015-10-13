@@ -61,16 +61,17 @@ public class ExportParse {
     {
         String htmlString = "<html>"
                 + "<b>Vulnerability description:</b><br/>"
-                + "<table border=\"1\"><tr><td><center><b>Name</b></center></td><td><center><b>Severity</b></center></td><td><center><b>Parameter</b></center></td><td><center><b>Affects</b></center></td><td><center><b>Details</b></center></td></tr>";
+                + "<table border=\"1\"><tr><td><center><b>Name</b></center></td><td><center><b>Severity</b></center></td><td><center><b>Parameter</b></center></td><td><center><b>Affects</b></center></td><td><center><b>Details</b></center></td><td><center><b>Request</b></center></td></tr>";
         for(int count = 0; count < resultList.size(); count++)
         {
             ResultEntry entry = resultList.get(count);
-            String tmp = String.format("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>", 
+            String tmp = String.format("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>", 
                     entry.Name,
                     entry.Severity,
                     entry.Parameter,
                     entry.Affects,
-                    entry.Details
+                    entry.Details,
+                    entry.Request
                     );
             htmlString = htmlString + tmp;
         }

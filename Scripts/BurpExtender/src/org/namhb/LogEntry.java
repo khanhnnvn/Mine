@@ -48,9 +48,17 @@ public class LogEntry {
         {
             this.profile = "XSS";
         }
-        if(check.equals("File Inclusion"))
+        if(check.equals("Parameter Manipulation"))
         {
-            this.profile = "Sql_Injection";
+            this.profile = "Parameter_Manipulation";
+        }
+        if(check.equals("File Upload"))
+        {
+            this.profile = "File_Upload";
+        }
+        if(check.equals("Text Search"))
+        {
+            this.profile = "Text_Search";
         }
         this.high = 0;
         this.medium = 0;

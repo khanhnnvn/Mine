@@ -24,7 +24,7 @@ import javax.swing.JMenuItem;
  * @author habachnam
  */
 public class MenuClick extends JMenu {
-    public JMenuItem sqlClick, xssClick, fileClick;
+    public JMenuItem sqlClick, xssClick, parameterManipulationClick, fileUploadClick, textSearchClick;
     public IHttpRequestResponse ihrr;
     public IHttpRequestResponse messageinfo;
     public int toolFlag;
@@ -38,18 +38,26 @@ public class MenuClick extends JMenu {
         //Create sub menu
         sqlClick = new  JMenuItem("SQL injection");
         xssClick = new  JMenuItem("Cross Site Scripting");
-        fileClick = new  JMenuItem("File Inclusion");
+        parameterManipulationClick = new  JMenuItem("Parameter Manipulation");
+        fileUploadClick = new  JMenuItem("File Upload");
+        textSearchClick = new  JMenuItem("Text Search");
         //Add event
         SQLActionListener sqlAction = new SQLActionListener();
         sqlClick.addActionListener(sqlAction);
         XssActionListener xssAction = new XssActionListener();
         xssClick.addActionListener(xssAction);
-        FileActionListener fileAction = new FileActionListener();
-        fileClick.addActionListener(fileAction);
+        ParameterManipulationActionListener parameterManipulationAction = new ParameterManipulationActionListener();
+        parameterManipulationClick.addActionListener(parameterManipulationAction);
+        FileUploadActionListener fileUploadAction = new FileUploadActionListener();
+        fileUploadClick.addActionListener(fileUploadAction);
+        TextSearchActionListener textSearchAction = new TextSearchActionListener();
+        textSearchClick.addActionListener(textSearchAction);
         //Add sub menu
         this.add(sqlClick);
         this.add(xssClick);
-        this.add(fileClick);
+        this.add(parameterManipulationClick);
+        this.add(fileUploadClick);
+        this.add(textSearchClick);
     }
     class SQLActionListener implements ActionListener {
         @Override
@@ -65,11 +73,25 @@ public class MenuClick extends JMenu {
             jPanel1.addRowDataModel(toolFlag, ihrr, "Cross Site Sripting");
         }
     }
-    class FileActionListener implements ActionListener {
+    class ParameterManipulationActionListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
             //Add to list
-            jPanel1.addRowDataModel(toolFlag, ihrr, "File Inclusion");
+            jPanel1.addRowDataModel(toolFlag, ihrr, "Parameter Manipulation");
+        }
+    }
+    class FileUploadActionListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            //Add to list
+            jPanel1.addRowDataModel(toolFlag, ihrr, "File Upload");
+        }
+    }
+    class TextSearchActionListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            //Add to list
+            jPanel1.addRowDataModel(toolFlag, ihrr, "Text Search");
         }
     }
  
