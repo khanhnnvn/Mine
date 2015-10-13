@@ -24,6 +24,7 @@ public class Aws {
     public String awsFolderPath = "";
     public String saveFolderPath = "";
     public String tempFileName = "";
+    public String tempFilePath = "";
     public String url;
     public String crawlResult = null;
     public IBurpExtenderCallbacks callbacks;
@@ -87,8 +88,26 @@ public class Aws {
         this.awsFolderPath = acunetixPath;
         this.saveFolderPath = tempfolderPath;
         this.tempFileName = tempfileName;
+        this.tempFilePath = tempfolderPath + "//" + tempfileName;
         this.stdout = new PrintWriter(callbacks.getStdout(), true);
         this.stderr = new PrintWriter(callbacks.getStderr(), true);
+        //*Delete req.tmp
+        try
+        {
+            File f1 = new File(tempFilePath);
+            if(f1.exists())
+            {
+                f1.delete();
+            }
+            else
+            {
+                this.callbacks.issueAlert("File request not found!");
+            }
+        }
+        catch(Exception e)
+        {
+            stdout.println("Error: "+e.toString());
+        }
         //*Delete xml before scan
         String exportFile = this.saveFolderPath + "//export.xml";
         try
@@ -112,17 +131,17 @@ public class Aws {
     {
         try
         {
-            try (FileWriter fw = new FileWriter(tempFileName)) {
+            try (FileWriter fw = new FileWriter(tempFilePath)) {
                 fw.write(req);
                 fw.close();
-                this.stdout.println("Saved to file: "+tempFileName);
+                this.stdout.println("Saved to file: "+tempFilePath);
                 return 1;
             }
         }
         catch (java.io.FileNotFoundException fe)
         {
             //Send to alert
-            callbacks.issueAlert("File access Permisson: "+tempFileName);
+            callbacks.issueAlert("File access Permisson: "+tempFilePath);
             return 0;
         }
         catch (Exception e)
@@ -189,7 +208,7 @@ public class Aws {
     }
     public int createCrawlFile()
     {
-        String cmd = awsFolderPath + "\\wvs_console.exe /Crawl \"" + this.url +"\" --GetFirstOnly=true /SaveFolder " + saveFolderPath + " /Import "+tempFileName;
+        String cmd = awsFolderPath + "\\wvs_console.exe /Crawl \"" + this.url +"\" --GetFirstOnly=true /SaveFolder " + saveFolderPath + " /Import "+tempFilePath;
         stdout.println("Run Crawler: " + cmd);
         boolean crawlResult = false;
         String s = null;
@@ -243,6 +262,7 @@ public class Aws {
             return 0;
         }
         
+
     }
     public void start()
     {
@@ -254,6 +274,23 @@ public class Aws {
             stdout.println("Start scan");
             gui.addDebugLog(logEntry, "Start scan");
             gui.updateStatus(logEntry, "Scanning");
+            //Delete req.tmp file
+            try
+            {
+                File f = new File(tempFilePath);
+                if(f.exists())
+                {
+                    f.delete();
+                }
+                else
+                {
+                    this.callbacks.issueAlert("File "+tempFilePath+" not found!");
+                }
+            }
+            catch(Exception e)
+            {
+                stdout.println("Error: "+e.toString());
+            }
             scan();
         }
         else
@@ -312,6 +349,23 @@ public class Aws {
         }
         catch (Exception ex) {
             stderr.println("createCrawlFile "+ex.toString());
+        }
+        //Delete craw file
+        try
+        {
+            File f = new File(crawlResult);
+            if(f.exists())
+            {
+                f.delete();
+            }
+            else
+            {
+                this.callbacks.issueAlert("File "+crawlResult+" not found!");
+            }
+        }
+        catch(Exception e)
+        {
+            stdout.println("Error: "+e.toString());
         }
     }
     public void getResult()
