@@ -98,10 +98,11 @@ public class Aws {
             if(f1.exists())
             {
                 f1.delete();
+                this.callbacks.issueAlert("Found req.tmp file, delete before scan!");
             }
             else
             {
-                this.callbacks.issueAlert("File request not found!");
+                
             }
         }
         catch(Exception e)
