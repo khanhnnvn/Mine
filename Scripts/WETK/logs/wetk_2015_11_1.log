@@ -1,0 +1,72 @@
+Debug Argument is True/False only. Exit now!
+%(asctime)-15s %(message)s
+%(asctime)-15s %(message)s
+%(asctime)-15s %(message)s
+%(asctime)-15s %(message)s
+2015-11-01 14:38:27,463 Set Logging mode is True.
+2015-11-01 14:38:56,750 Set Logging mode is True.
+2015-11-01 14:39:21,520 Set Logging mode is True.
+2015-11-01 14:40:35,058 Set Logging mode is True.
+2015-11-01 14:43:18,992 Set Logging mode is True.
+2015-11-01 14:44:17,785 Set Logging mode is True.
+2015-11-01 15:13:30,431 Set Logging mode is True.
+2015-11-01 15:13:38,333 Set Logging mode is True.
+2015-11-01 15:32:00,687 Set Logging mode is True.
+2015-11-01 15:32:00,687 Try to load: aa.
+2015-11-01 15:35:59,556 Set Logging mode is True.
+2015-11-01 15:35:59,557 Try to load: aa.
+2015-11-01 15:44:14,965 Set Logging mode is True.
+2015-11-01 15:44:14,966 Try to load: aa.
+2015-11-01 15:45:05,042 Set Logging mode is True.
+2015-11-01 15:45:05,042 Try to load: aa.
+2015-11-01 15:46:30,520 Set Logging mode is True.
+2015-11-01 15:46:30,521 Try to load: aa.
+2015-11-01 15:46:44,409 Set Logging mode is True.
+2015-11-01 15:46:44,409 Try to load: aa.
+2015-11-01 15:48:04,138 Set Logging mode is True.
+2015-11-01 15:48:04,139 Try to load: aa.
+2015-11-01 15:48:11,414 Set Logging mode is True.
+2015-11-01 15:48:11,415 Try to load: aa.
+2015-11-01 15:53:32,168 Set Logging mode is True.
+2015-11-01 15:53:32,169 Try to load: aa.
+2015-11-01 15:54:13,994 Set Logging mode is True.
+2015-11-01 15:54:13,995 Try to load: aa.
+2015-11-01 16:00:14,341 Set Logging mode is True.
+2015-11-01 16:00:14,342 Try to load: aa.
+2015-11-01 16:00:35,461 Set Logging mode is True.
+2015-11-01 16:00:35,461 Try to load: aa.
+2015-11-01 16:00:52,047 Set Logging mode is True.
+2015-11-01 16:00:52,048 Try to load: aa.
+2015-11-01 16:00:57,386 Set Logging mode is True.
+2015-11-01 16:00:57,387 Try to load: aa.
+2015-11-01 16:01:03,144 Set Logging mode is True.
+2015-11-01 16:01:03,145 Try to load: aa.
+2015-11-01 16:03:32,438 Set Logging mode is True.
+2015-11-01 16:03:32,438 Try to load: aa.
+2015-11-01 16:05:40,286 Set Logging mode is True.
+2015-11-01 16:05:40,287 Try to load: aa.
+2015-11-01 16:05:51,462 Set Logging mode is True.
+2015-11-01 16:05:51,463 Try to load: aa.
+2015-11-01 16:06:03,112 Set Logging mode is True.
+2015-11-01 16:06:03,113 Try to load: aa.
+2015-11-01 16:13:09,418 Set Logging mode is True.
+2015-11-01 16:13:09,419 Try to load: aa.
+2015-11-01 16:14:34,780 Set Logging mode is True.
+2015-11-01 16:14:34,781 Try to load: aa.
+2015-11-01 16:14:55,133 Set Logging mode is True.
+2015-11-01 16:14:55,133 Try to load: aa.
+2015-11-01 16:15:55,511 Set Logging mode is True.
+2015-11-01 16:15:55,512 Try to load: aa.
+2015-11-01 16:16:10,910 Set Logging mode is True.
+2015-11-01 16:16:10,911 Try to load: aa.
+2015-11-01 16:18:26,469 Set Logging mode is True.
+2015-11-01 16:18:26,470 Try to load: aa.
+2015-11-01 16:18:36,400 Set Logging mode is True.
+2015-11-01 16:18:36,401 Try to load: aa.
+2015-11-01 16:21:41,463 Set Logging mode is True.
+2015-11-01 16:21:41,464 Try to load: aa.
+2015-11-01 16:21:58,126 Set Logging mode is True.
+2015-11-01 16:21:58,127 Try to load: aa.
+2015-11-01 16:22:40,829 Set Logging mode is True.
+2015-11-01 16:22:40,830 Try to load: aa.
+2015-11-01 16:22:40,837 Loaded Module
