@@ -51,9 +51,9 @@ class Module:
 	def sendHTTPRequest(self):
 		print("test")
 	def start(self):
-		self.logger.info("Loaded Module: {0}.".format(self.name))
-		if(self.checkOptions() != False):
+		if(self.checkOptions() == False):
 			exit()
+		self.logger.warning("Started Module: {0}.".format(self.name))
 		# We coding here
 
 ######---------------------------------------------#####

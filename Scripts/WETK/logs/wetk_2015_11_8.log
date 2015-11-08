@@ -534,3 +534,30 @@
 2015-11-08 16:35:41,071 INFO       Loaded Module: Template Module.
 2015-11-08 16:35:41,071 ERROR      Option URL need configure.
 2015-11-08 16:35:41,071 INFO       Finish load module: a.
+2015-11-08 16:45:35,226 ERROR      Option URL need configure.
+2015-11-08 16:45:53,705 ERROR      Option URL need configure.
+2015-11-08 16:45:57,670 ERROR      Option URL need configure.
+2015-11-08 16:47:33,866 DEBUG      Set Logging mode is True.
+2015-11-08 16:47:33,866 DEBUG      Try to load: a.
+2015-11-08 16:47:33,866 DEBUG      Loading module: a.
+2015-11-08 16:47:33,866 DEBUG      Set URL to aa.
+2015-11-08 16:47:33,866 INFO       Finish load module: a.
+2015-11-08 16:49:22,851 DEBUG      Set Logging mode is True.
+2015-11-08 16:49:22,851 DEBUG      Try to load: a.
+2015-11-08 16:49:22,851 DEBUG      Loading module: a.
+2015-11-08 16:49:22,852 DEBUG      Set URL to aa.
+2015-11-08 16:49:22,852 INFO       Finish load module: a.
+2015-11-08 16:50:30,179 ERROR      Option URL need configure.
+2015-11-08 16:50:30,180 ERROR      Started Module: Template Module.
+2015-11-08 16:51:27,199 ERROR      Option URL need configure.
+2015-11-08 16:51:27,199 ERROR      Started Module: Template Module.
+2015-11-08 16:52:43,690 ERROR      Started Module: Template Module.
+2015-11-08 16:52:52,405 WARNING    Started Module: Template Module.
+2015-11-08 16:53:51,650 INFO       Started Module: Template Module.
+2015-11-08 16:53:51,650 INFO       Finish load module: a.
+2015-11-08 16:54:52,806 INFO       Try to load: a.
+2015-11-08 16:54:52,806 INFO       Started Module: Template Module.
+2015-11-08 16:54:52,806 INFO       Finish load module: a.
+2015-11-08 16:55:12,724 INFO       Try to load: a.
+2015-11-08 16:55:12,725 WARNING    Started Module: Template Module.
+2015-11-08 16:55:12,725 INFO       Finish load module: a.

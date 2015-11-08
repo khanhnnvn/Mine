@@ -34,7 +34,7 @@ class WEToolKit:
 			self.loadModule(self.modulePath)
 	def loadModule(self, moduleName):
 		modulePath 					=		moduleName.split("/")								# Split by /
-		self.logger.debug("Try to load: {0}.".format(modulePath[-1]))							# Print module name as last Element
+		self.logger.info("Try to load: {0}.".format(modulePath[-1]))							# Print module name as last Element
 		try:
 			moduleFileName			=		"{0}.{1}".format(os.path.join(moduleName),self.moduleExt)
 			moduleFilePath			=		os.path.join(self.dirPath,self.modulesFolder,moduleFileName)
@@ -51,11 +51,12 @@ class WEToolKit:
 			elif(self.args.showoptions == True):
 				wetkModule.showOptions()
 			elif(self.args.checkoptions == True):
-				wetkModule.setOptions(self.args.options)	
+				if(self.args.useoptions != None):
+					wetkModule.setOptions(self.args.useoptions)	
 				wetkModule.checkOptions()
 			else:
-				if(self.args.useoptions == True):
-					wetkModule.setOptions(self.args.options)
+				if(self.args.useoptions != None):
+					wetkModule.setOptions(self.args.useoptions)
 				wetkModule.run()
 		finally:
 			self.logger.info("Finish load module: {0}.".format(moduleName))
@@ -126,29 +127,11 @@ class WEToolKit:
 		parser.add_argument(
 			'-o',
 			'--useoptions',
-			help 					=		'Use module Options',
-			default					=		'false',
-			action					=		'store_true',
+			help 					=		'Module Options',
+			default					=		None,
+			nargs					=		'+',
 			)
-		# Module Option
-		# Check need module options or not
-		optionNeed					=		False
-		arrayNeed					=		[
-					"-o",
-					"--useoptions",
-					"--checkoptions",
-			]
-		for i in sys.argv:
-			if(i in arrayNeed):
-				optionNeed			=		True
-				break
-		if(optionNeed==True):
-			parser.add_argument(
-				'options',
-				help 					=		'Module Options',
-				nargs					=		'+',
-				default					=		None
-				)
+		
 		
 		# Set default is show help
 		if(len(sys.argv) < 2):
@@ -180,9 +163,9 @@ class WEToolKit:
 		self.logger.addHandler(fileHandler)
 		# Get and set debug
 		if(self.args.debug == True):
-			self.debug 				=		self.args.debug
+			self.debug 				=		True
 			self.logger.setLevel(logging.DEBUG)	
-		elif(self.args.debug == False):
+		else:
 			self.debug 				=		False
 			self.logger.setLevel(logging.INFO)
 		self.logger.debug("Set Logging mode is {0}.".format(self.debug))
