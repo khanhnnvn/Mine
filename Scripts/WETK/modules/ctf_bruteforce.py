@@ -1,19 +1,31 @@
 #!/usr/bin/python
 #author: namhb
+import requests
 class Module:
 	def __init__(self, logger):
 		self.logger						=	logger
-		self.name						=	"Template Module"		# Change it
+		self.name						=	"CTF Brute Forcr Module"								# Changed
+		self.description 				=	"This is Module for Brute force, file fuzzing"
+		self.rank						=	"MEDIUM"												# Exploit level
+		self.type						=	"Scan"													# Type: exploit | scanner | support
 		self.author						=	"namhb"
 		self.version					=	"0.0.1"
 		self.basicOptions				=	{
 				"URL"	:	{
 					"currentSetting"	:	None,
 					"required"			:	True,
-					"description"		:	"URL to exploit"
+					"description"		:	"URL to scanner"
 				}
 			}
-		self.options 					=	None					# Input options
+		self.fileList 					= 	[
+				"robots.txt",
+				".htaccess",
+				"web.config",
+				"login.php",
+				"admin.php",
+
+			]
+		self.options 					=	None													# Input options
 		# Help for this module, how to use
 		self.help 						=	"" \
 			"This is help for module." \
@@ -34,9 +46,12 @@ class Module:
 			else:
 				self.logger.debug("Option {0} not found.".format(key))
 	def printOptions(self):
-		print("Basic options:")
+		print("Basic options")
+		print("=============")
+		print("")
 		print("\t{0:7s}{1:20s}{2:12s}{3}".format("Name","Current Setting","Required","Description"))
 		print("\t{0:7s}{1:20s}{2:12s}{3}".format("----","---------------","--------","-----------"))
+		print("")
 		for key in self.basicOptions.keys():
 			option 							= 	self.basicOptions[key]
 			requiredString					=	option["required"] and "YES" or "NO"
@@ -48,20 +63,54 @@ class Module:
 				check 						=	False
 				self.logger.error("Option {0} need configure.".format(key))
 		return check
-	def sendHTTPRequest(self):
-		print("test")
+	def sendHttpGetRequest(self, url):
+		if(url[:5] == "https"):
+			r 								=	requests.get(url,verify=False)
+			r.headers["content-length"]		=	None
+		else:
+			r 								=	requests.get(url)
+		return r
 	def start(self):
 		if(self.checkOptions() == False):
 			exit()
 		self.logger.warning("Started Module: {0}.".format(self.name))
 		# We coding here
-
+		print("Site: {0} result:".format(self.basicOptions["URL"]["currentSetting"]))
+		print("==========================")
+		print("")
+		print("\t{0:50s}{1:10s}{2}".format("Filename","Code","Size"))
+		print("\t{0:50s}{1:10s}{2}".format("--------","----","----"))
+		print("")
+		for fileName in self.fileList:
+			url 							=	"{0}/{1}".format(self.basicOptions["URL"]["currentSetting"],fileName)
+			r 								=	self.sendHttpGetRequest(url)
+			print("\t{0:50s}{1:10s}{2}".format(fileName,str(r.status_code),r.headers["content-length"]))
 ######---------------------------------------------#####
 module 									= 	None
 # Init module
 def init(logger):
 	global module
 	module 								=	Module(logger)
+# Get Name
+def getName():
+	global module
+	return module.name
+# Get Type
+def getType():
+	global module
+	return module.type
+# Get Rank
+def getRank():
+	global module
+	return module.rank
+# Get Version
+def getVersion():
+	global module
+	return module.version
+# Get Description
+def getDescription():
+	global module
+	return module.description
 # Show help
 def showHelp():
 	global module

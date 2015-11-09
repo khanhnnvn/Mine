@@ -28,10 +28,55 @@ class WEToolKit:
 		self.getArument()
 		# Log config
 		self.logConfig()
-		# Set variable
+		# Use module
 		if(self.args.use != None):
 			self.modulePath			=		self.args.use
 			self.loadModule(self.modulePath)
+			exit()
+		if(self.args.list != None):
+			self.listModule()
+			exit()
+	def listModule(self):
+		self.logger.info("List Modules");
+		print("List Modules")
+		print("============")
+		print("")
+		print("\t{0:50s}{1:10s}{2:10s}{3}".format("Name","Version","Rank","Description"))
+		print("\t{0:50s}{1:10s}{2:10s}{3}".format("----","-------","----","-----------"))
+		print("")
+		prefixLength				=		len(self.moduleFolderPath)
+		time 						=		1
+		for path, subdirs, files in os.walk(self.moduleFolderPath):
+			for name in files:
+				if(name[-3:] == ".py"):
+					# Is module file
+					try:
+						# Try to load to get info
+						moduleFilePath	=		os.path.join(path, name)
+						imp.load_source("wetkModule",moduleFilePath)
+						if(time==1):
+							import wetkModule
+						else:
+							del wetkModule
+							import wetkModule
+						time 			+=1
+						wetkModule.init(self.logger)
+						subFolder		=		path[prefixLength:]
+						if(len(subFolder)!=0):
+							subFolder	=		subFolder[1:]
+						# Change \ to /, Windows only
+						subFolder		=		subFolder.replace("\\","/")
+						name 			=		"{0}/{1}".format(subFolder,name[:-3])
+						# Remove / first
+						if(name[0] == "/"):
+							name 		=		name[1:]
+						print("\t{0:50s}{1:10s}{2:10s}{3}".format(name,wetkModule.getVersion(),wetkModule.getRank(),wetkModule.getDescription()))
+					except Exception, e:
+						raise
+					else:
+						pass
+					finally:
+						pass
 	def loadModule(self, moduleName):
 		modulePath 					=		moduleName.split("/")								# Split by /
 		self.logger.info("Try to load: {0}.".format(modulePath[-1]))							# Print module name as last Element
