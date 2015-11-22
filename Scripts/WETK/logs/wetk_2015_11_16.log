@@ -1,0 +1,1581 @@
+2015-11-16 01:39:38,589 INFO       List Modules
+2015-11-16 01:39:51,036 INFO       Try to load: blind_sql_injection.
+2015-11-16 01:39:51,036 ERROR      Option URL need configure.
+2015-11-16 01:39:51,036 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:40:19,642 INFO       Try to load: blind_sql_injection.
+2015-11-16 01:40:19,644 ERROR      Option URL need configure.
+2015-11-16 01:40:19,644 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:41:15,588 INFO       Try to load: blind_sql_injection.
+2015-11-16 01:41:15,590 ERROR      Option URL need configure.
+2015-11-16 01:41:15,590 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:41:26,773 INFO       Try to load: blind_sql_injection.
+2015-11-16 01:41:26,773 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:41:53,092 DEBUG      Set Logging mode is True.
+2015-11-16 01:41:53,092 INFO       Try to load: blind_sql_injection.
+2015-11-16 01:41:53,092 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:41:53,093 DEBUG      Set URL to google.com.vn.
+2015-11-16 01:41:53,093 DEBUG      Add prefix http to: http://google.com.vn.
+2015-11-16 01:41:53,093 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:42:44,181 DEBUG      Set Logging mode is True.
+2015-11-16 01:42:44,181 INFO       Try to load: blind_sql_injection.
+2015-11-16 01:42:44,183 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:42:44,183 DEBUG      Set URL to google.com.vn.
+2015-11-16 01:42:44,183 DEBUG      Add prefix http to: http://google.com.vn.
+2015-11-16 01:42:44,184 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:43:27,710 DEBUG      Set Logging mode is True.
+2015-11-16 01:43:27,711 INFO       Try to load: blind_sql_injection.
+2015-11-16 01:43:27,713 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:43:27,713 DEBUG      Set URL to google.com.vn/afd.
+2015-11-16 01:43:27,713 DEBUG      Add prefix http to: http://google.com.vn/afd.
+2015-11-16 01:43:27,713 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:43:32,131 DEBUG      Set Logging mode is True.
+2015-11-16 01:43:32,131 INFO       Try to load: blind_sql_injection.
+2015-11-16 01:43:32,132 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:43:32,132 DEBUG      Set URL to google.com.vn/afd*.
+2015-11-16 01:43:32,132 DEBUG      Add prefix http to: http://google.com.vn/afd*.
+2015-11-16 01:43:32,132 DEBUG      Found 1 inject point in URL
+2015-11-16 01:43:32,132 DEBUG      Set inject point to: URL
+2015-11-16 01:43:32,132 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 01:43:32,133 WARNING    Send 0 request.
+2015-11-16 01:43:32,133 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:43:53,421 DEBUG      Set Logging mode is True.
+2015-11-16 01:43:53,421 INFO       Try to load: blind_sql_injection.
+2015-11-16 01:43:53,423 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:43:53,423 DEBUG      Set URL to google.com.vn/afd*.
+2015-11-16 01:43:53,423 DEBUG      Add prefix http to: http://google.com.vn/afd*.
+2015-11-16 01:43:53,424 DEBUG      Found 1 inject point in URL
+2015-11-16 01:43:53,424 DEBUG      Set inject point to: URL
+2015-11-16 01:43:53,424 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 01:43:53,424 WARNING    Send 0 request.
+2015-11-16 01:43:53,424 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:44:04,821 DEBUG      Set Logging mode is True.
+2015-11-16 01:44:04,822 INFO       Try to load: blind_sql_injection.
+2015-11-16 01:44:04,823 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:44:04,823 DEBUG      Set URL to google.com.vn/afd.
+2015-11-16 01:44:04,823 DEBUG      Add prefix http to: http://google.com.vn/afd.
+2015-11-16 01:44:04,823 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:44:17,395 INFO       Try to load: blind_sql_injection.
+2015-11-16 01:44:17,395 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:44:27,858 INFO       Try to load: blind_sql_injection.
+2015-11-16 01:44:27,858 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:45:32,997 INFO       Try to load: blind_sql_injection.
+2015-11-16 01:45:32,999 ERROR      Option URL need configure.
+2015-11-16 01:45:33,000 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:46:52,443 INFO       Try to load: blind_sql_injection.
+2015-11-16 01:46:52,445 ERROR      Option URL need configure.
+2015-11-16 01:46:52,446 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:46:58,508 INFO       Try to load: blind_sql_injection.
+2015-11-16 01:46:58,509 ERROR      Not found any inject point.
+2015-11-16 01:46:58,509 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:52:53,253 INFO       Try to load: blind_sql_injection.
+2015-11-16 01:52:53,255 ERROR      Not found any inject point.
+2015-11-16 01:52:53,255 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:53:02,292 INFO       Try to load: blind_sql_injection.
+2015-11-16 01:53:02,293 ERROR      Not found any inject point.
+2015-11-16 01:53:02,293 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 01:53:14,749 INFO       Try to load: blind_sql_injection.
+2015-11-16 01:53:14,750 ERROR      Not found any inject point.
+2015-11-16 01:53:14,750 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:03:54,254 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:03:54,256 ERROR      Not found any inject point.
+2015-11-16 02:03:54,257 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:04:16,065 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:04:16,065 INFO       Check Module Options
+2015-11-16 02:04:16,066 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:04:46,420 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:04:46,422 INFO       Check Module Options
+2015-11-16 02:04:46,423 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:05:32,812 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:05:32,814 INFO       Check Module Options
+2015-11-16 02:05:32,814 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:05:40,973 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:05:40,973 INFO       Check Module Options
+2015-11-16 02:05:40,974 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:13:12,037 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:13:12,039 INFO       Check Module Options
+2015-11-16 02:13:12,040 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:13:20,960 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:13:20,960 INFO       Check Module Options
+2015-11-16 02:13:20,961 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:14:37,966 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:14:37,968 INFO       Check Module Options
+2015-11-16 02:14:37,969 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:22:54,581 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:22:54,583 INFO       Check Module Options
+2015-11-16 02:22:54,584 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:30:13,564 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:30:13,568 INFO       Check Module Options
+2015-11-16 02:30:13,569 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:31:21,909 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:31:21,911 INFO       Check Module Options
+2015-11-16 02:31:21,912 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:42:08,990 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:42:08,991 ERROR      Error while load module exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:42:08,992 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:42:36,672 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:42:36,673 ERROR      Error while load module exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:42:36,673 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:42:42,333 DEBUG      Set Logging mode is True.
+2015-11-16 02:42:42,334 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:42:42,335 DEBUG      invalid syntax (blind_sql_injection.py, line 190)
+2015-11-16 02:42:42,335 ERROR      Error while load module exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:42:42,335 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:42:56,046 DEBUG      Set Logging mode is True.
+2015-11-16 02:42:56,046 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:42:56,049 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:42:56,049 DEBUG      Set URL to https://google.com.vn.
+2015-11-16 02:42:56,049 DEBUG      Set COOKIE to aa.
+2015-11-16 02:42:56,049 INFO       Check Module Options
+2015-11-16 02:42:56,049 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 02:42:56,050 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 02:42:56,050 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:43:14,991 DEBUG      Set Logging mode is True.
+2015-11-16 02:43:14,991 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:43:14,992 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:43:14,992 DEBUG      Set URL to https://google.com.vn.
+2015-11-16 02:43:14,992 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 02:43:14,992 INFO       Check Module Options
+2015-11-16 02:43:14,993 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 02:43:14,993 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 02:43:14,994 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:43:24,597 DEBUG      Set Logging mode is True.
+2015-11-16 02:43:24,597 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:43:24,597 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:43:24,598 DEBUG      Set URL to https://google.com.vn.
+2015-11-16 02:43:24,598 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 02:43:24,598 INFO       Check Module Options
+2015-11-16 02:43:24,598 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 02:43:24,598 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 02:43:24,599 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:46:01,528 DEBUG      Set Logging mode is True.
+2015-11-16 02:46:01,528 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:46:01,530 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:46:01,530 DEBUG      Set URL to https://google.com.vn.
+2015-11-16 02:46:01,530 DEBUG      Set COOKIE to aa:bb;ccdd.
+2015-11-16 02:46:01,531 INFO       Check Module Options
+2015-11-16 02:46:01,531 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 02:46:01,531 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:47:25,904 DEBUG      Set Logging mode is True.
+2015-11-16 02:47:25,904 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:47:25,906 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:47:25,907 DEBUG      Set URL to https://google.com.vn.
+2015-11-16 02:47:25,907 DEBUG      Set COOKIE to aa:bb;ccdd.
+2015-11-16 02:47:25,907 INFO       Check Module Options
+2015-11-16 02:47:25,907 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 02:47:25,907 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:48:09,942 DEBUG      Set Logging mode is True.
+2015-11-16 02:48:09,942 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:48:09,944 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:48:09,945 DEBUG      Set URL to https://google.com.vn.
+2015-11-16 02:48:09,945 DEBUG      Set COOKIE to aa:bb;ccdd.
+2015-11-16 02:48:09,945 INFO       Check Module Options
+2015-11-16 02:48:09,945 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 02:48:09,945 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:48:48,625 DEBUG      Set Logging mode is True.
+2015-11-16 02:48:48,625 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:48:48,627 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:48:48,627 DEBUG      Set URL to https://google.com.vn.
+2015-11-16 02:48:48,628 DEBUG      Set COOKIE to aa:bb;ccdd.
+2015-11-16 02:48:48,628 INFO       Check Module Options
+2015-11-16 02:48:48,628 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 02:48:48,628 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:48:59,392 DEBUG      Set Logging mode is True.
+2015-11-16 02:48:59,393 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:48:59,395 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:48:59,395 DEBUG      Set URL to https://google.com.vn.
+2015-11-16 02:48:59,395 DEBUG      Set COOKIE to aa:bb;ccdd.
+2015-11-16 02:48:59,395 INFO       Check Module Options
+2015-11-16 02:48:59,395 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 02:48:59,395 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:49:27,307 DEBUG      Set Logging mode is True.
+2015-11-16 02:49:27,309 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:49:27,311 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:49:27,311 DEBUG      Set URL to https://google.com.vn.
+2015-11-16 02:49:27,311 DEBUG      Set COOKIE to aa:bb;ccdd.
+2015-11-16 02:49:27,311 INFO       Check Module Options
+2015-11-16 02:49:27,311 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 02:49:27,312 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:49:44,249 DEBUG      Set Logging mode is True.
+2015-11-16 02:49:44,249 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:49:44,251 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:49:44,251 DEBUG      Set URL to https://google.com.vn.
+2015-11-16 02:49:44,251 DEBUG      Set COOKIE to aa:bb;ccdd.
+2015-11-16 02:49:44,251 INFO       Check Module Options
+2015-11-16 02:49:44,252 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 02:49:44,252 ERROR      Set COOKIE error in: ccdd
+2015-11-16 02:49:44,252 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 02:49:44,253 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:50:24,142 DEBUG      Set Logging mode is True.
+2015-11-16 02:50:24,142 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:50:24,144 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:50:24,144 DEBUG      Set URL to https://google.com.vn.
+2015-11-16 02:50:24,144 DEBUG      Set COOKIE to aa:bb;ccdd.
+2015-11-16 02:50:24,144 INFO       Check Module Options
+2015-11-16 02:50:24,145 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 02:50:24,145 ERROR      Set COOKIE error in: ccdd. Wrong syntax <cookie_name1>:<cookie_value1>.
+2015-11-16 02:50:24,145 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 02:50:24,146 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:51:05,068 DEBUG      Set Logging mode is True.
+2015-11-16 02:51:05,068 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:51:05,070 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:51:05,070 DEBUG      Set URL to https://google.com.vn.
+2015-11-16 02:51:05,070 DEBUG      Set COOKIE to aa:bb;ccdd.
+2015-11-16 02:51:05,071 INFO       Check Module Options
+2015-11-16 02:51:05,071 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 02:51:05,071 ERROR      Set COOKIE error in: ccdd. Wrong syntax <cookie_name1>:<cookie_value1>.
+2015-11-16 02:51:05,071 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 02:51:05,072 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:51:16,455 DEBUG      Set Logging mode is True.
+2015-11-16 02:51:16,455 INFO       Try to load: blind_sql_injection.
+2015-11-16 02:51:16,456 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 02:51:16,456 DEBUG      Set URL to https://google.com.vn.
+2015-11-16 02:51:16,456 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 02:51:16,456 INFO       Check Module Options
+2015-11-16 02:51:16,457 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 02:51:16,457 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 02:51:16,457 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 10:01:52,024 INFO       List Modules
+2015-11-16 10:02:15,415 INFO       List Modules
+2015-11-16 10:02:25,582 INFO       Try to load: blind_sql_injection.
+2015-11-16 10:02:25,583 ERROR      Option URL need configure.
+2015-11-16 10:02:25,583 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 10:02:38,385 INFO       Try to load: blind_sql_injection.
+2015-11-16 10:02:38,386 ERROR      Not found any inject point.
+2015-11-16 10:02:38,386 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 10:02:44,364 INFO       Try to load: blind_sql_injection.
+2015-11-16 10:02:44,364 WARNING    Inject point is ready.
+2015-11-16 10:02:44,365 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 10:02:44,365 WARNING    Send 0 request.
+2015-11-16 10:02:44,365 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 10:02:56,376 INFO       Try to load: blind_sql_injection.
+2015-11-16 10:02:56,376 WARNING    Inject point is ready.
+2015-11-16 10:02:56,377 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 10:02:56,377 WARNING    Send 0 request.
+2015-11-16 10:02:56,377 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 10:03:06,144 INFO       Try to load: blind_sql_injection.
+2015-11-16 10:03:06,145 WARNING    Inject point is ready.
+2015-11-16 10:03:06,145 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 10:03:06,145 WARNING    Send 0 request.
+2015-11-16 10:03:06,145 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 10:04:43,247 INFO       Try to load: blind_sql_injection.
+2015-11-16 10:04:43,250 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 10:05:37,772 INFO       Try to load: blind_sql_injection.
+2015-11-16 10:05:37,774 WARNING    Inject point is ready.
+2015-11-16 10:05:37,774 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 10:05:37,774 WARNING    Send 0 request.
+2015-11-16 10:05:37,774 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 10:06:35,507 INFO       Try to load: blind_sql_injection.
+2015-11-16 10:06:35,510 WARNING    Inject point is ready.
+2015-11-16 10:06:35,510 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 10:06:35,510 WARNING    Send 0 request.
+2015-11-16 10:06:35,510 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 10:07:00,670 INFO       Try to load: blind_sql_injection.
+2015-11-16 10:07:00,672 WARNING    Inject point is ready.
+2015-11-16 10:07:00,672 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 10:07:00,673 WARNING    Send 0 request.
+2015-11-16 10:07:00,673 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 10:07:30,939 INFO       Try to load: blind_sql_injection.
+2015-11-16 10:07:30,942 WARNING    Inject point is ready.
+2015-11-16 10:07:30,942 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 10:07:30,942 WARNING    Send 0 request.
+2015-11-16 10:07:30,942 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 10:08:11,357 INFO       Try to load: blind_sql_injection.
+2015-11-16 10:08:11,359 WARNING    Inject point is ready.
+2015-11-16 10:08:11,359 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 10:08:11,359 WARNING    Send 0 request.
+2015-11-16 10:08:11,360 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 10:08:13,548 INFO       Try to load: blind_sql_injection.
+2015-11-16 10:08:13,551 WARNING    Inject point is ready.
+2015-11-16 10:08:13,551 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 10:08:13,551 WARNING    Send 0 request.
+2015-11-16 10:08:13,551 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 10:09:17,462 INFO       Try to load: blind_sql_injection.
+2015-11-16 10:09:17,463 ERROR      Error while load module exploit/sql_injection/blind_sql_injection.
+2015-11-16 10:09:17,463 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 10:09:21,728 DEBUG      Set Logging mode is True.
+2015-11-16 10:09:21,729 INFO       Try to load: blind_sql_injection.
+2015-11-16 10:09:21,730 DEBUG      expected an indented block (blind_sql_injection.py, line 178)
+2015-11-16 10:09:21,730 ERROR      Error while load module exploit/sql_injection/blind_sql_injection.
+2015-11-16 10:09:21,730 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 10:09:37,061 DEBUG      Set Logging mode is True.
+2015-11-16 10:09:37,061 INFO       Try to load: blind_sql_injection.
+2015-11-16 10:09:37,063 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 10:09:37,064 DEBUG      Set URL to http://google.com.vn/a*.
+2015-11-16 10:09:37,064 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 10:09:37,064 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 10:09:37,064 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 10:09:37,064 DEBUG      Found 1 inject point in URL
+2015-11-16 10:09:37,064 DEBUG      Set inject point to: URL
+2015-11-16 10:09:37,065 WARNING    Inject point is ready.
+2015-11-16 10:09:37,065 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 10:09:37,065 WARNING    Send 0 request.
+2015-11-16 10:09:37,065 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 10:09:49,302 DEBUG      Set Logging mode is True.
+2015-11-16 10:09:49,303 INFO       Try to load: blind_sql_injection.
+2015-11-16 10:09:49,303 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 10:09:49,303 DEBUG      Set URL to http://google.com.vn/a*.
+2015-11-16 10:09:49,303 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 10:09:49,303 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 10:09:49,304 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 10:09:49,304 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 10:09:49,304 DEBUG      Set inject point to: COOKIE
+2015-11-16 10:09:49,304 DEBUG      Found 1 inject point in URL
+2015-11-16 10:09:49,304 ERROR      Only one inject point (* character).
+2015-11-16 10:09:49,304 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:24:36,894 INFO       Try to load: blind_sql_injection.
+2015-11-16 11:24:36,895 WARNING    Inject point is ready.
+2015-11-16 11:24:36,895 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 11:24:36,895 WARNING    Send 0 request.
+2015-11-16 11:24:36,895 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:24:41,769 DEBUG      Set Logging mode is True.
+2015-11-16 11:24:41,769 INFO       Try to load: blind_sql_injection.
+2015-11-16 11:24:41,770 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:24:41,770 DEBUG      Set URL to http://google.com.vn/a*.
+2015-11-16 11:24:41,770 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 11:24:41,770 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 11:24:41,770 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 11:24:41,770 DEBUG      Found 1 inject point in URL
+2015-11-16 11:24:41,770 DEBUG      Set inject point to: URL
+2015-11-16 11:24:41,771 WARNING    Inject point is ready.
+2015-11-16 11:24:41,771 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 11:24:41,771 WARNING    Send 0 request.
+2015-11-16 11:24:41,771 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:24:55,246 INFO       Try to load: blind_sql_injection.
+2015-11-16 11:24:55,246 INFO       Check Module Options
+2015-11-16 11:24:55,247 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:25:07,517 INFO       Try to load: blind_sql_injection.
+2015-11-16 11:25:07,518 WARNING    Inject point is ready.
+2015-11-16 11:25:07,518 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 11:25:07,518 WARNING    Send 0 request.
+2015-11-16 11:25:07,518 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:25:11,440 DEBUG      Set Logging mode is True.
+2015-11-16 11:25:11,440 INFO       Try to load: blind_sql_injection.
+2015-11-16 11:25:11,440 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:25:11,441 DEBUG      Set URL to http://google.com.vn/a*.
+2015-11-16 11:25:11,441 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 11:25:11,441 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 11:25:11,441 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 11:25:11,441 DEBUG      Found 1 inject point in URL
+2015-11-16 11:25:11,441 DEBUG      Set inject point to: URL
+2015-11-16 11:25:11,441 WARNING    Inject point is ready.
+2015-11-16 11:25:11,442 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 11:25:11,442 WARNING    Send 0 request.
+2015-11-16 11:25:11,442 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:25:59,540 DEBUG      Set Logging mode is True.
+2015-11-16 11:25:59,541 INFO       Try to load: blind_sql_injection.
+2015-11-16 11:25:59,541 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:25:59,541 DEBUG      Set URL to http://google.com.vn/a*.
+2015-11-16 11:25:59,541 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 11:25:59,541 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 11:25:59,541 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 11:25:59,542 DEBUG      Found 1 inject point in URL
+2015-11-16 11:25:59,542 DEBUG      Set inject point to: URL
+2015-11-16 11:25:59,542 WARNING    Inject point is ready.
+2015-11-16 11:25:59,542 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 11:25:59,542 WARNING    Send 0 request.
+2015-11-16 11:25:59,542 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:26:02,152 DEBUG      Set Logging mode is True.
+2015-11-16 11:26:02,152 INFO       Try to load: blind_sql_injection.
+2015-11-16 11:26:02,153 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:26:02,153 DEBUG      Set URL to http://google.com.vn/a*.
+2015-11-16 11:26:02,153 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 11:26:02,153 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 11:26:02,153 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 11:26:02,153 DEBUG      Found 1 inject point in URL
+2015-11-16 11:26:02,154 DEBUG      Set inject point to: URL
+2015-11-16 11:26:02,154 WARNING    Inject point is ready.
+2015-11-16 11:26:02,154 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 11:26:02,154 WARNING    Send 0 request.
+2015-11-16 11:26:02,154 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:26:55,439 DEBUG      Set Logging mode is True.
+2015-11-16 11:26:55,440 INFO       Try to load: blind_sql_injection.
+2015-11-16 11:26:55,442 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:26:55,442 DEBUG      Set URL to http://google.com.vn/a*.
+2015-11-16 11:26:55,442 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 11:26:55,443 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 11:26:55,443 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 11:26:55,443 DEBUG      Found 1 inject point in URL
+2015-11-16 11:26:55,443 DEBUG      Set inject point to: URL
+2015-11-16 11:26:55,443 WARNING    Inject point is ready.
+2015-11-16 11:26:55,443 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 11:26:55,443 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:27:03,997 DEBUG      Set Logging mode is True.
+2015-11-16 11:27:03,997 INFO       Try to load: blind_sql_injection.
+2015-11-16 11:27:04,000 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:27:04,000 DEBUG      Set URL to http://google.com.vn/a*.
+2015-11-16 11:27:04,000 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 11:27:04,000 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 11:27:04,000 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 11:27:04,000 DEBUG      Found 1 inject point in URL
+2015-11-16 11:27:04,001 DEBUG      Set inject point to: URL
+2015-11-16 11:27:04,001 WARNING    Inject point is ready.
+2015-11-16 11:27:04,001 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 11:27:04,001 WARNING    Send 1 request.
+2015-11-16 11:27:04,001 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:46:30,510 DEBUG      Set Logging mode is True.
+2015-11-16 11:46:30,511 INFO       Try to load: blind_sql_injection.
+2015-11-16 11:46:30,513 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:46:30,513 DEBUG      Set URL to http://google.com.vn/a*.
+2015-11-16 11:46:30,513 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 11:46:30,513 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 11:46:30,513 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 11:46:30,513 DEBUG      Found 1 inject point in URL
+2015-11-16 11:46:30,514 DEBUG      Set inject point to: URL
+2015-11-16 11:46:30,514 WARNING    Inject point is ready.
+2015-11-16 11:46:30,514 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 11:46:30,514 WARNING    Send 1 request.
+2015-11-16 11:46:30,514 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:46:51,897 DEBUG      Set Logging mode is True.
+2015-11-16 11:46:51,897 INFO       Try to load: blind_sql_injection.
+2015-11-16 11:46:51,899 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:46:51,899 DEBUG      Set URL to http://google.com.vn/a*.
+2015-11-16 11:46:51,899 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 11:46:51,899 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 11:46:51,899 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 11:46:51,900 DEBUG      Found 1 inject point in URL
+2015-11-16 11:46:51,900 DEBUG      Set inject point to: URL
+2015-11-16 11:46:51,900 WARNING    Inject point is ready.
+2015-11-16 11:46:51,900 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 11:46:51,900 WARNING    Send 1 request.
+2015-11-16 11:46:51,900 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:47:11,732 DEBUG      Set Logging mode is True.
+2015-11-16 11:47:11,733 INFO       Try to load: blind_sql_injection.
+2015-11-16 11:47:11,735 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:47:11,735 DEBUG      Set URL to http://google.com.vn/a*.
+2015-11-16 11:47:11,735 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 11:47:11,735 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 11:47:11,735 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 11:47:11,736 DEBUG      Found 1 inject point in URL
+2015-11-16 11:47:11,736 DEBUG      Set inject point to: URL
+2015-11-16 11:47:11,736 WARNING    Inject point is ready.
+2015-11-16 11:47:11,736 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 11:47:11,736 WARNING    Send 1 request.
+2015-11-16 11:47:11,736 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:47:24,102 DEBUG      Set Logging mode is True.
+2015-11-16 11:47:24,102 INFO       Try to load: blind_sql_injection.
+2015-11-16 11:47:24,105 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 11:47:24,105 DEBUG      Set URL to http://google.com.vn/a*.
+2015-11-16 11:47:24,105 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 11:47:24,105 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 11:47:24,105 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 11:47:24,105 DEBUG      Found 1 inject point in URL
+2015-11-16 11:47:24,106 DEBUG      Set inject point to: URL
+2015-11-16 11:47:24,106 WARNING    Inject point is ready.
+2015-11-16 11:47:24,106 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 11:47:24,138 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:25:07,259 DEBUG      Set Logging mode is True.
+2015-11-16 13:25:07,259 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:25:07,262 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:25:07,262 DEBUG      Set URL to http://google.com.vn/a*.
+2015-11-16 13:25:07,262 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:25:07,262 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:25:07,262 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:25:07,262 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:25:07,263 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:25:07,263 DEBUG      Found 1 inject point in URL
+2015-11-16 13:25:07,263 ERROR      Only one inject point (* character).
+2015-11-16 13:25:07,263 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:25:31,628 DEBUG      Set Logging mode is True.
+2015-11-16 13:25:31,629 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:25:31,631 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:25:31,631 DEBUG      Set URL to http://google.com.vn/a*.
+2015-11-16 13:25:31,631 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:25:31,631 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:25:31,632 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:25:31,632 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:25:31,632 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:25:31,632 DEBUG      Found 1 inject point in URL
+2015-11-16 13:25:31,632 ERROR      Only one inject point (* character).
+2015-11-16 13:25:31,632 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:25:44,894 DEBUG      Set Logging mode is True.
+2015-11-16 13:25:44,894 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:25:44,895 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:25:44,895 DEBUG      Set URL to http://google.com.vn/a*.
+2015-11-16 13:25:44,895 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 13:25:44,895 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:25:44,895 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:25:44,895 DEBUG      Found 1 inject point in URL
+2015-11-16 13:25:44,896 DEBUG      Set inject point to: URL
+2015-11-16 13:25:44,896 WARNING    Inject point is ready.
+2015-11-16 13:25:44,896 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:25:45,024 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:25:54,325 DEBUG      Set Logging mode is True.
+2015-11-16 13:25:54,325 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:25:54,327 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:25:54,328 DEBUG      Set URL to http://google.com.vn/a*.
+2015-11-16 13:25:54,328 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 13:25:54,328 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:25:54,328 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:25:54,328 DEBUG      Found 1 inject point in URL
+2015-11-16 13:25:54,328 DEBUG      Set inject point to: URL
+2015-11-16 13:25:54,329 WARNING    Inject point is ready.
+2015-11-16 13:25:54,329 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:25:54,358 WARNING    Send 1 request.
+2015-11-16 13:25:54,358 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:29:40,103 DEBUG      Set Logging mode is True.
+2015-11-16 13:29:40,103 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:29:40,105 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:29:40,105 DEBUG      Set URL to http://google.com.vn/a*.
+2015-11-16 13:29:40,106 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 13:29:40,106 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:29:40,106 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:29:40,106 DEBUG      Found 1 inject point in URL
+2015-11-16 13:29:40,106 DEBUG      Set inject point to: URL
+2015-11-16 13:29:40,106 WARNING    Inject point is ready.
+2015-11-16 13:29:40,106 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:29:40,130 WARNING    Send 1 request.
+2015-11-16 13:29:40,130 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:29:42,806 DEBUG      Set Logging mode is True.
+2015-11-16 13:29:42,806 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:29:42,807 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:29:42,807 DEBUG      Set URL to http://google.com.vn/a*.
+2015-11-16 13:29:42,807 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:29:42,807 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:29:42,807 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:29:42,807 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:29:42,807 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:29:42,808 DEBUG      Found 1 inject point in URL
+2015-11-16 13:29:42,808 ERROR      Only one inject point (* character).
+2015-11-16 13:29:42,808 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:29:46,358 DEBUG      Set Logging mode is True.
+2015-11-16 13:29:46,358 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:29:46,358 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:29:46,358 DEBUG      Set URL to http://google.com.vn/a.
+2015-11-16 13:29:46,359 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:29:46,359 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:29:46,359 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:29:46,359 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:29:46,359 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:29:46,359 WARNING    Inject point is ready.
+2015-11-16 13:29:46,359 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:29:48,573 WARNING    Send 1 request.
+2015-11-16 13:29:48,573 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:30:31,325 DEBUG      Set Logging mode is True.
+2015-11-16 13:30:31,325 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:30:31,328 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:30:31,328 DEBUG      Set URL to http://google.com.vn/a.
+2015-11-16 13:30:31,328 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:30:31,328 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:30:31,329 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:30:31,329 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:30:31,329 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:30:31,329 WARNING    Inject point is ready.
+2015-11-16 13:30:31,329 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:30:33,580 WARNING    Send 1 request.
+2015-11-16 13:30:33,580 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:31:11,406 DEBUG      Set Logging mode is True.
+2015-11-16 13:31:11,406 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:31:11,409 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:31:11,409 DEBUG      Set URL to http://google.com.vn/a.
+2015-11-16 13:31:11,409 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:31:11,409 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:31:11,409 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:31:11,410 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:31:11,410 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:31:11,410 WARNING    Inject point is ready.
+2015-11-16 13:31:11,410 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:31:13,649 WARNING    Send 1 request.
+2015-11-16 13:31:13,649 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:33:33,177 DEBUG      Set Logging mode is True.
+2015-11-16 13:33:33,177 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:33:33,180 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:33:33,180 DEBUG      Set URL to http://google.com.vn/a.
+2015-11-16 13:33:33,180 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:33:33,180 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:33:33,180 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:33:33,181 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:33:33,181 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:33:33,181 WARNING    Inject point is ready.
+2015-11-16 13:33:33,181 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:33:33,181 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:33:39,005 DEBUG      Set Logging mode is True.
+2015-11-16 13:33:39,005 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:33:39,008 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:33:39,008 DEBUG      Set URL to http://google.com.vn/a.
+2015-11-16 13:33:39,008 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:33:39,008 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:33:39,008 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:33:39,008 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:33:39,009 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:33:39,009 WARNING    Inject point is ready.
+2015-11-16 13:33:39,009 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:33:41,277 WARNING    Send 1 request.
+2015-11-16 13:33:41,278 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:35:32,527 DEBUG      Set Logging mode is True.
+2015-11-16 13:35:32,527 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:35:32,529 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:35:32,530 DEBUG      Set URL to http://google.com.vn/a.
+2015-11-16 13:35:32,530 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:35:32,530 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:35:32,530 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:35:32,530 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:35:32,530 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:35:32,530 WARNING    Inject point is ready.
+2015-11-16 13:35:32,530 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:35:32,531 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:35:43,892 DEBUG      Set Logging mode is True.
+2015-11-16 13:35:43,892 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:35:43,895 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:35:43,895 DEBUG      Set URL to http://google.com.vn/a.
+2015-11-16 13:35:43,895 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:35:43,896 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:35:43,896 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:35:43,896 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:35:43,896 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:35:43,896 WARNING    Inject point is ready.
+2015-11-16 13:35:43,896 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:35:43,897 WARNING    Send 1 request.
+2015-11-16 13:35:43,897 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:35:46,573 DEBUG      Set Logging mode is True.
+2015-11-16 13:35:46,574 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:35:46,574 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:35:46,574 DEBUG      Set URL to http://google.com.vn/a.
+2015-11-16 13:35:46,574 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:35:46,575 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:35:46,575 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:35:46,575 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:35:46,575 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:35:46,575 WARNING    Inject point is ready.
+2015-11-16 13:35:46,575 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:35:46,576 WARNING    Send 1 request.
+2015-11-16 13:35:46,576 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:36:20,465 DEBUG      Set Logging mode is True.
+2015-11-16 13:36:20,466 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:36:20,468 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:36:20,468 DEBUG      Set URL to http://google.com.vn/a.
+2015-11-16 13:36:20,468 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:36:20,469 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:36:20,469 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:36:20,469 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:36:20,469 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:36:20,469 WARNING    Inject point is ready.
+2015-11-16 13:36:20,469 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:36:20,470 WARNING    Send 1 request.
+2015-11-16 13:36:20,470 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:38:32,425 DEBUG      Set Logging mode is True.
+2015-11-16 13:38:32,425 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:38:32,428 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:38:32,428 DEBUG      Set URL to http://google.com.vn/a.
+2015-11-16 13:38:32,428 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:38:32,428 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:38:32,428 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:38:32,429 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:38:32,429 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:38:32,429 WARNING    Inject point is ready.
+2015-11-16 13:38:32,429 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:38:32,429 DEBUG      Send HTTP request number 1 to google.com.vn.
+2015-11-16 13:38:32,429 DEBUG      URL: http://google.com.vn/a.
+2015-11-16 13:38:32,430 WARNING    Send 1 request.
+2015-11-16 13:38:32,430 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:39:05,089 DEBUG      Set Logging mode is True.
+2015-11-16 13:39:05,089 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:39:05,092 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:39:05,092 DEBUG      Set URL to http://google.com.vn/a.
+2015-11-16 13:39:05,092 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:39:05,092 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:39:05,092 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:39:05,092 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:39:05,093 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:39:05,093 WARNING    Inject point is ready.
+2015-11-16 13:39:05,093 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:39:05,093 DEBUG      Send HTTP request number 1 to google.com.vn.
+2015-11-16 13:39:05,093 DEBUG      URL: http://google.com.vn/a.
+2015-11-16 13:39:05,093 DEBUG      Cookie: {'aa': 'bb', 'cc': 'dd*'}.
+2015-11-16 13:39:05,094 WARNING    Send 1 request.
+2015-11-16 13:39:05,094 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:39:20,384 DEBUG      Set Logging mode is True.
+2015-11-16 13:39:20,385 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:39:20,385 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:39:20,385 DEBUG      Set URL to http://google.com.vn/a*.
+2015-11-16 13:39:20,385 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 13:39:20,386 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:39:20,386 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:39:20,386 DEBUG      Found 1 inject point in URL
+2015-11-16 13:39:20,386 DEBUG      Set inject point to: URL
+2015-11-16 13:39:20,386 WARNING    Inject point is ready.
+2015-11-16 13:39:20,386 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:39:20,387 DEBUG      Send HTTP request number 1 to google.com.vn.
+2015-11-16 13:39:20,387 DEBUG      URL: http://google.com.vn/a*.
+2015-11-16 13:39:20,387 DEBUG      Cookie: {'aa': 'bb', 'cc': 'dd'}.
+2015-11-16 13:39:20,387 WARNING    Send 1 request.
+2015-11-16 13:39:20,387 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:40:18,374 DEBUG      Set Logging mode is True.
+2015-11-16 13:40:18,375 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:40:18,377 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:40:18,377 DEBUG      Set URL to http://google.com.vn/a*.
+2015-11-16 13:40:18,377 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 13:40:18,378 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:40:18,378 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:40:18,378 DEBUG      Found 1 inject point in URL
+2015-11-16 13:40:18,378 DEBUG      Set inject point to: URL
+2015-11-16 13:40:18,378 WARNING    Inject point is ready.
+2015-11-16 13:40:18,378 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:40:18,379 DEBUG      Send HTTP request number 1 to google.com.vn.
+2015-11-16 13:40:18,379 DEBUG      URL: http://google.com.vn/a*.
+2015-11-16 13:40:18,379 DEBUG      Cookie: {'aa': 'bb', 'cc': 'dd'}.
+2015-11-16 13:40:18,379 WARNING    Send 1 request.
+2015-11-16 13:40:18,379 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:40:27,887 DEBUG      Set Logging mode is True.
+2015-11-16 13:40:27,887 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:40:27,890 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:40:27,890 DEBUG      Set URL to http://google.com.vn/a*.
+2015-11-16 13:40:27,890 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 13:40:27,890 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:40:27,890 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:40:27,891 DEBUG      Found 1 inject point in URL
+2015-11-16 13:40:27,891 DEBUG      Set inject point to: URL
+2015-11-16 13:40:27,891 WARNING    Inject point is ready.
+2015-11-16 13:40:27,891 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:40:27,891 DEBUG      Send HTTP request number 1 to google.com.vn.
+2015-11-16 13:40:27,892 DEBUG      URL: http://google.com.vn/a*.
+2015-11-16 13:40:27,892 DEBUG      Cookie: {'aa': 'bb', 'cc': 'dd'}.
+2015-11-16 13:40:27,892 WARNING    Send 1 request.
+2015-11-16 13:40:27,892 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:40:55,884 DEBUG      Set Logging mode is True.
+2015-11-16 13:40:55,884 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:40:55,887 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:40:55,887 DEBUG      Set URL to http://google.com.vn/a*.
+2015-11-16 13:40:55,887 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 13:40:55,887 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:40:55,887 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:40:55,887 DEBUG      Found 1 inject point in URL
+2015-11-16 13:40:55,888 DEBUG      Set inject point to: URL
+2015-11-16 13:40:55,888 WARNING    Inject point is ready.
+2015-11-16 13:40:55,888 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:40:55,888 DEBUG      Send HTTP request number 1 to google.com.vn.
+2015-11-16 13:40:55,888 DEBUG      URL: http://google.com.vn/asss.
+2015-11-16 13:40:55,889 DEBUG      Cookie: {'aa': 'bb', 'cc': 'dd'}.
+2015-11-16 13:40:55,889 WARNING    Send 1 request.
+2015-11-16 13:40:55,889 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:41:01,170 DEBUG      Set Logging mode is True.
+2015-11-16 13:41:01,170 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:41:01,170 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:41:01,170 DEBUG      Set URL to http://google.com.vn/a.
+2015-11-16 13:41:01,171 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:41:01,171 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:41:01,171 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:41:01,171 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:41:01,171 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:41:01,171 WARNING    Inject point is ready.
+2015-11-16 13:41:01,171 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:41:01,171 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:41:31,808 DEBUG      Set Logging mode is True.
+2015-11-16 13:41:31,809 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:41:31,811 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:41:31,811 DEBUG      Set URL to http://google.com.vn/a.
+2015-11-16 13:41:31,812 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:41:31,812 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:41:31,812 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:41:31,812 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:41:31,812 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:41:31,812 WARNING    Inject point is ready.
+2015-11-16 13:41:31,812 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:41:31,813 DEBUG      Send HTTP request number 1 to google.com.vn.
+2015-11-16 13:41:31,813 DEBUG      URL: http://google.com.vn/a.
+2015-11-16 13:41:31,813 DEBUG      Cookie: {'aa': 'bb', 'cc': 'ddsss'}.
+2015-11-16 13:41:31,813 WARNING    Send 1 request.
+2015-11-16 13:41:31,813 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:45:41,359 DEBUG      Set Logging mode is True.
+2015-11-16 13:45:41,360 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:45:41,362 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:45:41,362 DEBUG      Set URL to http://google.com.vn/a.
+2015-11-16 13:45:41,362 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:45:41,363 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:45:41,363 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:45:41,363 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:45:41,363 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:45:41,363 WARNING    Inject point is ready.
+2015-11-16 13:45:41,363 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:45:41,364 DEBUG      Send HTTP request number 1 to google.com.vn.
+2015-11-16 13:45:41,364 DEBUG      URL: http://google.com.vn/a.
+2015-11-16 13:45:41,364 DEBUG      Cookie: {'aa': 'bb', 'cc': 'ddsss'}.
+2015-11-16 13:45:41,364 WARNING    Send 1 request.
+2015-11-16 13:45:41,364 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:46:05,231 DEBUG      Set Logging mode is True.
+2015-11-16 13:46:05,232 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:46:05,232 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:46:05,232 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:46:05,232 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:46:05,232 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:46:05,233 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:46:05,233 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:46:05,233 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:46:05,233 WARNING    Inject point is ready.
+2015-11-16 13:46:05,233 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:46:05,234 DEBUG      Send HTTP request number 1 to www.whatismybrowser.com.
+2015-11-16 13:46:05,234 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:46:05,234 DEBUG      Cookie: {'aa': 'bb', 'cc': 'ddsss'}.
+2015-11-16 13:46:05,234 WARNING    Send 1 request.
+2015-11-16 13:46:05,234 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:46:20,767 DEBUG      Set Logging mode is True.
+2015-11-16 13:46:20,767 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:46:20,770 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:46:20,770 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:46:20,770 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:46:20,771 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:46:20,771 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:46:20,771 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:46:20,771 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:46:20,771 WARNING    Inject point is ready.
+2015-11-16 13:46:20,771 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:46:20,772 DEBUG      Send HTTP request number 1 to www.whatismybrowser.com.
+2015-11-16 13:46:20,772 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:46:20,772 DEBUG      Cookie: {'aa': 'bb', 'cc': 'ddsss'}.
+2015-11-16 13:46:20,772 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:46:48,507 DEBUG      Set Logging mode is True.
+2015-11-16 13:46:48,507 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:46:48,510 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:46:48,510 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:46:48,510 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:46:48,510 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:46:48,510 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:46:48,511 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:46:48,511 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:46:48,511 WARNING    Inject point is ready.
+2015-11-16 13:46:48,511 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:46:48,516 DEBUG      Send HTTP request number 1 to www.whatismybrowser.com.
+2015-11-16 13:46:48,516 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:46:48,516 DEBUG      Cookie: {'aa': 'bb', 'cc': 'ddsss'}.
+2015-11-16 13:46:48,516 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:47:23,803 DEBUG      Set Logging mode is True.
+2015-11-16 13:47:23,804 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:47:23,806 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:47:23,806 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:47:23,807 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:47:23,807 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:47:23,807 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:47:23,807 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:47:23,807 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:47:23,807 WARNING    Inject point is ready.
+2015-11-16 13:47:23,807 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:47:23,813 DEBUG      Send HTTP request number 1 to www.whatismybrowser.com.
+2015-11-16 13:47:23,813 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:47:23,813 DEBUG      Cookie: {'aa': 'bb', 'cc': 'ddsss'}.
+2015-11-16 13:47:25,303 WARNING    Send 1 request.
+2015-11-16 13:47:25,303 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:47:37,309 DEBUG      Set Logging mode is True.
+2015-11-16 13:47:37,309 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:47:37,312 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:47:37,312 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:47:37,312 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:47:37,312 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:47:37,313 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:47:37,313 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:47:37,313 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:47:37,313 WARNING    Inject point is ready.
+2015-11-16 13:47:37,313 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:47:37,318 DEBUG      Send HTTP request number 1 to www.whatismybrowser.com.
+2015-11-16 13:47:37,318 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:47:37,318 DEBUG      Cookie: {'aa': 'bb', 'cc': 'ddsss'}.
+2015-11-16 13:47:38,349 WARNING    Send 1 request.
+2015-11-16 13:47:38,349 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:51:40,278 DEBUG      Set Logging mode is True.
+2015-11-16 13:51:40,279 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:51:40,281 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:51:40,282 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:51:40,282 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:51:40,282 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:51:40,282 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:51:40,282 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:51:40,282 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:51:40,282 WARNING    Inject point is ready.
+2015-11-16 13:51:40,283 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:51:40,288 DEBUG      Send HTTP request number 1 to www.whatismybrowser.com.
+2015-11-16 13:51:40,288 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:51:40,288 DEBUG      Cookie: {'aa': 'bb', 'cc': 'ddsss'}.
+2015-11-16 13:51:41,701 WARNING    Send 1 request.
+2015-11-16 13:51:41,701 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:53:58,868 DEBUG      Set Logging mode is True.
+2015-11-16 13:53:58,869 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:53:58,871 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:53:58,871 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:53:58,871 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:53:58,872 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:53:58,872 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:53:58,872 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:53:58,872 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:53:58,872 WARNING    Inject point is ready.
+2015-11-16 13:53:58,872 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:53:58,877 DEBUG      Send HTTP request number 1 to www.whatismybrowser.com.
+2015-11-16 13:53:58,878 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:53:58,878 DEBUG      Cookie: {'aa': 'bb', 'cc': 'ddsss'}.
+2015-11-16 13:54:00,096 WARNING    Send 1 request.
+2015-11-16 13:54:00,097 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:54:55,032 DEBUG      Set Logging mode is True.
+2015-11-16 13:54:55,032 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:54:55,035 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:54:55,035 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:54:55,035 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:54:55,035 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:54:55,035 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:54:55,035 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:54:55,036 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:54:55,036 WARNING    Inject point is ready.
+2015-11-16 13:54:55,036 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:54:55,041 DEBUG      Send HTTP request number 1 to www.whatismybrowser.com.
+2015-11-16 13:54:55,041 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:54:55,041 DEBUG      Cookie: {'aa': 'bb', 'cc': 'ddsss'}.
+2015-11-16 13:54:56,087 WARNING    Send 1 request.
+2015-11-16 13:54:56,087 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:55:30,043 DEBUG      Set Logging mode is True.
+2015-11-16 13:55:30,043 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:55:30,044 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:55:30,044 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:55:30,044 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:55:30,044 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:55:30,044 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:55:30,044 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:55:30,045 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:55:30,045 WARNING    Inject point is ready.
+2015-11-16 13:55:30,045 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:55:30,050 DEBUG      Send HTTP request number 1 to www.whatismybrowser.com.
+2015-11-16 13:55:30,050 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:55:30,050 DEBUG      Cookie: {'aa': 'bb', 'cc': 'ddsss'}.
+2015-11-16 13:55:31,099 WARNING    Send 1 request.
+2015-11-16 13:55:31,100 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:56:16,979 DEBUG      Set Logging mode is True.
+2015-11-16 13:56:16,980 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:56:16,982 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:56:16,983 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:56:16,983 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:56:16,983 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:56:16,983 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:56:16,983 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:56:16,983 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:56:16,984 WARNING    Inject point is ready.
+2015-11-16 13:56:16,984 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:56:16,989 DEBUG      Send HTTP request number 1 to www.whatismybrowser.com.
+2015-11-16 13:56:16,989 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:56:16,989 DEBUG      Cookie: {'aa': 'bb', 'cc': 'ddsss'}.
+2015-11-16 13:56:18,074 WARNING    Send 1 request.
+2015-11-16 13:56:18,075 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:56:48,750 DEBUG      Set Logging mode is True.
+2015-11-16 13:56:48,750 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:56:48,753 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:56:48,753 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:56:48,753 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:56:48,754 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:56:48,754 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:56:48,754 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:56:48,754 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:56:48,754 WARNING    Inject point is ready.
+2015-11-16 13:56:48,754 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:56:48,759 DEBUG      Send HTTP request number 1 to www.whatismybrowser.com.
+2015-11-16 13:56:48,759 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:56:48,759 DEBUG      Cookie: {'aa': 'bb', 'cc': 'ddsss'}.
+2015-11-16 13:56:50,032 WARNING    Send 1 request.
+2015-11-16 13:56:50,032 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:58:54,545 DEBUG      Set Logging mode is True.
+2015-11-16 13:58:54,545 INFO       Try to load: blind_sql_injection.
+2015-11-16 13:58:54,548 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 13:58:54,548 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:58:54,548 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 13:58:54,548 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:58:54,548 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 13:58:54,549 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 13:58:54,549 DEBUG      Set inject point to: COOKIE
+2015-11-16 13:58:54,549 WARNING    Inject point is ready.
+2015-11-16 13:58:54,549 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 13:58:54,554 DEBUG      Send HTTP request number 1 to www.whatismybrowser.com.
+2015-11-16 13:58:54,554 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 13:58:54,554 DEBUG      Cookie: {'aa': 'bb', 'cc': 'ddsss'}.
+2015-11-16 13:58:55,592 WARNING    Send 1 request.
+2015-11-16 13:58:55,592 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:00:23,685 DEBUG      Set Logging mode is True.
+2015-11-16 14:00:23,685 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:00:23,688 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:00:23,688 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:00:23,688 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 14:00:23,688 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:00:23,688 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:00:23,689 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 14:00:23,689 DEBUG      Set inject point to: COOKIE
+2015-11-16 14:00:23,689 WARNING    Inject point is ready.
+2015-11-16 14:00:23,689 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:00:23,694 DEBUG      Send HTTP request number 1 to www.whatismybrowser.com.
+2015-11-16 14:00:23,694 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:00:23,694 DEBUG      Cookie: {'aa': 'bb', 'cc': 'ddsss'}.
+2015-11-16 14:00:24,790 WARNING    Send 1 request.
+2015-11-16 14:00:24,791 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:00:42,548 DEBUG      Set Logging mode is True.
+2015-11-16 14:00:42,548 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:00:42,551 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:00:42,551 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:00:42,551 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 14:00:42,551 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:00:42,551 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:00:42,552 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 14:00:42,552 DEBUG      Set inject point to: COOKIE
+2015-11-16 14:00:42,552 WARNING    Inject point is ready.
+2015-11-16 14:00:42,552 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:00:42,557 DEBUG      Send HTTP request number 1 to www.whatismybrowser.com.
+2015-11-16 14:00:42,557 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:00:42,557 DEBUG      Cookie: {'aa': 'bb', 'cc': 'ddsss'}.
+2015-11-16 14:00:43,673 WARNING    Send 1 request.
+2015-11-16 14:00:43,674 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:02:11,975 DEBUG      Set Logging mode is True.
+2015-11-16 14:02:11,976 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:02:11,978 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:02:11,979 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:02:11,979 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 14:02:11,979 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:02:11,979 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:02:11,979 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 14:02:11,979 DEBUG      Set inject point to: COOKIE
+2015-11-16 14:02:11,979 WARNING    Inject point is ready.
+2015-11-16 14:02:11,980 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:02:11,985 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:02:25,845 DEBUG      Set Logging mode is True.
+2015-11-16 14:02:25,845 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:02:25,848 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:02:25,848 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:02:25,848 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 14:02:25,848 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:02:25,849 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:02:25,849 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 14:02:25,849 DEBUG      Set inject point to: COOKIE
+2015-11-16 14:02:25,849 WARNING    Inject point is ready.
+2015-11-16 14:02:25,849 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:02:25,854 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:02:49,292 DEBUG      Set Logging mode is True.
+2015-11-16 14:02:49,292 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:02:49,295 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:02:49,295 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:02:49,295 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 14:02:49,295 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:02:49,295 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:02:49,296 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 14:02:49,296 DEBUG      Set inject point to: COOKIE
+2015-11-16 14:02:49,296 WARNING    Inject point is ready.
+2015-11-16 14:02:49,296 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:02:49,301 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:02:58,768 DEBUG      Set Logging mode is True.
+2015-11-16 14:02:58,768 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:02:58,771 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:02:58,771 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:02:58,771 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 14:02:58,771 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:02:58,771 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:02:58,771 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 14:02:58,771 DEBUG      Set inject point to: COOKIE
+2015-11-16 14:02:58,772 WARNING    Inject point is ready.
+2015-11-16 14:02:58,772 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:02:58,777 DEBUG      Send GET request number 1 to www.whatismybrowser.com.
+2015-11-16 14:02:58,777 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:02:58,777 DEBUG      Cookie: {'aa': 'bb', 'cc': 'ddsss'}.
+2015-11-16 14:02:59,810 WARNING    Send 1 request.
+2015-11-16 14:02:59,811 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:03:52,712 DEBUG      Set Logging mode is True.
+2015-11-16 14:03:52,713 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:03:52,715 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:03:52,716 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:03:52,716 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 14:03:52,716 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:03:52,716 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:03:52,716 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 14:03:52,716 DEBUG      Set inject point to: COOKIE
+2015-11-16 14:03:52,717 WARNING    Inject point is ready.
+2015-11-16 14:03:52,717 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:03:52,722 DEBUG      Send GET request number 1 to www.whatismybrowser.com.
+2015-11-16 14:03:52,722 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:03:52,722 DEBUG      Cookie: {'aa': 'bb', 'cc': 'ddsss'}.
+2015-11-16 14:03:53,854 WARNING    Send 1 request.
+2015-11-16 14:03:53,854 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:11:42,711 DEBUG      Set Logging mode is True.
+2015-11-16 14:11:42,712 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:11:42,714 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:11:42,715 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:11:42,715 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 14:11:42,715 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:11:42,715 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:11:42,715 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 14:11:42,715 DEBUG      Set inject point to: COOKIE
+2015-11-16 14:11:42,715 WARNING    Inject point is ready.
+2015-11-16 14:11:42,716 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:11:42,721 DEBUG      Send GET request number 1 to www.whatismybrowser.com.
+2015-11-16 14:11:42,721 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:11:42,721 DEBUG      Cookie: {'aa': 'bb', 'cc': 'ddsss'}.
+2015-11-16 14:11:43,734 WARNING    Send 1 request.
+2015-11-16 14:11:43,735 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:13:18,980 DEBUG      Set Logging mode is True.
+2015-11-16 14:13:18,980 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:13:18,983 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:13:18,983 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:13:18,983 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 14:13:18,984 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:13:18,984 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:13:18,984 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 14:13:18,984 DEBUG      Set inject point to: COOKIE
+2015-11-16 14:13:18,984 WARNING    Inject point is ready.
+2015-11-16 14:13:18,984 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:13:18,990 DEBUG      Send GET request number 1 to www.whatismybrowser.com.
+2015-11-16 14:13:18,990 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:13:18,990 DEBUG      Cookie: {'aa': 'bb', 'cc': 'ddsss'}.
+2015-11-16 14:13:20,353 WARNING    Send 1 request.
+2015-11-16 14:13:20,353 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:13:31,703 DEBUG      Set Logging mode is True.
+2015-11-16 14:13:31,704 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:13:31,704 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:13:31,704 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:13:31,704 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 14:13:31,705 DEBUG      Set DATA to aaa.
+2015-11-16 14:13:31,705 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:13:31,705 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:13:31,705 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 14:13:31,705 DEBUG      Set inject point to: COOKIE
+2015-11-16 14:13:31,705 WARNING    Inject point is ready.
+2015-11-16 14:13:31,705 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:13:31,711 DEBUG      Send POST request number 1 to www.whatismybrowser.com.
+2015-11-16 14:13:31,711 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:13:31,711 DEBUG      Cookie: {'aa': 'bb', 'cc': 'ddsss'}.
+2015-11-16 14:13:32,749 WARNING    Send 1 request.
+2015-11-16 14:13:32,749 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:15:03,609 DEBUG      Set Logging mode is True.
+2015-11-16 14:15:03,609 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:15:03,612 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:15:03,612 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:15:03,612 DEBUG      Set COOKIE to aa:bb;cc:dd*.
+2015-11-16 14:15:03,613 DEBUG      Set DATA to aaa.
+2015-11-16 14:15:03,613 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:15:03,613 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:15:03,613 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 14:15:03,613 DEBUG      Set inject point to: COOKIE
+2015-11-16 14:15:03,613 WARNING    Inject point is ready.
+2015-11-16 14:15:03,613 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:15:03,618 DEBUG      Send POST request number 1 to www.whatismybrowser.com.
+2015-11-16 14:15:03,618 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:15:03,618 DEBUG      Cookie: {'aa': 'bb', 'cc': 'ddsss'}.
+2015-11-16 14:15:04,845 WARNING    Send 1 request.
+2015-11-16 14:15:04,845 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:15:11,659 DEBUG      Set Logging mode is True.
+2015-11-16 14:15:11,659 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:15:11,659 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:15:11,659 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:15:11,660 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 14:15:11,660 DEBUG      Set DATA to aaa.
+2015-11-16 14:15:11,660 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:15:11,660 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:15:11,660 ERROR      Not found any inject point.
+2015-11-16 14:15:11,660 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:15:17,449 DEBUG      Set Logging mode is True.
+2015-11-16 14:15:17,449 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:15:17,450 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:15:17,450 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:15:17,450 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 14:15:17,450 DEBUG      Set DATADICT to aaa.
+2015-11-16 14:15:17,450 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:15:17,450 ERROR      Set DATADICT error in: aaa. Wrong syntax <data_name1>:<data_value1>.
+2015-11-16 14:15:17,450 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:15:17,451 ERROR      Not found any inject point.
+2015-11-16 14:15:17,451 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:15:24,808 DEBUG      Set Logging mode is True.
+2015-11-16 14:15:24,808 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:15:24,809 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:15:24,809 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:15:24,809 DEBUG      Set COOKIE to aa:bb;cc:dd.
+2015-11-16 14:15:24,809 DEBUG      Set DATADICT to aaa:ee.
+2015-11-16 14:15:24,809 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:15:24,809 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:15:37,233 DEBUG      Set Logging mode is True.
+2015-11-16 14:15:37,233 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:15:37,234 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:15:37,234 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:15:37,234 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:15:37,234 DEBUG      Set DATADICT to aaa:ee.
+2015-11-16 14:15:37,234 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:15:37,234 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:15:45,747 DEBUG      Set Logging mode is True.
+2015-11-16 14:15:45,748 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:15:45,748 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:15:45,748 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:15:45,748 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:15:45,748 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:15:45,748 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:15:45,749 ERROR      Not found any inject point.
+2015-11-16 14:15:45,749 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:16:13,501 DEBUG      Set Logging mode is True.
+2015-11-16 14:16:13,501 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:16:13,501 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:16:13,502 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:16:13,502 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:16:13,502 DEBUG      Set DATADICT to aaa:ee.
+2015-11-16 14:16:13,502 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:16:13,502 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:16:16,521 DEBUG      Set Logging mode is True.
+2015-11-16 14:16:16,521 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:16:16,521 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:16:16,522 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:16:16,522 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:16:16,522 DEBUG      Set DATADICT to aaa:ee;.
+2015-11-16 14:16:16,522 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:16:16,522 ERROR      Set DATADICT error in: . Wrong syntax <data_name1>:<data_value1>.
+2015-11-16 14:16:16,522 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:16:16,522 ERROR      Not found any inject point.
+2015-11-16 14:16:16,523 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:16:19,780 DEBUG      Set Logging mode is True.
+2015-11-16 14:16:19,781 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:16:19,781 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:16:19,781 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:16:19,781 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:16:19,781 DEBUG      Set DATADICT to aaa:ee.
+2015-11-16 14:16:19,782 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:16:19,782 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:18:04,276 DEBUG      Set Logging mode is True.
+2015-11-16 14:18:04,277 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:18:04,279 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:18:04,280 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:18:04,280 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:18:04,280 DEBUG      Set DATADICT to aaa:ee.
+2015-11-16 14:18:04,280 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:18:04,280 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:18:18,845 DEBUG      Set Logging mode is True.
+2015-11-16 14:18:18,846 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:18:18,846 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:18:18,846 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:18:18,846 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:18:18,846 DEBUG      Set DATADICT to aaa:ee.
+2015-11-16 14:18:18,847 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:18:18,847 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:18:26,682 DEBUG      Set Logging mode is True.
+2015-11-16 14:18:26,682 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:18:26,682 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:18:26,682 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:18:26,683 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:18:26,683 DEBUG      Set DATADICT to aaa:ee.
+2015-11-16 14:18:26,683 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:18:26,683 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:19:01,443 DEBUG      Set Logging mode is True.
+2015-11-16 14:19:01,443 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:19:01,446 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:19:01,446 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:19:01,446 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:19:01,447 DEBUG      Set DATADICT to aaa:ee.
+2015-11-16 14:19:01,447 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:19:01,447 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:19:01,447 ERROR      POST data must set in POST Method.
+2015-11-16 14:19:01,447 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:19:10,458 DEBUG      Set Logging mode is True.
+2015-11-16 14:19:10,458 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:19:10,461 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:19:10,461 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:19:10,461 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:19:10,462 DEBUG      Set DATADICT to aaa:ee.
+2015-11-16 14:19:10,462 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:19:10,462 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:19:38,005 DEBUG      Set Logging mode is True.
+2015-11-16 14:19:38,006 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:19:38,008 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:19:38,009 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:19:38,009 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:19:38,009 DEBUG      Set DATADICT to aaa:ee.
+2015-11-16 14:19:38,009 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:19:38,009 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:20:08,008 DEBUG      Set Logging mode is True.
+2015-11-16 14:20:08,008 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:20:08,011 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:20:08,011 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:20:08,011 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:20:08,012 DEBUG      Set DATADICT to aaa:ee.
+2015-11-16 14:20:08,012 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:20:08,012 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:20:41,499 DEBUG      Set Logging mode is True.
+2015-11-16 14:20:41,499 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:20:41,502 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:20:41,502 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:20:41,502 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:20:41,502 DEBUG      Set DATADICT to aaa:ee.
+2015-11-16 14:20:41,502 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:20:41,503 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:20:41,503 ERROR      POST data must set in POST Method.
+2015-11-16 14:20:41,503 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:23:10,911 DEBUG      Set Logging mode is True.
+2015-11-16 14:23:10,911 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:23:10,914 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:23:10,914 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:23:10,914 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:23:10,915 DEBUG      Set DATADICT to aaa:ee.
+2015-11-16 14:23:10,915 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:23:10,915 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:23:10,915 ERROR      Not found any inject point.
+2015-11-16 14:23:10,915 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:23:15,487 DEBUG      Set Logging mode is True.
+2015-11-16 14:23:15,488 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:23:15,488 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:23:15,488 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:23:15,489 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:23:15,489 DEBUG      Set DATADICT to aaa:ee*.
+2015-11-16 14:23:15,489 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:23:15,489 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:23:15,489 ERROR      Not found any inject point.
+2015-11-16 14:23:15,489 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:24:49,336 DEBUG      Set Logging mode is True.
+2015-11-16 14:24:49,336 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:24:49,339 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:24:49,339 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:24:49,340 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:24:49,340 DEBUG      Set DATADICT to aaa:ee*.
+2015-11-16 14:24:49,340 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:24:49,340 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:24:49,340 DEBUG      Found 1 inject point in DATADICT
+2015-11-16 14:24:49,340 DEBUG      Set inject point to: DATADICT
+2015-11-16 14:24:49,340 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:24:56,328 DEBUG      Set Logging mode is True.
+2015-11-16 14:24:56,329 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:24:56,332 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:24:56,332 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:24:56,332 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:24:56,332 DEBUG      Set DATADICT to aaa:ee*.
+2015-11-16 14:24:56,332 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:24:56,332 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:24:56,332 DEBUG      Found 1 inject point in DATADICT
+2015-11-16 14:24:56,333 DEBUG      Set inject point to: DATADICT
+2015-11-16 14:24:56,333 WARNING    Inject point is ready.
+2015-11-16 14:24:56,333 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:24:56,333 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:27:24,537 DEBUG      Set Logging mode is True.
+2015-11-16 14:27:24,537 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:27:24,540 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:27:24,540 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:27:24,540 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:27:24,541 DEBUG      Set DATADICT to aaa:ee*.
+2015-11-16 14:27:24,541 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:27:24,541 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:27:24,541 DEBUG      Found 1 inject point in DATADICT
+2015-11-16 14:27:24,541 DEBUG      Set inject point to: DATADICT
+2015-11-16 14:27:24,541 WARNING    Inject point is ready.
+2015-11-16 14:27:24,541 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:27:24,541 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:28:06,088 DEBUG      Set Logging mode is True.
+2015-11-16 14:28:06,088 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:28:06,091 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:28:06,091 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:28:06,091 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:28:06,091 DEBUG      Set DATADICT to aaa:ee*.
+2015-11-16 14:28:06,092 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:28:06,092 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:28:06,092 DEBUG      Found 1 inject point in DATADICT
+2015-11-16 14:28:06,092 DEBUG      Set inject point to: DATADICT
+2015-11-16 14:28:06,092 WARNING    Inject point is ready.
+2015-11-16 14:28:06,092 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:28:06,092 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:30:13,387 DEBUG      Set Logging mode is True.
+2015-11-16 14:30:13,387 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:30:13,391 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:30:13,391 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:30:13,391 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:30:13,391 DEBUG      Set DATADICT to aaa:ee*.
+2015-11-16 14:30:13,391 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:30:13,391 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:30:13,391 DEBUG      Found 1 inject point in DATADICT
+2015-11-16 14:30:13,392 DEBUG      Set inject point to: DATADICT
+2015-11-16 14:30:13,392 WARNING    Inject point is ready.
+2015-11-16 14:30:13,392 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:30:13,392 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:30:34,709 DEBUG      Set Logging mode is True.
+2015-11-16 14:30:34,710 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:30:34,713 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:30:34,713 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:30:34,713 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:30:34,713 DEBUG      Set DATADICT to aaa:ee*.
+2015-11-16 14:30:34,713 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:30:34,713 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:30:34,714 DEBUG      Found 1 inject point in DATADICT
+2015-11-16 14:30:34,714 DEBUG      Set inject point to: DATADICT
+2015-11-16 14:30:34,714 WARNING    Inject point is ready.
+2015-11-16 14:30:34,714 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:30:34,719 DEBUG      Send POST request number 1 to www.whatismybrowser.com.
+2015-11-16 14:30:34,719 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:30:34,719 DEBUG      Cookie: {'aa': 'bb'}.
+2015-11-16 14:30:35,781 WARNING    Send 1 request.
+2015-11-16 14:30:35,781 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:30:48,788 DEBUG      Set Logging mode is True.
+2015-11-16 14:30:48,789 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:30:48,792 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:30:48,792 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:30:48,792 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:30:48,792 DEBUG      Set DATADICT to aaa:ee*.
+2015-11-16 14:30:48,793 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:30:48,793 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:30:48,793 DEBUG      Found 1 inject point in DATADICT
+2015-11-16 14:30:48,793 DEBUG      Set inject point to: DATADICT
+2015-11-16 14:30:48,793 WARNING    Inject point is ready.
+2015-11-16 14:30:48,793 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:30:48,798 DEBUG      Send POST request number 1 to www.whatismybrowser.com.
+2015-11-16 14:30:48,798 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:30:48,799 DEBUG      Cookie: {'aa': 'bb'}.
+2015-11-16 14:30:49,865 WARNING    Send 1 request.
+2015-11-16 14:30:49,866 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:31:49,699 DEBUG      Set Logging mode is True.
+2015-11-16 14:31:49,699 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:31:49,702 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:31:49,702 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:31:49,703 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:31:49,703 DEBUG      Set DATADICT to aaa:ee*.
+2015-11-16 14:31:49,703 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:31:49,703 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:31:49,703 DEBUG      Found 1 inject point in DATADICT
+2015-11-16 14:31:49,703 DEBUG      Set inject point to: DATADICT
+2015-11-16 14:31:49,703 WARNING    Inject point is ready.
+2015-11-16 14:31:49,704 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:31:49,709 DEBUG      Send POST request number 1 to www.whatismybrowser.com.
+2015-11-16 14:31:49,709 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:31:49,709 DEBUG      Cookie: {'aa': 'bb'}.
+2015-11-16 14:31:50,729 WARNING    Send 1 request.
+2015-11-16 14:31:50,729 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:32:42,214 DEBUG      Set Logging mode is True.
+2015-11-16 14:32:42,215 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:32:42,218 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:32:42,218 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:32:42,218 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:32:42,218 DEBUG      Set DATADICT to aaa:ee*.
+2015-11-16 14:32:42,219 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:32:42,219 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:32:42,219 DEBUG      Found 1 inject point in DATADICT
+2015-11-16 14:32:42,219 DEBUG      Set inject point to: DATADICT
+2015-11-16 14:32:42,219 WARNING    Inject point is ready.
+2015-11-16 14:32:42,219 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:32:42,224 DEBUG      Send POST request number 1 to www.whatismybrowser.com.
+2015-11-16 14:32:42,224 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:32:42,225 DEBUG      Cookie: {'aa': 'bb'}.
+2015-11-16 14:32:42,225 DEBUG      Data: {'aaa': 'eesss'}.
+2015-11-16 14:32:43,281 WARNING    Send 1 request.
+2015-11-16 14:32:43,281 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:38:25,257 DEBUG      Set Logging mode is True.
+2015-11-16 14:38:25,257 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:38:25,258 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:38:25,258 DEBUG      Set URL to https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:38:25,258 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:38:25,258 DEBUG      Set DATADICT to aaa:ee*.
+2015-11-16 14:38:25,258 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:38:25,258 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:38:25,258 DEBUG      Found 1 inject point in DATADICT
+2015-11-16 14:38:25,259 DEBUG      Set inject point to: DATADICT
+2015-11-16 14:38:25,259 WARNING    Inject point is ready.
+2015-11-16 14:38:25,259 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:38:25,264 DEBUG      Send POST request number 1 to www.whatismybrowser.com.
+2015-11-16 14:38:25,264 DEBUG      URL: https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending.
+2015-11-16 14:38:25,264 DEBUG      Cookie: {'aa': 'bb'}.
+2015-11-16 14:38:25,265 DEBUG      Data: {'aaa': 'eesss'}.
+2015-11-16 14:38:26,319 WARNING    Send 1 request.
+2015-11-16 14:38:26,319 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:38:35,365 DEBUG      Set Logging mode is True.
+2015-11-16 14:38:35,365 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:38:35,365 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:38:35,365 DEBUG      Set URL to http://posttestserver.com/post.php.
+2015-11-16 14:38:35,366 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:38:35,366 DEBUG      Set DATADICT to aaa:ee*.
+2015-11-16 14:38:35,366 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:38:35,366 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:38:35,366 DEBUG      Found 1 inject point in DATADICT
+2015-11-16 14:38:35,366 DEBUG      Set inject point to: DATADICT
+2015-11-16 14:38:35,366 WARNING    Inject point is ready.
+2015-11-16 14:38:35,366 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:38:35,372 DEBUG      Send POST request number 1 to posttestserver.com.
+2015-11-16 14:38:35,372 DEBUG      URL: http://posttestserver.com/post.php.
+2015-11-16 14:38:35,372 DEBUG      Cookie: {'aa': 'bb'}.
+2015-11-16 14:38:35,372 DEBUG      Data: {'aaa': 'eesss'}.
+2015-11-16 14:38:35,957 WARNING    Send 1 request.
+2015-11-16 14:38:35,958 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:43:24,444 DEBUG      Set Logging mode is True.
+2015-11-16 14:43:24,445 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:43:24,447 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:43:24,448 DEBUG      Set URL to http://posttestserver.com/post.php.
+2015-11-16 14:43:24,448 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:43:24,448 DEBUG      Set DATADICT to aaa:ee*.
+2015-11-16 14:43:24,448 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:43:24,448 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:43:24,448 DEBUG      Found 1 inject point in DATADICT
+2015-11-16 14:43:24,449 DEBUG      Set inject point to: DATADICT
+2015-11-16 14:43:24,449 WARNING    Inject point is ready.
+2015-11-16 14:43:24,449 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:43:24,454 DEBUG      Send POST request number 1 to posttestserver.com.
+2015-11-16 14:43:24,454 DEBUG      URL: http://posttestserver.com/post.php.
+2015-11-16 14:43:24,454 DEBUG      Cookie: {'aa': 'bb'}.
+2015-11-16 14:43:24,454 DEBUG      Data: {'aaa': 'eesss'}.
+2015-11-16 14:43:25,016 WARNING    Send 1 request.
+2015-11-16 14:43:25,016 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:43:30,512 DEBUG      Set Logging mode is True.
+2015-11-16 14:43:30,513 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:43:30,513 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:43:30,513 DEBUG      Set URL to http://posttestserver.com/post.php.
+2015-11-16 14:43:30,513 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:43:30,513 DEBUG      Set DATADICT to aaa:ee.
+2015-11-16 14:43:30,514 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:43:30,514 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:43:30,514 ERROR      Not found any inject point.
+2015-11-16 14:43:30,514 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:43:33,487 DEBUG      Set Logging mode is True.
+2015-11-16 14:43:33,487 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:43:33,487 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:43:33,487 DEBUG      Set URL to http://posttestserver.com/post.php.
+2015-11-16 14:43:33,487 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:43:33,488 DEBUG      Set DATADICT to aaa.
+2015-11-16 14:43:33,488 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:43:33,488 ERROR      Set DATADICT error in: aaa. Wrong syntax <data_name1>:<data_value1>.
+2015-11-16 14:43:33,488 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:43:33,488 ERROR      Not found any inject point.
+2015-11-16 14:43:33,488 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:43:38,236 DEBUG      Set Logging mode is True.
+2015-11-16 14:43:38,237 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:43:38,237 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:43:38,237 DEBUG      Set URL to http://posttestserver.com/post.php.
+2015-11-16 14:43:38,237 DEBUG      Set COOKIE to aa:bb.
+2015-11-16 14:43:38,237 DEBUG      Set DATADICT to aaa:aa.
+2015-11-16 14:43:38,237 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:43:38,238 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:43:38,238 ERROR      Not found any inject point.
+2015-11-16 14:43:38,238 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:43:45,366 DEBUG      Set Logging mode is True.
+2015-11-16 14:43:45,366 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:43:45,367 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:43:45,367 DEBUG      Set URL to http://posttestserver.com/post.php.
+2015-11-16 14:43:45,367 DEBUG      Set COOKIE to aa:b*b.
+2015-11-16 14:43:45,367 DEBUG      Set DATADICT to aaa:aa.
+2015-11-16 14:43:45,367 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:43:45,367 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:43:45,368 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 14:43:45,368 DEBUG      Set inject point to: COOKIE
+2015-11-16 14:43:45,368 WARNING    Inject point is ready.
+2015-11-16 14:43:45,368 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:43:45,373 DEBUG      Send POST request number 1 to posttestserver.com.
+2015-11-16 14:43:45,374 DEBUG      URL: http://posttestserver.com/post.php.
+2015-11-16 14:43:45,374 DEBUG      Cookie: {'aa': 'bsssb'}.
+2015-11-16 14:43:45,374 DEBUG      Data: {'aaa': 'aa'}.
+2015-11-16 14:43:45,733 WARNING    Send 1 request.
+2015-11-16 14:43:45,734 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:45:02,820 DEBUG      Set Logging mode is True.
+2015-11-16 14:45:02,820 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:45:02,820 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:45:02,820 DEBUG      Set URL to http://posttestserver.com/post.php.
+2015-11-16 14:45:02,820 DEBUG      Set COOKIE to aa:b*b.
+2015-11-16 14:45:02,821 DEBUG      Set DATADICT to aaa:aa.
+2015-11-16 14:45:02,821 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:45:02,821 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:45:02,821 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 14:45:02,821 DEBUG      Set inject point to: COOKIE
+2015-11-16 14:45:02,821 WARNING    Inject point is ready.
+2015-11-16 14:45:02,821 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:45:02,827 DEBUG      Send POST request number 1 to posttestserver.com.
+2015-11-16 14:45:02,827 DEBUG      URL: http://posttestserver.com/post.php.
+2015-11-16 14:45:02,827 DEBUG      Cookie: {'aa': 'bsssb'}.
+2015-11-16 14:45:02,827 DEBUG      Data: {'aaa': 'aa'}.
+2015-11-16 14:45:03,375 WARNING    Send 1 request.
+2015-11-16 14:45:03,375 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:45:27,628 DEBUG      Set Logging mode is True.
+2015-11-16 14:45:27,628 INFO       Try to load: blind_sql_injection.
+2015-11-16 14:45:27,631 DEBUG      Loading module: exploit/sql_injection/blind_sql_injection.
+2015-11-16 14:45:27,631 DEBUG      Set URL to http://posttestserver.com/post.php.
+2015-11-16 14:45:27,631 DEBUG      Set COOKIE to aa:b*b.
+2015-11-16 14:45:27,632 DEBUG      Set DATADICT to aaa:aa.
+2015-11-16 14:45:27,632 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:45:27,632 DEBUG      URL include http/https, don`t need add prefix.
+2015-11-16 14:45:27,632 DEBUG      Found 1 inject point in COOKIE
+2015-11-16 14:45:27,632 DEBUG      Set inject point to: COOKIE
+2015-11-16 14:45:27,632 WARNING    Inject point is ready.
+2015-11-16 14:45:27,632 WARNING    Started Module: Blind SQL injection Module.
+2015-11-16 14:45:27,638 DEBUG      Send POST request number 1 to posttestserver.com.
+2015-11-16 14:45:27,638 DEBUG      URL: http://posttestserver.com/post.php.
+2015-11-16 14:45:27,638 DEBUG      Cookie: {'aa': 'bsssb'}.
+2015-11-16 14:45:27,638 DEBUG      Data: {'aaa': 'aa'}.
+2015-11-16 14:45:27,998 WARNING    Send 1 request.
+2015-11-16 14:45:27,998 INFO       Finish load module: exploit/sql_injection/blind_sql_injection.

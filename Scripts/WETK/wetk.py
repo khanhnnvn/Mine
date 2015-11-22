@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #author: namhb
-import sys, time, requests, os, logging, argparse, datetime, platform, pkgutil, imp
+import sys, time, requests, os, logging, argparse, datetime, platform, pkgutil, imp, re
 
 '''
 How to use:
@@ -10,17 +10,19 @@ How to use:
 class WEToolKit:
 	def __init__(self):
 		#Const
-		self.dirPath				=		os.getcwd() 										# relative directory path
-		self.filePath				=		os.path.abspath(__file__) 							# absolute file path
-		self.fileName				=		os.path.basename(__file__) 							# the file name only
-		self.system					=		platform.system()									# check OS
-		self.debug					=		False												# default disable debug
-		self.version 				=		"0.0.1a"											# TK version
-		self.logFolder				=		"logs"												# Log store
-		self.modulesFolder			=		"modules"											# Modules folder 
-		self.moduleFolderPath		= 		os.path.join(self.dirPath,self.modulesFolder) 		# Modules folder Path
-		self.logPrefix				=		"wetk"												# Log Prefix
-		self.moduleExt				=		"py"												# python module extension file
+		self.dirPath					=		os.getcwd() 										# relative directory path
+		self.filePath					=		os.path.abspath(__file__) 							# absolute file path
+		self.fileName					=		os.path.basename(__file__) 							# the file name only
+		self.system						=		platform.system()									# check OS
+		self.debug						=		False												# default disable debug
+		self.version 					=		"0.0.1a"											# TK version
+		self.logFolder					=		"logs"												# Log store
+		self.modulesFolder				=		"modules"											# Modules folder 
+		self.libsFolder 				=		"libs"												# Libs folder
+		self.moduleFolderPath			= 		os.path.join(self.dirPath,self.modulesFolder) 		# Modules folder Path
+		self.libsFolderPath				= 		os.path.join(self.dirPath,self.libsFolder) 			# Modules folder Path
+		self.logPrefix					=		"wetk"												# Log Prefix
+		self.moduleExt					=		"py"												# python module extension file
 		# Start
 		self.run()
 	def run(self):
@@ -30,22 +32,22 @@ class WEToolKit:
 		self.logConfig()
 		# Use module
 		if(self.args.use != None):
-			self.modulePath			=		self.args.use
+			self.modulePath				=		self.args.use
 			self.loadModule(self.modulePath)
 			exit()
 		if(self.args.list != None):
 			self.listModule()
 			exit()
 	def listModule(self):
-		self.logger.info("List Modules");
+		self.logger.info("List Modules")
 		print("List Modules")
 		print("============")
 		print("")
-		print("\t{0:50s}{1:10s}{2:10s}{3}".format("Name","Version","Rank","Description"))
-		print("\t{0:50s}{1:10s}{2:10s}{3}".format("----","-------","----","-----------"))
+		print("\t{0:100s}{1:10s}{2:10s}{3}".format("Name","Version","Rank","Description"))
+		print("\t{0:100s}{1:10s}{2:10s}{3}".format("----","-------","----","-----------"))
 		print("")
-		prefixLength				=		len(self.moduleFolderPath)
-		time 						=		1
+		prefixLength					=		len(self.moduleFolderPath)
+		time 							=		1
 		for path, subdirs, files in os.walk(self.moduleFolderPath):
 			for name in files:
 				if(name[-3:] == ".py"):
@@ -70,7 +72,7 @@ class WEToolKit:
 						# Remove / first
 						if(name[0] == "/"):
 							name 		=		name[1:]
-						print("\t{0:50s}{1:10s}{2:10s}{3}".format(name,wetkModule.getVersion(),wetkModule.getRank(),wetkModule.getDescription()))
+						print("\t{0:100s}{1:10s}{2:10s}{3}".format(name,wetkModule.getVersion(),wetkModule.getRank(),wetkModule.getDescription()))
 					except Exception, e:
 						raise
 					else:
@@ -78,11 +80,11 @@ class WEToolKit:
 					finally:
 						pass
 	def loadModule(self, moduleName):
-		modulePath 					=		moduleName.split("/")								# Split by /
+		modulePath 						=		moduleName.split("/")								# Split by /
 		self.logger.info("Try to load: {0}.".format(modulePath[-1]))							# Print module name as last Element
 		try:
-			moduleFileName			=		"{0}.{1}".format(os.path.join(moduleName),self.moduleExt)
-			moduleFilePath			=		os.path.join(self.dirPath,self.modulesFolder,moduleFileName)
+			moduleFileName				=		"{0}.{1}".format(os.path.join(moduleName),self.moduleExt)
+			moduleFilePath				=		os.path.join(self.dirPath,self.modulesFolder,moduleFileName)
 			imp.load_source("wetkModule",moduleFilePath)
 			import wetkModule
 			wetkModule.init(self.logger)
@@ -107,74 +109,69 @@ class WEToolKit:
 			self.logger.info("Finish load module: {0}.".format(moduleName))
 		
 	def getArument(self):
-		parser 						= 		argparse.ArgumentParser(description="WETK - Web Exploit ToolKit - Version {0}".format(self.version))
-		# URL config
-		parser.add_argument(
-			'--url',
-			help 					=		'URL'
-			)
+		parser 							= 		argparse.ArgumentParser(description="WETK - Web Exploit ToolKit - Version {0}".format(self.version))
 		# Enable debug
 		parser.add_argument(
 			'-d',
 			'--debug',
-			help 					=		'enable/disable debug',
-			default					=		'false',
-			action					=		'store_true',
+			help 						=		'enable/disable debug',
+			default						=		'false',
+			action						=		'store_true',
 			)
 		# Show version
 		parser.add_argument(
 			'-v',
 			'--version',
-			help 					=		'WETK version',
-			action					=		'store_true',
+			help 						=		'WETK version',
+			action						=		'store_true',
 			)
 		# Update Framework
 		parser.add_argument(
 			'--update',
-			help 					=		'Update Framework',
-			action					=		'store_true',
+			help 						=		'Update Framework',
+			action						=		'store_true',
 			)
 		# List Module
 		parser.add_argument(
 			'-l',
 			'--list',
-			help 					=		'List all modules',
-			action					=		'store_true',
+			help 						=		'List all modules',
+			action						=		'store_true',
 			)
 		# Use Module
 		parser.add_argument(
 			'-u',
 			'--use',
-			help 					=		'Use module'
+			help 						=		'Use module'
 			)
 		# Show module help
 		parser.add_argument(
 			'--showhelp',
-			help 					=		'Show module Help',
-			default					=		'false',
-			action					=		'store_true',
+			help 						=		'Show module Help',
+			default						=		'false',
+			action						=		'store_true',
 			)
 		# Show module options
 		parser.add_argument(
 			'--showoptions',
-			help 					=		'Show module Options',
-			default					=		'false',
-			action					=		'store_true',
+			help 						=		'Show module Options',
+			default						=		'false',
+			action						=		'store_true',
 			)
 		# Check module options
 		parser.add_argument(
 			'--checkoptions',
-			help 					=		'Check module Options',
-			default					=		'false',
-			action					=		'store_true',
+			help 						=		'Check module Options',
+			default						=		'false',
+			action						=		'store_true',
 			)
 		# Use module options
 		parser.add_argument(
 			'-o',
 			'--useoptions',
-			help 					=		'Module Options',
-			default					=		None,
-			nargs					=		'+',
+			help 						=		'Module Options',
+			default						=		None,
+			nargs						=		'+',
 			)
 		
 		
@@ -184,46 +181,56 @@ class WEToolKit:
 			parser.print_help()
 			exit(0)
 		# Parse and save agrument
-		self.args 					= 		parser.parse_args()
+		self.args 						= 		parser.parse_args()
 		
-
+	def writeErrorLog(self, log):
+		self.logger.error(log)
 	def logConfig(self):
-		self.logger 				= 		logging.getLogger(__name__)					# Logging constructor 
+		self.logger 					= 		logging.getLogger(__name__)					# Logging constructor 
 		# Set format
-		self.logFormat 				= 		logging.Formatter("%(asctime)-15s %(levelname)-10s %(message)s")				
+		self.logFormat 					= 		logging.Formatter("%(asctime)-15s %(levelname)-10s %(message)s")				
 		# Console Handler
-		consoleHandler 				= 		logging.StreamHandler()
+		consoleHandler 					= 		logging.StreamHandler()
 		consoleHandler.setFormatter(self.logFormat)
 		self.logger.addHandler(consoleHandler)
 		# File Handler
-		dateTimeNow 				= 		datetime.datetime.now()
-		logFileName					=		"{0}_{1}_{2}_{3}.log".format(
+		dateTimeNow 					= 		datetime.datetime.now()
+		logFileName						=		"{0}_{1}_{2}_{3}.log".format(
 												self.logPrefix,
 												dateTimeNow.year,
 												dateTimeNow.month,
 												dateTimeNow.day)
-		logFilePath					=		os.path.join(self.dirPath, self.logFolder, logFileName)
-		fileHandler 				= 		logging.FileHandler(logFilePath)
+		logFilePath						=		os.path.join(self.dirPath, self.logFolder, logFileName)
+		fileHandler 					= 		logging.FileHandler(logFilePath)
 		fileHandler.setFormatter(self.logFormat)
 		self.logger.addHandler(fileHandler)
 		# Get and set debug
 		if(self.args.debug == True):
-			self.debug 				=		True
+			self.debug 					=		True
 			self.logger.setLevel(logging.DEBUG)	
 		else:
-			self.debug 				=		False
+			self.debug 					=		False
 			self.logger.setLevel(logging.INFO)
 		self.logger.debug("Set Logging mode is {0}.".format(self.debug))
 
 
 ######---------------------------------------------#####
-
-
+tk 										=		None
+def logKeyboardInterrupt(log):
+	print(log)
 def main():
-	tk 								= 		WEToolKit()
+	global tk
+	tk 									= 		WEToolKit()
 
 
 if __name__ == "__main__":
-	main()
+	try:
+		main()
+	except KeyboardInterrupt:
+		logKeyboardInterrupt("User canncel.")
+	else:
+		pass
+	finally:
+		pass
 
 
