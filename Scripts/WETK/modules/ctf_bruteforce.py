@@ -2,7 +2,7 @@
 #author: namhb
 import sys, os
 # Load core module
-execfile(os.path.join(os.getcwd(), "libs", "coreHTTPModule.py"))
+from libs.coreHTTPModule import coreHTTPModule
 class Module(coreHTTPModule):
 	def __init__(self, logger):
 		coreHTTPModule.__init__(self, logger)

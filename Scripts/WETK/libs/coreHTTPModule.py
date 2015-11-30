@@ -1,10 +1,9 @@
 #!/usr/bin/python
 #author: namhb
-import re, requests, string
+import re, requests, urllib2, string
 class coreHTTPModule:
 	def __init__(self, logger):
 		self.logger							=	logger
-		
 		self.requestCount 					=	0
 		self.timeOut 						=	1000
 		self.injectPoint 					=	None
@@ -81,7 +80,7 @@ class coreHTTPModule:
 			if(self.options[i].find("=") > 0):
 				option 						=	self.options[i].split("=")
 				key 						=	option[0]
-				value 						=	option[1]
+				value 						=	"=".join(option[1:])
 			else:
 				key 						=	self.options[i]
 				value 						=	None

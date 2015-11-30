@@ -1,0 +1,5 @@
+Scanner:
+Port scan use nc:
+     nc -v -zv 10.30.13.103 1-10000 2>&1    
+Scan IP, Port wit shell scipt:
+     for i in $(seq 1 255); do nc -v -n -z -w 1 10.30.142.$i 5900; done

@@ -1,6 +1,7 @@
 #!/usr/bin/python
 #author: namhb
 import sys, time, requests, os, logging, argparse, datetime, platform, pkgutil, imp, re
+import libs.coreHTTPModule
 
 '''
 How to use:
