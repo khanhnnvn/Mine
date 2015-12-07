@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #author: namhb
-import re, requests, urllib2, string
+import re, requests, urllib2, string, time
 class coreHTTPModule:
 	def __init__(self, logger):
 		self.logger							=	logger
@@ -370,10 +370,15 @@ class coreHTTPModule:
 		self.logger.debug("Cookie: {0}.".format(cookie))
 		if(httpMethod == "post"):
 			self.logger.debug("Data: {0}.".format(dataDict))
+		# Send HTTP with python requests
+		startTime 							= 	time.time()
 		resp 								= 	s.send(
 				prepped,
-				# timeout 					=	self.timeOut,
+				timeout 					=	self.timeOut,
 			)
+		endTime 							=	time.time()
+		processTime 						=	endTime - startTime
+		self.logger.debug("Time: {0}.".format(processTime))
 		# Update number request
 		self.requestCount					+=	1
 		# Return response
