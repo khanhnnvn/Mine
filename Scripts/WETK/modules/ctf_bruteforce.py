@@ -4,8 +4,8 @@ import sys, os
 # Load core module
 from libs.coreHTTPModule import coreHTTPModule
 class Module(coreHTTPModule):
-	def __init__(self, logger):
-		coreHTTPModule.__init__(self, logger)
+	def __init__(self, logger, profile):
+		coreHTTPModule.__init__(self, logger, profile)
 		self.name						=	"CTF Brute Force Module"								# Changed
 		self.description 				=	"This is Module for Brute force, file fuzzing"
 		self.rank						=	"MEDIUM"												# Exploit level
@@ -44,5 +44,5 @@ class Module(coreHTTPModule):
 			r 								=	self.sendHTTPRequest(fileName)
 			print("\t{0:50s}{1:10s}{2}".format(fileName,str(r.status_code),r.headers["content-length"]))
 # Load control module
-execfile(os.path.join(os.getcwd(), "libs", "controlHTTPModule.py"))
+execfile(os.path.join(os.getcwd(), "libs", "controlModule.py"))
 

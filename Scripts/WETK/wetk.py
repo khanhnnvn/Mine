@@ -20,8 +20,10 @@ class WEToolKit:
 		self.logFolder					=		"logs"												# Log store
 		self.modulesFolder				=		"modules"											# Modules folder 
 		self.libsFolder 				=		"libs"												# Libs folder
+		self.profileFolder 				=		"profiles"											# Profile
 		self.moduleFolderPath			= 		os.path.join(self.dirPath,self.modulesFolder) 		# Modules folder Path
-		self.libsFolderPath				= 		os.path.join(self.dirPath,self.libsFolder) 			# Modules folder Path
+		self.libsFolderPath				= 		os.path.join(self.dirPath,self.libsFolder) 			# Libs Path
+		self.profileFolderPath			= 		os.path.join(self.dirPath,self.profileFolder) 		# Profiles Path
 		self.logPrefix					=		"wetk"												# Log Prefix
 		self.moduleExt					=		"py"												# python module extension file
 		# Start
@@ -31,6 +33,13 @@ class WEToolKit:
 		self.getArument()
 		# Log config
 		self.logConfig()
+		# Check Profile file
+		if(os.path.isfile(os.path.join(self.profileFolderPath, self.args.profile))):
+			# Profile exits
+			self.profilePath 			=		os.path.join(self.profileFolderPath, self.args.profile)
+		else:
+			self.logger.info("Can not load Profile {}".format(self.args.profile))
+			exit()
 		# Use module
 		if(self.args.use != None):
 			self.modulePath				=		self.args.use
@@ -39,6 +48,7 @@ class WEToolKit:
 		if(self.args.list != None):
 			self.listModule()
 			exit()
+
 	def listModule(self):
 		self.logger.info("List Modules")
 		print("List Modules")
@@ -63,7 +73,7 @@ class WEToolKit:
 							del wetkModule
 							import wetkModule
 						time 			+=1
-						wetkModule.init(self.logger)
+						wetkModule.init(self.logger, self.profilePath)
 						subFolder		=		path[prefixLength:]
 						if(len(subFolder)!=0):
 							subFolder	=		subFolder[1:]
@@ -88,7 +98,7 @@ class WEToolKit:
 			moduleFilePath				=		os.path.join(self.dirPath,self.modulesFolder,moduleFileName)
 			imp.load_source("wetkModule",moduleFilePath)
 			import wetkModule
-			wetkModule.init(self.logger)
+			wetkModule.init(self.logger, self.profilePath)
 		except Exception, e:
 			self.logger.debug(e)
 			self.logger.error("Error while load module {0}.".format(moduleName))
@@ -174,7 +184,13 @@ class WEToolKit:
 			default						=		None,
 			nargs						=		'+',
 			)
-		
+		# Use profile
+		parser.add_argument(
+			'-p',
+			'--profile',
+			help 						=		'Profle Options',
+			default						=		"default",
+			)
 		
 		# Set default is show help
 		if(len(sys.argv) < 2):

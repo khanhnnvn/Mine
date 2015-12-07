@@ -1,9 +1,9 @@
 ######---------------------------------------------#####
 module 										= 	None
 # Init module
-def init(logger):
+def init(logger, profile):
 	global module
-	module 									=	Module(logger)
+	module 									=	Module(logger, profile)
 # Get Name
 def getName():
 	global module

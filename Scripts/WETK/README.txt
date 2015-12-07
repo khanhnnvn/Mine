@@ -16,5 +16,6 @@ Need:
 	Load module
 
 Required:
-	python3
+	python
 	requests
+	sodan
