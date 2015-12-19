@@ -21,6 +21,8 @@ class Module(coreHTTPModule):
 				"phpmyadmin",
 				"mysqladmin",
 				"backup",
+				".git/",
+				".git",
 			]
 		self.help 						=	"" \
 			"This is help for module." \

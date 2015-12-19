@@ -4,6 +4,7 @@ import ConfigParser, os
 class baseModule:
 	def __init__(self, logger):
 		self.config								= 	ConfigParser.ConfigParser()
+		self.logger								=	logger
 	def profileParse(self, profilePath):
 		self.config.read(profilePath)
 	def getConfig(self, section, option):
@@ -12,6 +13,13 @@ class baseModule:
 			exit()
 		else:
 			return self.config.get(section,option)
+	def checkOptions(self, basicOptions):
+		check 								=	True
+		for key in basicOptions.keys():
+			if((basicOptions[key]["required"] == True) and (basicOptions[key]["currentSetting"]==None)):
+				check 						=	False
+				self.logger.error("Option {0} need configure.".format(key))
+				return check
 	def printOptionsLong(self, key, currentSetting, requiredString, description):
 		if(currentSetting != None):
 			blockSize 							=	45

@@ -1,0 +1,163 @@
+2015-12-13 12:18:02,871 DEBUG      Set Logging mode is True.
+2015-12-13 12:18:02,872 INFO       Try to load: google_search_subdomain.
+2015-12-13 12:18:03,957 DEBUG      Loading module: scanner/google_search_subdomain.
+2015-12-13 12:18:03,957 DEBUG      Set DOMAIN to mbbank.com.vn.
+2015-12-13 12:18:03,957 WARNING    Started Module: Google Search Subdomain Module.
+2015-12-13 12:18:03,957 DEBUG      Google Search Sub Domain: mbbank.com.vn
+2015-12-13 12:18:04,342 DEBUG      First Query: site:mbbank.com.vn
+2015-12-13 12:18:05,376 INFO       Finish load module: scanner/google_search_subdomain.
+2015-12-13 12:18:59,470 DEBUG      Set Logging mode is True.
+2015-12-13 12:18:59,470 INFO       Try to load: google_search_subdomain.
+2015-12-13 12:19:00,499 DEBUG      Loading module: scanner/google_search_subdomain.
+2015-12-13 12:19:00,499 DEBUG      Set DOMAIN to mbbank.com.vn.
+2015-12-13 12:19:00,499 WARNING    Started Module: Google Search Subdomain Module.
+2015-12-13 12:19:00,500 DEBUG      Google Search Sub Domain: mbbank.com.vn
+2015-12-13 12:19:00,788 DEBUG      First Query: site:mbbank.com.vn
+2015-12-13 12:19:01,669 INFO       Finish load module: scanner/google_search_subdomain.
+2015-12-13 12:29:51,916 DEBUG      Set Logging mode is True.
+2015-12-13 12:29:51,916 INFO       Try to load: google_search_subdomain.
+2015-12-13 12:29:52,944 DEBUG      Loading module: scanner/google_search_subdomain.
+2015-12-13 12:29:52,944 DEBUG      Set DOMAIN to mbbank.com.vn.
+2015-12-13 12:29:52,944 WARNING    Started Module: Google Search Subdomain Module.
+2015-12-13 12:29:52,945 DEBUG      Google Search Sub Domain: mbbank.com.vn
+2015-12-13 12:29:53,265 DEBUG      First Query: site:mbbank.com.vn
+2015-12-13 12:29:54,300 INFO       Finish load module: scanner/google_search_subdomain.
+2015-12-13 12:30:51,540 DEBUG      Set Logging mode is True.
+2015-12-13 12:30:51,541 INFO       Try to load: google_search_subdomain.
+2015-12-13 12:30:51,541 DEBUG      invalid syntax (google_search_subdomain.py, line 25)
+2015-12-13 12:30:51,541 ERROR      Error while load module scanner/google_search_subdomain.
+2015-12-13 12:30:51,541 INFO       Finish load module: scanner/google_search_subdomain.
+2015-12-13 12:31:05,873 DEBUG      Set Logging mode is True.
+2015-12-13 12:31:05,873 INFO       Try to load: google_search_subdomain.
+2015-12-13 12:31:05,874 DEBUG      invalid syntax (google_search_subdomain.py, line 25)
+2015-12-13 12:31:05,874 ERROR      Error while load module scanner/google_search_subdomain.
+2015-12-13 12:31:05,874 INFO       Finish load module: scanner/google_search_subdomain.
+2015-12-13 12:31:09,586 DEBUG      Set Logging mode is True.
+2015-12-13 12:31:09,588 INFO       Try to load: google_search_subdomain.
+2015-12-13 12:31:09,588 DEBUG      invalid syntax (google_search_subdomain.py, line 25)
+2015-12-13 12:31:09,588 ERROR      Error while load module scanner/google_search_subdomain.
+2015-12-13 12:31:09,588 INFO       Finish load module: scanner/google_search_subdomain.
+2015-12-13 12:31:20,802 DEBUG      Set Logging mode is True.
+2015-12-13 12:31:20,802 INFO       Try to load: google_search_subdomain.
+2015-12-13 12:31:21,831 DEBUG      Loading module: scanner/google_search_subdomain.
+2015-12-13 12:31:21,832 DEBUG      Set DOMAIN to mbbank.com.vn.
+2015-12-13 12:31:21,832 WARNING    Started Module: Google Search Subdomain Module.
+2015-12-13 12:31:21,832 DEBUG      Google Search Sub Domain: mbbank.com.vn
+2015-12-13 12:31:22,128 DEBUG      First Query: site:mbbank.com.vn
+2015-12-13 12:31:23,044 INFO       Finish load module: scanner/google_search_subdomain.
+2015-12-13 12:32:36,626 DEBUG      Set Logging mode is True.
+2015-12-13 12:32:36,626 INFO       Try to load: google_search_subdomain.
+2015-12-13 12:32:37,657 DEBUG      Loading module: scanner/google_search_subdomain.
+2015-12-13 12:32:37,657 DEBUG      Set DOMAIN to mbbank.com.vn.
+2015-12-13 12:32:37,657 WARNING    Started Module: Google Search Subdomain Module.
+2015-12-13 12:32:37,657 DEBUG      Google Search Sub Domain: mbbank.com.vn
+2015-12-13 12:32:37,953 DEBUG      First Query: site:mbbank.com.vn
+2015-12-13 12:32:38,906 INFO       Finish load module: scanner/google_search_subdomain.
+2015-12-13 12:33:36,239 DEBUG      Set Logging mode is True.
+2015-12-13 12:33:36,240 INFO       Try to load: google_search_subdomain.
+2015-12-13 12:33:37,271 DEBUG      Loading module: scanner/google_search_subdomain.
+2015-12-13 12:33:37,271 DEBUG      Set DOMAIN to mbbank.com.vn.
+2015-12-13 12:33:37,271 WARNING    Started Module: Google Search Subdomain Module.
+2015-12-13 12:33:37,271 DEBUG      Google Search Sub Domain: mbbank.com.vn
+2015-12-13 12:33:37,499 DEBUG      First Query: site:mbbank.com.vn
+2015-12-13 12:33:38,706 INFO       Found: thongtinthitruong.mbbank.com.vn
+2015-12-13 12:33:38,729 INFO       Found: www.mbbank.com.vn
+2015-12-13 12:33:38,989 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=g2VtVoaACsnHuAT2sJToBw&start=10&sa=N
+2015-12-13 12:33:45,005 INFO       Found: moneytovietnam.mbbank.com.vn
+2015-12-13 12:33:45,022 INFO       Found: emb.mbbank.com.vn
+2015-12-13 12:33:45,036 INFO       Found: ebanking.mbbank.com.vn
+2015-12-13 12:33:45,072 INFO       Found: crm.mbbank.com.vn
+2015-12-13 12:33:45,285 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=hGVtVpj7IIOauQTn54aQCw&start=20&sa=N
+2015-12-13 12:33:46,503 INFO       Finish load module: scanner/google_search_subdomain.
+2015-12-13 12:34:36,416 DEBUG      Set Logging mode is True.
+2015-12-13 12:34:36,416 INFO       Try to load: google_search_subdomain.
+2015-12-13 12:34:37,447 DEBUG      Loading module: scanner/google_search_subdomain.
+2015-12-13 12:34:37,447 DEBUG      Set DOMAIN to mbbank.com.vn.
+2015-12-13 12:34:37,447 WARNING    Started Module: Google Search Subdomain Module.
+2015-12-13 12:34:37,447 DEBUG      Google Search Sub Domain: mbbank.com.vn
+2015-12-13 12:34:37,741 DEBUG      First Query: site:mbbank.com.vn
+2015-12-13 12:34:38,611 INFO       Finish load module: scanner/google_search_subdomain.
+2015-12-13 12:35:11,051 DEBUG      Set Logging mode is True.
+2015-12-13 12:35:11,052 INFO       Try to load: google_search_subdomain.
+2015-12-13 12:35:12,080 DEBUG      Loading module: scanner/google_search_subdomain.
+2015-12-13 12:35:12,081 DEBUG      Set DOMAIN to mbbank.com.vn.
+2015-12-13 12:35:12,081 WARNING    Started Module: Google Search Subdomain Module.
+2015-12-13 12:35:12,081 DEBUG      Google Search Sub Domain: mbbank.com.vn
+2015-12-13 12:35:12,306 DEBUG      First Query: site:mbbank.com.vn
+2015-12-13 12:35:13,357 INFO       Found: thongtinthitruong.mbbank.com.vn
+2015-12-13 12:35:13,379 INFO       Found: www.mbbank.com.vn
+2015-12-13 12:35:13,614 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=4WVtVsKHO9SPuAThvLiIDw&start=10&sa=N
+2015-12-13 12:35:19,592 INFO       Found: moneytovietnam.mbbank.com.vn
+2015-12-13 12:35:19,607 INFO       Found: emb.mbbank.com.vn
+2015-12-13 12:35:19,620 INFO       Found: ebanking.mbbank.com.vn
+2015-12-13 12:35:19,653 INFO       Found: crm.mbbank.com.vn
+2015-12-13 12:35:19,848 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=42VtVsqCCtO-uASe7omICA&start=20&sa=N
+2015-12-13 12:35:21,850 INFO       Finish load module: scanner/google_search_subdomain.
+2015-12-13 12:35:56,938 DEBUG      Set Logging mode is True.
+2015-12-13 12:35:56,938 INFO       Try to load: google_search_subdomain.
+2015-12-13 12:35:57,968 DEBUG      Loading module: scanner/google_search_subdomain.
+2015-12-13 12:35:57,969 DEBUG      Set DOMAIN to mbbank.com.vn.
+2015-12-13 12:35:57,969 WARNING    Started Module: Google Search Subdomain Module.
+2015-12-13 12:35:57,969 DEBUG      Google Search Sub Domain: mbbank.com.vn
+2015-12-13 12:36:01,669 DEBUG      First Query: site:mbbank.com.vn
+2015-12-13 12:36:02,055 INFO       Finish load module: scanner/google_search_subdomain.
+2015-12-13 12:37:02,720 DEBUG      Set Logging mode is True.
+2015-12-13 12:37:02,720 INFO       Try to load: google_search_subdomain.
+2015-12-13 12:37:03,750 DEBUG      Loading module: scanner/google_search_subdomain.
+2015-12-13 12:37:03,750 DEBUG      Set DOMAIN to mbbank.com.vn.
+2015-12-13 12:37:03,750 WARNING    Started Module: Google Search Subdomain Module.
+2015-12-13 12:37:03,751 DEBUG      Google Search Sub Domain: mbbank.com.vn
+2015-12-13 12:37:04,075 DEBUG      First Query: site:mbbank.com.vn
+2015-12-13 12:37:05,132 INFO       Found: thongtinthitruong.mbbank.com.vn
+2015-12-13 12:37:05,154 INFO       Found: www.mbbank.com.vn
+2015-12-13 12:37:05,407 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=UWZtVv3DK9GouQTSr5DwDg&start=10&sa=N
+2015-12-13 12:37:11,418 INFO       Found: moneytovietnam.mbbank.com.vn
+2015-12-13 12:37:11,434 INFO       Found: emb.mbbank.com.vn
+2015-12-13 12:37:11,447 INFO       Found: ebanking.mbbank.com.vn
+2015-12-13 12:37:11,484 INFO       Found: crm.mbbank.com.vn
+2015-12-13 12:37:11,686 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=UmZtVo6qOtSNuAS4h7XwBg&start=20&sa=N
+2015-12-13 12:37:17,980 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=WWZtVpeuDsqxuAS3i4Jw&start=30&sa=N
+2015-12-13 12:37:24,333 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=X2ZtVtOmII_GuATb2IawCg&start=40&sa=N
+2015-12-13 12:37:30,616 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=ZWZtVu_pNcyNuASkk4XwDQ&start=50&sa=N
+2015-12-13 12:37:36,903 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=bGZtVuSQCtPhuQTd767wDQ&start=60&sa=N
+2015-12-13 12:37:43,310 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=cmZtVvzkG8aGuASYkKuYBw&start=70&sa=N
+2015-12-13 12:37:49,372 INFO       Found: moneytovietnam.mbbank.com.vn:86
+2015-12-13 12:37:49,615 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=eGZtVoe1NIOJuASak6GgCA&start=80&sa=N
+2015-12-13 12:37:55,911 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=f2ZtVuKDCs3IuAThoJrYCQ&start=90&sa=N
+2015-12-13 12:38:01,893 INFO       Found: mbplus.mbbank.com.vn
+2015-12-13 12:38:02,266 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=hWZtVoiJHM6KuwSWopDAAg&start=100&sa=N
+2015-12-13 12:38:08,746 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=i2ZtVoXoMZOouwTW8YHYCQ&start=110&sa=N
+2015-12-13 12:38:15,063 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=kmZtVof6EcyRuAT7qKeQBw&start=120&sa=N
+2015-12-13 12:38:21,392 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=mGZtVr-tJYS_uATtuIzoCg&start=130&sa=N
+2015-12-13 12:38:27,736 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=nmZtVvuvOZC1uQTBl4qgAw&start=140&sa=N
+2015-12-13 12:38:34,173 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=pWZtVve0EYuiuQTa0aTACA&start=150&sa=N
+2015-12-13 12:38:40,625 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=q2ZtVruILIH8ugSbq52QDQ&start=160&sa=N
+2015-12-13 12:38:47,068 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=smZtVo7LCpGOuASJvKrgDw&start=170&sa=N
+2015-12-13 12:38:53,513 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=uGZtVt_lJYG2uQS-u6nADw&start=180&sa=N
+2015-12-13 12:38:59,814 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=v2ZtVt71A8mJuQSfrb2oDw&start=190&sa=N
+2015-12-13 12:39:06,118 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=xWZtVqCVFsXmuQTYw4_oAw&start=200&sa=N
+2015-12-13 12:39:12,425 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=y2ZtVvfXKITnuQTHz4mgBw&start=210&sa=N
+2015-12-13 12:39:18,776 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=0WZtVr-xO5ePuASt9I7QAg&start=220&sa=N
+2015-12-13 12:39:25,102 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=2GZtVvjmE4zhuQS6mIuYBA&start=230&sa=N
+2015-12-13 12:39:31,576 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=3mZtVvHdJ9CSuATciJXoDA&start=240&sa=N
+2015-12-13 12:39:38,040 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=5WZtVr7RB4SQuASk9bT4Bg&start=250&sa=N
+2015-12-13 12:39:44,479 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=62ZtVqzzI46BuwS81IGAAg&start=260&sa=N
+2015-12-13 12:39:50,809 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=8mZtVqnYAYTbuQTWi73AAQ&start=270&sa=N
+2015-12-13 12:39:57,267 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=-GZtVsnzFcfJuAS6k4iYDg&start=280&sa=N
+2015-12-13 12:40:03,630 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=_mZtVpn_MY6XuASxsJXQCw&start=290&sa=N
+2015-12-13 12:40:09,971 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=BWdtVoftCo_IuASZ2oD4Cw&start=300&sa=N
+2015-12-13 12:40:16,400 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=C2dtVrziH9KPuASplKL4Aw&start=310&sa=N
+2015-12-13 12:40:22,865 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=EWdtVsX3OdCJuATtoo3oAQ&start=320&sa=N
+2015-12-13 12:40:29,188 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=GGdtVtmdGYe4uATbyYn4DA&start=330&sa=N
+2015-12-13 12:40:35,669 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=HmdtVon6LMygugTKgIjQAQ&start=340&sa=N
+2015-12-13 12:40:42,128 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=JWdtVvmeDc2ruQT4t6W4BQ&start=350&sa=N
+2015-12-13 12:40:48,563 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=K2dtVu_QKcyOuATdh6uoDQ&start=360&sa=N
+2015-12-13 12:40:54,912 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=MmdtVvrnBseiugTigYj4AQ&start=370&sa=N
+2015-12-13 12:41:01,387 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=OGdtVsWMHIm7uATkvKKIBA&start=380&sa=N
+2015-12-13 12:41:07,806 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=PmdtVpqGOYiXuAS04oLwAQ&start=390&sa=N
+2015-12-13 12:41:14,260 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=RWdtVp3PFZWXuATb2qHAAg&start=400&sa=N
+2015-12-13 12:41:20,825 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=S2dtVtO6NtCVuQTOlaaIAQ&start=410&sa=N
+2015-12-13 12:41:27,148 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=UmdtVvHgFsPsugSC-IGIAw&start=420&sa=N
+2015-12-13 12:41:33,621 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=WGdtVrC4Ks6NuATOo7CoAg&start=430&sa=N
+2015-12-13 12:41:40,102 DEBUG      Go to next page https://www.google.com.vn/search?q=site:mbbank.com.vn&hl=vi&gbv=2&prmd=ivns&ei=X2dtVu-iCs29ugSBq7L4AQ&start=440&sa=N
+2015-12-13 12:41:45,533 ERROR      Captcha found, exit now
