@@ -1,0 +1,7 @@
+
+Scanner:
+git clone https://github.com/robertdavidgraham/masscan
+
+
+Decompiler IDA:
+https://derevenets.com/
