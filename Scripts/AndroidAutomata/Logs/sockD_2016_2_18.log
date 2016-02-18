@@ -1,0 +1,114 @@
+2016-02-18 16:41:59,324 DEBUG      Pid is 787
+2016-02-18 16:43:00,908 DEBUG      Port is not listen
+2016-02-18 16:46:05,740 DEBUG      Pid is 4676
+2016-02-18 16:47:25,114 DEBUG      Port is not listen
+2016-02-18 16:47:41,697 DEBUG      Pid is 5274
+2016-02-18 16:47:51,819 DEBUG      Pid is 5274
+2016-02-18 16:50:35,566 DEBUG      Pid is 5958
+2016-02-18 16:50:36,569 ERROR      Can not kill pid 5958
+2016-02-18 16:50:39,852 DEBUG      Port is not listen
+2016-02-18 16:50:41,491 DEBUG      Port is not listen
+2016-02-18 16:50:42,968 DEBUG      Port is not listen
+2016-02-18 16:50:44,267 DEBUG      Port is not listen
+2016-02-18 16:50:45,458 DEBUG      Port is not listen
+2016-02-18 16:51:11,349 DEBUG      Pid is 7364
+2016-02-18 16:51:12,351 ERROR      Can not kill pid 7364
+2016-02-18 16:51:35,708 DEBUG      Pid is 7625
+2016-02-18 16:51:37,711 ERROR      Can not kill pid 7625
+2016-02-18 16:52:04,245 DEBUG      Pid is 8052
+2016-02-18 16:52:06,274 DEBUG      Port is not listen
+2016-02-18 16:52:06,275 DEBUG      Killed process 8052
+2016-02-18 16:52:27,072 DEBUG      Pid is 8314
+2016-02-18 16:52:28,101 DEBUG      Port is not listen
+2016-02-18 16:52:28,101 DEBUG      Killed process 8314
+2016-02-18 16:56:09,071 DEBUG      Port is not listen
+2016-02-18 16:59:27,438 DEBUG      Port is not listen
+2016-02-18 16:59:57,885 DEBUG      Port is not listen
+2016-02-18 17:00:33,260 DEBUG      Port is not listen
+2016-02-18 17:00:58,163 DEBUG      Port is not listen
+2016-02-18 17:02:01,656 DEBUG      Port is not listen
+2016-02-18 17:03:12,607 DEBUG      Pid is 13237
+2016-02-18 17:03:13,638 DEBUG      Port is not listen
+2016-02-18 17:03:13,639 DEBUG      Killed process 13237
+2016-02-18 17:03:50,984 DEBUG      Port is not listen
+2016-02-18 17:04:07,180 DEBUG      Port is not listen
+2016-02-18 17:05:24,410 DEBUG      Port is not listen
+2016-02-18 17:06:04,519 DEBUG      Port is not listen
+2016-02-18 17:08:38,032 DEBUG      Port is not listen
+2016-02-18 17:09:49,900 DEBUG      Port is not listen
+2016-02-18 17:11:03,235 DEBUG      Port is not listen
+2016-02-18 17:12:47,872 DEBUG      Port is not listen
+2016-02-18 17:13:11,512 DEBUG      Port is not listen
+2016-02-18 17:14:05,164 DEBUG      Port is not listen
+2016-02-18 17:14:18,642 DEBUG      Port is not listen
+2016-02-18 17:17:52,094 DEBUG      Port is not listen
+2016-02-18 17:18:39,843 DEBUG      Port is not listen
+2016-02-18 17:19:01,552 DEBUG      Port is not listen
+2016-02-18 17:19:32,513 DEBUG      Port is not listen
+2016-02-18 17:20:42,702 DEBUG      Pid is 26840
+2016-02-18 17:20:43,734 DEBUG      Port is not listen
+2016-02-18 17:20:43,734 DEBUG      Killed process 26840
+2016-02-18 17:21:28,255 DEBUG      Pid is 29352
+2016-02-18 17:21:29,289 DEBUG      Port is not listen
+2016-02-18 17:21:29,289 DEBUG      Killed process 29352
+2016-02-18 17:22:04,371 DEBUG      Pid is 29880
+2016-02-18 17:22:05,405 DEBUG      Port is not listen
+2016-02-18 17:22:05,405 DEBUG      Killed process 29880
+2016-02-18 17:24:52,415 DEBUG      Pid is 30399
+2016-02-18 17:24:53,450 DEBUG      Port is not listen
+2016-02-18 17:24:53,450 DEBUG      Killed process 30399
+2016-02-18 17:25:03,493 DEBUG      Pid is 31951
+2016-02-18 17:25:03,493 INFO       Open new sock with PID: 31951
+2016-02-18 17:26:06,425 DEBUG      Pid is 31951
+2016-02-18 17:26:07,458 DEBUG      Port is not listen
+2016-02-18 17:26:07,459 DEBUG      Killed process 31951
+2016-02-18 17:26:17,503 DEBUG      Pid is 315
+2016-02-18 17:26:17,503 INFO       Open new sock with PID: 315
+2016-02-18 17:30:09,926 DEBUG      Pid is 315
+2016-02-18 17:30:10,956 DEBUG      Port is not listen
+2016-02-18 17:30:10,957 DEBUG      Killed process 315
+2016-02-18 17:30:20,995 DEBUG      Port is not listen
+2016-02-18 17:30:20,996 ERROR      Error, can not open new sock
+2016-02-18 17:30:46,543 DEBUG      Port is not listen
+2016-02-18 17:30:56,585 DEBUG      Port is not listen
+2016-02-18 17:30:56,586 ERROR      Error, can not open new sock
+2016-02-18 17:39:34,322 DEBUG      Port is not listen
+2016-02-18 17:39:44,360 DEBUG      Port is not listen
+2016-02-18 17:39:44,361 ERROR      Error, can not open new sock
+2016-02-18 17:48:13,166 DEBUG      Port is not listen
+2016-02-18 17:48:23,212 DEBUG      Port is not listen
+2016-02-18 17:48:23,212 ERROR      Error, can not open new sock
+2016-02-18 17:57:17,912 DEBUG      Pid is 6710
+2016-02-18 17:57:18,942 DEBUG      Port is not listen
+2016-02-18 17:57:18,943 DEBUG      Killed process 6710
+2016-02-18 17:57:28,985 DEBUG      Pid is 9354
+2016-02-18 17:57:28,985 INFO       Open new sock with PID: 9354
+2016-02-18 17:57:29,955 ERROR      Sock PID 9354 can not access Internet
+2016-02-18 17:59:29,287 DEBUG      Pid is 9354
+2016-02-18 17:59:30,317 DEBUG      Port is not listen
+2016-02-18 17:59:30,317 DEBUG      Killed process 9354
+2016-02-18 17:59:40,361 DEBUG      Pid is 10540
+2016-02-18 17:59:40,361 INFO       Open new sock with PID: 10540
+2016-02-18 17:59:42,573 ERROR      Sock PID 10540 can not access Internet
+2016-02-18 18:00:25,563 DEBUG      Pid is 10540
+2016-02-18 18:00:26,596 DEBUG      Port is not listen
+2016-02-18 18:00:26,596 DEBUG      Killed process 10540
+2016-02-18 18:00:36,636 DEBUG      Pid is 11204
+2016-02-18 18:00:36,636 INFO       Open new sock with PID: 11204
+2016-02-18 18:01:31,014 DEBUG      Pid is 11204
+2016-02-18 18:01:32,045 DEBUG      Port is not listen
+2016-02-18 18:01:32,046 DEBUG      Killed process 11204
+2016-02-18 18:01:42,088 DEBUG      Pid is 11425
+2016-02-18 18:01:42,088 INFO       Open new sock with PID: 11425
+2016-02-18 18:01:43,540 ERROR      Sock PID 11425 can not access Internet
+2016-02-18 18:03:27,784 DEBUG      Pid is 11425
+2016-02-18 18:03:28,817 DEBUG      Port is not listen
+2016-02-18 18:03:28,818 DEBUG      Killed process 11425
+2016-02-18 18:03:38,859 DEBUG      Pid is 12088
+2016-02-18 18:03:38,859 INFO       Open new sock with PID: 12088
+2016-02-18 18:03:41,617 DEBUG      Sock PID 12088 access Internet OK
+2016-02-18 18:23:03,162 DEBUG      Pid is 12088
+2016-02-18 18:23:04,197 DEBUG      Port is not listen
+2016-02-18 18:23:04,197 DEBUG      Killed process 12088
+2016-02-18 18:23:14,239 DEBUG      Port is not listen
+2016-02-18 18:23:14,239 ERROR      Error, can not open new sock

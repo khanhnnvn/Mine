@@ -1,0 +1,260 @@
+98.248.61.68|admin|123456|United States (US)|California|San Jose|95120
+173.237.184.150|nagios|nagios|United States (US)|Missouri|Saint Louis|63131
+75.173.250.76|support|support|United States (US)|Colorado|Colorado Springs|Unknown
+68.69.45.145|support|support|United States (US)|Illinois|Bluffs|62621
+66.241.67.213|root|nimda|United States (US)|Oregon|Medford|97501
+64.9.116.119|admin|default|United States (US)|Unknown|Unknown|Unknown
+50.192.60.38|admin|admin|United States (US)|Georgia|Woodstock|30189
+12.6.82.252|support|support|United States (US)|Unknown|Unknown|Unknown
+65.51.25.202|admin|default|United States (US)|Unknown|Unknown|Unknown
+24.242.172.110|admin|admin|United States (US)|Texas|San Antonio|78238
+108.30.209.83|student|student|United States (US)|Unknown|Unknown|Unknown
+162.249.122.68|admin|default|United States (US)|Unknown|Unknown|Unknown
+24.234.67.81|support|support|United States (US)|Nevada|Las Vegas|89102
+205.227.88.24|andy|andy|United States (US)|California|Oakland|94610
+173.241.210.218|admin|admin|United States (US)|Michigan|Holton|49425
+174.19.107.114|support|support|United States (US)|Unknown|Unknown|Unknown
+107.1.156.18|admin|default|United States (US)|Utah|Salt Lake City|84104
+199.9.62.214|m|m|United States (US)|Texas|Amarillo|79110
+73.49.109.201|admin|admin|United States (US)|Unknown|Unknown|Unknown
+162.17.77.169|m|m|United States (US)|Unknown|Unknown|Unknown
+107.14.226.6|admin|admin|United States (US)|Unknown|Unknown|Unknown
+64.211.197.180|admin|default|United States (US)|Unknown|Unknown|Unknown
+206.169.26.110|admin|default|United States (US)|California|Bakersfield|Unknown
+98.201.85.36|admin|admin|United States (US)|Texas|Houston|77070
+173.160.243.217|PlcmSpIp|PlcmSpIp|United States (US)|Washington|Seattle|Unknown
+72.28.175.109|admin|admin|United States (US)|South Carolina|Aiken|29803
+65.202.59.150|admin|default|United States (US)|Massachusetts|Norwood|02062
+12.154.134.36|sales|sales|United States (US)|Unknown|Unknown|Unknown
+66.96.104.225|support|support|United States (US)|Michigan|Iron Mountain|49801
+66.150.143.228|admin|default|United States (US)|Georgia|Atlanta|30303
+198.108.193.207|admin|default|United States (US)|Michigan|Charlevoix|49720
+207.47.12.108|jordan|jordan|United States (US)|California|Santa Clara|95050
+50.250.224.229|admin|admin|United States (US)|Unknown|Unknown|Unknown
+205.132.143.26|admin|default|United States (US)|Nevada|Carlin|89822
+66.203.118.19|tomcat|tomcat|United States (US)|Washington|Seattle|98132
+75.99.129.229|root|root|United States (US)|New Jersey|Totowa|07512
+209.190.225.210|tecmint|tecmint|United States (US)|Maryland|Silver Spring|Unknown
+137.116.196.200|admin|admin|United States (US)|Unknown|Unknown|Unknown
+69.38.139.139|admin|default|United States (US)|New York|New York|10010
+23.254.164.88|test|test|United States (US)|Oklahoma|Tulsa|74103
+75.150.227.221|admin|admin|United States (US)|Illinois|Oak Lawn|Unknown
+199.115.172.187|admin|admin|United States (US)|Florida|Hollywood|Unknown
+204.246.238.131|admin|default|United States (US)|Unknown|Unknown|Unknown
+12.106.126.66|PlcmSpIp|PlcmSpIp|United States (US)|Unknown|Unknown|Unknown
+167.206.177.156|admin|default|United States (US)|New York|Holtsville|11742
+50.242.22.237|demo|demo|United States (US)|Unknown|Unknown|Unknown
+209.90.63.90|admin|default|United States (US)|New York|New York|10018
+173.220.116.194|PlcmSpIp|PlcmSpIp|United States (US)|New Jersey|Union|07083
+173.227.219.161|admin|default|United States (US)|Kentucky|Louisville|Unknown
+68.69.45.115|support|support|United States (US)|Illinois|Bluffs|62621
+24.123.208.82|admin|admin|United States (US)|Indiana|Carmel|46032
+12.162.105.43|admin|default|United States (US)|New Jersey|Little Falls|07424
+206.74.140.100|user|user|United States (US)|South Carolina|Mccormick|29835
+65.103.47.249|anonymous|anonymous|United States (US)|Unknown|Unknown|Unknown
+96.228.245.211|admin|default|United States (US)|Florida|Bradenton|Unknown
+41.189.254.31|admin|admin|United States (US)|Armed Forces Europe, Middle East, & Canada|Fpo|Unknown
+63.95.218.116|Berwyn|IL|United States (US)|Maryland|Owings Mills|21117
+50.197.235.25|admin|admin|United States (US)|Florida|Englewood|34223
+69.74.202.95|mysql|mysql|United States (US)|New York|Long Island City|11101
+205.251.155.46|user|user|United States (US)|Georgia|Atlanta|30310
+173.190.114.210|admin|default|United States (US)|Kentucky|Glasgow|42141
+108.33.103.59|admin|admin|United States (US)|Florida|Tampa|33626
+72.87.54.6|user|user|United States (US)|Kansas|Dodge City|67801
+162.40.255.31|hscroot|abc123|United States (US)|Georgia|Dalton|Unknown
+50.246.179.249|PlcmSpIp|PlcmSpIp|United States (US)|Unknown|Unknown|Unknown
+96.31.84.126|support|support|United States (US)|Florida|Tampa|33614
+174.136.62.146|sales|sales|United States (US)|Texas|Houston|77069
+100.38.47.189|admin|default|United States (US)|Unknown|Unknown|Unknown
+108.61.159.121|admin|admin|United States (US)|New Jersey|Matawan|07747
+66.119.59.218|ftpuser|asteriskftp|United States (US)|Wyoming|Cheyenne|82009
+38.124.193.185|admin|administrator|United States (US)|Unknown|Unknown|Unknown
+97.88.31.157|test|test1234|United States (US)|Minnesota|Sartell|56377
+50.192.195.225|sales|sales|United States (US)|Utah|Salt Lake City|84115
+204.210.173.4|user|user|United States (US)|Ohio|Canfield|44406
+75.90.251.115|admin|default|United States (US)|Kentucky|Somerset|42503
+71.162.243.7|ftpuser|asteriskftp|United States (US)|Pennsylvania|Berwyn|19312
+73.155.194.173|ubnt|ubnt|United States (US)|Unknown|Unknown|Unknown
+162.249.127.48|www|www|United States (US)|Unknown|Unknown|Unknown
+64.183.93.156|admin|default|United States (US)|California|Torrance|90501
+8.29.20.7|admin|default|United States (US)|Unknown|Unknown|Unknown
+50.193.136.219|admin|admin|United States (US)|Maryland|Hyattsville|20782
+166.136.142.227|user|user|United States (US)|Unknown|Unknown|Unknown
+64.1.17.221|admin|default|United States (US)|New York|New York|Unknown
+168.215.104.233|admin|default|United States (US)|Unknown|Unknown|Unknown
+66.153.72.40|PlcmSpIp|PlcmSpIp|United States (US)|District of Columbia|Washington|20002
+98.103.145.59|user|user|United States (US)|Ohio|Cleveland|Unknown
+173.187.164.226|admin|default|United States (US)|Georgia|Dalton|30722
+97.77.22.61|admin|default|United States (US)|Texas|San Antonio|Unknown
+67.130.135.15|scan|scan|United States (US)|Unknown|Unknown|Unknown
+66.161.201.239|admin|default|United States (US)|Ohio|Cincinnati|Unknown
+66.109.49.11|root|server|United States (US)|New York|Albany|Unknown
+64.250.197.51|root|1234|United States (US)|Oklahoma|Kingfisher|73750
+139.137.221.108|admin|default|United States (US)|Ohio|Cleveland|44112
+71.14.28.163|admin|default|United States (US)|Alabama|Jasper|35501
+66.90.162.220|PlcmSpIp|PlcmSpIp|United States (US)|Texas|Austin|78747
+75.127.16.12|user|password|United States (US)|Wyoming|Gillette|Unknown
+208.109.207.211|test|test|United States (US)|Arizona|Scottsdale|85260
+38.122.226.3|admin|default|United States (US)|New York|New York|Unknown
+99.192.205.104|PlcmSpIp|PlcmSpIp|United States (US)|Michigan|Franklin|48025
+173.59.115.46|admin|default|United States (US)|Pennsylvania|Holmes|19043
+50.78.251.117|PlcmSpIp|PlcmSpIp|United States (US)|Connecticut|South Windsor|06074
+206.169.151.6|admin|default|United States (US)|Unknown|Unknown|Unknown
+173.227.106.30|admin|default|United States (US)|Georgia|Atlanta|30338
+64.130.117.57|admin|admin|United States (US)|Alabama|Elba|36323
+66.104.2.68|admin|admin|United States (US)|Unknown|Unknown|Unknown
+208.1.63.17|anonymous|anonymous|United States (US)|North Carolina|Raleigh|Unknown
+73.42.184.131|root|raspberry|United States (US)|Unknown|Unknown|Unknown
+54.211.225.250|admin|admin|United States (US)|Virginia|Ashburn|Unknown
+96.230.48.25|ftpuser|asteriskftp|United States (US)|Unknown|Unknown|Unknown
+204.12.196.98|test|test|United States (US)|Missouri|Kansas City|64106
+166.161.52.25||admin|United States (US)|Unknown|Unknown|Unknown
+172.77.243.208|support|support|Unknown (Unknown)|Unknown|Unknown|Unknown
+66.207.69.22|admin|default|United States (US)|Virginia|Blacksburg|24060
+104.235.53.32|support|support|Unknown (Unknown)|Unknown|Unknown|Unknown
+173.161.39.69|bill|bill|United States (US)|Illinois|Rolling Meadows|60008
+50.24.121.199|ubnt|ubnt|United States (US)|Unknown|Unknown|Unknown
+216.12.10.68|admin|default|United States (US)|Virginia|Charlottesville|Unknown
+50.78.55.34|admin|default|United States (US)|New Jersey|Edison|08820
+72.93.210.57|admin|default|United States (US)|Massachusetts|Braintree|02184
+68.69.45.110|support|support|United States (US)|Illinois|Bluffs|62621
+172.77.164.87|support|support|Unknown (Unknown)|Unknown|Unknown|Unknown
+192.206.56.9|admin|default|United States (US)|Kansas|Wichita|Unknown
+70.164.205.174|anonymous|anonymous|United States (US)|Oklahoma|Oklahoma City|73132
+73.20.81.85|ubnt|ubnt|United States (US)|Unknown|Unknown|Unknown
+149.91.98.106|ubnt|ubnt|United States (US)|Unknown|Unknown|Unknown
+72.54.74.76|admin|default|United States (US)|Georgia|Alpharetta|Unknown
+70.181.114.235|support|support|United States (US)|California|Irvine|92612
+50.198.47.117|ftpuser|ftpuser|United States (US)|Illinois|Oak Forest|60452
+97.125.84.207|support|support|United States (US)|Oregon|Eugene|Unknown
+209.94.250.245|PlcmSpIp|PlcmSpIp|United States (US)|Texas|Houston|77060
+108.171.172.124|ftp|ftp|United States (US)|Texas|San Antonio|78218
+64.196.58.14|support|support|United States (US)|Illinois|Stockton|61085
+23.25.157.125|root||United States (US)|Minnesota|Saint Paul|Unknown
+209.76.42.235|admin|default|United States (US)|Nevada|Gardnerville|89410
+97.65.205.10|PlcmSpIp|PlcmSpIp|United States (US)|Unknown|Unknown|Unknown
+67.208.227.19|support|support|United States (US)|Michigan|Ravenna|49451
+108.59.9.7|mysql|mysql|United States (US)|Delaware|Unknown|Unknown
+206.201.80.247|admin|default|United States (US)|Texas|Fort Worth|Unknown
+108.30.224.254|PlcmSpIp|PlcmSpIp|United States (US)|Unknown|Unknown|Unknown
+206.41.10.161|library|library|United States (US)|Florida|Miami|33145
+65.36.44.69|edwin|edwin|United States (US)|Texas|San Marcos|78666
+50.254.139.219|git|git|United States (US)|Unknown|Unknown|Unknown
+162.218.236.189|teamspeak|teamspeak|United States (US)|New York|Buffalo|14202
+67.215.232.230|support|support|United States (US)|California|Santa Ana|92705
+97.79.140.179|PlcmSpIp|PlcmSpIp|United States (US)|Unknown|Unknown|Unknown
+216.162.83.6|admin|default|United States (US)|Pennsylvania|Norristown|19403
+50.77.133.163|admin|default|United States (US)|Illinois|Niles|60714
+96.44.136.22|www|www|United States (US)|California|Los Angeles|90014
+137.119.94.175|support|support|United States (US)|North Carolina|Raleigh|27607
+156.79.252.2|admin|admin|United States (US)|California|Sunnyvale|94085
+108.174.50.195|www|www|United States (US)|New York|Buffalo|14221
+173.15.20.213|bob|bob|United States (US)|Illinois|Chicago|Unknown
+68.69.45.114|support|support|United States (US)|Illinois|Bluffs|62621
+173.9.50.163|ftpuser|asteriskftp|United States (US)|Massachusetts|Sunderland|01375
+98.115.140.46|admin|default|United States (US)|Unknown|Unknown|Unknown
+64.47.3.86|admin|default|United States (US)|Unknown|Unknown|Unknown
+75.147.65.229|ron|ron|United States (US)|New Jersey|Hightstown|08520
+107.0.100.148|admin|admin|United States (US)|Illinois|Northbrook|Unknown
+207.45.174.70|admin|admin|United States (US)|New York|Hawthorne|10532
+65.23.50.50|PlcmSpIp|PlcmSpIp|United States (US)|Missouri|Saint Charles|Unknown
+40.130.41.26|PlcmSpIp|PlcmSpIp|United States (US)|Unknown|Unknown|Unknown
+64.34.127.159|mysql|password|United States (US)|California|Los Angeles|90017
+69.195.219.15|user|user|United States (US)|Florida|Miami|33132
+67.65.174.126|pos|pos|United States (US)|Unknown|Unknown|Unknown
+184.95.45.218|ftpuser|ftpuser|United States (US)|Arizona|Tempe|85281
+68.143.142.82|test|test|United States (US)|Ohio|Sunbury|43074
+65.156.150.200|oracle|oracle|United States (US)|Unknown|Unknown|Unknown
+66.192.162.78|admin|default|United States (US)|Illinois|Monee|60449
+69.130.227.173|log|log|United States (US)|Michigan|Grand Rapids|Unknown
+74.217.200.248|admin|default|United States (US)|Georgia|Atlanta|30303
+74.208.110.4|ftpuser|123456|United States (US)|Pennsylvania|Wayne|19087
+173.230.60.14|user|user|United States (US)|Indiana|Alamo|47916
+216.244.96.210|admin|default|United States (US)|Connecticut|Shelton|06484
+108.34.147.11|admin|default|United States (US)|Connecticut|Pawcatuck|06379
+162.236.52.18|admin|123456|United States (US)|Unknown|Unknown|Unknown
+204.185.225.88|user|user|United States (US)|Missouri|Columbia|65203
+69.155.252.183|admin|default|United States (US)|Unknown|Unknown|Unknown
+67.208.225.47|support|support|United States (US)|Michigan|Casnovia|49318
+208.180.22.223|support|support|United States (US)|Texas|College Station|77845
+69.39.235.2|support|support|United States (US)|Illinois|Arlington Heights|60005
+72.175.216.114|admin|admin|United States (US)|Unknown|Unknown|Unknown
+108.59.254.215|music|music|United States (US)|New York|Pittsford|14534
+184.95.45.217|ftpuser|ftpuser|United States (US)|Arizona|Tempe|85281
+108.234.94.4|ubnt|ubnt|United States (US)|Georgia|Atlanta|Unknown
+12.131.227.140|test|testtest|United States (US)|Unknown|Unknown|Unknown
+184.168.153.141|uucp|uucp|United States (US)|Arizona|Scottsdale|85260
+67.208.227.192|support|support|United States (US)|Michigan|Holton|49425
+38.64.64.162|admin|default|United States (US)|California|Los Angeles|Unknown
+50.247.96.45|test|test|United States (US)|Unknown|Unknown|Unknown
+104.137.217.95|support|support|Unknown (Unknown)|Unknown|Unknown|Unknown
+67.208.225.172|admin|default|United States (US)|Michigan|Casnovia|49318
+50.251.222.201|david|david|United States (US)|Unknown|Unknown|Unknown
+173.166.35.114|ftpuser|asteriskftp|United States (US)|Massachusetts|Needham|02492
+209.118.65.245|admin|admin|United States (US)|Pennsylvania|Bethlehem|Unknown
+50.203.244.141|admin|default|United States (US)|Texas|Seabrook|77586
+63.119.25.76|admin|default|United States (US)|New Jersey|Newton|07860
+71.85.72.86|admin|admin|United States (US)|Unknown|Unknown|Unknown
+65.49.79.216|ftpuser|asteriskftp|United States (US)|California|Fremont|94539
+96.8.215.219|support|support|United States (US)|Texas|Boerne|78006
+12.168.54.52|admin|default|United States (US)|Unknown|Unknown|Unknown
+167.94.2.200|admin|default|United States (US)|Arizona|Scottsdale|Unknown
+63.117.230.210|admin|default|United States (US)|Massachusetts|Wrentham|02093
+66.109.49.12|root|server|United States (US)|New York|Albany|Unknown
+64.132.45.236|admin|default|United States (US)|North Carolina|Mooresville|28117
+71.14.28.164|admin|default|United States (US)|Alabama|Jasper|35501
+38.124.172.122|admin|administrator|United States (US)|Unknown|Unknown|Unknown
+66.85.140.72|ftp|ftp|United States (US)|Arizona|Tempe|85281
+155.212.106.194|admin|admin|United States (US)|Indiana|Hammond|46320
+173.230.60.13|user|user|United States (US)|Indiana|Alamo|47916
+67.208.225.133|support|support|United States (US)|Michigan|Casnovia|49318
+52.7.50.78|john|john|United States (US)|Delaware|Wilmington|19893
+173.190.238.166|demo|demo|United States (US)|Unknown|Unknown|Unknown
+74.208.223.24|ftp|ftp|United States (US)|Pennsylvania|Wayne|19087
+64.196.58.123|support|support|United States (US)|Illinois|Stockton|61085
+161.242.10.149|admin|default|United States (US)|New York|West Henrietta|14586
+199.106.139.7|admin|default|United States (US)|Unknown|Unknown|Unknown
+70.105.81.66|ftp|123456|United States (US)|Unknown|Unknown|Unknown
+205.132.143.27|admin|default|United States (US)|Nevada|Carlin|89822
+173.255.215.133|ftp|ftp|United States (US)|New Jersey|Absecon|08205
+170.164.50.90|admin|default|United States (US)|California|San Bernardino|Unknown
+64.185.2.130|admin|admin|United States (US)|Texas|Lamesa|79331
+50.156.141.211|admin|password|United States (US)|Florida|Jacksonville|32256
+216.194.126.100|admin|admin|United States (US)|Utah|Lindon|84042
+71.164.230.179|ftpuser|asteriskftp|United States (US)|Texas|Garland|75041
+64.28.77.8|admin|admin|United States (US)|Missouri|Chesterfield|63017
+72.249.150.159|admin|admin|United States (US)|Missouri|Saint Louis|63131
+69.36.94.194|testuser|testuser|United States (US)|California|Simi Valley|93063
+216.60.59.139|admin|default|United States (US)|Texas|San Antonio|78216
+96.29.8.30|admin|password|United States (US)|Kentucky|Louisville|40245
+69.74.217.222|admin|default|United States (US)|New Jersey|Newark|07103
+96.91.175.41|admin|default|United States (US)|Unknown|Unknown|Unknown
+72.27.252.39|admin|default|United States (US)|North Carolina|Asheville|28801
+107.167.199.138|admin|admin|United States (US)|Unknown|Unknown|Unknown
+173.245.117.5|test|test123|United States (US)|Virginia|Ashburn|20146
+108.58.212.29|admin|default|United States (US)|Unknown|Unknown|Unknown
+73.46.105.161|admin|admin|United States (US)|Unknown|Unknown|Unknown
+173.200.182.181|PlcmSpIp|PlcmSpIp|United States (US)|California|San Jose|Unknown
+74.218.93.146|admin|admin|United States (US)|Ohio|Dayton|Unknown
+108.170.108.156|mailman|mailman|United States (US)|New York|New Rochelle|Unknown
+54.169.78.61|ftpuser|ftpuser|United States (US)|New Jersey|Woodbridge|07095
+198.175.125.139|marketing|marketing|United States (US)|Missouri|Kansas City|64106
+209.190.225.209|tecmint|tecmint|United States (US)|Maryland|Silver Spring|Unknown
+216.84.58.240|admin|default|United States (US)|Missouri|O Fallon|63366
+50.186.66.157|test|test|United States (US)|Unknown|Unknown|Unknown
+96.243.213.91|root|server|United States (US)|Unknown|Unknown|Unknown
+66.18.6.115|PlcmSpIp|PlcmSpIp|United States (US)|Texas|Dallas|75202
+216.167.187.194|tech|tech|United States (US)|Texas|Midland|79705
+64.207.144.93|public|public|United States (US)|California|Culver City|90232
+97.67.217.61|admin|default|United States (US)|North Carolina|Zebulon|27597
+64.79.104.217|admin|admin|United States (US)|Illinois|Lombard|60148
+64.184.2.5|library|library|United States (US)|Indiana|Indianapolis|46268
+209.254.184.134|admin|password|United States (US)|New York|Fairport|14450
+64.28.77.8|PlcmSpIp|PlcmSpIp|United States (US)|Missouri|Chesterfield|63017
+67.208.252.57|support|support|United States (US)|Michigan|Lansing|48933
+74.51.221.243|admin|default|United States (US)|Nebraska|Lincoln|68508
+65.51.160.125|test|test|United States (US)|New Jersey|South Plainfield|07080
+206.71.50.4|ftpuser|ftpuser|United States (US)|New York|Brooklyn|11232
+69.73.17.154|PlcmSpIp|PlcmSpIp|United States (US)|Alabama|Huntsville|Unknown
+67.164.20.207|test|test|United States (US)|California|San Jose|95136
+

@@ -1,0 +1,7 @@
+sudo pip install geoip2
+sudo apt-get install sqlite
+sudo pip install requesocks
+GeoIP DB:
+http://dev.maxmind.com/geoip/geoip2/geolite2/
+sshpass
+
