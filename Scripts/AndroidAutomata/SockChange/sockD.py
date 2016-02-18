@@ -62,6 +62,8 @@ class sockD:
 			# closeSock ok, open sock
 			sockInfo 					=	self.selectSock()
 			if(sockInfo is not None):
+				self.logger.debug("Goted sock info:")
+				self.logger.debug(sockInfo)
 				cmd 						=	self.sshCmd.format(sockInfo["password"], sockInfo["username"], sockInfo["ip"], self.sockPort)
 				process 					= 	subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 				time.sleep(self.sockTimeOut)
@@ -81,7 +83,7 @@ class sockD:
 				else:
 					self.logger.error("Error, can not open new sock")
 					# update sock status is False
-
+					self.updateDieSock(sockInfo["id"])
 					# get new sock
 					return False
 			else:
@@ -100,7 +102,7 @@ class sockD:
 		else:
 			return False
 	def selectSock(self):
-		re 								=	self.db.get_one_row("socks","status","True")
+		re 								=	self.db.get_one_row("socks","status","True","lastcheck")
 		if(len(re) == 1):
 			# Found one, ok
 			data						=	{}
@@ -114,4 +116,6 @@ class sockD:
 			return None
 	def updateDieSock(self, id):
 		# Update status and last check
-		pass
+		self.db.update_row("socks","id",id,"status","False")
+		self.logger.debug("Updated socks id {0} staus to  False".format(id))
+		self.db.update_row("socks","id",id,"lastcheck",time.time())

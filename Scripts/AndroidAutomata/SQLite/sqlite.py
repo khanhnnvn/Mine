@@ -77,13 +77,13 @@ class SQLitedatabase:
 					sql = sql+" AND "+key+"='"+item+"'" +" "
 		re = self.query2(sql)
 		return re
-	def get_one_row(self,table_name,key,value):
+	def get_one_row(self,table_name,key,value,order):
 		if type(value) == int:
 			sql = "SELECT * FROM "+table_name + " WHERE "+key+"="+str(value)
 		else:
 			if type(value) == str:
 				sql = "SELECT * FROM "+table_name + " WHERE "+key+"='"+value+"'"
-		sql = sql + " limit 0,1"
+		sql = sql + " order by "+order+" limit 0,1"
 		re = self.query2(sql)
 		return re
 	def delete_row(self,table_name,key,value):
@@ -101,12 +101,13 @@ class SQLitedatabase:
 			else:
 				if type(kvalue) == str:
 					sql = sql + " WHERE " + key + "='" + kvalue + "'"
+		elif type(nvalue) == str:
+			sql = "UPDATE "+table_name + " SET " + nkey + "='" + nvalue + "'"
+			if type(kvalue) == int:
+				sql = sql + " WHERE " + key + "=" + str(kvalue)
+			if type(kvalue) == str:
+				sql = sql + " WHERE " + key + "='" + kvalue + "'"
 		else:
-			if type(nvalue) == str:
-				sql = "UPDATE "+table_name + " SET " + nkey + "='" + nvalue + "'"
-				if type(kvalue) == int:
-					sql = sql + " WHERE " + key + "=" + str(kvalue)
-				if type(kvalue) == str:
-					sql = sql + " WHERE " + key + "='" + kvalue + "'"
+			print(type(nvalue))
 		self.query(sql)
 
