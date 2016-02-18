@@ -107,7 +107,13 @@ class SQLitedatabase:
 				sql = sql + " WHERE " + key + "=" + str(kvalue)
 			if type(kvalue) == str:
 				sql = sql + " WHERE " + key + "='" + kvalue + "'"
-		else:
-			print(type(nvalue))
+		elif(type(nvalue) == float):
+			# Float
+			sql = "UPDATE "+table_name + " SET " + nkey + "=" + str(nvalue)
+			if type(kvalue) == int:
+				sql = sql + " WHERE " + key + "=" + str(kvalue)
+			else:
+				if type(kvalue) == str:
+					sql = sql + " WHERE " + key + "='" + kvalue + "'"
 		self.query(sql)
 

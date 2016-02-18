@@ -1,0 +1,10 @@
+2016-02-18 23:31:11,294 DEBUG      Selected sock
+2016-02-18 23:31:21,361 DEBUG      Selected sock
+2016-02-18 23:31:31,430 DEBUG      Selected sock
+2016-02-18 23:31:41,495 DEBUG      Selected sock
+2016-02-18 23:31:51,552 DEBUG      Selected sock
+2016-02-18 23:32:01,611 DEBUG      Selected sock
+2016-02-18 23:32:11,676 DEBUG      Selected sock
+2016-02-18 23:32:21,734 DEBUG      Selected sock
+2016-02-18 23:46:09,736 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-18 23:46:19,803 DEBUG      Sock is not good, changed status. go to next sock

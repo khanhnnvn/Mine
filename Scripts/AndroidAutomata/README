@@ -4,4 +4,6 @@ sudo pip install requesocks
 GeoIP DB:
 http://dev.maxmind.com/geoip/geoip2/geolite2/
 
+sudo apt-get install polipo
+
 

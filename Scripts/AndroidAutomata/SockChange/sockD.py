@@ -8,7 +8,7 @@ class sockD:
 		self.dirPath 					=		os.getcwd()
 		self.sockPort 					=		9991
 		self.sockTimeOut 				=		10													# 10
-		self.sshCmd 					=		"sshpass -p {0} ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no {1}@{2} -D {3} "
+		self.sshCmd 					=		"sshpass -p {0} ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no {1}@{2} -D 0.0.0.0:{3} "
 		self.netstatCmd 				=		"lsof -i:{0} | tail -n +2 | awk '{{print $2}}' | sort | uniq"
 		self.killProcessCmd 			=		"kill -9 {0}"
 		self.logSetup()
@@ -75,10 +75,15 @@ class sockD:
 					# Check Internet
 					if(self.checkInternet()):
 						self.logger.debug("Sock PID {0} access Internet OK".format(self.pid))
+						# update lastcheck
+						timeNow 						=	time.time()
+						self.db.update_row("socks","id",sockInfo["id"],"lastcheck",timeNow)
+						self.logger.debug("Updated socks id {0} lastcheck to  {1}".format(sockInfo["id"],timeNow))
 						return True
 					else:
 						self.logger.error("Sock PID {0} can not access Internet".format(self.pid))
 						# update sock status is False
+						self.updateDieSock(sockInfo["id"])
 						return False
 				else:
 					self.logger.error("Error, can not open new sock")
@@ -96,11 +101,15 @@ class sockD:
 	def checkInternet(self):
 		session = requesocks.session()
 		session.proxies = {'http': 'socks5://localhost:{0}'.format(self.sockPort), 'https': 'socks5://localhost:{0}'.format(self.sockPort)}
-		response = session.get('http://ip.42.pl/raw')
-		if(int(response.status_code) == 200):
-			return True
-		else:
+		try:
+			response = session.get('http://ip.42.pl/raw')
+			if(int(response.status_code) == 200):
+				return True
+			else:
+				return False
+		except Exception, e:
 			return False
+		
 	def selectSock(self):
 		re 								=	self.db.get_one_row("socks","status","True","lastcheck")
 		if(len(re) == 1):
@@ -118,4 +127,6 @@ class sockD:
 		# Update status and last check
 		self.db.update_row("socks","id",id,"status","False")
 		self.logger.debug("Updated socks id {0} staus to  False".format(id))
-		self.db.update_row("socks","id",id,"lastcheck",time.time())
+		timeNow 						=	time.time()
+		self.db.update_row("socks","id",id,"lastcheck",timeNow)
+		self.logger.debug("Updated socks id {0} lastcheck to  {1}".format(id,timeNow))
