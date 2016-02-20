@@ -58,6 +58,7 @@ class AndroidAutomata(object):
 			# Wait and re run
 			time.sleep(5)
 			self.start()
+			# Set max to restart appium
 		if(self.sockD.checkOpenPort() is True):
 			# Start run
 			self.logger.info("Start run new appium instance")
