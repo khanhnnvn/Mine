@@ -56,6 +56,7 @@ class AndroidAutomata(object):
 		try:
 			self.setUpAppium()
 		except Exception, e:
+			self.logger.error(e)
 			self.logger.error("Can not start Appium")
 			# Wait and re run
 			time.sleep(5)
@@ -78,7 +79,7 @@ class AndroidAutomata(object):
 		# Returns abs path relative to this file and not cwd
 		# desired_caps['app'] = os.path.abspath(os.path.join(os.path.dirname(__file__),'app-release.apk'))
 		desired_caps['appPackage'] 				=	self.appName
-		desired_caps['appActivity'] 			=	self.appActivity
+		desired_caps['appActivity'] 			=	self.activityName
 		self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
 	def appiumScript(self):
 		element = self.driver.find_element_by_id("com.hbn.hakmeshop:id/hakmeShopButton")

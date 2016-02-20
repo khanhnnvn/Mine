@@ -10133,3 +10133,22 @@
 2016-02-20 17:22:11,927 DEBUG      Sock PID 3038 access Internet OK
 2016-02-20 17:22:11,928 DEBUG      Updated socks id 95 lastcheck to  1455963731.93
 >>>>>>> 922a6b016215ec2d59651b54a8080e076c39c6b8
+2016-02-20 20:08:14,510 DEBUG      Port 9991 is not listen, don`t need close
+2016-02-20 20:08:14,511 DEBUG      Goted sock info:
+2016-02-20 20:08:14,511 DEBUG      {'username': u'test', 'ip': u'173.245.117.5', 'password': u'test123', 'id': 237}
+2016-02-20 20:08:17,566 DEBUG      Pid is 9308
+2016-02-20 20:08:17,588 DEBUG      Pid is 9308
+2016-02-20 20:08:17,589 INFO       Open new sock with PID: 9308
+2016-02-20 20:08:20,305 DEBUG      Request time of id 237 :  2.7074611187
+2016-02-20 20:08:20,306 DEBUG      Sock PID 9308 access Internet OK
+2016-02-20 20:08:20,308 DEBUG      Updated socks id 237 lastcheck to  1455973700.31
+2016-02-20 20:09:02,585 DEBUG      Pid is 9308
+2016-02-20 20:09:03,602 DEBUG      Killed process 9308
+2016-02-20 20:09:03,603 DEBUG      Goted sock info:
+2016-02-20 20:09:03,603 DEBUG      {'username': u'test', 'ip': u'50.186.66.157', 'password': u'test', 'id': 247}
+2016-02-20 20:09:06,659 DEBUG      Pid is 9576
+2016-02-20 20:09:06,681 DEBUG      Pid is 9576
+2016-02-20 20:09:06,682 INFO       Open new sock with PID: 9576
+2016-02-20 20:09:07,459 DEBUG      Request time of id 247 :  0.768174886703
+2016-02-20 20:09:07,460 DEBUG      Sock PID 9576 access Internet OK
+2016-02-20 20:09:07,461 DEBUG      Updated socks id 247 lastcheck to  1455973747.46
