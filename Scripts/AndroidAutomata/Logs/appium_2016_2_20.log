@@ -117,6 +117,249 @@
 2016-02-20 17:09:16,013 DEBUG      com.google.android.finsky.activities.ScreenshotsActivity
 2016-02-20 17:09:49,216 DEBUG      com.startapp.android.publish.FullScreenActivity
 2016-02-20 17:09:49,402 DEBUG      Cliked View
+<<<<<<< HEAD
+2016-02-20 10:17:35,229 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-20 10:17:45,750 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-20 10:17:56,243 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-20 10:18:06,785 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-20 10:18:17,594 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-20 10:20:30,572 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-20 10:20:41,193 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-20 10:20:54,919 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-20 10:21:05,434 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-20 10:21:16,027 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-20 10:25:18,390 INFO       Start run new appium instance
+2016-02-20 10:25:46,879 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 10:25:47,475 DEBUG      Cliked Image
+2016-02-20 10:26:04,423 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 10:26:32,892 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 10:26:33,789 DEBUG      Cliked Image
+2016-02-20 10:26:50,171 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-20 10:27:05,238 DEBUG      Start change new Sock
+2016-02-20 10:27:10,808 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-20 10:27:34,746 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 10:27:35,455 DEBUG      Cliked Image
+2016-02-20 10:27:51,879 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 10:28:46,321 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 10:28:47,294 DEBUG      Cliked Image
+2016-02-20 10:29:04,071 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-20 10:29:13,781 DEBUG      Start change new Sock
+2016-02-20 10:29:40,946 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 10:29:42,715 DEBUG      Cliked View
+2016-02-20 10:30:00,083 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-20 10:30:32,118 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 10:30:32,622 DEBUG      Cliked WebView
+2016-02-20 10:37:20,216 INFO       Start run new appium instance
+2016-02-20 10:37:48,121 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 10:37:48,754 DEBUG      Cliked Image
+2016-02-20 10:38:05,062 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-20 10:38:36,710 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 10:38:37,423 DEBUG      Cliked Image
+2016-02-20 10:38:54,155 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 10:39:06,124 DEBUG      Start change new Sock
+2016-02-20 10:39:18,109 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-20 10:39:20,539 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-20 10:39:31,366 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-20 10:39:52,420 DEBUG      com.startapp.android.publish.FullScreenActivity
+2016-02-20 10:39:53,238 DEBUG      Cliked View
+2016-02-20 10:40:10,239 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-20 10:40:42,443 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 10:40:43,216 DEBUG      Cliked Image
+2016-02-20 10:41:00,377 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-20 10:41:32,641 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 10:41:33,432 DEBUG      Cliked Image
+2016-02-20 10:41:49,966 DEBUG      com.android.internal.app.ResolverActivity
+2016-02-20 10:41:51,395 DEBUG      Start change new Sock
+2016-02-20 10:43:21,589 DEBUG      Start change new Sock
+2016-02-20 10:43:33,566 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-20 10:44:58,528 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 10:44:59,107 DEBUG      Cliked Image
+2016-02-20 10:44:59,109 DEBUG      Start change new Sock
+2016-02-20 10:45:23,664 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 10:45:53,049 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 10:45:53,870 DEBUG      Cliked Image
+2016-02-20 10:46:10,266 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 10:46:39,405 DEBUG      com.startapp.android.publish.list3d.List3DActivity
+2016-02-20 10:46:51,713 DEBUG      Start change new Sock
+2016-02-20 10:47:15,355 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 10:47:16,105 DEBUG      Cliked Image
+2016-02-20 10:47:32,783 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 10:48:01,681 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 10:48:02,253 DEBUG      Cliked Image
+2016-02-20 10:48:18,675 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-20 10:48:51,804 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 10:48:53,015 DEBUG      Cliked Image
+2016-02-20 10:49:09,570 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 10:49:11,128 DEBUG      Start change new Sock
+2016-02-20 10:49:44,089 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 10:49:45,337 DEBUG      Cliked View
+2016-02-20 10:50:01,908 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 10:50:30,694 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 10:50:31,969 DEBUG      Cliked View
+2016-02-20 10:50:48,462 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 10:51:00,464 DEBUG      Start change new Sock
+2016-02-20 10:51:27,526 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 10:51:28,568 DEBUG      Cliked Image
+2016-02-20 10:51:45,071 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 10:52:14,010 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 10:52:14,541 DEBUG      Cliked WebView
+2016-02-20 10:52:31,271 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 10:53:00,022 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 10:53:00,680 DEBUG      Cliked Image
+2016-02-20 10:53:17,263 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 10:53:18,821 DEBUG      Start change new Sock
+2016-02-20 10:54:48,781 DEBUG      Start change new Sock
+2016-02-20 10:56:16,549 DEBUG      Start change new Sock
+2016-02-20 10:57:46,302 DEBUG      Start change new Sock
+2016-02-20 10:59:17,621 DEBUG      Start change new Sock
+2016-02-20 11:00:44,454 DEBUG      Start change new Sock
+2016-02-20 11:02:14,432 DEBUG      Start change new Sock
+2016-02-20 11:03:40,903 DEBUG      Start change new Sock
+2016-02-20 11:04:29,168 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:04:29,848 DEBUG      Cliked View
+2016-02-20 11:04:46,515 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 11:05:15,385 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:05:16,598 DEBUG      Cliked View
+2016-02-20 11:05:33,136 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 11:05:39,941 DEBUG      Start change new Sock
+2016-02-20 11:06:07,546 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:06:08,621 DEBUG      Cliked Image
+2016-02-20 11:06:25,233 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 11:06:54,090 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:06:55,002 DEBUG      Cliked View
+2016-02-20 11:07:11,445 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 11:07:40,045 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:07:40,649 DEBUG      Cliked View
+2016-02-20 11:07:40,651 DEBUG      Start change new Sock
+2016-02-20 11:08:24,155 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 11:09:35,520 DEBUG      Start change new Sock
+2016-02-20 11:09:39,390 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-20 11:11:06,810 DEBUG      Start change new Sock
+2016-02-20 11:11:18,770 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-20 11:12:43,507 DEBUG      Start change new Sock
+2016-02-20 11:14:11,299 DEBUG      Start change new Sock
+2016-02-20 11:15:38,942 DEBUG      Start change new Sock
+2016-02-20 11:17:07,723 DEBUG      Start change new Sock
+2016-02-20 11:17:19,701 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-20 11:18:35,795 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:18:36,404 DEBUG      Cliked Image
+2016-02-20 11:18:52,887 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 11:18:59,566 DEBUG      Start change new Sock
+2016-02-20 11:19:26,559 DEBUG      com.startapp.android.publish.list3d.List3DActivity
+2016-02-20 11:19:55,541 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:19:56,777 DEBUG      Cliked Image
+2016-02-20 11:20:13,391 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 11:20:42,504 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:20:43,473 DEBUG      Cliked Image
+2016-02-20 11:20:59,968 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-20 11:21:04,726 DEBUG      Start change new Sock
+2016-02-20 11:21:53,403 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:21:54,378 DEBUG      Cliked Image
+2016-02-20 11:22:11,100 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 11:22:40,384 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:22:41,047 DEBUG      Cliked Image
+2016-02-20 11:22:57,543 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 11:23:09,511 DEBUG      Start change new Sock
+2016-02-20 11:23:34,308 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:23:35,101 DEBUG      Cliked Image
+2016-02-20 11:23:51,769 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 11:24:20,798 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:24:22,006 DEBUG      Cliked Image
+2016-02-20 11:24:38,673 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 11:25:08,001 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:25:08,878 DEBUG      Cliked View
+2016-02-20 11:25:25,470 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 11:25:26,912 DEBUG      Start change new Sock
+2016-02-20 11:26:57,644 DEBUG      Start change new Sock
+2016-02-20 11:28:24,236 DEBUG      Start change new Sock
+2016-02-20 11:29:51,742 DEBUG      Start change new Sock
+2016-02-20 11:31:20,712 DEBUG      Start change new Sock
+2016-02-20 11:32:49,253 DEBUG      Start change new Sock
+2016-02-20 11:33:44,397 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:33:45,652 DEBUG      Cliked View
+2016-02-20 11:34:02,420 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 11:34:31,149 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:34:31,861 DEBUG      Cliked Image
+2016-02-20 11:34:48,321 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 11:34:49,737 DEBUG      Start change new Sock
+2016-02-20 11:35:22,134 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:35:23,285 DEBUG      Cliked Image
+2016-02-20 11:35:39,717 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 11:36:08,717 DEBUG      com.startapp.android.publish.list3d.List3DActivity
+2016-02-20 11:36:37,787 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:36:38,968 DEBUG      Cliked View
+2016-02-20 11:36:38,970 DEBUG      Start change new Sock
+2016-02-20 11:37:02,378 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 11:38:13,974 DEBUG      Start change new Sock
+2016-02-20 11:39:20,890 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:39:24,467 DEBUG      Cliked Image
+2016-02-20 11:39:40,955 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:39:44,442 DEBUG      Cliked Image
+2016-02-20 11:40:00,872 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:40:04,150 DEBUG      Cliked Image
+2016-02-20 11:40:20,755 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:40:24,062 DEBUG      Cliked Image
+2016-02-20 11:40:24,063 DEBUG      Start change new Sock
+2016-02-20 11:40:36,217 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-20 11:41:16,296 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:41:19,667 DEBUG      Cliked Image
+2016-02-20 11:41:36,157 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:41:39,517 DEBUG      Cliked Image
+2016-02-20 11:41:56,797 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:42:00,364 DEBUG      Cliked Image
+2016-02-20 11:42:17,645 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:42:21,085 DEBUG      Cliked Image
+2016-02-20 11:42:37,936 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:42:41,188 DEBUG      Cliked Image
+2016-02-20 11:42:58,163 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:43:01,676 DEBUG      Cliked Image
+2016-02-20 11:43:18,436 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:43:21,692 DEBUG      Cliked Image
+2016-02-20 11:43:38,691 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:43:39,476 DEBUG      Cliked Image
+2016-02-20 11:43:56,275 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 11:44:03,040 DEBUG      Start change new Sock
+2016-02-20 11:44:31,470 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:44:32,481 DEBUG      Cliked Image
+2016-02-20 11:44:48,953 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 11:45:18,143 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:45:18,988 DEBUG      Cliked Image
+2016-02-20 11:45:35,486 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 11:46:03,960 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 11:46:04,470 DEBUG      Cliked WebView
+2016-02-20 11:46:04,473 DEBUG      Start change new Sock
+2016-02-20 11:46:27,921 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 11:47:39,238 DEBUG      Start change new Sock
+2016-02-20 11:49:03,822 DEBUG      Start change new Sock
+2016-02-20 11:50:35,443 DEBUG      Start change new Sock
+2016-02-20 11:52:09,620 DEBUG      Start change new Sock
+2016-02-20 11:53:35,935 DEBUG      Start change new Sock
+2016-02-20 11:55:04,305 DEBUG      Start change new Sock
+2016-02-20 11:55:16,268 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-20 11:56:43,672 DEBUG      Start change new Sock
+2016-02-20 11:58:10,192 DEBUG      Start change new Sock
+2016-02-20 11:59:38,022 DEBUG      Start change new Sock
+2016-02-20 12:01:07,344 DEBUG      Start change new Sock
+2016-02-20 12:02:35,039 DEBUG      Start change new Sock
+2016-02-20 12:04:04,133 DEBUG      Start change new Sock
+2016-02-20 12:05:28,227 DEBUG      Start change new Sock
+2016-02-20 12:05:40,752 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-20 12:07:03,836 DEBUG      Start change new Sock
+2016-02-20 12:08:31,418 DEBUG      Start change new Sock
+2016-02-20 12:09:55,684 DEBUG      Start change new Sock
+2016-02-20 12:10:19,859 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 12:10:20,439 DEBUG      Cliked Image
+2016-02-20 12:10:36,808 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 12:11:05,109 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 12:11:06,100 DEBUG      Cliked Image
+2016-02-20 12:11:22,687 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 12:11:51,751 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 12:11:52,466 DEBUG      Cliked Image
+2016-02-20 12:12:09,070 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 12:12:10,503 DEBUG      Start change new Sock
+2016-02-20 12:12:22,826 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-20 12:13:52,763 DEBUG      Start change new Sock
+=======
 2016-02-20 17:10:06,090 DEBUG      com.google.android.finsky.activities.MainActivity
 2016-02-20 17:10:10,383 DEBUG      Start change new Sock
 2016-02-20 17:11:00,813 ERROR      Can not start Appium
@@ -171,6 +414,7 @@
 2016-02-20 17:22:16,940 ERROR      Can not start Appium
 2016-02-20 17:22:21,944 ERROR      Can not start Appium
 2016-02-20 17:22:26,951 ERROR      Can not start Appium
+<<<<<<< HEAD
 2016-02-20 17:22:31,957 ERROR      Can not start Appium
 2016-02-20 17:22:36,963 ERROR      Can not start Appium
 2016-02-20 17:22:41,970 ERROR      Can not start Appium
@@ -372,3 +616,6 @@
 2016-02-20 17:39:03,187 ERROR      Can not start Appium
 2016-02-20 17:39:08,193 ERROR      Can not start Appium
 2016-02-20 17:39:13,201 ERROR      Can not start Appium
+=======
+>>>>>>> 922a6b016215ec2d59651b54a8080e076c39c6b8
+>>>>>>> 4a8d63e7507f565775cb6a13a16dd033cbc6c430
