@@ -8,6 +8,9 @@ class AndroidAutomata(object):
 	def __init__(self):
 		self.logPrefix					=		"appium"												# Log Prefix
 		self.logFolder					=		"Logs"												# Log store
+		self.appName 					=		"com.hbn.hakmeshop"
+		self.activityName 				=		".MainActivity"
+		self.deviceName 				=		"604ae633"
 		self.timePerSock 				=		15
 		self.dirPath 					=		os.getcwd()
 		self.logSetup()
@@ -42,9 +45,6 @@ class AndroidAutomata(object):
 												dateTimeNow.day)
 		logFilePath						=		os.path.join(self.dirPath, self.logFolder, logFileName)
 		fileHandler 					= 		logging.FileHandler(logFilePath)
-		self.appName 					=		"com.hbn.hakmeshop"
-		self.activityName 				=		".MainActivity"
-		self.deviceName 				=		"604ae633"
 		fileHandler.setFormatter(self.logFormat)
 		self.logger.addHandler(fileHandler)
 		self.logger.setLevel(logging.DEBUG)
@@ -53,7 +53,6 @@ class AndroidAutomata(object):
 			self.sockD.getSock()
 	# Start auto
 	def start(self):
-		
 		try:
 			self.setUpAppium()
 		except Exception, e:
