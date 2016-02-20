@@ -42,6 +42,9 @@ class AndroidAutomata(object):
 												dateTimeNow.day)
 		logFilePath						=		os.path.join(self.dirPath, self.logFolder, logFileName)
 		fileHandler 					= 		logging.FileHandler(logFilePath)
+		self.appName 					=		"com.hbn.hakmeshop"
+		self.activityName 				=		".MainActivity"
+		self.deviceName 				=		"604ae633"
 		fileHandler.setFormatter(self.logFormat)
 		self.logger.addHandler(fileHandler)
 		self.logger.setLevel(logging.DEBUG)
@@ -69,14 +72,14 @@ class AndroidAutomata(object):
 	def setUpAppium(self):
 		"Setup for the click"
 		desired_caps = {}
-		desired_caps['platformName'] = 'Android'
-		desired_caps['platformVersion'] = '4.4.2'
+		desired_caps['platformName'] 			= 	'Android'
+		desired_caps['platformVersion'] 		= 	'4.4.2'
 		# desired_caps['deviceName'] = '02c4b753091ce5ec' # Nexus
-		desired_caps['deviceName'] = '604ae633' # LG
+		desired_caps['deviceName'] 				=	self.deviceName 
 		# Returns abs path relative to this file and not cwd
 		# desired_caps['app'] = os.path.abspath(os.path.join(os.path.dirname(__file__),'app-release.apk'))
-		desired_caps['appPackage'] = 'com.hbn.hakmeshop'
-		desired_caps['appActivity'] = '.MainActivity'
+		desired_caps['appPackage'] 				=	self.appName
+		desired_caps['appActivity'] 			=	self.appActivity
 		self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
 	def appiumScript(self):
 		element = self.driver.find_element_by_id("com.hbn.hakmeshop:id/hakmeShopButton")
@@ -106,7 +109,7 @@ class AndroidAutomata(object):
 						self.logger.debug("Cliked {0}".format("ImageView"))
 					else:
 						self.logger.error("Check uiviewer")
-				elif(activityN == "ccom.startapp.android.publish.list3d.List3DActivity"):
+				elif(activityN == "com.startapp.android.publish.list3d.List3DActivity"):
 					if(self.findRelativeLayout()):
 						self.el.click()
 						self.logger.debug("Cliked {0}".format("RelativeLayout"))
@@ -120,21 +123,21 @@ class AndroidAutomata(object):
 						self.logger.debug("Cliked {0}".format("View"))
 				elif(activityN == "org.chromium.chrome.browser.document.DocumentActivity"):
 					# Chrome, close
-					self.driver.start_activity('com.hbn.hakmeshop','.MainActivity')
+					self.driver.start_activity(self.appName,self.activityName)
 				elif(activityN == "com.google.android.apps.chrome.ChromeTabbedActivity"):
 					# Install app if not found
-					self.driver.start_activity('com.hbn.hakmeshop','.MainActivity')
+					self.driver.start_activity(self.appName,self.activityName)
 				elif(activityN == "com.google.android.finsky.activities.MainActivity"):
 					# Install app if not found
 					self.installApp()
 					# Demo on time wait new code for playstore
-					self.driver.start_activity('com.hbn.hakmeshop','.MainActivity')
+					self.driver.start_activity(self.appName,self.activityName)
 				elif(activityN == "com.google.android.finsky.activities.ScreenshotsActivity"):
 					# Back to mainapp
-					self.driver.start_activity('com.hbn.hakmeshop','.MainActivity')
+					self.driver.start_activity(self.appName,self.activityName)
 				else:
 					# Back to app
-					self.driver.start_activity('com.hbn.hakmeshop','.MainActivity')
+					self.driver.start_activity(self.appName,self.activityName)
 					# Out app
 					# close app
 			countSockTime += 1
@@ -177,11 +180,16 @@ class AndroidAutomata(object):
 			return False
 	def installApp(self):
 		# Find install button
-		installButton = self.driver.find_element_by_class_name("android.widget.Button")
-		installButton.click()
-		time.sleep(2)
-		# Accept
-		installButton.click()
+		try:
+			installButton = self.driver.find_element_by_class_name("android.widget.Button")
+			installButton.click()
+			time.sleep(2)
+			# Accept
+			installButton.click()
+		except Exception, e:
+			# Install error, may be time out
+			self.logger.error("Can not install from PlayStore, back to main app")
+		
 def main():
 	mainClass 		=	AndroidAutomata()
 
