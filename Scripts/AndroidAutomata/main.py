@@ -100,7 +100,7 @@ class AndroidAutomata(object):
 					elif(self.findView()):
 						self.el.click()
 						self.logger.debug("Cliked {0}".format("View"))
-					if(self.findImageView()):
+					elif(self.findImageView()):
 						self.el.click()
 						self.logger.debug("Cliked {0}".format("ImageView"))
 					else:

@@ -107,3 +107,13 @@
 2016-02-20 17:07:17,189 DEBUG      Cliked ImageView
 2016-02-20 17:07:33,541 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
 2016-02-20 17:07:45,369 DEBUG      Start change new Sock
+2016-02-20 17:08:05,884 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 17:08:06,776 DEBUG      Cliked Image
+2016-02-20 17:08:07,852 ERROR      Check uiviewer
+2016-02-20 17:08:24,725 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-20 17:08:55,994 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 17:08:57,259 DEBUG      Cliked Image
+2016-02-20 17:08:59,699 DEBUG      Cliked ImageView
+2016-02-20 17:09:16,013 DEBUG      com.google.android.finsky.activities.ScreenshotsActivity
+2016-02-20 17:09:49,216 DEBUG      com.startapp.android.publish.FullScreenActivity
+2016-02-20 17:09:49,402 DEBUG      Cliked View
