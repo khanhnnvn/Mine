@@ -117,3 +117,53 @@
 2016-02-20 17:09:16,013 DEBUG      com.google.android.finsky.activities.ScreenshotsActivity
 2016-02-20 17:09:49,216 DEBUG      com.startapp.android.publish.FullScreenActivity
 2016-02-20 17:09:49,402 DEBUG      Cliked View
+2016-02-20 17:10:06,090 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-20 17:10:10,383 DEBUG      Start change new Sock
+2016-02-20 17:11:00,813 ERROR      Can not start Appium
+2016-02-20 17:11:05,833 ERROR      Can not start Appium
+2016-02-20 17:11:10,845 ERROR      Can not start Appium
+2016-02-20 17:11:15,856 ERROR      Can not start Appium
+2016-02-20 17:11:20,873 ERROR      Can not start Appium
+2016-02-20 17:11:25,887 ERROR      Can not start Appium
+2016-02-20 17:11:30,907 ERROR      Can not start Appium
+2016-02-20 17:11:35,925 ERROR      Can not start Appium
+2016-02-20 17:11:40,944 ERROR      Can not start Appium
+2016-02-20 17:11:45,958 ERROR      Can not start Appium
+2016-02-20 17:11:50,976 ERROR      Can not start Appium
+2016-02-20 17:11:55,989 ERROR      Can not start Appium
+2016-02-20 17:12:00,997 ERROR      Can not start Appium
+2016-02-20 17:12:06,006 ERROR      Can not start Appium
+2016-02-20 17:12:11,021 ERROR      Can not start Appium
+2016-02-20 17:12:16,030 ERROR      Can not start Appium
+2016-02-20 17:12:21,043 ERROR      Can not start Appium
+2016-02-20 17:12:26,058 ERROR      Can not start Appium
+2016-02-20 17:12:31,068 ERROR      Can not start Appium
+2016-02-20 17:12:36,077 ERROR      Can not start Appium
+2016-02-20 17:12:41,085 ERROR      Can not start Appium
+2016-02-20 17:12:46,095 ERROR      Can not start Appium
+2016-02-20 17:12:51,107 ERROR      Can not start Appium
+2016-02-20 17:12:56,119 ERROR      Can not start Appium
+2016-02-20 17:13:01,138 ERROR      Can not start Appium
+2016-02-20 17:13:06,151 ERROR      Can not start Appium
+2016-02-20 17:13:11,168 ERROR      Can not start Appium
+2016-02-20 17:13:16,185 ERROR      Can not start Appium
+2016-02-20 17:13:21,200 ERROR      Can not start Appium
+2016-02-20 17:13:26,216 ERROR      Can not start Appium
+2016-02-20 17:13:31,234 ERROR      Can not start Appium
+2016-02-20 17:13:36,248 ERROR      Can not start Appium
+2016-02-20 17:13:41,255 ERROR      Can not start Appium
+2016-02-20 17:14:02,670 INFO       Start run new appium instance
+2016-02-20 17:14:35,573 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 17:14:36,159 DEBUG      Cliked Image
+2016-02-20 17:14:52,652 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 17:15:20,948 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 17:15:21,352 DEBUG      Cliked Image
+2016-02-20 17:15:37,824 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 17:15:49,496 DEBUG      Start change new Sock
+2016-02-20 17:16:12,546 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 17:16:12,891 DEBUG      Cliked WebView
+2016-02-20 17:16:29,361 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 17:16:57,849 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 17:16:58,311 DEBUG      Cliked Image
+2016-02-20 17:17:14,585 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
+2016-02-20 17:17:43,051 DEBUG      com.startapp.android.publish.OverlayActivity
