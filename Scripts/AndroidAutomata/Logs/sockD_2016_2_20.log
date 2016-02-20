@@ -9388,3 +9388,13 @@
 2016-02-20 17:15:56,227 DEBUG      Request time of id 24 :  1.57650113106
 2016-02-20 17:15:56,227 DEBUG      Sock PID 864 access Internet OK
 2016-02-20 17:15:56,228 DEBUG      Updated socks id 24 lastcheck to  1455963356.23
+2016-02-20 17:22:00,378 DEBUG      Pid is 864
+2016-02-20 17:22:01,394 DEBUG      Killed process 864
+2016-02-20 17:22:01,396 DEBUG      Goted sock info:
+2016-02-20 17:22:01,396 DEBUG      {'username': u'root', 'ip': u'64.250.197.51', 'password': u'1234', 'id': 95}
+2016-02-20 17:22:09,536 DEBUG      Pid is 3038
+2016-02-20 17:22:09,556 DEBUG      Pid is 3038
+2016-02-20 17:22:09,556 INFO       Open new sock with PID: 3038
+2016-02-20 17:22:11,926 DEBUG      Request time of id 95 :  2.36214995384
+2016-02-20 17:22:11,927 DEBUG      Sock PID 3038 access Internet OK
+2016-02-20 17:22:11,928 DEBUG      Updated socks id 95 lastcheck to  1455963731.93

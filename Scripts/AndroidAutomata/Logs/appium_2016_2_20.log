@@ -167,3 +167,7 @@
 2016-02-20 17:16:58,311 DEBUG      Cliked Image
 2016-02-20 17:17:14,585 DEBUG      com.google.android.apps.chrome.ChromeTabbedActivity
 2016-02-20 17:17:43,051 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-20 17:22:11,931 ERROR      Can not start Appium
+2016-02-20 17:22:16,940 ERROR      Can not start Appium
+2016-02-20 17:22:21,944 ERROR      Can not start Appium
+2016-02-20 17:22:26,951 ERROR      Can not start Appium
