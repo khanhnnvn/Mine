@@ -30,3 +30,90 @@
 2016-02-19 01:48:07,853 INFO       Start run new appium instance
 2016-02-19 01:49:23,702 DEBUG      Sock is not good, changed status. go to next sock
 2016-02-19 01:49:59,320 INFO       Start run new appium instance
+2016-02-19 23:00:38,748 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:00:48,816 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:02:43,140 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:02:53,196 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:03:03,263 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:03:13,321 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:03:23,386 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:03:33,450 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:03:43,514 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:03:53,580 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:04:03,636 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:04:13,691 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:04:23,757 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:04:33,815 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:04:43,870 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:04:55,062 ERROR      Can not start Appium
+2016-02-19 23:04:55,088 INFO       Start run new appium instance
+2016-02-19 23:07:43,872 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:07:54,748 ERROR      Can not start Appium
+2016-02-19 23:10:28,184 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:10:38,240 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:10:48,297 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:10:58,354 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:11:08,423 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:11:19,756 ERROR      Can not start Appium
+2016-02-19 23:12:21,688 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:12:31,753 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:12:41,805 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:12:51,866 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:13:01,932 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:13:14,492 ERROR      Can not start Appium
+2016-02-19 23:16:48,694 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:16:58,761 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:17:08,821 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:17:18,885 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:17:28,945 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:17:39,004 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:17:49,060 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:17:59,124 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:18:09,188 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:18:19,243 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:18:29,304 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:18:41,196 ERROR      Can not start Appium
+2016-02-19 23:20:57,789 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:20:57,992 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:20:58,196 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:20:58,406 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:20:58,631 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:20:58,847 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:20:59,064 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:20:59,290 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:20:59,511 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:20:59,729 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:00,796 ERROR      Can not start Appium
+2016-02-19 23:21:17,626 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:17,865 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:18,097 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:18,327 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:18,552 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:18,772 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:18,990 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:19,216 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:19,441 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:19,671 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:19,906 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:20,138 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:20,367 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:21,821 ERROR      Can not start Appium
+2016-02-19 23:21:34,469 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:34,697 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:34,922 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:35,155 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:35,375 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:35,605 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:35,834 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:36,070 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:36,308 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:36,539 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:36,776 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:37,009 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:37,257 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:37,507 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:37,740 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:37,987 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:38,225 DEBUG      Sock is not good, changed status. go to next sock
+2016-02-19 23:21:40,521 ERROR      Can not start Appium
+2016-02-19 23:22:33,621 ERROR      Can not start Appium

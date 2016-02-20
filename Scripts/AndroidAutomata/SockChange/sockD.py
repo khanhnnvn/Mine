@@ -1,5 +1,5 @@
-import logging, datetime, os, subprocess, time, requesocks
 #!/usr/bin/python
+import logging, datetime, os, subprocess, time, requesocks
 class sockD:
 	def __init__(self, db):
 		self.db 						=		db
@@ -8,8 +8,11 @@ class sockD:
 		self.dirPath 					=		os.getcwd()
 		self.sockPort 					=		9991
 		self.sockTimeOut 				=		10													# 10
+		self.closePort 					=		True
+		self.lastIPSock 				=		""
 		self.sshCmd 					=		"sshpass -p {0} ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no {1}@{2} -D 0.0.0.0:{3} "
-		self.netstatCmd 				=		"lsof -i:{0} | tail -n +2 | awk '{{print $2}}' | sort | uniq"
+		self.netstatCmd 				=		"netstat -luntp 2>/dev/null | grep 0.0.0.0:{0} | awk '{{print $7}}' | cut -d/ -f1"
+		self.netstatCmdCount 			=		"netstat -luntp 2>/dev/null | grep 0.0.0.0:{0} | awk '{{print $7}}' | cut -d/ -f1 | wc -l"
 		self.killProcessCmd 			=		"kill -9 {0}"
 		self.logSetup()
 	def logSetup(self):
@@ -33,29 +36,49 @@ class sockD:
 		self.logger.addHandler(fileHandler)
 		self.logger.setLevel(logging.DEBUG)
 	def checkOpenPort(self):
-		cmd 							=		self.netstatCmd.format(self.sockPort)
-		re 								= 		os.popen(cmd).read()
+		# First, count 
+		cmd 							=		self.netstatCmdCount.format(self.sockPort)
+		count							= 		os.popen(cmd).read()
 		try:
-			pid 						=		int(re)
-			self.logger.debug("Pid is {0}".format(pid))
-			self.pid 					=		pid
-			return True
+			countN 						=		int(count)
+			if(countN > 0):
+				# Port open
+				cmd 					=		self.netstatCmd.format(self.sockPort)
+				re 						= 		os.popen(cmd).read()
+				try:
+					pid 				=		int(re)
+					self.logger.debug("Pid is {0}".format(pid))
+					self.pid 			=		pid
+				except Exception, e:
+					self.logger.debug("Can not get PID, may be port listen by root")
+					self.closePort 			=	False
+				return True
+			else:
+				# Port close
+				# self.logger.debug("Port is not listen")
+				return False
 		except Exception, e:
-			self.logger.debug("Port is not listen")
-			return False
+			self.logger.debug("Unknow Exception, please check")
 	def closeSock(self):
 		if(self.checkOpenPort()):
-			# Kill process
-			cmd 						=	self.killProcessCmd.format(self.pid)
-			os.popen(cmd)
-			time.sleep(1)	# delay 2s
-			if(self.checkOpenPort()):
-				self.logger.error("Can not kill pid {0}".format(self.pid))
+			# Check port close
+			if(self.closePort == False):
+				# True is can not close
+				self.logger.debug("Can not close port")
 				return False
 			else:
-				self.logger.debug("Killed process {0}".format(self.pid))
-				return True
+				# Kill process
+				cmd 						=	self.killProcessCmd.format(self.pid)
+				os.popen(cmd)
+				time.sleep(1)	# delay 2s
+				if(self.checkOpenPort()):
+					self.logger.error("Can not kill pid {0}".format(self.pid))
+					return False
+				else:
+					self.logger.debug("Killed process {0}".format(self.pid))
+					return True
 		else:
+			self.logger.debug("Port {0} is not listen, don`t need close".format(self.sockPort))
 			return True
 	def getSock(self):
 		if(self.closeSock()):
@@ -65,15 +88,21 @@ class sockD:
 				self.logger.debug("Goted sock info:")
 				self.logger.debug(sockInfo)
 				cmd 						=	self.sshCmd.format(sockInfo["password"], sockInfo["username"], sockInfo["ip"], self.sockPort)
-				process 					= 	subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-				time.sleep(self.sockTimeOut)
+				devnull 					= 	open(os.devnull, 'wb') 
+				process 					= 	subprocess.Popen(cmd, shell=True, stdout=devnull, stderr=devnull)
+				#time.sleep(self.sockTimeOut)
+				#Edit to count per second
+				for i in range(0, self.sockTimeOut):
+					time.sleep(1)
+					if(self.checkOpenPort()):
+						break	
 				if(self.checkOpenPort()):
 
 					# Open sock ok
 					self.logger.info("Open new sock with PID: {0}".format(self.pid))
 					
 					# Check Internet
-					if(self.checkInternet()):
+					if(self.checkInternet(sockInfo["id"])):
 						self.logger.debug("Sock PID {0} access Internet OK".format(self.pid))
 						# update lastcheck
 						timeNow 						=	time.time()
@@ -98,13 +127,25 @@ class sockD:
 			# Can not close sock, error, exit
 			self.logger.error("Error, can not close sock, exit now!")
 			return False
-	def checkInternet(self):
+	def checkInternet(self, id):
 		session = requesocks.session()
 		session.proxies = {'http': 'socks5://localhost:{0}'.format(self.sockPort), 'https': 'socks5://localhost:{0}'.format(self.sockPort)}
 		try:
+			startTime					=	time.time()
 			response = session.get('http://ip.42.pl/raw')
 			if(int(response.status_code) == 200):
-				return True
+				if(self.lastIPSock 		!=	response.text):
+					# New sock
+					self.lastIPSock 		=	response.text
+					doneTime 				=	time.time()
+					# Update response time
+					time2response 			=	doneTime - startTime
+					self.db.update_row("socks","id",id,"time2response",time2response)
+					self.logger.debug("Request time of id {0} :  {1}".format(id,time2response))
+					return True
+				else:
+					self.logger.error("Sock not change")
+					return False
 			else:
 				return False
 		except Exception, e:
@@ -112,6 +153,7 @@ class sockD:
 		
 	def selectSock(self):
 		re 								=	self.db.get_one_row("socks","status","True","lastcheck")
+		# re 								=	self.db.get_one_row("socks","id",95,"lastcheck")
 		if(len(re) == 1):
 			# Found one, ok
 			data						=	{}
