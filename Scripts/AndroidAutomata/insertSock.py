@@ -6,7 +6,7 @@ import logging, time
 FORMAT = '%(asctime)-15s %(levelname)s %(message)s'
 logging.basicConfig(filename='insertSock.log',level=logging.DEBUG, format=FORMAT)
 # Connect geoIP
-reader = geoip2.database.Reader('/home/namhb/Downloads/GeoLite2-City.mmdb')
+reader = geoip2.database.Reader('/home/habachnam/Downloads/GeoLite2-City.mmdb')
 # Connect
 db 		=		SQLitedatabase("appDB")
 
@@ -45,9 +45,10 @@ def insertSock(db, ip, username, password, port=22):
 			# Start insert
 			db.insert_table_spec("socks",data)
 
-with open('sock1.txt') as f:
+with open('sock2.txt') as f:
 	lines 				= 	f.readlines()
 for line in lines:
+	print line
 	item 				= 	line.split("|")
 	ip 					= 	item[0]
 	username 			= 	item[1]

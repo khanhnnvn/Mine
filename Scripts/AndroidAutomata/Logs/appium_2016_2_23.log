@@ -1,0 +1,849 @@
+2016-02-23 18:31:17,094 DEBUG      Pid is 4930
+2016-02-23 18:31:17,094 INFO       Start run new appium instance
+2016-02-23 18:31:17,787 DEBUG      Not Home, try again
+2016-02-23 18:31:26,382 DEBUG      This is Home Desktop
+2016-02-23 18:31:27,034 ERROR      Called Proxy Droid
+2016-02-23 18:31:28,953 DEBUG      Proxy is OFF
+2016-02-23 18:31:29,204 DEBUG      Turn on Proxy
+2016-02-23 18:31:30,847 DEBUG      Pid is 4930
+2016-02-23 18:31:31,988 DEBUG      Pid is 4930
+2016-02-23 18:31:32,864 DEBUG      Pid is 4930
+2016-02-23 18:31:33,596 DEBUG      Pid is 4930
+2016-02-23 18:31:45,395 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 18:31:45,553 DEBUG      Cliked ImageView
+2016-02-23 18:31:46,723 DEBUG      Cliked Image
+2016-02-23 18:31:47,889 DEBUG      Pid is 4930
+2016-02-23 18:46:23,507 ERROR      Message: A new session could not be created. (Original error: Requested a new session but one was in progress)
+
+2016-02-23 18:46:23,507 ERROR      Can not start Appium
+2016-02-23 18:46:28,520 ERROR      Message: A new session could not be created. (Original error: Requested a new session but one was in progress)
+
+2016-02-23 18:46:28,520 ERROR      Can not start Appium
+2016-02-23 18:46:33,527 ERROR      <urlopen error [Errno 111] Connection refused>
+2016-02-23 18:46:33,528 ERROR      Can not start Appium
+2016-02-23 18:47:33,767 DEBUG      Pid is 10915
+2016-02-23 18:47:33,768 INFO       Start run new appium instance
+2016-02-23 18:47:39,202 DEBUG      Not Home, try again
+2016-02-23 18:47:47,524 DEBUG      This is Home Desktop
+2016-02-23 18:47:48,152 ERROR      Called Proxy Droid
+2016-02-23 18:47:49,578 DEBUG      Proxy is ON
+2016-02-23 18:47:49,578 DEBUG      Proxy is on, don`t need on
+2016-02-23 18:47:50,988 DEBUG      Pid is 10915
+2016-02-23 18:47:51,970 DEBUG      Pid is 10915
+2016-02-23 18:47:52,808 DEBUG      Pid is 10915
+2016-02-23 18:47:53,540 DEBUG      Pid is 10915
+2016-02-23 18:48:05,298 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 18:48:05,498 DEBUG      Cliked ImageView
+2016-02-23 18:48:09,458 DEBUG      Cliked View
+2016-02-23 18:48:09,795 DEBUG      Pid is 10915
+2016-02-23 18:48:21,233 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 18:48:21,449 DEBUG      Cliked ImageView
+2016-02-23 18:48:22,435 DEBUG      Cliked Image
+2016-02-23 18:48:23,644 DEBUG      Wait For new Sock
+2016-02-23 18:49:23,715 DEBUG      Wait For new Sock
+2016-02-23 18:50:23,787 DEBUG      Wait For new Sock
+2016-02-23 18:51:23,866 DEBUG      Pid is 12995
+2016-02-23 18:51:52,146 DEBUG      Pid is 12995
+2016-02-23 18:51:52,146 INFO       Start run new appium instance
+2016-02-23 18:51:53,333 DEBUG      Not Home, try again
+2016-02-23 18:52:01,827 DEBUG      This is Home Desktop
+2016-02-23 18:52:02,418 ERROR      Called Proxy Droid
+2016-02-23 18:52:03,733 DEBUG      Proxy is ON
+2016-02-23 18:52:03,734 DEBUG      Proxy is on, don`t need on
+2016-02-23 18:52:05,249 DEBUG      Pid is 12995
+2016-02-23 18:52:06,165 DEBUG      Pid is 12995
+2016-02-23 18:52:06,830 DEBUG      Pid is 12995
+2016-02-23 18:52:18,034 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 18:52:18,290 DEBUG      Cliked ImageView
+2016-02-23 18:52:19,625 DEBUG      Cliked Image
+2016-02-23 18:52:20,790 DEBUG      Pid is 12995
+2016-02-23 18:52:32,336 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-23 18:52:32,406 DEBUG      Go to PlayStore
+2016-02-23 18:52:34,567 DEBUG      Not Home, try again
+2016-02-23 18:52:43,115 DEBUG      This is Home Desktop
+2016-02-23 18:52:43,789 ERROR      Called Proxy Droid
+2016-02-23 18:52:45,095 DEBUG      Proxy is ON
+2016-02-23 18:52:45,341 DEBUG      Turn off Proxy
+2016-02-23 18:52:47,454 DEBUG      Not Home, try again
+2016-02-23 18:52:56,088 DEBUG      This is Home Desktop
+2016-02-23 18:52:59,690 ERROR      Called PlayStore
+2016-02-23 18:53:01,764 DEBUG      PlayStore is not ready
+2016-02-23 18:53:02,030 DEBUG      PlayStore is ready
+2016-02-23 18:53:02,031 DEBUG      Wait time to load PlayStore 0
+2016-02-23 18:53:03,090 DEBUG      Wait time to load PlayStore 1
+2016-02-23 18:53:04,228 DEBUG      Wait time to load PlayStore 2
+2016-02-23 18:53:05,290 DEBUG      Wait time to load PlayStore 3
+2016-02-23 18:53:06,331 DEBUG      Wait time to load PlayStore 4
+2016-02-23 18:53:07,380 DEBUG      Wait time to load PlayStore 5
+2016-02-23 18:53:08,531 DEBUG      Wait time to load PlayStore 6
+2016-02-23 18:53:09,575 DEBUG      Wait time to load PlayStore 7
+2016-02-23 18:53:10,820 DEBUG      Wait time to load PlayStore 8
+2016-02-23 18:53:11,891 DEBUG      Wait time to load PlayStore 9
+2016-02-23 18:53:12,959 DEBUG      Wait time to load PlayStore 10
+2016-02-23 18:53:14,046 DEBUG      Wait time to load PlayStore 11
+2016-02-23 18:53:15,128 DEBUG      Wait time to load PlayStore 12
+2016-02-23 18:53:16,330 DEBUG      Wait time to load PlayStore 13
+2016-02-23 18:53:17,396 DEBUG      Wait time to load PlayStore 14
+2016-02-23 18:53:18,598 DEBUG      Wait time to load PlayStore 15
+2016-02-23 18:53:19,665 DEBUG      Wait time to load PlayStore 16
+2016-02-23 18:53:20,770 DEBUG      Wait time to load PlayStore 17
+2016-02-23 18:53:21,981 DEBUG      Wait time to load PlayStore 18
+2016-02-23 18:53:23,052 DEBUG      Wait time to load PlayStore 19
+2016-02-23 18:53:24,250 DEBUG      Wait time to load PlayStore 20
+2016-02-23 18:53:25,297 DEBUG      Wait time to load PlayStore 21
+2016-02-23 18:53:26,447 DEBUG      Wait time to load PlayStore 22
+2016-02-23 18:53:27,560 DEBUG      Wait time to load PlayStore 23
+2016-02-23 18:53:28,607 DEBUG      Wait time to load PlayStore 24
+2016-02-23 18:53:29,668 DEBUG      Wait time to load PlayStore 25
+2016-02-23 18:53:30,713 DEBUG      Wait time to load PlayStore 26
+2016-02-23 18:53:31,827 DEBUG      Wait time to load PlayStore 27
+2016-02-23 18:53:32,934 DEBUG      Wait time to load PlayStore 28
+2016-02-23 18:53:34,084 DEBUG      Wait time to load PlayStore 29
+2016-02-23 18:53:35,124 ERROR      Can not install from PlayStore, back to main app
+2016-02-23 18:53:35,125 DEBUG      Wait time to load PlayStore 30
+2016-02-23 18:53:36,168 DEBUG      Wait time to load PlayStore 31
+2016-02-23 18:53:37,244 DEBUG      Wait time to load PlayStore 32
+2016-02-23 18:53:38,317 DEBUG      Wait time to load PlayStore 33
+2016-02-23 18:53:39,386 DEBUG      Wait time to load PlayStore 34
+2016-02-23 18:53:40,426 DEBUG      Wait time to load PlayStore 35
+2016-02-23 18:53:41,639 DEBUG      Wait time to load PlayStore 36
+2016-02-23 18:53:42,687 DEBUG      Wait time to load PlayStore 37
+2016-02-23 18:53:43,730 DEBUG      Wait time to load PlayStore 38
+2016-02-23 18:53:44,807 DEBUG      Wait time to load PlayStore 39
+2016-02-23 18:53:46,009 DEBUG      Wait time to load PlayStore 40
+2016-02-23 18:53:47,054 DEBUG      Wait time to load PlayStore 41
+2016-02-23 18:53:48,162 DEBUG      Wait time to load PlayStore 42
+2016-02-23 18:53:49,361 DEBUG      Wait time to load PlayStore 43
+2016-02-23 18:53:50,579 DEBUG      Wait time to load PlayStore 44
+2016-02-23 18:53:51,653 DEBUG      Wait time to load PlayStore 45
+2016-02-23 18:53:52,697 DEBUG      Wait time to load PlayStore 46
+2016-02-23 18:53:53,742 DEBUG      Wait time to load PlayStore 47
+2016-02-23 18:53:54,803 DEBUG      Wait time to load PlayStore 48
+2016-02-23 18:53:55,884 DEBUG      Wait time to load PlayStore 49
+2016-02-23 18:53:57,084 DEBUG      Wait time to load PlayStore 50
+2016-02-23 18:53:58,126 DEBUG      Wait time to load PlayStore 51
+2016-02-23 18:53:59,174 DEBUG      Wait time to load PlayStore 52
+2016-02-23 18:54:00,371 DEBUG      Wait time to load PlayStore 53
+2016-02-23 18:54:01,521 DEBUG      Wait time to load PlayStore 54
+2016-02-23 18:54:02,564 DEBUG      Wait time to load PlayStore 55
+2016-02-23 18:54:03,774 DEBUG      Wait time to load PlayStore 56
+2016-02-23 18:54:04,812 DEBUG      Wait time to load PlayStore 57
+2016-02-23 18:54:05,863 DEBUG      Wait time to load PlayStore 58
+2016-02-23 18:54:06,923 DEBUG      Wait time to load PlayStore 59
+2016-02-23 18:54:10,041 DEBUG      Not Home, try again
+2016-02-23 18:54:18,278 DEBUG      This is Home Desktop
+2016-02-23 18:54:19,219 ERROR      Called Proxy Droid
+2016-02-23 18:54:20,595 DEBUG      Proxy is OFF
+2016-02-23 18:54:20,862 DEBUG      Turn on Proxy
+2016-02-23 18:54:23,998 DEBUG      Pid is 12995
+2016-02-23 18:54:25,008 DEBUG      Pid is 12995
+2016-02-23 18:54:25,796 DEBUG      Pid is 12995
+2016-02-23 18:54:26,531 DEBUG      Pid is 12995
+2016-02-23 18:54:37,948 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 18:54:38,369 DEBUG      Cliked ImageView
+2016-02-23 18:54:39,629 DEBUG      Cliked Image
+2016-02-23 18:54:40,988 DEBUG      Pid is 12995
+2016-02-23 18:54:52,588 DEBUG      com.android.internal.app.ResolverActivity
+2016-02-23 18:54:52,737 DEBUG      Chrome chose default browser popup
+2016-02-23 18:54:52,772 ERROR      Select Chrome error
+2016-02-23 18:54:52,772 ERROR      'instancemethod' object has no attribute '__getitem__'
+2016-02-23 18:54:54,363 DEBUG      Pid is 12995
+2016-02-23 18:54:55,239 DEBUG      Pid is 12995
+2016-02-23 18:54:56,046 DEBUG      Pid is 12995
+2016-02-23 18:55:15,871 DEBUG      com.startapp.android.publish.list3d.List3DActivity
+2016-02-23 18:55:20,064 DEBUG      Cliked RelativeLayout
+2016-02-23 18:55:20,718 DEBUG      Pid is 12995
+2016-02-23 18:55:32,657 DEBUG      com.android.internal.app.ResolverActivity
+2016-02-23 18:55:32,807 DEBUG      Chrome chose default browser popup
+2016-02-23 18:55:32,828 ERROR      Select Chrome error
+2016-02-23 18:55:32,828 ERROR      'instancemethod' object has no attribute '__getitem__'
+2016-02-23 18:55:34,461 DEBUG      Pid is 12995
+2016-02-23 18:55:35,265 DEBUG      Pid is 12995
+2016-02-23 18:55:36,025 DEBUG      Pid is 12995
+2016-02-23 18:55:36,828 DEBUG      Pid is 12995
+2016-02-23 18:55:48,753 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 18:55:49,054 DEBUG      Cliked ImageView
+2016-02-23 18:55:50,359 DEBUG      Cliked Image
+2016-02-23 18:55:51,683 DEBUG      Pid is 12995
+2016-02-23 18:56:02,999 DEBUG      com.android.internal.app.ResolverActivity
+2016-02-23 18:56:03,144 DEBUG      Chrome chose default browser popup
+2016-02-23 18:56:03,174 ERROR      Select Chrome error
+2016-02-23 18:56:03,174 ERROR      'instancemethod' object has no attribute '__getitem__'
+2016-02-23 18:56:04,896 DEBUG      Wait For new Sock
+2016-02-23 18:57:04,948 DEBUG      Wait For new Sock
+2016-02-23 18:58:05,023 DEBUG      Wait For new Sock
+2016-02-23 18:59:05,091 DEBUG      Wait For new Sock
+2016-02-23 19:00:05,149 DEBUG      Pid is 14433
+2016-02-23 19:00:47,645 DEBUG      Pid is 14433
+2016-02-23 19:00:47,645 INFO       Start run new appium instance
+2016-02-23 19:00:48,355 DEBUG      Not Home, try again
+2016-02-23 19:00:57,143 DEBUG      This is Home Desktop
+2016-02-23 19:00:57,799 ERROR      Called Proxy Droid
+2016-02-23 19:00:59,139 DEBUG      Proxy is ON
+2016-02-23 19:00:59,139 DEBUG      Proxy is on, don`t need on
+2016-02-23 19:01:00,661 DEBUG      Pid is 14433
+2016-02-23 19:01:01,647 DEBUG      Pid is 14433
+2016-02-23 19:01:02,386 DEBUG      Pid is 14433
+2016-02-23 19:01:14,318 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 19:01:14,561 DEBUG      Cliked ImageView
+2016-02-23 19:01:15,962 DEBUG      Cliked Image
+2016-02-23 19:01:17,245 DEBUG      Pid is 14433
+2016-02-23 19:01:28,497 DEBUG      com.android.internal.app.ResolverActivity
+2016-02-23 19:01:28,662 DEBUG      Chrome chose default browser popup
+2016-02-23 19:01:28,690 ERROR      Select Chrome error
+2016-02-23 19:01:28,690 ERROR      Message: An element could not be located on the page using the given search parameters.
+
+2016-02-23 19:01:30,262 DEBUG      Pid is 14433
+2016-02-23 19:01:31,101 DEBUG      Pid is 14433
+2016-02-23 19:01:31,931 DEBUG      Pid is 14433
+2016-02-23 19:01:33,215 DEBUG      Pid is 14433
+2016-02-23 19:01:49,709 DEBUG      com.startapp.android.publish.list3d.List3DActivity
+2016-02-23 19:01:50,533 DEBUG      Cliked RelativeLayout
+2016-02-23 19:01:51,634 DEBUG      Pid is 14433
+2016-02-23 19:02:02,888 DEBUG      com.android.internal.app.ResolverActivity
+2016-02-23 19:02:03,039 DEBUG      Chrome chose default browser popup
+2016-02-23 19:02:03,068 ERROR      Select Chrome error
+2016-02-23 19:02:03,068 ERROR      Message: An element could not be located on the page using the given search parameters.
+
+2016-02-23 19:02:04,701 DEBUG      Pid is 14433
+2016-02-23 19:02:05,732 DEBUG      Pid is 14433
+2016-02-23 19:02:06,591 DEBUG      Pid is 14433
+2016-02-23 19:02:18,386 DEBUG      com.startapp.android.publish.list3d.List3DActivity
+2016-02-23 19:02:19,306 DEBUG      Cliked RelativeLayout
+2016-02-23 19:02:20,465 DEBUG      Pid is 14433
+2016-02-23 19:02:32,584 DEBUG      com.android.internal.app.ResolverActivity
+2016-02-23 19:02:32,743 DEBUG      Chrome chose default browser popup
+2016-02-23 19:02:32,790 ERROR      Select Chrome error
+2016-02-23 19:02:32,790 ERROR      Message: An element could not be located on the page using the given search parameters.
+
+2016-02-23 19:02:34,094 DEBUG      Pid is 14433
+2016-02-23 19:02:35,096 DEBUG      Pid is 14433
+2016-02-23 19:02:35,830 DEBUG      Pid is 14433
+2016-02-23 19:02:47,436 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 19:02:47,780 DEBUG      Cliked ImageView
+2016-02-23 19:02:49,040 DEBUG      Cliked Image
+2016-02-23 19:02:50,230 DEBUG      Pid is 14433
+2016-02-23 19:03:01,912 DEBUG      org.chromium.chrome.browser.ChromeTabbedActivity
+2016-02-23 19:03:03,441 DEBUG      Pid is 14433
+2016-02-23 19:03:04,328 DEBUG      Pid is 14433
+2016-02-23 19:03:05,099 DEBUG      Pid is 14433
+2016-02-23 19:03:05,948 DEBUG      Pid is 14433
+2016-02-23 19:03:17,840 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 19:03:18,095 DEBUG      Cliked ImageView
+2016-02-23 19:03:19,269 DEBUG      Cliked Image
+2016-02-23 19:03:20,450 DEBUG      Pid is 14433
+2016-02-23 19:03:32,069 DEBUG      org.chromium.chrome.browser.ChromeTabbedActivity
+2016-02-23 19:03:33,419 DEBUG      Pid is 14433
+2016-02-23 19:03:34,407 DEBUG      Pid is 14433
+2016-02-23 19:03:35,228 DEBUG      Pid is 14433
+2016-02-23 19:03:46,523 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 19:03:46,706 DEBUG      Cliked ImageView
+2016-02-23 19:03:48,399 DEBUG      Cliked Image
+2016-02-23 19:03:52,429 DEBUG      Cliked View
+2016-02-23 19:03:52,492 DEBUG      Pid is 14433
+2016-02-23 19:04:04,199 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-23 19:04:04,257 DEBUG      Go to PlayStore
+2016-02-23 19:04:06,343 DEBUG      Not Home, try again
+2016-02-23 19:04:14,909 DEBUG      This is Home Desktop
+2016-02-23 19:04:15,882 ERROR      Called Proxy Droid
+2016-02-23 19:04:17,175 DEBUG      Proxy is ON
+2016-02-23 19:04:17,427 DEBUG      Turn off Proxy
+2016-02-23 19:04:19,850 DEBUG      Not Home, try again
+2016-02-23 19:04:28,694 DEBUG      This is Home Desktop
+2016-02-23 19:04:32,000 ERROR      Called PlayStore
+2016-02-23 19:04:34,052 DEBUG      PlayStore is not ready
+2016-02-23 19:04:34,174 DEBUG      PlayStore is ready
+2016-02-23 19:04:34,175 DEBUG      Wait time to load PlayStore 0
+2016-02-23 19:04:35,214 DEBUG      Wait time to load PlayStore 1
+2016-02-23 19:04:36,270 DEBUG      Wait time to load PlayStore 2
+2016-02-23 19:04:37,483 DEBUG      Wait time to load PlayStore 3
+2016-02-23 19:04:38,706 DEBUG      Wait time to load PlayStore 4
+2016-02-23 19:04:39,906 DEBUG      Wait time to load PlayStore 5
+2016-02-23 19:04:40,974 DEBUG      Wait time to load PlayStore 6
+2016-02-23 19:04:42,209 DEBUG      Wait time to load PlayStore 7
+2016-02-23 19:04:43,350 DEBUG      Wait time to load PlayStore 8
+2016-02-23 19:04:44,383 DEBUG      Wait time to load PlayStore 9
+2016-02-23 19:04:45,530 DEBUG      Wait time to load PlayStore 10
+2016-02-23 19:04:46,570 DEBUG      Wait time to load PlayStore 11
+2016-02-23 19:04:47,671 DEBUG      Wait time to load PlayStore 12
+2016-02-23 19:04:48,736 DEBUG      Wait time to load PlayStore 13
+2016-02-23 19:04:49,785 DEBUG      Wait time to load PlayStore 14
+2016-02-23 19:04:50,835 DEBUG      Wait time to load PlayStore 15
+2016-02-23 19:04:51,943 DEBUG      Wait time to load PlayStore 16
+2016-02-23 19:04:52,985 DEBUG      Wait time to load PlayStore 17
+2016-02-23 19:04:54,111 DEBUG      Wait time to load PlayStore 18
+2016-02-23 19:04:55,156 DEBUG      Wait time to load PlayStore 19
+2016-02-23 19:04:56,199 DEBUG      Wait time to load PlayStore 20
+2016-02-23 19:04:57,237 DEBUG      Wait time to load PlayStore 21
+2016-02-23 19:04:58,305 DEBUG      Wait time to load PlayStore 22
+2016-02-23 19:04:59,509 DEBUG      Wait time to load PlayStore 23
+2016-02-23 19:05:00,709 DEBUG      Wait time to load PlayStore 24
+2016-02-23 19:05:01,928 DEBUG      Wait time to load PlayStore 25
+2016-02-23 19:05:02,989 DEBUG      Wait time to load PlayStore 26
+2016-02-23 19:05:04,098 DEBUG      Wait time to load PlayStore 27
+2016-02-23 19:05:05,140 DEBUG      Wait time to load PlayStore 28
+2016-02-23 19:05:06,183 DEBUG      Wait time to load PlayStore 29
+2016-02-23 19:05:07,231 ERROR      Can not install from PlayStore, back to main app
+2016-02-23 19:05:07,231 DEBUG      Wait time to load PlayStore 30
+2016-02-23 19:05:08,338 DEBUG      Wait time to load PlayStore 31
+2016-02-23 19:05:09,480 DEBUG      Wait time to load PlayStore 32
+2016-02-23 19:05:10,524 DEBUG      Wait time to load PlayStore 33
+2016-02-23 19:05:11,570 DEBUG      Wait time to load PlayStore 34
+2016-02-23 19:05:12,631 DEBUG      Wait time to load PlayStore 35
+2016-02-23 19:05:13,740 DEBUG      Wait time to load PlayStore 36
+2016-02-23 19:05:14,785 DEBUG      Wait time to load PlayStore 37
+2016-02-23 19:05:15,830 DEBUG      Wait time to load PlayStore 38
+2016-02-23 19:05:16,871 DEBUG      Wait time to load PlayStore 39
+2016-02-23 19:05:17,915 DEBUG      Wait time to load PlayStore 40
+2016-02-23 19:05:18,956 DEBUG      Wait time to load PlayStore 41
+2016-02-23 19:05:20,071 DEBUG      Wait time to load PlayStore 42
+2016-02-23 19:05:21,148 DEBUG      Wait time to load PlayStore 43
+2016-02-23 19:05:22,263 DEBUG      Wait time to load PlayStore 44
+2016-02-23 19:05:23,302 DEBUG      Wait time to load PlayStore 45
+2016-02-23 19:05:24,357 DEBUG      Wait time to load PlayStore 46
+2016-02-23 19:05:25,495 DEBUG      Wait time to load PlayStore 47
+2016-02-23 19:05:26,567 DEBUG      Wait time to load PlayStore 48
+2016-02-23 19:05:27,623 DEBUG      Wait time to load PlayStore 49
+2016-02-23 19:05:28,743 DEBUG      Wait time to load PlayStore 50
+2016-02-23 19:05:29,795 DEBUG      Wait time to load PlayStore 51
+2016-02-23 19:05:30,855 DEBUG      Wait time to load PlayStore 52
+2016-02-23 19:05:31,896 DEBUG      Wait time to load PlayStore 53
+2016-02-23 19:06:24,334 DEBUG      Pid is 16109
+2016-02-23 19:06:24,334 INFO       Start run new appium instance
+2016-02-23 19:06:25,066 DEBUG      Not Home, try again
+2016-02-23 19:06:33,394 DEBUG      This is Home Desktop
+2016-02-23 19:06:34,841 ERROR      Called Proxy Droid
+2016-02-23 19:06:35,482 DEBUG      Proxy is OFF
+2016-02-23 19:06:35,730 DEBUG      Turn on Proxy
+2016-02-23 19:06:37,372 DEBUG      Pid is 16109
+2016-02-23 19:06:38,769 DEBUG      Pid is 16109
+2016-02-23 19:06:39,590 DEBUG      Pid is 16109
+2016-02-23 19:06:51,359 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 19:06:51,627 DEBUG      Cliked ImageView
+2016-02-23 19:06:53,696 DEBUG      Cliked View
+2016-02-23 19:06:54,779 DEBUG      Pid is 16109
+2016-02-23 19:07:06,236 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-23 19:07:06,290 DEBUG      Go to PlayStore
+2016-02-23 19:07:08,497 DEBUG      Not Home, try again
+2016-02-23 19:07:16,854 DEBUG      This is Home Desktop
+2016-02-23 19:07:20,135 ERROR      Called Proxy Droid
+2016-02-23 19:08:03,040 ERROR      Message: A new session could not be created. (Original error: Requested a new session but one was in progress)
+
+2016-02-23 19:08:03,041 ERROR      Can not start Appium
+2016-02-23 19:08:08,063 ERROR      Message: A new session could not be created. (Original error: Requested a new session but one was in progress)
+
+2016-02-23 19:08:08,064 ERROR      Can not start Appium
+2016-02-23 19:08:13,104 ERROR      Message: A new session could not be created. (Original error: Requested a new session but one was in progress)
+
+2016-02-23 19:08:13,104 ERROR      Can not start Appium
+2016-02-23 19:08:18,121 ERROR      Message: A new session could not be created. (Original error: Requested a new session but one was in progress)
+
+2016-02-23 19:08:18,122 ERROR      Can not start Appium
+2016-02-23 19:08:29,427 DEBUG      Pid is 16109
+2016-02-23 19:08:29,427 INFO       Start run new appium instance
+2016-02-23 19:08:30,630 DEBUG      Not Home, try again
+2016-02-23 19:08:38,836 DEBUG      This is Home Desktop
+2016-02-23 19:08:39,454 ERROR      Called Proxy Droid
+2016-02-23 19:08:40,228 DEBUG      Proxy is OFF
+2016-02-23 19:08:40,527 DEBUG      Turn on Proxy
+2016-02-23 19:08:42,072 DEBUG      Pid is 16109
+2016-02-23 19:08:43,043 DEBUG      Pid is 16109
+2016-02-23 19:08:44,127 DEBUG      Pid is 16109
+2016-02-23 19:08:56,039 DEBUG      com.startapp.android.publish.FullScreenActivity
+2016-02-23 19:08:56,798 DEBUG      Cliked View
+2016-02-23 19:08:56,820 DEBUG      Pid is 16109
+2016-02-23 19:09:08,182 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-23 19:09:08,237 DEBUG      Go to PlayStore
+2016-02-23 19:09:10,247 DEBUG      Not Home, try again
+2016-02-23 19:09:18,760 DEBUG      This is Home Desktop
+2016-02-23 19:09:19,185 ERROR      Called Proxy Droid
+2016-02-23 19:09:20,424 DEBUG      Proxy is ON
+2016-02-23 19:09:20,693 DEBUG      Turn off Proxy
+2016-02-23 19:09:22,861 DEBUG      Not Home, try again
+2016-02-23 19:09:31,063 DEBUG      This is Home Desktop
+2016-02-23 19:09:34,346 ERROR      Called PlayStore
+2016-02-23 19:09:36,575 DEBUG      PlayStore is not ready
+2016-02-23 19:09:36,845 DEBUG      PlayStore is ready
+2016-02-23 19:09:36,845 DEBUG      Wait time to load PlayStore 0
+2016-02-23 19:09:37,912 DEBUG      Wait time to load PlayStore 1
+2016-02-23 19:09:39,007 DEBUG      Wait time to load PlayStore 2
+2016-02-23 19:09:40,060 DEBUG      Wait time to load PlayStore 3
+2016-02-23 19:09:41,106 DEBUG      Wait time to load PlayStore 4
+2016-02-23 19:09:42,218 DEBUG      Wait time to load PlayStore 5
+2016-02-23 19:09:43,284 DEBUG      Wait time to load PlayStore 6
+2016-02-23 19:09:44,351 DEBUG      Wait time to load PlayStore 7
+2016-02-23 19:09:45,554 DEBUG      Wait time to load PlayStore 8
+2016-02-23 19:09:46,607 DEBUG      Wait time to load PlayStore 9
+2016-02-23 19:09:47,651 DEBUG      Wait time to load PlayStore 10
+2016-02-23 19:09:48,696 DEBUG      Wait time to load PlayStore 11
+2016-02-23 19:09:49,727 DEBUG      Wait time to load PlayStore 12
+2016-02-23 19:09:50,863 DEBUG      Wait time to load PlayStore 13
+2016-02-23 19:09:51,965 DEBUG      Wait time to load PlayStore 14
+2016-02-23 19:09:53,029 DEBUG      Wait time to load PlayStore 15
+2016-02-23 19:09:54,234 DEBUG      Wait time to load PlayStore 16
+2016-02-23 19:09:55,349 DEBUG      Wait time to load PlayStore 17
+2016-02-23 19:09:56,442 DEBUG      Wait time to load PlayStore 18
+2016-02-23 19:09:57,553 DEBUG      Wait time to load PlayStore 19
+2016-02-23 19:09:58,591 DEBUG      Wait time to load PlayStore 20
+2016-02-23 19:09:59,625 DEBUG      Wait time to load PlayStore 21
+2016-02-23 19:10:00,854 DEBUG      Wait time to load PlayStore 22
+2016-02-23 19:10:01,934 DEBUG      Wait time to load PlayStore 23
+2016-02-23 19:10:03,002 DEBUG      Wait time to load PlayStore 24
+2016-02-23 19:10:04,224 DEBUG      Wait time to load PlayStore 25
+2016-02-23 19:10:05,337 DEBUG      Wait time to load PlayStore 26
+2016-02-23 19:10:06,425 DEBUG      Wait time to load PlayStore 27
+2016-02-23 19:10:07,493 DEBUG      Wait time to load PlayStore 28
+2016-02-23 19:10:08,541 DEBUG      Wait time to load PlayStore 29
+2016-02-23 19:10:09,584 ERROR      Can not install from PlayStore, back to main app
+2016-02-23 19:10:42,294 ERROR      Message: A new session could not be created. (Original error: Requested a new session but one was in progress)
+
+2016-02-23 19:10:42,294 ERROR      Can not start Appium
+2016-02-23 19:10:47,316 ERROR      Message: A new session could not be created. (Original error: Requested a new session but one was in progress)
+
+2016-02-23 19:10:47,316 ERROR      Can not start Appium
+2016-02-23 19:10:52,332 ERROR      Message: A new session could not be created. (Original error: Requested a new session but one was in progress)
+
+2016-02-23 19:10:52,332 ERROR      Can not start Appium
+2016-02-23 19:10:57,352 ERROR      Message: A new session could not be created. (Original error: Requested a new session but one was in progress)
+
+2016-02-23 19:10:57,353 ERROR      Can not start Appium
+2016-02-23 19:11:02,424 ERROR      Message: A new session could not be created. (Original error: Requested a new session but one was in progress)
+
+2016-02-23 19:11:02,424 ERROR      Can not start Appium
+2016-02-23 19:11:07,445 ERROR      Message: A new session could not be created. (Original error: Requested a new session but one was in progress)
+
+2016-02-23 19:11:07,445 ERROR      Can not start Appium
+2016-02-23 19:12:17,352 DEBUG      Pid is 19646
+2016-02-23 19:12:17,354 INFO       Start run new appium instance
+2016-02-23 19:12:22,792 DEBUG      Not Home, try again
+2016-02-23 19:12:31,185 DEBUG      This is Home Desktop
+2016-02-23 19:12:31,569 ERROR      Called Proxy Droid
+2016-02-23 19:12:32,343 DEBUG      Proxy is OFF
+2016-02-23 19:12:32,612 DEBUG      Turn on Proxy
+2016-02-23 19:12:34,009 DEBUG      Pid is 19646
+2016-02-23 19:12:34,960 DEBUG      Pid is 19646
+2016-02-23 19:12:35,718 DEBUG      Pid is 19646
+2016-02-23 19:12:47,615 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 19:12:47,973 DEBUG      Cliked ImageView
+2016-02-23 19:12:49,664 DEBUG      Cliked View
+2016-02-23 19:12:50,916 DEBUG      Pid is 19646
+2016-02-23 19:13:02,679 DEBUG      org.chromium.chrome.browser.ChromeTabbedActivity
+2016-02-23 19:13:04,043 DEBUG      Pid is 19646
+2016-02-23 19:13:05,010 DEBUG      Pid is 19646
+2016-02-23 19:13:05,804 DEBUG      Pid is 19646
+2016-02-23 19:13:07,233 DEBUG      Pid is 19646
+2016-02-23 19:13:18,824 DEBUG      com.startapp.android.publish.list3d.List3DActivity
+2016-02-23 19:13:19,513 DEBUG      Cliked RelativeLayout
+2016-02-23 19:13:20,553 DEBUG      Pid is 19646
+2016-02-23 19:13:32,300 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-23 19:13:32,517 DEBUG      Go to PlayStore
+2016-02-23 19:13:34,776 DEBUG      Not Home, try again
+2016-02-23 19:13:42,992 DEBUG      This is Home Desktop
+2016-02-23 19:13:46,311 ERROR      Called Proxy Droid
+2016-02-23 19:14:29,964 ERROR      <urlopen error [Errno 111] Connection refused>
+2016-02-23 19:14:29,964 ERROR      Can not start Appium
+2016-02-23 19:14:46,945 DEBUG      Pid is 19646
+2016-02-23 19:14:46,945 INFO       Start run new appium instance
+2016-02-23 19:14:47,645 DEBUG      Not Home, try again
+2016-02-23 19:14:55,967 DEBUG      This is Home Desktop
+2016-02-23 19:14:57,528 ERROR      Called Proxy Droid
+2016-02-23 19:14:58,364 DEBUG      Proxy is OFF
+2016-02-23 19:14:59,072 DEBUG      Turn on Proxy
+2016-02-23 19:15:00,641 DEBUG      Pid is 19646
+2016-02-23 19:15:01,823 DEBUG      Pid is 19646
+2016-02-23 19:15:02,543 DEBUG      Pid is 19646
+2016-02-23 19:15:14,299 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 19:15:14,567 DEBUG      Cliked ImageView
+2016-02-23 19:15:16,087 DEBUG      Cliked View
+2016-02-23 19:15:17,186 DEBUG      Pid is 19646
+2016-02-23 19:15:29,347 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-23 19:15:29,555 DEBUG      Go to PlayStore
+2016-02-23 19:15:31,552 DEBUG      Not Home, try again
+2016-02-23 19:15:39,782 DEBUG      This is Home Desktop
+2016-02-23 19:15:43,054 ERROR      Called Proxy Droid
+2016-02-23 19:17:46,344 ERROR      Message: A new session could not be created. (Original error: Requested a new session but one was in progress)
+
+2016-02-23 19:17:46,345 ERROR      Can not start Appium
+2016-02-23 19:17:51,351 ERROR      <urlopen error [Errno 111] Connection refused>
+2016-02-23 19:17:51,351 ERROR      Can not start Appium
+2016-02-23 19:18:23,034 DEBUG      Pid is 21160
+2016-02-23 19:18:23,035 INFO       Start run new appium instance
+2016-02-23 19:18:28,433 DEBUG      Not Home, try again
+2016-02-23 19:18:37,208 DEBUG      This is Home Desktop
+2016-02-23 19:18:38,783 ERROR      Called Proxy Droid
+2016-02-23 19:18:39,521 DEBUG      Proxy is OFF
+2016-02-23 19:18:39,842 DEBUG      Turn on Proxy
+2016-02-23 19:18:41,487 DEBUG      Pid is 21160
+2016-02-23 19:18:42,754 DEBUG      Pid is 21160
+2016-02-23 19:18:43,479 DEBUG      Pid is 21160
+2016-02-23 19:18:54,871 DEBUG      com.startapp.android.publish.FullScreenActivity
+2016-02-23 19:18:55,640 DEBUG      Cliked View
+2016-02-23 19:18:55,661 DEBUG      Pid is 21160
+2016-02-23 19:19:07,318 DEBUG      org.chromium.chrome.browser.ChromeTabbedActivity
+2016-02-23 19:19:08,638 DEBUG      Pid is 21160
+2016-02-23 19:19:09,561 DEBUG      Pid is 21160
+2016-02-23 19:19:10,291 DEBUG      Pid is 21160
+2016-02-23 19:19:11,054 DEBUG      Pid is 21160
+2016-02-23 19:19:22,245 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 19:19:22,500 DEBUG      Cliked ImageView
+2016-02-23 19:19:23,885 DEBUG      Cliked View
+2016-02-23 19:19:24,984 DEBUG      Pid is 21160
+2016-02-23 19:19:37,087 DEBUG      org.chromium.chrome.browser.ChromeTabbedActivity
+2016-02-23 19:19:38,542 DEBUG      Pid is 21160
+2016-02-23 19:19:39,444 DEBUG      Pid is 21160
+2016-02-23 19:19:40,118 DEBUG      Pid is 21160
+2016-02-23 19:19:41,167 DEBUG      Pid is 21160
+2016-02-23 19:19:52,387 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 19:19:52,578 DEBUG      Cliked ImageView
+2016-02-23 19:19:53,996 DEBUG      Cliked Image
+2016-02-23 19:19:55,157 DEBUG      Pid is 21160
+2016-02-23 19:20:08,556 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-23 19:20:08,790 DEBUG      Go to PlayStore
+2016-02-23 19:20:11,178 DEBUG      Not Home, try again
+2016-02-23 19:20:20,357 DEBUG      This is Home Desktop
+2016-02-23 19:20:23,631 ERROR      Called Proxy Droid
+2016-02-23 19:23:59,497 ERROR      <urlopen error [Errno 111] Connection refused>
+2016-02-23 19:23:59,500 ERROR      Can not start Appium
+2016-02-23 19:24:26,761 ERROR      Message: A new session could not be created. (Original error: Requested a new session but one was in progress)
+
+2016-02-23 19:24:26,761 ERROR      Can not start Appium
+2016-02-23 19:24:31,767 ERROR      <urlopen error [Errno 111] Connection refused>
+2016-02-23 19:24:31,767 ERROR      Can not start Appium
+2016-02-23 19:24:51,166 DEBUG      Pid is 24267
+2016-02-23 19:24:51,167 INFO       Start run new appium instance
+2016-02-23 19:24:52,425 DEBUG      Not Home, try again
+2016-02-23 19:25:01,194 DEBUG      This is Home Desktop
+2016-02-23 19:25:02,763 ERROR      Called Proxy Droid
+2016-02-23 19:25:03,929 DEBUG      Proxy is OFF
+2016-02-23 19:25:04,189 DEBUG      Turn on Proxy
+2016-02-23 19:25:05,818 DEBUG      Pid is 24267
+2016-02-23 19:25:07,026 DEBUG      Pid is 24267
+2016-02-23 19:25:07,808 DEBUG      Pid is 24267
+2016-02-23 19:25:19,081 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 19:25:19,340 DEBUG      Cliked ImageView
+2016-02-23 19:25:20,580 DEBUG      Cliked Image
+2016-02-23 19:25:23,684 DEBUG      Pid is 24267
+2016-02-23 19:25:35,860 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-23 19:25:36,064 DEBUG      Go to PlayStore
+2016-02-23 19:25:41,465 DEBUG      Not Home, try again
+2016-02-23 19:25:50,501 DEBUG      This is Home Desktop
+2016-02-23 19:25:53,808 ERROR      Called PlayStore
+2016-02-23 19:25:55,948 DEBUG      PlayStore is not ready
+2016-02-23 19:25:56,468 DEBUG      PlayStore is ready
+2016-02-23 19:25:56,469 DEBUG      Wait time to load PlayStore 0
+2016-02-23 19:26:05,732 DEBUG      Wait app installed
+2016-02-23 19:26:18,962 DEBUG      Wait app installed
+2016-02-23 19:26:31,034 DEBUG      Wait app installed
+2016-02-23 19:26:41,459 DEBUG      Wait app installed
+2016-02-23 19:26:51,610 DEBUG      Wait app installed
+2016-02-23 19:27:01,690 DEBUG      App installed OK
+2016-02-23 19:27:01,740 DEBUG      App installed OK
+2016-02-23 19:27:04,041 DEBUG      Not Home, try again
+2016-02-23 19:27:13,527 DEBUG      This is Home Desktop
+2016-02-23 19:27:14,200 ERROR      Called Proxy Droid
+2016-02-23 19:27:16,160 DEBUG      Proxy is OFF
+2016-02-23 19:27:16,413 DEBUG      Turn on Proxy
+2016-02-23 19:27:19,547 DEBUG      Pid is 24267
+2016-02-23 19:27:20,554 DEBUG      Pid is 24267
+2016-02-23 19:27:21,379 DEBUG      Pid is 24267
+2016-02-23 19:27:33,405 DEBUG      com.startapp.android.publish.FullScreenActivity
+2016-02-23 19:27:34,176 DEBUG      Cliked View
+2016-02-23 19:27:34,201 DEBUG      Pid is 24267
+2016-02-23 19:27:46,252 DEBUG      org.chromium.chrome.browser.ChromeTabbedActivity
+2016-02-23 19:27:47,546 DEBUG      Pid is 24267
+2016-02-23 19:27:48,634 DEBUG      Pid is 24267
+2016-02-23 19:27:49,465 DEBUG      Pid is 24267
+2016-02-23 19:27:50,192 DEBUG      Pid is 24267
+2016-02-23 19:28:01,818 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 19:28:02,012 DEBUG      Cliked ImageView
+2016-02-23 19:28:03,771 DEBUG      Cliked Image
+2016-02-23 19:28:09,472 DEBUG      Cliked View
+2016-02-23 19:28:09,917 DEBUG      Pid is 24267
+2016-02-23 19:28:21,867 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-23 19:28:22,086 DEBUG      Go to PlayStore
+2016-02-23 19:28:27,528 DEBUG      Not Home, try again
+2016-02-23 19:28:36,530 DEBUG      This is Home Desktop
+2016-02-23 19:28:39,797 ERROR      Called PlayStore
+2016-02-23 19:28:42,208 DEBUG      PlayStore is not ready
+2016-02-23 19:28:42,725 DEBUG      PlayStore is ready
+2016-02-23 19:28:42,725 DEBUG      Wait time to load PlayStore 0
+2016-02-23 19:28:52,725 DEBUG      Wait app installed
+2016-02-23 19:29:04,910 DEBUG      Wait app installed
+2016-02-23 19:29:15,726 DEBUG      Wait app installed
+2016-02-23 19:29:25,915 DEBUG      App installed OK
+2016-02-23 19:29:26,436 DEBUG      App installed OK
+2016-02-23 19:29:28,834 DEBUG      Not Home, try again
+2016-02-23 19:29:38,089 DEBUG      This is Home Desktop
+2016-02-23 19:29:38,744 ERROR      Called Proxy Droid
+2016-02-23 19:29:40,041 DEBUG      Proxy is OFF
+2016-02-23 19:29:40,217 DEBUG      Turn on Proxy
+2016-02-23 19:29:43,066 DEBUG      Wait For new Sock
+2016-02-23 19:30:43,135 DEBUG      Wait For new Sock
+2016-02-23 19:31:43,206 DEBUG      Pid is 25966
+2016-02-23 19:31:43,216 DEBUG      Appium wait too long!
+2016-02-23 19:31:50,462 DEBUG      Not Home, try again
+2016-02-23 19:31:59,581 DEBUG      This is Home Desktop
+2016-02-23 19:32:00,260 ERROR      Called Proxy Droid
+2016-02-23 19:32:01,756 DEBUG      Proxy is OFF
+2016-02-23 19:32:02,584 DEBUG      Turn on Proxy
+2016-02-23 19:32:04,428 DEBUG      Pid is 25966
+2016-02-23 19:32:05,552 DEBUG      Pid is 25966
+2016-02-23 19:32:06,387 DEBUG      Pid is 25966
+2016-02-23 19:32:17,966 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 19:32:18,202 DEBUG      Cliked ImageView
+2016-02-23 19:32:19,351 DEBUG      Cliked Image
+2016-02-23 19:32:20,660 DEBUG      Pid is 25966
+2016-02-23 19:32:31,921 DEBUG      org.chromium.chrome.browser.ChromeTabbedActivity
+2016-02-23 19:32:33,404 DEBUG      Pid is 25966
+2016-02-23 19:32:34,441 DEBUG      Pid is 25966
+2016-02-23 19:32:35,180 DEBUG      Pid is 25966
+2016-02-23 19:32:46,614 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 19:32:46,849 DEBUG      Cliked ImageView
+2016-02-23 19:32:48,119 DEBUG      Cliked View
+2016-02-23 19:32:49,204 DEBUG      Pid is 25966
+2016-02-23 19:33:00,347 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-23 19:33:00,551 DEBUG      Go to PlayStore
+2016-02-23 19:33:05,832 DEBUG      Not Home, try again
+2016-02-23 19:33:14,801 DEBUG      This is Home Desktop
+2016-02-23 19:33:18,143 ERROR      Called PlayStore
+2016-02-23 19:33:20,281 DEBUG      PlayStore is not ready
+2016-02-23 19:33:20,561 DEBUG      PlayStore is ready
+2016-02-23 19:33:20,562 DEBUG      Wait time to load PlayStore 0
+2016-02-23 19:33:30,243 DEBUG      Wait app installed
+2016-02-23 19:33:40,898 DEBUG      Wait app installed
+2016-02-23 19:33:51,448 DEBUG      Wait app installed
+2016-02-23 19:34:02,628 DEBUG      Wait app installed
+2016-02-23 19:34:12,778 DEBUG      Wait app installed
+2016-02-23 19:34:23,160 DEBUG      Wait app installed
+2016-02-23 19:34:33,225 DEBUG      App installed OK
+2016-02-23 19:34:33,277 DEBUG      App installed OK
+2016-02-23 19:34:35,755 DEBUG      Not Home, try again
+2016-02-23 19:34:44,891 DEBUG      This is Home Desktop
+2016-02-23 19:34:45,481 ERROR      Called Proxy Droid
+2016-02-23 19:34:46,924 DEBUG      Proxy is OFF
+2016-02-23 19:34:47,108 DEBUG      Turn on Proxy
+2016-02-23 19:34:50,055 DEBUG      Pid is 25966
+2016-02-23 19:34:51,194 DEBUG      Pid is 25966
+2016-02-23 19:34:52,364 DEBUG      Pid is 25966
+2016-02-23 19:35:03,744 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 19:35:03,969 DEBUG      Cliked ImageView
+2016-02-23 19:35:05,077 DEBUG      Cliked Image
+2016-02-23 19:35:08,121 DEBUG      Cliked View
+2016-02-23 19:35:08,976 DEBUG      Pid is 25966
+2016-02-23 19:35:20,958 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-23 19:35:21,193 DEBUG      Go to PlayStore
+2016-02-23 19:35:26,206 DEBUG      Not Home, try again
+2016-02-23 19:35:35,167 DEBUG      This is Home Desktop
+2016-02-23 19:35:38,456 ERROR      Called PlayStore
+2016-02-23 19:35:40,568 DEBUG      PlayStore is not ready
+2016-02-23 19:35:41,019 DEBUG      PlayStore is ready
+2016-02-23 19:35:41,020 DEBUG      Wait time to load PlayStore 0
+2016-02-23 19:35:49,900 DEBUG      Wait app installed
+2016-02-23 19:36:00,515 DEBUG      Wait app installed
+2016-02-23 19:36:10,653 DEBUG      Wait app installed
+2016-02-23 19:36:21,013 DEBUG      Wait app installed
+2016-02-23 19:36:31,067 DEBUG      App installed OK
+2016-02-23 19:36:31,131 DEBUG      App installed OK
+2016-02-23 19:36:33,762 DEBUG      Not Home, try again
+2016-02-23 19:36:42,642 DEBUG      This is Home Desktop
+2016-02-23 19:36:43,309 ERROR      Called Proxy Droid
+2016-02-23 19:36:44,650 DEBUG      Proxy is OFF
+2016-02-23 19:36:44,936 DEBUG      Turn on Proxy
+2016-02-23 19:36:48,020 DEBUG      Pid is 26760
+2016-02-23 19:36:49,167 DEBUG      Pid is 26760
+2016-02-23 19:36:49,910 DEBUG      Pid is 26760
+2016-02-23 19:37:01,046 DEBUG      com.startapp.android.publish.FullScreenActivity
+2016-02-23 19:37:01,289 DEBUG      Cliked View
+2016-02-23 19:37:01,310 DEBUG      Pid is 26760
+2016-02-23 19:37:12,752 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-23 19:37:12,964 DEBUG      Go to PlayStore
+2016-02-23 19:37:18,161 DEBUG      Not Home, try again
+2016-02-23 19:37:27,056 DEBUG      This is Home Desktop
+2016-02-23 19:37:30,398 ERROR      Called PlayStore
+2016-02-23 19:37:32,841 DEBUG      PlayStore is not ready
+2016-02-23 19:37:33,180 DEBUG      PlayStore is ready
+2016-02-23 19:37:33,180 DEBUG      Wait time to load PlayStore 0
+2016-02-23 19:37:42,492 DEBUG      Wait app installed
+2016-02-23 19:37:52,853 DEBUG      Wait app installed
+2016-02-23 19:38:02,929 DEBUG      App installed OK
+2016-02-23 19:38:02,982 DEBUG      App installed OK
+2016-02-23 19:38:05,426 DEBUG      Not Home, try again
+2016-02-23 19:38:14,181 DEBUG      This is Home Desktop
+2016-02-23 19:38:14,831 ERROR      Called Proxy Droid
+2016-02-23 19:38:16,974 DEBUG      Proxy is OFF
+2016-02-23 19:38:17,283 DEBUG      Turn on Proxy
+2016-02-23 19:38:20,482 DEBUG      Pid is 26760
+2016-02-23 19:38:21,617 DEBUG      Pid is 26760
+2016-02-23 19:38:22,446 DEBUG      Pid is 26760
+2016-02-23 19:38:34,055 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 19:38:34,308 DEBUG      Cliked ImageView
+2016-02-23 19:38:35,756 DEBUG      Cliked View
+2016-02-23 19:38:36,859 DEBUG      Pid is 26760
+2016-02-23 19:38:48,151 DEBUG      com.android.internal.app.ResolverActivity
+2016-02-23 19:38:48,287 DEBUG      Chrome chose default browser popup
+2016-02-23 19:38:48,320 ERROR      Select Chrome error
+2016-02-23 19:38:48,320 ERROR      Message: An element could not be located on the page using the given search parameters.
+
+2016-02-23 19:38:49,961 DEBUG      Pid is 26760
+2016-02-23 19:38:51,098 DEBUG      Pid is 26760
+2016-02-23 19:38:51,900 DEBUG      Pid is 26760
+2016-02-23 19:38:53,312 DEBUG      Pid is 26760
+2016-02-23 19:39:04,412 DEBUG      com.startapp.android.publish.list3d.List3DActivity
+2016-02-23 19:39:05,744 DEBUG      Cliked RelativeLayout
+2016-02-23 19:39:07,021 DEBUG      Pid is 26760
+2016-02-23 19:39:18,791 DEBUG      org.chromium.chrome.browser.ChromeTabbedActivity
+2016-02-23 19:39:20,330 DEBUG      Pid is 26760
+2016-02-23 19:39:21,120 DEBUG      Pid is 26760
+2016-02-23 19:39:21,827 DEBUG      Pid is 26760
+2016-02-23 19:39:33,397 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 19:39:33,650 DEBUG      Cliked ImageView
+2016-02-23 19:39:35,140 DEBUG      Cliked View
+2016-02-23 19:39:35,850 DEBUG      Pid is 26760
+2016-02-23 19:39:46,980 DEBUG      com.android.internal.app.ResolverActivity
+2016-02-23 19:39:47,109 DEBUG      Chrome chose default browser popup
+2016-02-23 19:39:47,142 ERROR      Select Chrome error
+2016-02-23 19:39:47,142 ERROR      Message: An element could not be located on the page using the given search parameters.
+
+2016-02-23 19:39:48,548 DEBUG      Pid is 26760
+2016-02-23 19:39:49,513 DEBUG      Pid is 26760
+2016-02-23 19:39:50,219 DEBUG      Pid is 26760
+2016-02-23 19:40:01,808 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 19:40:02,006 DEBUG      Cliked ImageView
+2016-02-23 19:40:03,391 DEBUG      Cliked Image
+2016-02-23 19:40:04,550 DEBUG      Pid is 26760
+2016-02-23 19:40:16,364 DEBUG      com.android.internal.app.ResolverActivity
+2016-02-23 19:40:16,498 DEBUG      Chrome chose default browser popup
+2016-02-23 19:40:16,539 ERROR      Select Chrome error
+2016-02-23 19:40:16,539 ERROR      Message: An element could not be located on the page using the given search parameters.
+
+2016-02-23 19:40:17,975 DEBUG      Pid is 26760
+2016-02-23 19:40:18,804 DEBUG      Pid is 26760
+2016-02-23 19:40:19,556 DEBUG      Pid is 26760
+2016-02-23 19:40:30,861 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 19:40:31,063 DEBUG      Cliked ImageView
+2016-02-23 19:40:32,402 DEBUG      Cliked Image
+2016-02-23 19:40:33,632 DEBUG      Pid is 26760
+2016-02-23 19:40:45,761 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 19:40:46,345 DEBUG      Cliked ImageView
+2016-02-23 19:40:48,123 DEBUG      Cliked View
+2016-02-23 19:40:51,812 DEBUG      Cliked WebView
+2016-02-23 19:40:51,833 DEBUG      Pid is 26760
+2016-02-23 19:41:03,225 DEBUG      org.chromium.chrome.browser.ChromeTabbedActivity
+2016-02-23 19:41:04,728 DEBUG      Pid is 26760
+2016-02-23 19:41:05,846 DEBUG      Pid is 26760
+2016-02-23 19:41:06,658 DEBUG      Pid is 26760
+2016-02-23 19:41:07,721 DEBUG      Pid is 26760
+2016-02-23 19:41:19,500 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 19:41:19,736 DEBUG      Cliked ImageView
+2016-02-23 19:41:20,982 DEBUG      Cliked View
+2016-02-23 19:41:22,267 DEBUG      Pid is 26760
+2016-02-23 19:41:33,472 DEBUG      org.chromium.chrome.browser.ChromeTabbedActivity
+2016-02-23 19:41:34,968 DEBUG      Wait For new Sock
+2016-02-23 19:42:34,991 DEBUG      Wait For new Sock
+2016-02-23 19:43:35,064 DEBUG      Wait For new Sock
+2016-02-23 19:44:35,090 DEBUG      Pid is 28894
+2016-02-23 19:44:35,097 DEBUG      Appium wait too long!
+2016-02-23 19:44:48,558 DEBUG      Not Home, try again
+2016-02-23 19:44:58,115 DEBUG      This is Home Desktop
+2016-02-23 19:44:58,940 ERROR      Called Proxy Droid
+2016-02-23 19:45:00,387 DEBUG      Proxy is ON
+2016-02-23 19:45:00,387 DEBUG      Proxy is on, don`t need on
+2016-02-23 19:45:02,151 DEBUG      Pid is 28894
+2016-02-23 19:45:03,485 DEBUG      Pid is 28894
+2016-02-23 19:45:04,265 DEBUG      Pid is 28894
+2016-02-23 19:45:05,281 DEBUG      Pid is 28894
+2016-02-23 19:45:06,337 DEBUG      Pid is 28894
+2016-02-23 19:45:07,354 DEBUG      Pid is 28894
+2016-02-23 19:45:08,426 DEBUG      Pid is 28894
+2016-02-23 19:45:09,480 DEBUG      Pid is 28894
+2016-02-23 19:45:10,522 DEBUG      Pid is 28894
+2016-02-23 19:45:11,582 DEBUG      Pid is 28894
+2016-02-23 19:45:12,594 DEBUG      Pid is 28894
+2016-02-23 19:45:13,686 DEBUG      Pid is 28894
+2016-02-23 19:45:14,716 DEBUG      Pid is 28894
+2016-02-23 19:45:16,121 DEBUG      Pid is 28894
+2016-02-23 19:45:17,202 DEBUG      Pid is 28894
+2016-02-23 19:45:18,218 DEBUG      Pid is 28894
+2016-02-23 19:45:19,757 DEBUG      Pid is 28894
+2016-02-23 19:45:31,219 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 19:45:31,485 DEBUG      Cliked ImageView
+2016-02-23 19:45:32,895 DEBUG      Cliked Image
+2016-02-23 19:45:34,114 DEBUG      Pid is 28894
+2016-02-23 19:45:45,552 DEBUG      com.startapp.android.publish.OverlayActivity
+2016-02-23 19:45:45,740 DEBUG      Cliked ImageView
+2016-02-23 19:45:47,870 DEBUG      Pid is 28894
+2016-02-23 19:45:59,304 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-23 19:45:59,362 DEBUG      Go to PlayStore
+2016-02-23 19:46:05,108 DEBUG      Not Home, try again
+2016-02-23 19:46:14,557 DEBUG      This is Home Desktop
+2016-02-23 19:46:17,868 ERROR      Called PlayStore
+2016-02-23 19:46:20,021 DEBUG      PlayStore is not ready
+2016-02-23 19:46:20,240 DEBUG      PlayStore is ready
+2016-02-23 19:46:20,240 DEBUG      Wait time to load PlayStore 0
+2016-02-23 19:46:21,296 DEBUG      Wait time to load PlayStore 1
+2016-02-23 19:46:22,336 DEBUG      Wait time to load PlayStore 2
+2016-02-23 19:46:23,382 DEBUG      Wait time to load PlayStore 3
+2016-02-23 19:46:24,512 DEBUG      Wait time to load PlayStore 4
+2016-02-23 19:46:25,576 DEBUG      Wait time to load PlayStore 5
+2016-02-23 19:46:26,646 DEBUG      Wait time to load PlayStore 6
+2016-02-23 19:46:27,766 DEBUG      Wait time to load PlayStore 7
+2016-02-23 19:46:28,995 DEBUG      Wait time to load PlayStore 8
+2016-02-23 19:46:30,199 DEBUG      Wait time to load PlayStore 9
+2016-02-23 19:46:31,242 DEBUG      Wait time to load PlayStore 10
+2016-02-23 19:46:32,280 DEBUG      Wait time to load PlayStore 11
+2016-02-23 19:46:33,325 DEBUG      Wait time to load PlayStore 12
+2016-02-23 19:46:34,402 DEBUG      Wait time to load PlayStore 13
+2016-02-23 19:46:35,513 DEBUG      Wait time to load PlayStore 14
+2016-02-23 19:46:36,589 DEBUG      Wait time to load PlayStore 15
+2016-02-23 19:46:37,791 DEBUG      Wait time to load PlayStore 16
+2016-02-23 19:46:38,871 DEBUG      Wait time to load PlayStore 17
+2016-02-23 19:46:39,984 DEBUG      Wait time to load PlayStore 18
+2016-02-23 19:46:41,194 DEBUG      Wait time to load PlayStore 19
+2016-02-23 19:46:42,302 DEBUG      Wait time to load PlayStore 20
+2016-02-23 19:46:43,341 DEBUG      Wait time to load PlayStore 21
+2016-02-23 19:46:44,385 DEBUG      Wait time to load PlayStore 22
+2016-02-23 19:46:45,435 DEBUG      Wait time to load PlayStore 23
+2016-02-23 19:46:46,646 DEBUG      Wait time to load PlayStore 24
+2016-02-23 19:46:47,848 DEBUG      Wait time to load PlayStore 25
+2016-02-23 19:46:49,070 DEBUG      Wait time to load PlayStore 26
+2016-02-23 19:46:50,271 DEBUG      Wait time to load PlayStore 27
+2016-02-23 19:46:51,426 DEBUG      Wait time to load PlayStore 28
+2016-02-23 19:46:52,531 DEBUG      Wait time to load PlayStore 29
+2016-02-23 19:46:53,582 ERROR      Can not install from PlayStore, back to main app
+2016-02-23 19:46:56,721 DEBUG      Killed playstore
+2016-02-23 19:46:56,721 DEBUG      Wait time to load PlayStore 30
+2016-02-23 19:47:01,893 DEBUG      Wait time to load PlayStore 31
+2016-02-23 19:47:03,591 DEBUG      Wait time to load PlayStore 32
+2016-02-23 19:47:04,888 DEBUG      Wait time to load PlayStore 33
+2016-02-23 19:47:06,208 DEBUG      Wait time to load PlayStore 34
+2016-02-23 19:47:07,500 DEBUG      Wait time to load PlayStore 35
+2016-02-23 19:47:09,242 DEBUG      Wait time to load PlayStore 36
+2016-02-23 19:47:10,912 DEBUG      Wait time to load PlayStore 37
+2016-02-23 19:47:12,182 DEBUG      Wait time to load PlayStore 38
+2016-02-23 19:47:13,437 DEBUG      Wait time to load PlayStore 39
+2016-02-23 19:47:15,040 DEBUG      Wait time to load PlayStore 40
+2016-02-23 19:47:16,649 DEBUG      Wait time to load PlayStore 41
+2016-02-23 19:47:17,876 DEBUG      Wait time to load PlayStore 42
+2016-02-23 19:47:19,105 DEBUG      Wait time to load PlayStore 43
+2016-02-23 19:47:20,314 DEBUG      Wait time to load PlayStore 44
+2016-02-23 19:47:21,834 DEBUG      Wait time to load PlayStore 45
+2016-02-23 19:47:23,338 DEBUG      Wait time to load PlayStore 46
+2016-02-23 19:47:24,553 DEBUG      Wait time to load PlayStore 47
+2016-02-23 19:47:25,750 DEBUG      Wait time to load PlayStore 48
+2016-02-23 19:47:26,955 DEBUG      Wait time to load PlayStore 49
+2016-02-23 19:47:28,193 DEBUG      Wait time to load PlayStore 50
+2016-02-23 19:47:29,420 DEBUG      Wait time to load PlayStore 51
+2016-02-23 19:47:31,011 DEBUG      Wait time to load PlayStore 52
+2016-02-23 19:47:32,518 DEBUG      Wait time to load PlayStore 53
+2016-02-23 19:47:34,310 DEBUG      Wait time to load PlayStore 54
+2016-02-23 19:47:35,540 DEBUG      Wait time to load PlayStore 55
+2016-02-23 19:47:36,750 DEBUG      Wait time to load PlayStore 56
+2016-02-23 19:47:38,258 DEBUG      Wait time to load PlayStore 57
+2016-02-23 19:47:39,752 DEBUG      Wait time to load PlayStore 58
+2016-02-23 19:47:40,956 DEBUG      Wait time to load PlayStore 59
+2016-02-23 19:47:44,569 DEBUG      Not Home, try again
+2016-02-23 19:47:54,233 DEBUG      This is Home Desktop
+2016-02-23 19:47:55,008 ERROR      Called Proxy Droid
+2016-02-23 19:47:56,350 DEBUG      Proxy is OFF
+2016-02-23 19:47:56,636 DEBUG      Turn on Proxy
+2016-02-23 19:48:00,567 DEBUG      Wait For new Sock

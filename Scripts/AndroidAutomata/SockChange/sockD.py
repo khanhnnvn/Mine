@@ -1,12 +1,10 @@
 #!/usr/bin/python
 import logging, datetime, os, subprocess, time, requesocks
 class sockD:
-	def __init__(self, db):
+	def __init__(self, db, logger, sockPort):
 		self.db 						=		db
-		self.logPrefix					=		"sockD"												# Log Prefix
-		self.logFolder					=		"Logs"												# Log store
-		self.dirPath 					=		os.getcwd()
-		self.sockPort 					=		9991
+		self.logger 					=		logger
+		self.sockPort 					=		sockPort
 		self.sockTimeOut 				=		10													# 10
 		self.closePort 					=		True
 		self.lastIPSock 				=		""
@@ -14,27 +12,6 @@ class sockD:
 		self.netstatCmd 				=		"netstat -luntp 2>/dev/null | grep 0.0.0.0:{0} | awk '{{print $7}}' | cut -d/ -f1"
 		self.netstatCmdCount 			=		"netstat -luntp 2>/dev/null | grep 0.0.0.0:{0} | awk '{{print $7}}' | cut -d/ -f1 | wc -l"
 		self.killProcessCmd 			=		"kill -9 {0}"
-		self.logSetup()
-	def logSetup(self):
-		self.logger 					= 		logging.getLogger(__name__)							# Logging constructor 
-		# Set format
-		self.logFormat 					= 		logging.Formatter("%(asctime)-15s %(levelname)-10s %(message)s")				
-		# Console Handler
-		consoleHandler 					= 		logging.StreamHandler()
-		consoleHandler.setFormatter(self.logFormat)
-		self.logger.addHandler(consoleHandler)
-		# File Handler
-		dateTimeNow 					= 		datetime.datetime.now()
-		logFileName						=		"{0}_{1}_{2}_{3}.log".format(
-												self.logPrefix,
-												dateTimeNow.year,
-												dateTimeNow.month,
-												dateTimeNow.day)
-		logFilePath						=		os.path.join(self.dirPath, self.logFolder, logFileName)
-		fileHandler 					= 		logging.FileHandler(logFilePath)
-		fileHandler.setFormatter(self.logFormat)
-		self.logger.addHandler(fileHandler)
-		self.logger.setLevel(logging.DEBUG)
 	def checkOpenPort(self):
 		# First, count 
 		cmd 							=		self.netstatCmdCount.format(self.sockPort)
@@ -51,7 +28,7 @@ class sockD:
 					self.pid 			=		pid
 				except Exception, e:
 					self.logger.debug("Can not get PID, may be port listen by root")
-					self.closePort 			=	False
+					# self.closePort 			=	False
 				return True
 			else:
 				# Port close

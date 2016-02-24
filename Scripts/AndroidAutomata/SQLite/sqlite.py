@@ -52,8 +52,10 @@ class SQLitedatabase:
 				str2 = str2 + "'" + item + "'"+ ","
 			elif type(item) == bool:
 				str2 = str2 + "'" + str(item) + "'"  + ","
+			elif item == None:
+				str2 = str2 + "''"+ ","
 			else:
-				str2 = str2 + "'" + str(item) + "'"+ ","
+				str2 = str2 + "'" + str(item.encode('utf-8')) + "'"+ ","
 		str1 = str1[:-1] + ")"
 		str2 = str2[:-1] + ")"
 		sql = "INSERT into "+str1+" values (" + str2
