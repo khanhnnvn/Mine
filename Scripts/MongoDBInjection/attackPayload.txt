@@ -1,0 +1,4 @@
+curl http://localhost:8080/json -H "Content-Type: ication/json" -X POST -d '{"id": {"$ne" :1}  }'
+
+
+curl http://localhost:8080/json -H "Content-Type: ication/json" -X POST -d '{"id": {"$in" :[1,2]}  }'
