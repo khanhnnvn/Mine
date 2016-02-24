@@ -1509,3 +1509,26 @@
 2016-02-24 21:15:24,568 DEBUG      Pid is 8843
 2016-02-24 21:15:25,674 DEBUG      Pid is 8843
 2016-02-24 21:15:26,784 DEBUG      Pid is 8843
+2016-02-24 21:15:38,441 DEBUG      com.startapp.android.publish.list3d.List3DActivity
+2016-02-24 21:15:39,079 DEBUG      Cliked RelativeLayout
+2016-02-24 21:15:40,168 DEBUG      Pid is 8843
+2016-02-24 21:15:52,002 DEBUG      com.google.android.finsky.activities.MainActivity
+2016-02-24 21:15:52,168 DEBUG      Go to PlayStore
+2016-02-24 21:15:57,393 DEBUG      Not Home, try again
+2016-02-24 21:16:06,554 DEBUG      This is Home Desktop
+2016-02-24 21:16:09,962 ERROR      Called PlayStore
+2016-02-24 21:16:12,109 DEBUG      PlayStore is not ready
+2016-02-24 21:16:12,651 DEBUG      PlayStore is ready
+2016-02-24 21:16:12,651 DEBUG      Wait time to load PlayStore 0
+2016-02-24 21:16:21,443 DEBUG      Wait app installed
+2016-02-24 21:16:31,528 DEBUG      App installed OK
+2016-02-24 21:16:31,575 DEBUG      App installed OK
+2016-02-24 21:16:33,464 DEBUG      Not Home, try again
+2016-02-24 21:16:42,783 DEBUG      This is Home Desktop
+2016-02-24 21:16:43,586 ERROR      Called Proxy Droid
+2016-02-24 21:16:45,042 DEBUG      Proxy is OFF
+2016-02-24 21:16:45,352 DEBUG      Turn on Proxy
+2016-02-24 21:16:49,023 DEBUG      Pid is 8843
+2016-02-24 21:16:49,884 DEBUG      Pid is 8843
+2016-02-24 21:16:50,608 DEBUG      Pid is 8843
+2016-02-24 21:16:51,461 DEBUG      Pid is 8843
