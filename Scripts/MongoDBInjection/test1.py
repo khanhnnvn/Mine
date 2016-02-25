@@ -22,11 +22,11 @@ def hello():
 		return str
 	else:
 		return "Hello"
-@app.route("/json",methods=['POST'])
+@app.route("/json",methods=['GET','POST'])
 def json():
 	data = request.json
 	id = (data['id'])
-	print(type(id))
+	print(data['id'])
 	cursor = handle.test_table.find({'id':id})
 	for document in cursor:
 		print(document)	

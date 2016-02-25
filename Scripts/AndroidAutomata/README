@@ -1,6 +1,8 @@
 sudo pip install geoip2
 sudo apt-get install sqlite, sshpass
 sudo pip install requesocks
+sudo pip install Appium-Python-Client
+
 GeoIP DB:
 http://dev.maxmind.com/geoip/geoip2/geolite2/
 
