@@ -1,7 +1,5 @@
-
 Scanner:
 git clone https://github.com/robertdavidgraham/masscan
-
 Subdomain Brute:
 https://github.com/aboul3la/Sublist3r
 SVN Extractor:
@@ -10,6 +8,8 @@ Sharepoint check:
 https://github.com/sensepost/SPartan
 Include shell in jpg:
 http://www.virtualabs.fr/Nasty-bulletproof-Jpegs-l
+URLextractor
+https://github.com/eschultze/URLextractor
 Dir Brute:
 https://github.com/maurosoria/dirsearch
 Decompiler IDA:
