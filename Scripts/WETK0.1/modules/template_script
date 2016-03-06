@@ -1,0 +1,17 @@
+import shodan, os
+from libs.coreScannerModule import coreScannerModule
+class Module(coreScannerModule):
+	def __init__(self, logger, profile):
+		coreScannerModule.__init__(self, logger, profile)
+		self.name							=	"Shodan Module"
+		self.description 					=	"Shodan Module for Search Enginer"
+		self.rank							=	"MEDIUM"					# Exploit level
+		self.type							=	"Scanner"					# Type: exploit | scanner | support
+		self.author							=	"namhb"
+		self.version						=	"0.0.1"
+	def search(self, key):
+		pass
+	def run(self):
+		self.search("apache")
+# Load control module
+execfile(os.path.join(os.getcwd(), "libs", "controlModule.py"))
