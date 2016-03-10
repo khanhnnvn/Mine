@@ -260,6 +260,7 @@ class coreHTTPModule:
 					return False
 			self.basicOptions["DATADICT"]["currentSetting"] = allData			
 	def sendHTTPRequest(self, payload):
+		payload 							=	str(payload)
 		# Create http request with your options
 		httpMethod 							=	self.basicOptions["METHOD"]["currentSetting"]
 		url 								=	self.basicOptions["URL"]["currentSetting"]
