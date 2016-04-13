@@ -108,8 +108,8 @@ plain_text=[]
 # 	iv[iv_index] = tmp
 
 
-# def find_for_n(s, n):
-# 	return s ^ (n+1) ^ (n)
+def find_for_n(s, n):
+	return ord(s) ^ (n+1) ^ (n)
 
 
 
@@ -119,26 +119,50 @@ plain_text=[]
 # 	m = n+1
 # 	for k in (15,15-m,-1):
 # 		iv[k] = chr(find_for_n(iss[k],n))
+iv1 = cookie[:blockSize]
+iv1=binascii.unhexlify(iv1)
 
-n=5
-# iv[15] = chr(57)
-iv[15] = chr(62)
-iv[14] = chr(114)
-iv[13] = chr(154)
-iv[12] = chr(197)
+for i1 in range(0,16):
+	iv[i1] = chr(0)
+
+iv[15] = chr(58)
+iv[14] = chr(117)
+iv[13] = chr(156)
+iv[12] = chr(196)
 iv[11] = chr(89)
+iv[10] = chr(89)
+iv[9] = chr(245)
+iv[8] = chr(32)
+iv[7] = chr(91)
+iv[6] = chr(11)
+iv[5] = chr(33)
+iv[4] = chr(190)
+iv[3] = chr(84)
+iv[2] = chr(222)
+iv[1] = chr(252)
+iv[0] = chr(105)
 
-for j in range(0,255):
-	for i in range (0,(16-n)):
-		iv[i] = chr(0)
-		if(i == (15-n)):
-			iv[i] = chr(j)
-	
+for i in range(0,16):
+	tmp = ord(iv[i]) ^ ord(iv1[i]) ^ (16-i)
+	print chr(tmp)
+# for m in range(0,15):
 
-	final_target = "".join(iv).encode("hex")+firstBlock
-	r = requests.get(url, cookies={'flag_auth': final_target})
-	if(r.status_code == 404):
-		print "Found ",
-		print j
-		f = j
-		break
+# n = 15
+# for m in range(0,n):
+# 	for k in range(15,15-n,-1):
+# 		if(k >= (15-m)):
+# 			iv[k] = chr(find_for_n(iv[k],m+1))
+# print iv
+
+# for j in range(0,255):
+# 	iv[15-n] = chr(j)
+
+
+# 	final_target = "".join(iv).encode("hex")+firstBlock
+# 	r = requests.get(url, cookies={'flag_auth': final_target})
+# 	if(r.status_code == 404):
+# 		print "Found ",
+# 		print j
+# 		# iv[15-n] = chr(j)
+# 		break
+# print iv
