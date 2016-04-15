@@ -25,19 +25,16 @@ public class ListState {
 		}
 		return false;
 	}
-	
 	public State getStateByName(String _name){
-		for (int i=0; i<listStates.size(); i++){
-			if (listStates.get(i).getName().compareTo(_name)==0){
-				return listStates.get(i);
-			}
-		}
-		return null;
+            for (int i=0; i<listStates.size(); i++){
+                if (listStates.get(i).getName().compareTo(_name)==0){
+                    return listStates.get(i);
+                }
+            }
+            return null;
 	}
-	
-	
 	public int getSize(){
-		return listStates.size();
+            return listStates.size();
 	}
 	
 	public void removeStateByName(String name){

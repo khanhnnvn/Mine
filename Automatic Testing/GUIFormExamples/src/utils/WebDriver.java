@@ -149,49 +149,45 @@ public class WebDriver {
                 String s2name = this.transactionModel.getColumnName(j+2).toString();
 
                 if (eventNConds.length() == 0){
-                        eventNConds = "_";
+                    eventNConds = "_";
                 }
-
                 ArrayList<String> ECnames = new ArrayList<String>();
                 ECnames = subEvents(eventNConds); //List cac event va condition
-
                 //System.out.println(s1name + "--" + ename + "-->" + s2name + " :\t" + cellString);
                 for (int k=0 ; k<ECnames.size() ; k++){
-                        if (ECnames.get(k).length()==0 || ECnames.get(k).compareTo("_")==0){
-                        continue;
+                    if (ECnames.get(k).length()==0 || ECnames.get(k).compareTo("_")==0){
+                    continue;
                 }
-
-                        String eName = getNameEvent(ECnames.get(k));
-                        Condition cond = getCond(ECnames.get(k));
-                        System.out.println("Name Event: " + eName);
-                        transitionList.addTransition(new Transition(eventList.getEventByName(eName), 
-                                stateList.getStateByName(s1name), 
-                                stateList.getStateByName(s2name), cond));
+                    String eName = getNameEvent(ECnames.get(k));
+                    Condition cond = getCond(ECnames.get(k));
+                    System.out.println("Name Event: " + eName);
+                    transitionList.addTransition(new Transition(eventList.getEventByName(eName), 
+                        stateList.getStateByName(s1name), 
+                        stateList.getStateByName(s2name), cond));
                 }
             }
         }
         this.logger.debug(MessageFormat.format("Number of transaction: {0}",this.transitionList.getSize()));
     }
     public ArrayList<String> subEvents(String events){
+        // Tach nhieu eventNcond ,
+        // [id1/value1],[id2/value2]
         String tempEvent = events;
         ArrayList<String> result = new ArrayList<String>();
         if (!events.equals("_")){
             while (tempEvent != null){
                 String buff1 = "";
                 String buff2 = "";
-
                 int charac = tempEvent.indexOf(",");
                 if (charac >= 0){
-
-                        buff1 = tempEvent.substring(0, charac);
-                        buff2 = tempEvent.substring(charac + 1, tempEvent.length());
-                        result.add(buff1);
-                        tempEvent = buff2;
+                    buff1 = tempEvent.substring(0, charac);
+                    buff2 = tempEvent.substring(charac + 1, tempEvent.length());
+                    result.add(buff1);
+                    tempEvent = buff2;
                 }else{
-
-                        buff1 = tempEvent;
-                        result.add(buff1);
-                        tempEvent = null;
+                    buff1 = tempEvent;
+                    result.add(buff1);
+                    tempEvent = null;
                 }
             }
         }else{
@@ -200,29 +196,31 @@ public class WebDriver {
         return result;
     }
     public String getNameEvent(String input){
+        // Lay event
         String temp = "";
         if (input.indexOf("]") >= 0){
-                temp = input.substring(input.indexOf("]")+1, input.length());
+            temp = input.substring(input.indexOf("]")+1, input.length());
         }else{
-                temp = input;
+            temp = input;
         }
-
         return temp;
     }
 	
     public Condition getCond(String input){
+        // [id/value]
+        // Lay trong dau ngoac, tach biet bang /
         int moNgoac = input.indexOf("[");
         int dongNgoac = input.indexOf("]");
         String conds = "";
         Condition conditions;
         if (moNgoac >= 0 && dongNgoac > moNgoac){
-                conds = input.substring(moNgoac+1, dongNgoac);
-                int gachCheo = conds.indexOf("/");
-                String id = conds.substring(0, gachCheo);
-                String values = conds.substring(gachCheo+1, conds.length());
-                conditions = new Condition(id, values);
+            conds = input.substring(moNgoac+1, dongNgoac);
+            int gachCheo = conds.indexOf("/");
+            String id = conds.substring(0, gachCheo);
+            String values = conds.substring(gachCheo+1, conds.length());
+            conditions = new Condition(id, values);
         }else{
-                conditions = new Condition();
+            conditions = new Condition();
         }
         return conditions;
     }
