@@ -45,10 +45,12 @@ public class Helper {
     Logger logger;
     WebDriver webDriver;
     FSM fsm;
+    Functions functions;
     public Helper(Logger logger)
     {
         this.logger = logger;
         this.webDriver = new WebDriver(this.logger);
+        this.functions = new Functions();
     }
     public void setElementTableModel(TableModel elementTableModel)
     {
@@ -100,7 +102,7 @@ public class Helper {
     public void getAllEvent(Document doc) throws XPathExpressionException
     {
         int stateIDFrom, stateIDTo, eventID;
-        String input;
+        String input, htmlID, action;
         XPath xpath;
         XPathExpression expr;
         NodeList nl;
@@ -129,8 +131,12 @@ public class Helper {
         eventID = 0;
         this.logger.debug(MessageFormat.format("Number of  Events {0}", eventArray.size()));
         for (String str : eventArray) {
+            if(this.functions.checkCond(str))
+                str = this.functions.getNameEvent(str);
+            htmlID = this.functions.getHTMLIdOfEvent(str);
+            action = this.functions.getActionOfEvent(str);
             this.logger.debug(MessageFormat.format("Event id {0}: {1}", eventID, str));
-            this.eventModel.addRow(new Object[] {eventID, str});
+            this.eventModel.addRow(new Object[] {eventID, str, htmlID, action});
             eventID +=1;
         }
     }

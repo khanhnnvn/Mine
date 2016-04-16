@@ -12,6 +12,7 @@ import java.text.MessageFormat;
 import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
 import utils.*;
+import org.openqa.selenium.WebElement;
 /**
  *
  * @author kendy
@@ -26,8 +27,10 @@ public class WebDriver {
     Logger logger;
     DefaultTableModel elementmodel, stateModel, transactionModel, eventModel, valueModel;
     FSM fsm;
+    Functions functions;
     public WebDriver(Logger logger) {
         this.logger = logger;
+        this.functions = new Functions();
     }
     public void import2WebDriver(DefaultTableModel elementmodel, DefaultTableModel stateModel, DefaultTableModel transactionModel, DefaultTableModel eventModel, DefaultTableModel valueModel)
     {
@@ -44,8 +47,9 @@ public class WebDriver {
         this.addState();
         this.addEvent();
         this.addTransaction();
-        this.fsm = new FSM(this.valueModel.getColumnCount() - 2, "test", stateList, transitionList, beginState, endStateList);
+        this.fsm = new FSM(this.valueModel.getColumnCount() - 2, "test", stateList, transitionList, beginState, endStateList, this.logger);
         ListTransitionSequence transqlist = fsm.getPath_DFS();
+        transqlist.printElem();
     }
     public void addElement()
     {
@@ -151,77 +155,33 @@ public class WebDriver {
                 if (eventNConds.length() == 0){
                     eventNConds = "_";
                 }
-                ArrayList<String> ECnames = new ArrayList<String>();
-                ECnames = subEvents(eventNConds); //List cac event va condition
-                //System.out.println(s1name + "--" + ename + "-->" + s2name + " :\t" + cellString);
-                for (int k=0 ; k<ECnames.size() ; k++){
-                    if (ECnames.get(k).length()==0 || ECnames.get(k).compareTo("_")==0){
-                    continue;
-                }
-                    String eName = getNameEvent(ECnames.get(k));
-                    Condition cond = getCond(ECnames.get(k));
-                    System.out.println("Name Event: " + eName);
+                if(!eventNConds.equals("_"))
+                {
+                    String eName = this.functions.getNameEvent(eventNConds);
+                    this.logger.debug(MessageFormat.format("Name Event:  {0}",eName));
+                    Condition cond = this.functions.getCond(eventNConds);
                     transitionList.addTransition(new Transition(eventList.getEventByName(eName), 
-                        stateList.getStateByName(s1name), 
-                        stateList.getStateByName(s2name), cond));
+                    stateList.getStateByName(s1name), 
+                    stateList.getStateByName(s2name), cond));
                 }
+                
+//                ArrayList<String> ECnames = new ArrayList<String>();
+//                ECnames = subEvents(eventNConds); //List cac event va condition
+//                //System.out.println(s1name + "--" + ename + "-->" + s2name + " :\t" + cellString);
+//                for (int k=0 ; k<ECnames.size() ; k++){
+//                    if (ECnames.get(k).length()==0 || ECnames.get(k).compareTo("_")==0){
+//                    continue;
+//                }
+//                    String eName = getNameEvent(ECnames.get(k));
+//                    Condition cond = getCond(ECnames.get(k));
+//                    System.out.println("Name Event: " + eName);
+//                    transitionList.addTransition(new Transition(eventList.getEventByName(eName), 
+//                        stateList.getStateByName(s1name), 
+//                        stateList.getStateByName(s2name), cond));
+//                }
             }
         }
         this.logger.debug(MessageFormat.format("Number of transaction: {0}",this.transitionList.getSize()));
     }
-    public ArrayList<String> subEvents(String events){
-        // Tach nhieu eventNcond ,
-        // [id1/value1],[id2/value2]
-        String tempEvent = events;
-        ArrayList<String> result = new ArrayList<String>();
-        if (!events.equals("_")){
-            while (tempEvent != null){
-                String buff1 = "";
-                String buff2 = "";
-                int charac = tempEvent.indexOf(",");
-                if (charac >= 0){
-                    buff1 = tempEvent.substring(0, charac);
-                    buff2 = tempEvent.substring(charac + 1, tempEvent.length());
-                    result.add(buff1);
-                    tempEvent = buff2;
-                }else{
-                    buff1 = tempEvent;
-                    result.add(buff1);
-                    tempEvent = null;
-                }
-            }
-        }else{
-            result.add("_");
-        }
-        return result;
-    }
-    public String getNameEvent(String input){
-        // Lay event
-        String temp = "";
-        if (input.indexOf("]") >= 0){
-            temp = input.substring(input.indexOf("]")+1, input.length());
-        }else{
-            temp = input;
-        }
-        return temp;
-    }
-	
-    public Condition getCond(String input){
-        // [id/value]
-        // Lay trong dau ngoac, tach biet bang /
-        int moNgoac = input.indexOf("[");
-        int dongNgoac = input.indexOf("]");
-        String conds = "";
-        Condition conditions;
-        if (moNgoac >= 0 && dongNgoac > moNgoac){
-            conds = input.substring(moNgoac+1, dongNgoac);
-            int gachCheo = conds.indexOf("/");
-            String id = conds.substring(0, gachCheo);
-            String values = conds.substring(gachCheo+1, conds.length());
-            conditions = new Condition(id, values);
-        }else{
-            conditions = new Condition();
-        }
-        return conditions;
-    }
+    
 }

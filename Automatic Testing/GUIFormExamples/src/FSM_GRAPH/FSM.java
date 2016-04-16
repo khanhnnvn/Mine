@@ -17,13 +17,15 @@ public class FSM {
     private ListTransition transitionList;
     private State beginState;
     private ListState endStateList;
-    public FSM(int _num, String _name, ListState _stateList, ListTransition _transitionList, State _beginState, ListState _endStateList){
+    public Logger logger;
+    public FSM(int _num, String _name, ListState _stateList, ListTransition _transitionList, State _beginState, ListState _endStateList, Logger logger){
         name = _name;
         numOfTest = _num;
         stateList=_stateList;
         transitionList=_transitionList;
         beginState = _beginState;
         endStateList = _endStateList;
+        logger = logger;
     }
     //------------------------------------------------------------------------------------------
     //Ham GET

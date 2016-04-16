@@ -18,12 +18,12 @@ public class ListEvent {
 	}
 	
 	public Event getEventByName(String _name){
-		for (int i=0 ; i<listEvent.size() ; i++){
-			if (listEvent.get(i).getName().compareTo(_name) == 0){
-				return listEvent.get(i);
-			}
-		}
-		return null;
+            for (int i=0 ; i<listEvent.size() ; i++){
+                if (listEvent.get(i).getName().compareTo(_name) == 0){
+                    return listEvent.get(i);
+                }
+            }
+            return null;
 	}
 	
 	
