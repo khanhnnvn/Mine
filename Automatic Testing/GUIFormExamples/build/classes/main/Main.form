@@ -745,16 +745,28 @@
                     <Component class="javax.swing.JTable" name="jTable5">
                       <Properties>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                          <Table columnCount="5" rowCount="0">
+                          <Table columnCount="7" rowCount="0">
                             <Column editable="true" title="ID" type="java.lang.Object"/>
-                            <Column editable="true" title="Transtations" type="java.lang.Object"/>
-                            <Column editable="true" title="Path" type="java.lang.Object"/>
+                            <Column editable="true" title="Test Path" type="java.lang.Object"/>
+                            <Column editable="true" title="Transition Num" type="java.lang.Object"/>
+                            <Column editable="true" title="Event" type="java.lang.Object"/>
+                            <Column editable="true" title="End States" type="java.lang.Object"/>
                             <Column editable="true" title="Status" type="java.lang.Object"/>
                             <Column editable="true" title="Reason" type="java.lang.Object"/>
                           </Table>
                         </Property>
                         <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                           <TableColumnModel selectionModel="0">
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
                             <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                               <Title/>
                               <Editor/>
@@ -940,7 +952,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="http://google.com.vn"/>
+        <Property name="text" type="java.lang.String" value="http://testphp.vulnweb.com/login.php"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">
@@ -958,6 +970,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Start"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton3">
       <Properties>

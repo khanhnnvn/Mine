@@ -12,13 +12,14 @@ import javax.swing.JTextArea;
  * @author kendy
  */
 public class Logger {
+
     JTextArea logArea;
-    public Logger(JTextArea logArea)
-    {
+
+    public Logger(JTextArea logArea) {
         this.logArea = logArea;
     }
-    public void log(String log)
-    {
+
+    public void log(String log) {
         this.logArea.append(log);
         System.out.println(log);
     }

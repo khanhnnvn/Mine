@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package utils;
+
 import FSM_GRAPH.FSM;
 import htmlElement.ListElementStatus;
 import htmlElement.WebElements;
@@ -13,7 +14,7 @@ import utils.Logger;
 import jxl.Sheet;
 import jxl.Workbook;
 import jxl.write.*;
-import java.io.*;  
+import java.io.*;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -33,74 +34,79 @@ import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
 import org.w3c.dom.Element;
 
-
 /**
  *
  * @author namhb
  */
 public class Helper {
+
     JFileChooser chooser = new JFileChooser();
-    DefaultTableModel elementmodel, stateModel, transactionModel, eventModel, valueModel;
-    TableModel elementTableModel, stateTableModel, transactionTableModel, eventTableModel, valueTableModel;
+    DefaultTableModel elementmodel, stateModel, transactionModel, eventModel, valueModel, testPathModel;
+    TableModel elementTableModel, stateTableModel, transactionTableModel, eventTableModel, valueTableModel, testPathTableModel;
     Logger logger;
-    WebDriver webDriver;
+    WebDriverCommand webDriver;
     FSM fsm;
     Functions functions;
-    public Helper(Logger logger)
-    {
+
+    public Helper(Logger logger) {
         this.logger = logger;
-        this.webDriver = new WebDriver(this.logger);
+        this.webDriver = new WebDriverCommand(this.logger);
         this.functions = new Functions();
     }
-    public void setElementTableModel(TableModel elementTableModel)
-    {
+   
+    public void setElementTableModel(TableModel elementTableModel) {
         this.elementTableModel = elementTableModel;
         this.elementmodel = (DefaultTableModel) this.elementTableModel;
     }
-    public void setValueTableModel(TableModel valueTableModel)
-    {
+
+    public void setValueTableModel(TableModel valueTableModel) {
         this.valueTableModel = valueTableModel;
         this.valueModel = (DefaultTableModel) this.valueTableModel;
     }
-    public void setStateTableModel(TableModel stateTableModel)
-    {
+
+    public void setStateTableModel(TableModel stateTableModel) {
         this.stateTableModel = stateTableModel;
         this.stateModel = (DefaultTableModel) this.stateTableModel;
     }
-    public void setTransactionTableModel(TableModel transactionTableModel)
-    {
+
+    public void setTransactionTableModel(TableModel transactionTableModel) {
         this.transactionTableModel = transactionTableModel;
         this.transactionModel = (DefaultTableModel) this.transactionTableModel;
     }
-    public void setEventTableModel(TableModel eventTableModel)
-    {
+
+    public void setEventTableModel(TableModel eventTableModel) {
         this.eventTableModel = eventTableModel;
         this.eventModel = (DefaultTableModel) this.eventTableModel;
     }
-    public void import2WebDriver()
-    {
-        this.webDriver.import2WebDriver(this.elementmodel, this.stateModel, this.transactionModel, this.eventModel, this.valueModel);
+    public void setTestPathTableModel(TableModel testPathTableModel) {
+        this.testPathTableModel = testPathTableModel;
+        this.testPathModel = (DefaultTableModel) this.testPathTableModel;
+    }
+    public void import2WebDriver() {
+        this.webDriver.import2WebDriver(this.elementmodel, this.stateModel, this.transactionModel, this.eventModel, this.valueModel, this.testPathModel);
 //        fsm = new FSM(numOfTest, this.name, stateList, transitionList, beginState, endStateList);
     }
-    public Document xmlParse(String filePath)
-    {
+
+    public void start(String startURL) {
+        Thread t1 = new Thread(new WebDriverThread(this.webDriver, startURL));
+        t1.start();
+    }
+    public Document xmlParse(String filePath) {
         try {
             File inputFile = new File(filePath);
-            DocumentBuilderFactory dbFactory  = DocumentBuilderFactory.newInstance();
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(inputFile);
             doc.getDocumentElement().normalize();
             return doc;
-        }
-        catch(Exception e)
-        {
+        } catch (Exception e) {
             this.logger.error("Read file error");
             this.logger.error(e.toString());
             return null;
         }
     }
-    public void getAllEvent(Document doc) throws XPathExpressionException
-    {
+
+    public void getAllEvent(Document doc) throws XPathExpressionException {
         int stateIDFrom, stateIDTo, eventID;
         String input, htmlID, action;
         XPath xpath;
@@ -110,20 +116,20 @@ public class Helper {
         HashSet<String> eventArray = new HashSet<String>();
         // Get all fsa_trans
         expr = xpath.compile("//fsa_trans");
-        nl = (NodeList)expr.evaluate(doc, XPathConstants.NODESET);
+        nl = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
         this.logger.debug(MessageFormat.format("Number of  fsa_trans {0}", nl.getLength()));
         for (int temp = 0; temp < nl.getLength(); temp++) {
             Node nNode = nl.item(temp);
             if (nNode.getNodeType() == Node.ELEMENT_NODE) {
                 Element eElement = (Element) nNode;
                 input = eElement.getElementsByTagName("input").item(0).getTextContent();
-                Element eElementFrom = (Element) eElement.getElementsByTagName("from").item(0);              
+                Element eElementFrom = (Element) eElement.getElementsByTagName("from").item(0);
                 stateIDFrom = Integer.parseInt(eElementFrom.getElementsByTagName("id").item(0).getTextContent());
                 Element eElementTo = (Element) eElement.getElementsByTagName("to").item(0);
                 stateIDTo = Integer.parseInt(eElementTo.getElementsByTagName("id").item(0).getTextContent());
                 this.logger.debug(MessageFormat.format("Event {0} from {1} to {2}", input, stateIDFrom, stateIDTo));
                 // Update transaction table
-                this.transactionModel.setValueAt(input, stateIDFrom, stateIDTo+2);
+                this.transactionModel.setValueAt(input, stateIDFrom, stateIDTo + 2);
                 // Add to event list
                 eventArray.add(input);
             }
@@ -131,17 +137,34 @@ public class Helper {
         eventID = 0;
         this.logger.debug(MessageFormat.format("Number of  Events {0}", eventArray.size()));
         for (String str : eventArray) {
-            if(this.functions.checkCond(str))
+            if (this.functions.checkCond(str)) {
                 str = this.functions.getNameEvent(str);
-            htmlID = this.functions.getHTMLIdOfEvent(str);
-            action = this.functions.getActionOfEvent(str);
-            this.logger.debug(MessageFormat.format("Event id {0}: {1}", eventID, str));
-            this.eventModel.addRow(new Object[] {eventID, str, htmlID, action});
-            eventID +=1;
+            }
+            if (!this.checkEventName(str)) {
+                htmlID = this.functions.getHTMLIdOfEvent(str);
+                action = this.functions.getActionOfEvent(str);
+                this.logger.debug(MessageFormat.format("Event id {0}: {1}", eventID, str));
+                this.eventModel.addRow(new Object[]{eventID, str, htmlID, action});
+                eventID += 1;
+            } else {
+                this.logger.debug(MessageFormat.format("Event {0} duplicated, not add", str));
+            }
         }
     }
-    public void getAllStates(Document doc) throws XPathExpressionException
-    {
+
+    public boolean checkEventName(String str) {
+        boolean result = false;
+        int rowNum = this.eventModel.getRowCount();
+        for (int i = 0; i < rowNum; i++) {
+            String value = this.eventModel.getValueAt(i, 1).toString();
+            if (str.equals(value)) {
+                result = true;
+            }
+        }
+        return result;
+    }
+
+    public void getAllStates(Document doc) throws XPathExpressionException {
         //Get all states name
         String stateName, noteValue;
         String stateX, stateY, noteX, noteY;
@@ -151,7 +174,7 @@ public class Helper {
         NodeList nl;
         xpath = XPathFactory.newInstance().newXPath();
         expr = xpath.compile("//structure[@type=\"state_set\"]/state");
-        nl = (NodeList)expr.evaluate(doc, XPathConstants.NODESET);
+        nl = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
         this.logger.debug(MessageFormat.format("Number of States {0}", nl.getLength()));
         for (int temp = 0; temp < nl.getLength(); temp++) {
             Node nNode = nl.item(temp);
@@ -161,16 +184,16 @@ public class Helper {
                 stateID = Integer.parseInt(eElement.getElementsByTagName("id").item(0).getTextContent());
                 this.logger.debug(MessageFormat.format("ID: {0}, Name: {1}", stateID, stateName));
                 // Add to table
-                this.stateModel.addRow(new Object[]{ stateID, 5, stateName});
+                this.stateModel.addRow(new Object[]{stateID, 5, stateName});
                 // Add Row to transaction
-                this.transactionModel.addRow(new Object[] {stateID, stateName});
+                this.transactionModel.addRow(new Object[]{stateID, stateName});
                 // Add columns to transaction
                 this.transactionModel.addColumn(stateName);
             }
         }
         //Find Start states
         expr = xpath.compile("//structure[@type=\"start_state\"]/state");
-        nl = (NodeList)expr.evaluate(doc, XPathConstants.NODESET);
+        nl = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
         this.logger.debug(MessageFormat.format("Number of Start States {0}", nl.getLength()));
         for (int temp = 0; temp < nl.getLength(); temp++) {
             Node nNode = nl.item(temp);
@@ -185,7 +208,7 @@ public class Helper {
         }
         //Find Final state
         expr = xpath.compile("//structure[@type=\"final_states\"]/state");
-        nl = (NodeList)expr.evaluate(doc, XPathConstants.NODESET);
+        nl = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
         this.logger.debug(MessageFormat.format("Number of Start States {0}", nl.getLength()));
         for (int temp = 0; temp < nl.getLength(); temp++) {
             Node nNode = nl.item(temp);
@@ -200,10 +223,10 @@ public class Helper {
         }
         //Get all X, Y
         ArrayList<ArrayList<String>> allstatePoint = new ArrayList<ArrayList<String>>();
-        
+
         String statePointData;
         expr = xpath.compile("//state_point");
-        nl = (NodeList)expr.evaluate(doc, XPathConstants.NODESET);
+        nl = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
         this.logger.debug(MessageFormat.format("Number of State Point {0}", nl.getLength()));
         for (int temp = 0; temp < nl.getLength(); temp++) {
             Node nNode = nl.item(temp);
@@ -227,7 +250,7 @@ public class Helper {
         }
         //Get all element of state
         expr = xpath.compile("//note");
-        nl = (NodeList)expr.evaluate(doc, XPathConstants.NODESET);
+        nl = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
         this.logger.debug(MessageFormat.format("Number of Note {0}", nl.getLength()));
         for (int temp = 0; temp < nl.getLength(); temp++) {
             Node nNode = nl.item(temp);
@@ -239,88 +262,74 @@ public class Helper {
                 stateY = eElementPoint.getElementsByTagName("y").item(0).getTextContent();
                 this.logger.debug(MessageFormat.format("Note Point - Value: {0}, X: {1}, Y: {2}", noteValue, stateX, stateY));
                 int id = this.findIdByPoint(allstatePoint, stateX, stateY);
-                if(id < 0)
-                {
+                if (id < 0) {
                     this.logger.debug("Note not for State");
-                }
-                else
-                {
+                } else {
                     // Update value
                     String[] tmp = noteValue.split(",");
-                    for (int temp2 = 0; temp2 < tmp.length; temp2++)
-                    {
+                    for (int temp2 = 0; temp2 < tmp.length; temp2++) {
                         this.logger.debug(MessageFormat.format("States id {0} have Element id {1}", id, tmp[temp2]));
-                        this.stateModel.setValueAt("o", id, Integer.parseInt(tmp[temp2])+5);
+                        this.stateModel.setValueAt("o", id, Integer.parseInt(tmp[temp2]) + 5);
                     }
                 }
             }
         }
     }
-    public int findIdByPoint(ArrayList<ArrayList<String>> allstatePoint, String stateX, String stateY)
-    {
+
+    public int findIdByPoint(ArrayList<ArrayList<String>> allstatePoint, String stateX, String stateY) {
         ArrayList statePoint;
         String alstateX, alstateY;
-        for (int temp = 0; temp < allstatePoint.size(); temp++)
-        {
+        for (int temp = 0; temp < allstatePoint.size(); temp++) {
             alstateX = allstatePoint.get(temp).get(1);
             alstateY = allstatePoint.get(temp).get(2);
-            if((alstateX.equals(stateX)) && (alstateY.equals(stateY)))
-            {
+            if ((alstateX.equals(stateX)) && (alstateY.equals(stateY))) {
                 return Integer.parseInt(allstatePoint.get(temp).get(0));
             }
         }
         return -1;
     }
-    public void selectJFlapFile(Component parent)
-    {
-        if(this.elementmodel != null)
-        {
+
+    public void selectJFlapFile(Component parent) {
+        if (this.elementmodel != null) {
             chooser.setFileFilter(new FileNameExtensionFilter("JFLAP Files", "jflap"));
             int returnVal = chooser.showOpenDialog(parent);
-            if(returnVal == JFileChooser.APPROVE_OPTION) {
+            if (returnVal == JFileChooser.APPROVE_OPTION) {
                 this.logger.debug("Openning JFLAP file: " + chooser.getSelectedFile().getAbsolutePath());
                 this.processJFlapFile(chooser.getSelectedFile().getAbsolutePath());
             }
-        }
-        else
-        {
+        } else {
             this.logger.error("Select Element file first!");
         }
     }
-    public void processJFlapFile(String filePath)
-    {
+
+    public void processJFlapFile(String filePath) {
         Document doc = this.xmlParse(filePath);
-        if(doc != null)
-        {
-            try
-            {
+        if (doc != null) {
+            try {
                 this.getAllStates(doc);
                 this.getAllEvent(doc);
-            }
-            catch(Exception e)
-            {
+            } catch (Exception e) {
                 this.logger.error("Read file error");
                 this.logger.error(e.toString());
             }
         }
     }
-    public void selectExcelFile(Component parent, JLabel elementCountLabel)
-    {
+
+    public void selectExcelFile(Component parent, JLabel elementCountLabel) {
         chooser.setFileFilter(new FileNameExtensionFilter("Excel Files", "xls"));
         int returnVal = chooser.showOpenDialog(parent);
-        if(returnVal == JFileChooser.APPROVE_OPTION) {
+        if (returnVal == JFileChooser.APPROVE_OPTION) {
             this.logger.debug("Openning Excel file: " + chooser.getSelectedFile().getAbsolutePath());
             this.processElementExcelFile(chooser.getSelectedFile().getAbsolutePath(), elementCountLabel);
-        }        
+        }
     }
-    public void displayElementExcelFile()
-    {
-        
+
+    public void displayElementExcelFile() {
+
     }
-    public void processElementExcelFile(String filePath, JLabel elementCountLabel)
-    {
-        try
-        {
+
+    public void processElementExcelFile(String filePath, JLabel elementCountLabel) {
+        try {
             Workbook workbook = Workbook.getWorkbook(new java.io.File(filePath));
             Sheet sheet = workbook.getSheet(0);
             int nelem = Integer.valueOf(sheet.getCell(0, 0).getContents().trim()).intValue();
@@ -328,43 +337,52 @@ public class Helper {
             this.logger.debug(MessageFormat.format("Number of Element {0}", nelem));
             this.logger.debug(MessageFormat.format("Number of Test value {0}", numOfTest));
             // Add to value table
-            for (int i=0; i<numOfTest; i++){
-                this.valueModel.addColumn(i+1);
+            for (int i = 0; i < numOfTest; i++) {
+                this.valueModel.addColumn(i + 1);
             }
             elementCountLabel.setText(Integer.toString(nelem));
             this.logger.debug("Start read Element");
-            for (int i=0; i<nelem; i++){
-        	int id = Integer.valueOf(sheet.getCell(1, i+2).getContents().trim()).intValue();
-        	String html_id = sheet.getCell(2, i+2).getContents().trim();
-        	String type = sheet.getCell(3, i+2).getContents().trim();
-        	this.logger.debug(MessageFormat.format("ID: {0}, HTML id: {1}, Type: {2}", id, html_id, type));
+            for (int i = 0; i < nelem; i++) {
+                int id = Integer.valueOf(sheet.getCell(1, i + 2).getContents().trim()).intValue();
+                String html_id = sheet.getCell(2, i + 2).getContents().trim();
+                String type = sheet.getCell(3, i + 2).getContents().trim();
+                this.logger.debug(MessageFormat.format("ID: {0}, HTML id: {1}, Type: {2}", id, html_id, type));
                 // Add Row               
-                this.elementmodel.addRow(new Object[]{ id, html_id, type});
+                this.elementmodel.addRow(new Object[]{id, html_id, type});
                 // Add Column to state table                
                 this.stateModel.addColumn(id);
                 // Add Row to value
-                this.valueModel.addRow(new Object[]{ id, html_id});
+                this.valueModel.addRow(new Object[]{id, html_id});
                 // For old code, get value, add to value table
                 ArrayList<String> values = new ArrayList<String>();
-        	for (int j=0; j<numOfTest; j++){
-        		String tvalue = sheet.getCell(4+j, i+2).getContents().trim();
-        		if (tvalue.length()==0){
-                            tvalue = "";
-        		}
-                        else
-                        {
-                            this.logger.debug(MessageFormat.format("Add value: {0}", tvalue));
-                        }
-                        this.valueModel.setValueAt(tvalue, id, j+2);
-        		values.add(tvalue);
-        	}
+                for (int j = 0; j < numOfTest; j++) {
+                    String tvalue = sheet.getCell(4 + j, i + 2).getContents().trim();
+                    if (tvalue.length() == 0) {
+                        tvalue = "";
+                    } else {
+                        this.logger.debug(MessageFormat.format("Add value: {0}", tvalue));
+                    }
+                    this.valueModel.setValueAt(tvalue, id, j + 2);
+                    values.add(tvalue);
+                }
             }
-        }
-        catch(Exception e)
-        {
+        } catch (Exception e) {
             this.logger.error("Read file error");
             this.logger.error(e.toString());
         }
 
+    }
+}
+class WebDriverThread implements Runnable {
+    WebDriverCommand webDriver;
+    String startURL;
+    public WebDriverThread(WebDriverCommand webDriver, String startURL) {
+        this.webDriver = webDriver;
+        this.startURL = startURL;
+    }
+
+    public void run() {
+        this.webDriver.startFirefox();
+        this.webDriver.runAllTestCase(startURL);
     }
 }

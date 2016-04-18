@@ -4,23 +4,27 @@
  * and open the template in the editor.
  */
 package main;
+
 import javax.swing.ScrollPaneConstants;
 import javax.swing.table.TableModel;
 import utils.*;
+
 /**
  *
  * @author namhb
  */
 public class Main extends javax.swing.JFrame {
+
     Helper helper;
     Logger logger;
+
     /**
      * Creates new form Main
      */
     public Main() {
         initComponents();
-        this.logger =   new Logger(this.jTextArea1);
-        this.helper =   new Helper(this.logger);
+        this.logger = new Logger(this.jTextArea1);
+        this.helper = new Helper(this.logger);
         jScrollPane1.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane7.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane8.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -29,6 +33,7 @@ public class Main extends javax.swing.JFrame {
         this.helper.setTransactionTableModel(jTable4.getModel());
         this.helper.setEventTableModel(jTable3.getModel());
         this.helper.setValueTableModel(jTable6.getModel());
+        this.helper.setTestPathTableModel(jTable5.getModel());
     }
 
     /**
@@ -360,7 +365,7 @@ public class Main extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "Transtations", "Path", "Status", "Reason"
+                "ID", "Test Path", "Transition Num", "Event", "End States", "Status", "Reason"
             }
         ));
         jScrollPane6.setViewportView(jTable5);
@@ -474,7 +479,7 @@ public class Main extends javax.swing.JFrame {
 
             jLabel1.setText("URL:");
 
-            jTextField1.setText("http://google.com.vn");
+            jTextField1.setText("http://testphp.vulnweb.com/login.php");
 
             jButton1.setText("Open Element File");
             jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -485,6 +490,11 @@ public class Main extends javax.swing.JFrame {
 
             jButton2.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
             jButton2.setText("Start");
+            jButton2.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    jButton2ActionPerformed(evt);
+                }
+            });
 
             jButton3.setText("Open JFLAP File");
             jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -606,6 +616,12 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.helper.import2WebDriver();
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        String startURL = jTextField1.getText();
+        this.helper.start(startURL);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

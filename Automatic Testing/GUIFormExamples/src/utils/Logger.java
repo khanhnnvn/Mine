@@ -15,26 +15,27 @@ import javax.swing.JTextArea;
  * @author namhb
  */
 public class Logger {
+
     JTextArea logPanel;
-    public Logger(JTextArea logPanel)
-    {
+
+    public Logger(JTextArea logPanel) {
         this.logPanel = logPanel;
     }
-    public void debug(String message)
-    {
+
+    public void debug(String message) {
         String timeStamp = new SimpleDateFormat("yyyyMMdd-HHmmss").format(Calendar.getInstance().getTime());
         message = MessageFormat.format("DEBUG {0}: {1}.", timeStamp, message);
         System.out.println(message);
         this.logPanel.append(message);
         this.logPanel.append("\n");
     }
-    public void error(String message)
-    {
+
+    public void error(String message) {
         String timeStamp = new SimpleDateFormat("yyyyMMdd-HHmmss").format(Calendar.getInstance().getTime());
         message = MessageFormat.format("ERROR {0}: {1}.", timeStamp, message);
         System.out.println(message);
         this.logPanel.append(message);
         this.logPanel.append("\n");
-        
+
     }
 }
