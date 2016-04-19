@@ -82,13 +82,13 @@ public class Helper {
         this.testPathTableModel = testPathTableModel;
         this.testPathModel = (DefaultTableModel) this.testPathTableModel;
     }
-    public void import2WebDriver() {
-        this.webDriver.import2WebDriver(this.elementmodel, this.stateModel, this.transactionModel, this.eventModel, this.valueModel, this.testPathModel);
+    public void import2WebDriver(JLabel transitionCountLabel, JLabel testPathCountLabel) {
+        this.webDriver.import2WebDriver(this.elementmodel, this.stateModel, this.transactionModel, this.eventModel, this.valueModel, this.testPathModel, testPathCountLabel, transitionCountLabel);
 //        fsm = new FSM(numOfTest, this.name, stateList, transitionList, beginState, endStateList);
     }
 
-    public void start(String startURL) {
-        Thread t1 = new Thread(new WebDriverThread(this.webDriver, startURL));
+    public void start(String startURL, boolean renewCookie, String ffPath) {
+        Thread t1 = new Thread(new WebDriverThread(this.webDriver, startURL, renewCookie, ffPath));
         t1.start();
     }
     public Document xmlParse(String filePath) {
@@ -106,7 +106,7 @@ public class Helper {
         }
     }
 
-    public void getAllEvent(Document doc) throws XPathExpressionException {
+    public void getAllEvent(Document doc, JLabel EventNumLabel, JLabel TransNumLabel) throws XPathExpressionException {
         int stateIDFrom, stateIDTo, eventID;
         String input, htmlID, action;
         XPath xpath;
@@ -118,6 +118,7 @@ public class Helper {
         expr = xpath.compile("//fsa_trans");
         nl = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
         this.logger.debug(MessageFormat.format("Number of  fsa_trans {0}", nl.getLength()));
+        TransNumLabel.setText(Integer.toString(nl.getLength()));
         for (int temp = 0; temp < nl.getLength(); temp++) {
             Node nNode = nl.item(temp);
             if (nNode.getNodeType() == Node.ELEMENT_NODE) {
@@ -136,6 +137,7 @@ public class Helper {
         }
         eventID = 0;
         this.logger.debug(MessageFormat.format("Number of  Events {0}", eventArray.size()));
+        EventNumLabel.setText(Integer.toString(eventArray.size()));
         for (String str : eventArray) {
             if (this.functions.checkCond(str)) {
                 str = this.functions.getNameEvent(str);
@@ -150,6 +152,7 @@ public class Helper {
                 this.logger.debug(MessageFormat.format("Event {0} duplicated, not add", str));
             }
         }
+        EventNumLabel.setText(Integer.toString(this.eventModel.getRowCount()));
     }
 
     public boolean checkEventName(String str) {
@@ -164,7 +167,7 @@ public class Helper {
         return result;
     }
 
-    public void getAllStates(Document doc) throws XPathExpressionException {
+    public void getAllStates(Document doc, JLabel StateNumLabel) throws XPathExpressionException {
         //Get all states name
         String stateName, noteValue;
         String stateX, stateY, noteX, noteY;
@@ -176,6 +179,7 @@ public class Helper {
         expr = xpath.compile("//structure[@type=\"state_set\"]/state");
         nl = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
         this.logger.debug(MessageFormat.format("Number of States {0}", nl.getLength()));
+        StateNumLabel.setText(Integer.toString(nl.getLength()));
         for (int temp = 0; temp < nl.getLength(); temp++) {
             Node nNode = nl.item(temp);
             if (nNode.getNodeType() == Node.ELEMENT_NODE) {
@@ -289,25 +293,25 @@ public class Helper {
         return -1;
     }
 
-    public void selectJFlapFile(Component parent) {
+    public void selectJFlapFile(Component parent, JLabel StateNumLabel, JLabel EventNumLabel, JLabel TransNumLabel) {
         if (this.elementmodel != null) {
             chooser.setFileFilter(new FileNameExtensionFilter("JFLAP Files", "jflap"));
             int returnVal = chooser.showOpenDialog(parent);
             if (returnVal == JFileChooser.APPROVE_OPTION) {
                 this.logger.debug("Openning JFLAP file: " + chooser.getSelectedFile().getAbsolutePath());
-                this.processJFlapFile(chooser.getSelectedFile().getAbsolutePath());
+                this.processJFlapFile(chooser.getSelectedFile().getAbsolutePath(), StateNumLabel, EventNumLabel, TransNumLabel);
             }
         } else {
             this.logger.error("Select Element file first!");
         }
     }
 
-    public void processJFlapFile(String filePath) {
+    public void processJFlapFile(String filePath, JLabel StateNumLabel, JLabel EventNumLabel, JLabel TransNumLabel) {
         Document doc = this.xmlParse(filePath);
         if (doc != null) {
             try {
-                this.getAllStates(doc);
-                this.getAllEvent(doc);
+                this.getAllStates(doc, StateNumLabel);
+                this.getAllEvent(doc, EventNumLabel, TransNumLabel);
             } catch (Exception e) {
                 this.logger.error("Read file error");
                 this.logger.error(e.toString());
@@ -315,12 +319,12 @@ public class Helper {
         }
     }
 
-    public void selectExcelFile(Component parent, JLabel elementCountLabel) {
+    public void selectExcelFile(Component parent, JLabel elementCountLabel, JLabel valueCountLabel) {
         chooser.setFileFilter(new FileNameExtensionFilter("Excel Files", "xls"));
         int returnVal = chooser.showOpenDialog(parent);
         if (returnVal == JFileChooser.APPROVE_OPTION) {
             this.logger.debug("Openning Excel file: " + chooser.getSelectedFile().getAbsolutePath());
-            this.processElementExcelFile(chooser.getSelectedFile().getAbsolutePath(), elementCountLabel);
+            this.processElementExcelFile(chooser.getSelectedFile().getAbsolutePath(), elementCountLabel, valueCountLabel);
         }
     }
 
@@ -328,7 +332,7 @@ public class Helper {
 
     }
 
-    public void processElementExcelFile(String filePath, JLabel elementCountLabel) {
+    public void processElementExcelFile(String filePath, JLabel elementCountLabel, JLabel valueCountLabel) {
         try {
             Workbook workbook = Workbook.getWorkbook(new java.io.File(filePath));
             Sheet sheet = workbook.getSheet(0);
@@ -341,6 +345,7 @@ public class Helper {
                 this.valueModel.addColumn(i + 1);
             }
             elementCountLabel.setText(Integer.toString(nelem));
+            valueCountLabel.setText(Integer.toString(numOfTest));
             this.logger.debug("Start read Element");
             for (int i = 0; i < nelem; i++) {
                 int id = Integer.valueOf(sheet.getCell(1, i + 2).getContents().trim()).intValue();
@@ -376,13 +381,17 @@ public class Helper {
 class WebDriverThread implements Runnable {
     WebDriverCommand webDriver;
     String startURL;
-    public WebDriverThread(WebDriverCommand webDriver, String startURL) {
+    boolean renewCookie;
+    String ffPath;
+    public WebDriverThread(WebDriverCommand webDriver, String startURL, boolean renewCookie, String ffPath) {
         this.webDriver = webDriver;
         this.startURL = startURL;
+        this.renewCookie = renewCookie;
+        this.ffPath = ffPath;
     }
 
     public void run() {
-        this.webDriver.startFirefox();
-        this.webDriver.runAllTestCase(startURL);
+        this.webDriver.startFirefox(ffPath);
+        this.webDriver.runAllTestCase(startURL, renewCookie);
     }
 }

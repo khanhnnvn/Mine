@@ -12,6 +12,7 @@ import java.io.File;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
+import javax.swing.JLabel;
 import javax.swing.table.DefaultTableModel;
 import utils.*;
 import org.openqa.selenium.WebElement;
@@ -36,19 +37,22 @@ public class WebDriverCommand {
     DefaultTableModel elementmodel, stateModel, transactionModel, eventModel, valueModel, testPathModel;
     FSM fsm;
     Functions functions;
+    JLabel testPathCountLabel, transitionCountLabel;
 
     public WebDriverCommand(Logger logger) {
         this.logger = logger;
         this.functions = new Functions();
     }
 
-    public void import2WebDriver(DefaultTableModel elementmodel, DefaultTableModel stateModel, DefaultTableModel transactionModel, DefaultTableModel eventModel, DefaultTableModel valueModel, DefaultTableModel testPathModel) {
+    public void import2WebDriver(DefaultTableModel elementmodel, DefaultTableModel stateModel, DefaultTableModel transactionModel, DefaultTableModel eventModel, DefaultTableModel valueModel, DefaultTableModel testPathModel, JLabel testPathCountLabel, JLabel transitionCountLabel) {
         this.elementmodel = elementmodel;
         this.stateModel = stateModel;
         this.transactionModel = transactionModel;
         this.eventModel = eventModel;
         this.valueModel = valueModel;
         this.testPathModel = testPathModel;
+        this.testPathCountLabel = testPathCountLabel;
+        this.transitionCountLabel = transitionCountLabel;
         this.importAll();
     }
 
@@ -84,6 +88,8 @@ public class WebDriverCommand {
                 rowID += 1;
             }
         }
+        this.transitionCountLabel.setText(Integer.toString(this.testPathModel.getRowCount()));
+        this.testPathCountLabel.setText(Integer.toString(transqlist.getSize()));
     }
 
     public void addElement() {
@@ -188,35 +194,44 @@ public class WebDriverCommand {
         this.logger.debug(MessageFormat.format("Number of transaction: {0}", this.transitionList.getSize()));
     }
 
-    public void startFirefox() {
-        File pathToBinary = new File("D:\\03.Portable\\FirefoxPortable\\App\\Firefox\\firefox.exe");
-        FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
-        FirefoxProfile firefoxProfile = new FirefoxProfile();
-        this.driver = new FirefoxDriver(ffBinary, firefoxProfile);
+    public void startFirefox(String firefoxPath) {
+        String FFpath = firefoxPath;
+        File f = new File(FFpath);
+        if(f.exists()){
+            File pathToBinary = new File(FFpath);
+            FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
+            FirefoxProfile firefoxProfile = new FirefoxProfile();
+            this.driver = new FirefoxDriver(ffBinary, firefoxProfile);
+            this.logger.debug(MessageFormat.format("Start Firefox at: {0}", firefoxPath));
+        }
+        else
+        {
+            this.driver = new FirefoxDriver();
+            this.logger.debug(MessageFormat.format("Not found Firefox at: {0}. Run default Firefox", firefoxPath));
+        }
         this.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
-    public void runAllTestCase(String startURL) {
+    public void runAllTestCase(String startURL, boolean renewCookie) {
         ListTransitionSequence transqlist = fsm.getPath_DFS();
         for (int i = 0; i < transqlist.getSize(); i++) {
             TransitionSequences transq = transqlist.getTransitionByIndex(i);
             // Run test case
-            this.runOneTransitionSequences(startURL, transq, i);
+            this.runOneTransitionSequences(startURL, transq, i, renewCookie);
         }
     }
 
-    public void runOneTransitionSequences(String startURL, TransitionSequences transq, int test_c) {
+    public void runOneTransitionSequences(String startURL, TransitionSequences transq, int test_c, boolean renewCookie) {
         boolean passone = true;
         this.driver.get(startURL);
         // Check delete cookie
-        this.driver.manage().deleteAllCookies();
+        if(renewCookie) this.driver.manage().deleteAllCookies();
         // Check begin state
         for (int j = 0; j < transq.getSize(); j++) {
             Transition tran = transq.getTransitionByIndex(j);
             Event e = tran.getEvent();
             State s1 = tran.getBeginState();
             State s2 = tran.getEndState();
-            // Don`t know
             // Check state
             // And do cond if need
             int reasonCol = 6;
@@ -237,6 +252,7 @@ public class WebDriverCommand {
             if (!s2.checkState(driver, test_c, this.logger)) {
                 passone = false;
                 this.logger.debug(MessageFormat.format("FAIL STATE: {0}", s2.getName()));
+                this.testPathModel.setValueAt("FAIL", tran.getTableID(), statusCol);
                 this.testPathModel.setValueAt("FAIL STATE", tran.getTableID(), reasonCol);
                 break;
             }
