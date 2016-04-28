@@ -1,3 +1,0 @@
-Scanner:
-https://github.com/sensepost/SPartan
-
