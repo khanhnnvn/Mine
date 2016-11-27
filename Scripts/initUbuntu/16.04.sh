@@ -1,6 +1,7 @@
 #!/bin/bash
-echo "Start Initialization Ubuntu 14.04 LTS - NamHB"
+echo "Start Initialization Ubuntu 16.04 LTS - NamHB"
 # Apt config
+cp /etc/apt/sources.list /etc/apt/sources.list.back
 cp souces1604.list /etc/apt/sources.list
 apt-get update
 # Install google chrome, download
@@ -41,7 +42,14 @@ wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 heroku login
 
 # Create tools
-mkdir -p /home/habachname/Tools
-mkdir -p /home/habachname/git
-mkdir -p /home/habachname/tmp
+mkdir -p /home/habachnam/Tools
+mkdir -p /home/habachnam/git
+mkdir -p /home/habachnam/tmp
+# Edit vim
+cd /home/habachnam/tmp
+git clone https://github.com/chrishunt/color-schemes.git
+cd ./color-schemes
+mkdir -p ~/.vim/colors/
+cp railscasts/base16-railscasts.vim ~/.vim/colors/
+# Finish
 echo "Finish Initialization Ubuntu 14.04 LTS - NamHB"
