@@ -44,4 +44,7 @@ heroku login
 mkdir -p /home/habachname/Tools
 mkdir -p /home/habachname/git
 mkdir -p /home/habachname/tmp
-echo "Finish Initialization Ubuntu 14.04 LTS - NamHB"
+# Vim, bash
+cp .bashrc ~/.bashrc
+cp .vimrc ~/.vimrc
+echo "Finish Initialization Ubuntu 16.04 LTS - NamHB"
