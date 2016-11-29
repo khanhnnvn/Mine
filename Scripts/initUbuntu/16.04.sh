@@ -12,10 +12,8 @@ sudo add-apt-repository -y ppa:noobslab/themes
 sudo add-apt-repository -y ppa:noobslab/icons
 sudo add-apt-repository -y ppa:numix/ppa
 sudo apt-get update
-sudo apt-get install -y flatabulous-theme arc-flatabulous-theme numix-gtk-theme
-sudo apt-get install -y ultra-flat-icons
-sudo apt-get purge -y cups-browsed cups-daemon
-sudo apt-get remove unity-webapps-amazon*
+sudo apt-get install -y flatabulous-theme arc-flatabulous-theme numix-gtk-theme ultra-flat-icons classicmenu-indicator
+sudo apt-get purge -y cups-browsed cups-daemon libreoffice-math cheese unity-webapps-amazon* simple-scan
 
 sudo cp ./NetworkManager.conf /etc/NetworkManager/NetworkManager.conf
 cp ./.tmux.conf ~/
