@@ -45,4 +45,6 @@ mkdir -p /home/habachname/tmp
 # Vim, bash
 cp .bashrc ~/.bashrc
 cp .vimrc ~/.vimrc
+# Disable Guest
+sudo sh -c 'printf "[SeatDefaults]\nallow-guest=false\n" > /etc/lightdm/lightdm.conf.d/50-no-guest.conf'
 echo "Finish Initialization Ubuntu 16.04 LTS - NamHB"
