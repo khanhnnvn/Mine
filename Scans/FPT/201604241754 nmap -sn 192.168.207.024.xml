@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?><nmaprun start="1461545678" profile_name="" xmloutputversion="1.04" scanner="nmap" version="7.12" startstr="Sun Apr 24 17:54:38 2016" args="nmap -sn 192.168.207.024"><verbose level="0"></verbose><debugging level="0"></debugging><output type="interactive">
-Starting Nmap 7.12 ( https://nmap.org ) at 2016-04-24 17:54 Pacific Daylight Time
-Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
-Nmap done: 1 IP address (0 hosts up) scanned in 3.15 seconds
-</output><runstats><finished timestr="Sun Apr 24 17:54:42 2016" time="1461545682"></finished><hosts down="1" total="1" up="0"></hosts></runstats></nmaprun>

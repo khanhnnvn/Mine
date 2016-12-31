@@ -7,7 +7,8 @@ apt-get update
 # * Java JDK, extract, rename to java
 # * Virtualbox: Download
 # * Sublime, netbean
-sudo apt-get install build-essential unity-tweak-tool git bleachbit compizconfig-settings-manager tmux vim vlc unrar p7zip filezilla python-pip gdb libssl-dev ipython
+sudo apt-get install build-essential unity-tweak-tool git bleachbit compizconfig-settings-manager tmux vim vlc unrar p7zip filezilla python-pip gdb libssl-dev ipython python-dev libfuzzy-dev automake libtool make gcc libffi-dev libxml2-dev libxslt-dev python-dev zlib1g-dev
+sudo pip install pymongo
 sudo add-apt-repository -y ppa:noobslab/themes
 sudo add-apt-repository -y ppa:noobslab/icons
 sudo add-apt-repository -y ppa:numix/ppa
