@@ -13,7 +13,7 @@ sudo add-apt-repository -y ppa:noobslab/themes
 sudo add-apt-repository -y ppa:noobslab/icons
 sudo add-apt-repository -y ppa:numix/ppa
 sudo apt-get update
-sudo apt-get install -y flatabulous-theme arc-flatabulous-theme numix-gtk-theme ultra-flat-icons classicmenu-indicator
+sudo apt-get install -y flatabulous-theme arc-flatabulous-theme numix-gtk-theme ultra-flat-icons classicmenu-indicator 
 sudo apt-get purge -y cups-browsed cups-daemon libreoffice-math cheese unity-webapps-amazon* simple-scan
 
 sudo cp ./NetworkManager.conf /etc/NetworkManager/NetworkManager.conf
@@ -47,5 +47,9 @@ mkdir -p /home/habachname/tmp
 cp .bashrc ~/.bashrc
 cp .vimrc ~/.vimrc
 # Disable Guest
+# Virtual env
+mkdir ~/.virtualenvs
+sudo pip install virtualenv
+sudo pip install virtualenvwrapper
 sudo sh -c 'printf "[SeatDefaults]\nallow-guest=false\n" > /etc/lightdm/lightdm.conf.d/50-no-guest.conf'
 echo "Finish Initialization Ubuntu 16.04 LTS - NamHB"
